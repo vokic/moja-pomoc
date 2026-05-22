@@ -32,7 +32,11 @@ export function HomePage() {
         </p>
 
         <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-          <Button asChild size="lg" className="h-12 px-6 text-[15px] shadow-md">
+          <Button
+            asChild
+            size="lg"
+            className="h-12 bg-[#0C4DA2] px-6 text-[15px] text-white shadow-md hover:bg-[#073B7E]"
+          >
             <Link to="/wizard">Saznaj šta mi pripada (~2 min)</Link>
           </Button>
           <Button
