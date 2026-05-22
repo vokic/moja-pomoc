@@ -510,7 +510,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
         Preskoči na glavni sadržaj
       </a>
       <Header />
-      <main id="main" className="flex-1" style={{ backgroundColor: bg }}>
+      <main id="main" className="flex flex-1 flex-col" style={{ backgroundColor: bg }}>
         {children}
       </main>
       <Footer />
