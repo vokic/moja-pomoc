@@ -497,11 +497,15 @@ export function PageShell({ children }: { children: React.ReactNode }) {
   // Theme distinction stays in headers (Merriweather logo USA, PT Sans Caption hexagon SR).
   const fontFamily = '"Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif';
   const bg = theme === 'srpski' ? '#F2F4F7' : '#ffffff';
+  // USA = top band ~30px + brand band ~70px = ~100px
+  // SR  = top band ~30px + brand band ~110px + nav ~50px = ~190px
+  // Hero on HomePage uses calc(100svh - var(--header-h)) to fill viewport.
+  const headerH = theme === 'srpski' ? '190px' : '100px';
   return (
     <div
       data-theme={theme}
       className="flex min-h-screen flex-col text-[#1b1b1b]"
-      style={{ fontFamily, backgroundColor: bg }}
+      style={{ fontFamily, backgroundColor: bg, '--header-h': headerH } as React.CSSProperties}
     >
       <a
         href="#main"
