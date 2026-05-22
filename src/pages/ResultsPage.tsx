@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { ResultCard } from '@/components/results/ResultCard';
+import { Anketa } from '@/components/shared/Anketa';
 import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Card } from '@/components/ui/card';
 import { useCatalog } from '@/hooks/useCatalog';
@@ -111,6 +112,8 @@ export function ResultsPage() {
           </div>
         )}
       </section>
+
+      {matches.length > 0 && <Anketa />}
     </div>
   );
 }
