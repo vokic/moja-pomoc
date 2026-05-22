@@ -493,10 +493,9 @@ export function Footer() {
 
 export function PageShell({ children }: { children: React.ReactNode }) {
   const { theme } = useTheme();
-  const fontFamily =
-    theme === 'srpski'
-      ? '"PT Sans", system-ui, -apple-system, sans-serif'
-      : '"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif';
+  // Both themes use Nunito Sans (rounded, friendly, full Cyrillic) for body.
+  // Theme distinction stays in headers (Merriweather logo USA, PT Sans Caption hexagon SR).
+  const fontFamily = '"Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif';
   const bg = theme === 'srpski' ? '#F2F4F7' : '#ffffff';
   return (
     <div
