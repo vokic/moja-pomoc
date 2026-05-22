@@ -142,7 +142,7 @@ function UsaHeader() {
 
 function UsaFooter() {
   return (
-    <footer className="mt-16">
+    <footer>
       <div className="bg-[#162e51] text-white">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
@@ -339,7 +339,7 @@ function SrHeader() {
 
 function SrFooter() {
   return (
-    <footer className="mt-16" style={{ fontFamily: '"PT Sans", system-ui, sans-serif' }}>
+    <footer style={{ fontFamily: '"PT Sans", system-ui, sans-serif' }}>
       <div className="bg-[#0A1A33] text-white">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
