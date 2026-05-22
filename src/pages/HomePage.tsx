@@ -35,7 +35,7 @@ export function HomePage() {
           <Button
             asChild
             size="lg"
-            className="h-12 bg-[#0C4DA2] px-6 text-[15px] text-white shadow-md hover:bg-[#073B7E]"
+            className="h-12 bg-[#1B3A6B] px-6 text-[15px] text-white shadow-md hover:bg-[#0F2547]"
           >
             <Link to="/wizard">Saznaj šta mi pripada (~2 min)</Link>
           </Button>
