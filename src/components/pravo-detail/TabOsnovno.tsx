@@ -27,7 +27,7 @@ export function TabOsnovno({ pravo }: Props) {
       <Row label="Poslednja provera" value={pravo.last_verified} />
 
       <div className="sm:col-span-2">
-        <dt className="text-[12px] font-bold uppercase tracking-wider text-[#565c65]">
+        <dt className="text-[13px] font-bold uppercase tracking-wider text-[var(--brand-primary)]">
           Zašto se propušta
         </dt>
         <dd className="mt-1 text-[14px] leading-relaxed text-[#1b1b1b]">
@@ -37,7 +37,7 @@ export function TabOsnovno({ pravo }: Props) {
 
       {pravo.pravni_osnov.length > 0 && (
         <div className="sm:col-span-2">
-          <dt className="text-[12px] font-bold uppercase tracking-wider text-[#565c65]">
+          <dt className="text-[13px] font-bold uppercase tracking-wider text-[var(--brand-primary)]">
             Pravni osnov
           </dt>
           <dd className="mt-2 space-y-1.5 text-[13.5px] text-[#1b1b1b]">
@@ -73,9 +73,11 @@ export function TabOsnovno({ pravo }: Props) {
 
 function Row({ label, value }: { label: string; value: string }) {
   return (
-    <div>
-      <dt className="text-[12px] font-bold uppercase tracking-wider text-[#565c65]">{label}</dt>
-      <dd className="mt-1 text-[14px] leading-relaxed text-[#1b1b1b]">{value}</dd>
+    <div className="border-l-2 border-[var(--brand-primary)]/30 pl-3">
+      <dt className="text-[12.5px] font-bold uppercase tracking-wider text-[var(--brand-primary)]">
+        {label}
+      </dt>
+      <dd className="mt-1 text-[14.5px] leading-relaxed text-[#1b1b1b]">{value}</dd>
     </div>
   );
 }

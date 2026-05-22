@@ -77,7 +77,9 @@ export function TabInstitucije({ pravo }: Props) {
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div>
-      <dt className="text-[11px] font-bold uppercase tracking-wider text-[#565c65]">{label}</dt>
+      <dt className="text-[12px] font-bold uppercase tracking-wider text-[var(--brand-primary)]">
+        {label}
+      </dt>
       <dd className="mt-0.5 text-[#1b1b1b]">{children}</dd>
     </div>
   );
