@@ -1,4 +1,5 @@
-﻿import type { UputstvoZahteva } from '@/types';
+﻿import { TrackedLink } from '@/components/shared/TrackedLink';
+import type { UputstvoZahteva } from '@/types';
 
 type Props = { uputstvo?: UputstvoZahteva };
 
@@ -20,14 +21,15 @@ export function TabUputstvo({ uputstvo }: Props) {
           {uputstvo.gde_dobiti_obrazac}
         </p>
         {uputstvo.obrazac_url && (
-          <a
+          <TrackedLink
+            source="obrazac"
             href={uputstvo.obrazac_url}
             target="_blank"
             rel="noreferrer"
             className="mt-2 inline-block text-[13.5px] font-semibold text-[var(--brand-primary)] underline"
           >
             Pogledaj službeni obrazac ↗
-          </a>
+          </TrackedLink>
         )}
       </header>
 

@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { TabDokumenti } from '@/components/pravo-detail/TabDokumenti';
@@ -10,8 +10,10 @@ import { TabUputstvo } from '@/components/pravo-detail/TabUputstvo';
 import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Badge } from '@/components/ui/badge';
 import { useCatalog } from '@/hooks/useCatalog';
+import { usePageDwell } from '@/hooks/usePageDwell';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import { useScript } from '@/hooks/useScript';
+import { useScrollDepth } from '@/hooks/useScrollDepth';
 import { track } from '@/lib/analytics';
 import { findPravo } from '@/lib/catalog';
 import { kategorijaLabel } from '@/lib/labels';
@@ -23,6 +25,10 @@ export function PravoDetailPage() {
   const { script } = useScript();
   const pravoForTitle = id && katalog ? findPravo(katalog, id) : undefined;
   usePageTitle(pravoForTitle ? pickScript(pravoForTitle.naziv, script) : 'Pravo');
+  usePageDwell('pravo_detail');
+  useScrollDepth('pravo_detail', pravoForTitle ? { pravo_id: pravoForTitle.id } : undefined, pravoForTitle?.id);
+
+  const [activeTab, setActiveTab] = useState('osnovno');
 
   useEffect(() => {
     if (pravoForTitle) track('pravo_viewed', { pravo_id: pravoForTitle.id });
@@ -102,7 +108,13 @@ export function PravoDetailPage() {
       <Disclaimer className="mt-6" />
 
       <div className="mt-6">
-        <Tabs defaultValue="osnovno">
+        <Tabs
+          value={activeTab}
+          onValueChange={(v) => {
+            setActiveTab(v);
+            track('pravo_tab_changed', { tab: v, pravo_id: pravo.id });
+          }}
+        >
           <TabsList className="w-full overflow-x-auto">
             <TabsTrigger value="osnovno">Osnovno</TabsTrigger>
             <TabsTrigger value="koraci">Koraci</TabsTrigger>

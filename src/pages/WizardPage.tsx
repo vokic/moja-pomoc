@@ -6,16 +6,27 @@ import { TOTAL_STEPS, WIZARD_STEPS } from '@/components/wizard/steps-config';
 import { WizardStep } from '@/components/wizard/WizardStep';
 import { useProfile } from '@/hooks/useProfile';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import { usePageDwell } from '@/hooks/usePageDwell';
 import { track } from '@/lib/analytics';
 import type { Profile } from '@/types';
 
 export function WizardPage() {
   usePageTitle('Vodič za prava');
+  usePageDwell('wizard');
   const { profile, update, reset, complete } = useProfile();
   const navigate = useNavigate();
 
   const [currentStep, setCurrentStep] = useState(0);
   const [resumePrompt, setResumePrompt] = useState<boolean | null>(null);
+
+  const step = WIZARD_STEPS[currentStep];
+  const isLast = currentStep === TOTAL_STEPS - 1;
+
+  useEffect(() => {
+    if (resumePrompt === false) {
+      track('wizard_step_viewed', { step: step.id, index: currentStep });
+    }
+  }, [currentStep, step.id, resumePrompt]);
 
   useEffect(() => {
     if (resumePrompt !== null) return;
@@ -52,9 +63,6 @@ export function WizardPage() {
     );
   }
 
-  const step = WIZARD_STEPS[currentStep];
-  const isLast = currentStep === TOTAL_STEPS - 1;
-
   const rawValue = profile?.[step.id];
   const value: string | string[] | undefined = rawValue as string | string[] | undefined;
 
@@ -79,7 +87,10 @@ export function WizardPage() {
         <Button
           variant="outline"
           disabled={currentStep === 0}
-          onClick={() => setCurrentStep((s) => Math.max(0, s - 1))}
+          onClick={() => {
+            track('wizard_back', { from: step.id });
+            setCurrentStep((s) => Math.max(0, s - 1));
+          }}
         >
           Nazad
         </Button>

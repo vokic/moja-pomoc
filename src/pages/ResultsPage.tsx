@@ -7,8 +7,10 @@ import { PdfExportButton } from '@/components/shared/PdfExportButton';
 import { Card } from '@/components/ui/card';
 import { useCatalog } from '@/hooks/useCatalog';
 import { useMatches } from '@/hooks/useMatches';
+import { usePageDwell } from '@/hooks/usePageDwell';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import { useProfile } from '@/hooks/useProfile';
+import { track } from '@/lib/analytics';
 import { kategorijaLabel } from '@/lib/labels';
 import type { Kategorija, MatchResult } from '@/types';
 
@@ -16,6 +18,7 @@ type Filter = 'sve' | 'surprise' | 'high';
 
 export function ResultsPage() {
   usePageTitle('Moji rezultati');
+  usePageDwell('rezultati');
   const { complete, loaded } = useProfile();
   const { loading: catalogLoading, error: catalogError } = useCatalog();
   const { matches, count, surprises, categories, highPriority } = useMatches();
@@ -69,19 +72,34 @@ export function ResultsPage() {
       {matches.length > 0 && (
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap gap-2">
-            <FilterChip active={filter === 'sve'} onClick={() => setFilter('sve')}>
+            <FilterChip
+              active={filter === 'sve'}
+              onClick={() => {
+                track('results_filter_changed', { filter: 'sve' });
+                setFilter('sve');
+              }}
+            >
               Sve ({matches.length})
             </FilterChip>
             {surprises > 0 && (
               <FilterChip
                 active={filter === 'surprise'}
-                onClick={() => setFilter('surprise')}
+                onClick={() => {
+                  track('results_filter_changed', { filter: 'surprise' });
+                  setFilter('surprise');
+                }}
               >
                 Verovatno niste znali ({surprises})
               </FilterChip>
             )}
             {highPriority > 0 && (
-              <FilterChip active={filter === 'high'} onClick={() => setFilter('high')}>
+              <FilterChip
+                active={filter === 'high'}
+                onClick={() => {
+                  track('results_filter_changed', { filter: 'high' });
+                  setFilter('high');
+                }}
+              >
                 Visok prioritet ({highPriority})
               </FilterChip>
             )}
@@ -90,7 +108,11 @@ export function ResultsPage() {
             <input
               type="checkbox"
               checked={groupByCategory}
-              onChange={(e) => setGroupByCategory(e.target.checked)}
+              onChange={(e) => {
+                const next = e.target.checked;
+                track('results_view_changed', { view: next ? 'grouped' : 'flat' });
+                setGroupByCategory(next);
+              }}
               className="h-4 w-4"
             />
             Pokaži po kategorijama

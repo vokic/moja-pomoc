@@ -3,14 +3,18 @@ import { CategoryFilter } from '@/components/search/CategoryFilter';
 import { SearchBar } from '@/components/search/SearchBar';
 import { SearchResults } from '@/components/search/SearchResults';
 import { useCatalog } from '@/hooks/useCatalog';
+import { usePageDwell } from '@/hooks/usePageDwell';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import { track } from '@/lib/analytics';
 import { buildSearchIndex, search } from '@/lib/search-index';
 import type { Kategorija } from '@/types';
 
 const DEBOUNCE_MS = 200;
+const MIN_QUERY_LEN = 3;
 
 export function SearchPage() {
   usePageTitle('Pretraga prava');
+  usePageDwell('pretraga');
   const { katalog, loading, error } = useCatalog();
   const [query, setQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
@@ -39,6 +43,19 @@ export function SearchPage() {
     for (const p of katalog.prava) set.add(p.kategorija);
     return Array.from(set).sort();
   }, [katalog]);
+
+  // Fire one event per stable (debounced) query, not on every keystroke.
+  useEffect(() => {
+    const q = debouncedQuery.trim();
+    if (q.length < MIN_QUERY_LEN) return;
+    track('search_query', {
+      length: q.length,
+      has_filter: selectedCats.length > 0,
+    });
+    if (results.length === 0) {
+      track('search_no_results', { query: q.slice(0, 30) });
+    }
+  }, [debouncedQuery, results.length, selectedCats.length]);
 
   if (loading) {
     return (

@@ -6,19 +6,22 @@ import type { Pravo } from '@/types';
 
 type Props = {
   prava: Pravo[];
+  /** Where in the app this button was rendered — for analytics segmentation. */
+  source?: string;
 };
 
-export function PdfExportButton({ prava }: Props) {
+export function PdfExportButton({ prava, source = 'rezultati' }: Props) {
   const [busy, setBusy] = useState(false);
 
   const onClick = async () => {
     if (busy || prava.length === 0) return;
+    track('pdf_export_started', { count: prava.length, source });
     setBusy(true);
     try {
       // Lazy-load jsPDF so it doesn't bloat the main bundle.
       const { exportPravaPdf } = await import('@/lib/pdf-export');
       exportPravaPdf(prava);
-      track('pdf_exported', { count: prava.length });
+      track('pdf_exported', { count: prava.length, source });
     } finally {
       setBusy(false);
     }

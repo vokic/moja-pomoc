@@ -1,4 +1,5 @@
-﻿import { formatIznos } from '@/lib/iznos';
+﻿import { TrackedLink } from '@/components/shared/TrackedLink';
+import { formatIznos } from '@/lib/iznos';
 import { kategorijaLabel } from '@/lib/labels';
 import type { Pravo } from '@/types';
 
@@ -50,14 +51,15 @@ export function TabOsnovno({ pravo }: Props) {
                 {ls.url && (
                   <>
                     {' '}
-                    <a
+                    <TrackedLink
+                      source="pravni_osnov"
                       href={ls.url}
                       target="_blank"
                       rel="noreferrer"
                       className="text-[var(--brand-primary)] underline"
                     >
                       ↗
-                    </a>
+                    </TrackedLink>
                   </>
                 )}
               </div>

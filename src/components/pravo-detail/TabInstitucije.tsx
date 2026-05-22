@@ -1,4 +1,5 @@
-﻿import type { Pravo } from '@/types';
+﻿import { TrackedLink } from '@/components/shared/TrackedLink';
+import type { Pravo } from '@/types';
 
 type Props = { pravo: Pravo };
 
@@ -25,23 +26,37 @@ export function TabInstitucije({ pravo }: Props) {
             )}
             {i.telefon && (
               <Row label="Telefon">
-                <a href={`tel:${i.telefon}`} className="text-[var(--brand-primary)] underline">
+                <TrackedLink
+                  source="institucija"
+                  href={`tel:${i.telefon}`}
+                  className="text-[var(--brand-primary)] underline"
+                >
                   {i.telefon}
-                </a>
+                </TrackedLink>
               </Row>
             )}
             {i.email && (
               <Row label="Email">
-                <a href={`mailto:${i.email}`} className="text-[var(--brand-primary)] underline">
+                <TrackedLink
+                  source="institucija"
+                  href={`mailto:${i.email}`}
+                  className="text-[var(--brand-primary)] underline"
+                >
                   {i.email}
-                </a>
+                </TrackedLink>
               </Row>
             )}
             {i.url && (
               <Row label="Web">
-                <a href={i.url} target="_blank" rel="noreferrer" className="text-[var(--brand-primary)] underline">
+                <TrackedLink
+                  source="institucija"
+                  href={i.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[var(--brand-primary)] underline"
+                >
                   {i.url} ↗
-                </a>
+                </TrackedLink>
               </Row>
             )}
             {i.radno_vreme && (

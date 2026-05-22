@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import { TrackedLink } from '@/components/shared/TrackedLink';
 import { useScript } from '@/lib/script-context';
 import { useTheme, type Theme } from '@/lib/theme-context';
 
@@ -191,44 +192,48 @@ function UsaFooter() {
               <h4 className="text-[15px] font-bold">Zvanične institucije</h4>
               <ul className="mt-3 space-y-2 text-[14px] text-white/85">
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://euprava.gov.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     eUprava ↗
-                  </a>
+                  </TrackedLink>
                 </li>
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://www.pio.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     PIO fond ↗
-                  </a>
+                  </TrackedLink>
                 </li>
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://www.rfzo.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     RFZO ↗
-                  </a>
+                  </TrackedLink>
                 </li>
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://www.nsz.gov.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     NSZ ↗
-                  </a>
+                  </TrackedLink>
                 </li>
               </ul>
             </div>
@@ -403,44 +408,48 @@ function SrFooter() {
               </h4>
               <ul className="mt-3 space-y-2 text-[14px] text-white/80">
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://euprava.gov.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     eUprava ↗
-                  </a>
+                  </TrackedLink>
                 </li>
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://www.pio.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     PIO fond ↗
-                  </a>
+                  </TrackedLink>
                 </li>
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://www.rfzo.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     RFZO ↗
-                  </a>
+                  </TrackedLink>
                 </li>
                 <li>
-                  <a
+                  <TrackedLink
+                    source="footer"
                     href="https://www.nsz.gov.rs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white hover:underline"
                   >
                     NSZ ↗
-                  </a>
+                  </TrackedLink>
                 </li>
               </ul>
             </div>
