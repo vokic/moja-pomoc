@@ -293,8 +293,8 @@
         "sr_lat": "Oslobađanje participacije RFZO (besplatna zdravstvena usluga)"
       },
       "kratak_opis": {
-        "sr_cyr": "Особе са одређеним хроничним болестима, ниским примањима, или статусом, не плаћају партиципацију за здравствене услуге. Уштеда 5-50.000 РСД годишње.",
-        "sr_lat": "Osobe sa određenim hroničnim bolestima, niskim primanjima, ili statusom, ne plaćaju participaciju za zdravstvene usluge. Ušteda 5-50.000 RSD godišnje."
+        "sr_cyr": "Особе са одређеним болестима (малигне, дијабетес, дијализа, аутоимуне, мултипла склероза, психозе и др.), ниским примањима, или статусом, не плаћају партиципацију.",
+        "sr_lat": "Osobe sa određenim bolestima (maligne, dijabetes, dijaliza, autoimune, multipla skleroza, psihoze i dr.), niskim primanjima, ili statusom, ne plaćaju participaciju."
       },
       "prioritet_propusta": 4,
       "tagovi": [
@@ -305,19 +305,19 @@
       "pravni_osnov": [
         {
           "zakon": "Zakon o zdravstvenom osiguranju",
-          "clanovi": "27-30",
-          "sluzbeni_glasnik": "Sl. glasnik RS 25/2019 sa izmenama"
+          "sluzbeni_glasnik": "Sl. glasnik RS 25/2019 sa izmenama",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_zdravstvenom_osiguranju.html"
         },
         {
-          "zakon": "Pravilnik o obrascu zdravstvene knjižice",
-          "url": "https://www.rfzo.rs"
+          "zakon": "Pravilnik o sadržaju i obimu prava na zdravstvenu zaštitu iz obaveznog zdravstvenog osiguranja i o participaciji za 2025",
+          "napomena": "Donesen 11.03.2025, primena od 06.03.2025. Pravilnik se donosi godišnje - za 2026 verifikovati novu verziju."
         }
       ],
       "iznos": {
         "tip": "opisno",
-        "vrednost_opis": "Oslobađanje od participacije za zdravstvene usluge (lekarske preglede, lekove sa pozitivne liste, dijagnostiku, bolničko lečenje). Vrednost godišnje: 5.000 RSD (umereni korisnici) do 50.000+ RSD (česti korisnici sa skupim lekovima)."
+        "vrednost_opis": "Potpuno oslobađanje od participacije za zdravstvene usluge (lekarske preglede, lekove sa pozitivne liste, dijagnostiku, bolničko lečenje). Vrednost godišnje: 5.000 RSD (umereni korisnici) do 50.000+ RSD (česti korisnici sa skupim lekovima i hroničnom dijagnozom)."
       },
-      "ko_ima_pravo_opis": "Osobe sa jednim od ovih osnova: (a) hronične bolesti sa propisane liste (dijabetes, hipertenzija, srčana, KOPB, onkologija, dijaliza, dijaliza...), (b) niska primanja (po članu domaćinstva ispod cenzusa), (c) deca do 18 godina, (d) trudnice i porodilje, (e) osobe sa invaliditetom, (f) ratni vojni invalidi, (g) korisnici socijalne pomoći.",
+      "ko_ima_pravo_opis": "Po više osnova: (a) Specifične bolesti: zarazne, maligne, dijabetes, psihoze, epilepsija, multipla skleroza, terminalna faza hronične bubrežne slabosti (dijaliza), sistemske autoimune bolesti, reumatska groznica, bolesti zavisnosti, retke bolesti. (b) Statusi: ratni i mirnodopski vojni invalidi, civilni invalidi rata, slepa i trajno nepokretna lica, korisnici tuđe nege i pomoći, dobrovoljni davaoci krvi, živi davaoci organa, izbegla/raseljena lica, Romi bez registrovanog prebivališta. (c) Materijalni cenzus: za samce mesečna primanja ispod 37.147,76 RSD; za zajednicu - ispod 28.575,20 RSD po članu (cenzus za 2025 - usklađuje se sa minimalnom zaradom).",
       "uslovi": [
         {
           "tip": "ili",
@@ -325,18 +325,44 @@
             {
               "tip": "zdravlje",
               "vrednost": [
-                "hronicno",
                 "onkologija",
                 "dijaliza",
                 "mentalno",
-                "invaliditet",
                 "autoimuna",
                 "tudja_nega"
               ]
             },
             {
-              "tip": "starost_max",
-              "vrednost": 18
+              "tip": "zdravlje",
+              "vrednost": [
+                "invaliditet",
+                "cula"
+              ]
+            },
+            {
+              "tip": "i",
+              "uslovi": [
+                {
+                  "tip": "zdravlje",
+                  "vrednost": [
+                    "hronicno"
+                  ]
+                },
+                {
+                  "tip": "ili",
+                  "uslovi": [
+                    {
+                      "tip": "primanja_max_rsd",
+                      "vrednost": 28575,
+                      "po_clanu": true
+                    },
+                    {
+                      "tip": "starost_max",
+                      "vrednost": 18
+                    }
+                  ]
+                }
+              ]
             },
             {
               "tip": "i",
@@ -355,44 +381,54 @@
             },
             {
               "tip": "primanja_max_rsd",
-              "vrednost": 13500,
+              "vrednost": 28575,
               "po_clanu": true
+            },
+            {
+              "tip": "posebna_kategorija",
+              "vrednost": [
+                "borac",
+                "porodica_palog_borca",
+                "izbeglica"
+              ]
             }
           ]
         }
       ],
-      "zasto_se_propusta": "Mnogi pacijenti plaćaju participaciju iako imaju pravo na oslobađanje. Osnov mora da bude upisan u zdravstvenu knjižicu od strane izabranog lekara - bez toga, na svakom šalteru se traži participacija. Postupak je jednostavan ali nije jasan - lekari često ne objašnjavaju.",
+      "zasto_se_propusta": "Mnogi pacijenti plaćaju participaciju iako imaju pravo na oslobađanje. Osnov mora da bude evidentiran u sistemu RFZO-a (preko izabranog lekara ili matične filijale RFZO-a) - bez toga, na svakom šalteru se traži participacija. Postupak je administrativno jednostavan ali se ne objašnjava proaktivno. Posebno se gubi pri ispunjenju materijalnog cenzusa - mnogi penzioneri sa najnižom imaju pravo a ne podnose zahtev.",
       "koraci": [
         {
           "redni_broj": 1,
-          "naslov": "Pribavite medicinsku dokumentaciju za dijagnozu",
-          "opis": "Ako imate hroničnu bolest - pribavite nalaze (krvni pritisak, krvne analize, EKG, nalaz onkologa...) sa kojom dokazujete trajnu dijagnozu. Za druge osnove - dokumente za primanja, invaliditet, itd."
+          "naslov": "Utvrdite po kom osnovu imate pravo",
+          "opis": "Tri glavna osnova: (a) medicinski - imate jednu od propisanih bolesti; (b) statusni - invalidnost, slepilo, tuđa nega, davalac organa, izbeglica; (c) materijalni cenzus - primanja ispod propisanog praga. Po jednom osnovu ide obrazac UP-1, po drugom samo lekarska evidencija."
         },
         {
           "redni_broj": 2,
-          "naslov": "Posetite izabranog lekara",
-          "opis": "Izabrani lekar (Dom zdravlja) upisuje dijagnozu u vašu zdravstvenu knjižicu kao osnov za oslobađanje. Tražite da se to upiše JASNO sa kodom dijagnoze i datumom."
+          "naslov": "Za medicinski osnov - kod izabranog lekara",
+          "opis": "Izabrani lekar (Dom zdravlja) evidentira dijagnozu kao osnov za oslobađanje u digitalnom kartonu RFZO-a. Tražite EKSPLICITNO: 'Molim da upišete moju dijagnozu [X] kao osnov za oslobađanje od participacije'.",
+          "napomena": "Bez ovog upisa - na šalteru se i dalje naplaćuje. Lekar zna proceduru ali često zaboravlja da pita."
         },
         {
           "redni_broj": 3,
-          "naslov": "Za druge osnove - obratite se RFZO filijali",
-          "opis": "Ako je osnov niska primanja - donesite uverenja o primanjima. Ako socijalna pomoć - rešenje CSR-a. RFZO upisuje status u knjižicu."
+          "naslov": "Za materijalni cenzus / status - matična RFZO filijala",
+          "opis": "U RFZO filijali prema prebivalištu - obrazac UP-1 (Zahtev za oslobađanje od participacije). Priložite ličnu kartu, zdravstvenu knjižicu, dokaze o primanjima (svih članova domaćinstva za poslednja 3 meseca).",
+          "upozorenje": "Cenzus se računa po članu domaćinstva (28.575 RSD za 2025) - saberite SVE prihode i podelite sa brojem članova."
         },
         {
           "redni_broj": 4,
-          "naslov": "Provera u zdravstvenoj knjižici",
-          "opis": "Pre sledećeg pregleda - proverite da li je status oslobađanja vidljiv u knjižici (digitalna kartica ili pečat u papirnoj knjižici)."
+          "naslov": "Donošenje rešenja (15-30 dana)",
+          "opis": "RFZO unosi status u matičnu evidenciju (dostupnu zdravstvenim ustanovama). Po zahtevu izdaje potvrdu UP-2 (papirni dokument za vlastiti uvid)."
         },
         {
           "redni_broj": 5,
           "naslov": "Korišćenje pri svakom pregledu",
-          "opis": "Pri pregledu / izdavanju recepta / dijagnostici - sestra na kasi vidi da ste oslobođeni i ne naplaćuje participaciju.",
-          "upozorenje": "Ako vam je ipak naplaćeno - tražite ponovno proveru. Možda osnov nije pravilno upisan."
+          "opis": "Pri pregledu / izdavanju recepta / dijagnostici - sestra na kasi vidi vaš status u sistemu i ne naplaćuje participaciju.",
+          "upozorenje": "Ako vam je ipak naplaćeno - tražite ponovo proveru. Možda osnov nije pravilno upisan ili je istekao."
         },
         {
           "redni_broj": 6,
-          "naslov": "Obnova statusa (godišnje)",
-          "opis": "Status oslobađanja se obnavlja godišnje za većinu osnova - tražite od izabranog lekara da proveri i obnovi pri redovnoj kontroli."
+          "naslov": "Obnova - statusni i medicinski osnov: trajni; materijalni: godišnje",
+          "opis": "Medicinski osnov je trajan dok dijagnoza postoji. Statusni (invaliditet, slepilo) - trajni. Materijalni cenzus - obnova godišnje sa svežim uverenjima o primanjima."
         }
       ],
       "dokumenti": [
@@ -405,25 +441,26 @@
         },
         {
           "id": "zdrav_knjizica",
-          "naziv": "Zdravstvena knjižica (kartica)",
+          "naziv": "Zdravstvena knjižica / kartica",
           "obavezno": true,
           "gde_se_nabavlja": "Već imate",
           "trosak_rsd": 0
         },
         {
           "id": "med_dokumentacija",
-          "naziv": "Medicinska dokumentacija za dijagnozu",
-          "obavezno": true,
+          "naziv": "Medicinska dokumentacija za dijagnozu (za medicinski osnov)",
+          "obavezno": false,
           "gde_se_nabavlja": "Vaš izabrani lekar / specijalisti",
           "trosak_rsd": 0,
-          "napomena": "Nalazi koji dokazuju hroničnu dijagnozu"
+          "napomena": "Nalazi koji dokazuju jednu od propisanih bolesti (maligna, dijabetes, dijaliza, autoimuna, MS, psihoze, epilepsija, ...)"
         },
         {
           "id": "uver_primanja",
-          "naziv": "Uverenja o primanjima (ako je osnov niska primanja)",
+          "naziv": "Uverenja o primanjima za 3 meseca (za materijalni cenzus)",
           "obavezno": false,
-          "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
-          "trosak_rsd": 0
+          "gde_se_nabavlja": "Poslodavac / PIO / NSZ / Poreska",
+          "trosak_rsd": 0,
+          "napomena": "Za sve punoletne članove domaćinstva. Plate, penzije, naknade NSZ, ostali prihodi."
         },
         {
           "id": "resenje_csr",
@@ -431,49 +468,105 @@
           "obavezno": false,
           "gde_se_nabavlja": "Centar za socijalni rad",
           "trosak_rsd": 0
+        },
+        {
+          "id": "resenje_invalid",
+          "naziv": "Rešenje o invaliditetu / tuđoj nezi (za statusni osnov)",
+          "obavezno": false,
+          "gde_se_nabavlja": "PIO",
+          "trosak_rsd": 0
         }
       ],
       "institucije": [
         {
           "naziv": "Vaš izabrani lekar (Dom zdravlja)",
           "tip": "filijala",
-          "napomena": "Za upisivanje hroničnih bolesti kao osnov"
+          "napomena": "Za medicinski osnov - evidencija dijagnoze kao osnov za oslobađanje"
         },
         {
-          "naziv": "Republički fond za zdravstveno osiguranje (RFZO) - filijala",
+          "naziv": "Republički fond za zdravstveno osiguranje (RFZO) - matična filijala",
           "tip": "filijala",
           "telefon": "0700 33 33 33",
-          "url": "https://www.rfzo.rs"
+          "url": "https://rfzo.rs/index.php/osiguranalica/participacija",
+          "napomena": "Za materijalni cenzus i statusne osnove - obrazac UP-1"
         }
       ],
       "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "UP-1 — Zahtev za oslobađanje od plaćanja participacije",
+        "gde_dobiti_obrazac": "Matična RFZO filijala / ispostava",
+        "obrazac_url": "https://rfzo.rs/index.php/osiguranalica/participacija",
+        "pre_popunjavanja": [
+          "Utvrdite po kom osnovu se prijavljujete (medicinski, statusni, materijalni)",
+          "Za materijalni cenzus: izračunajte primanja po članu domaćinstva (prag za samce: 37.147,76 RSD; za zajednicu: 28.575,20 RSD po članu - cenzus za 2025)",
+          "Pripremite uverenja o primanjima ZA SVE punoletne članove",
+          "Za medicinski osnov: pripremite medicinsku dokumentaciju i prvo razgovarajte sa izabranim lekarom",
+          "Za statusni osnov: pripremite rešenje o invaliditetu/tuđoj nezi/itd."
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za oslobađanje od participacije po osnovu [navedite]",
+          "Molim obrazac UP-1",
+          "Po odobrenju, molim potvrdu UP-2 za moju evidenciju"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li je naveden tačan osnov za oslobađanje",
+          "Da li su priložena uverenja o primanjima (ako je materijalni)",
+          "Da li je naveden ceo broj članova domaćinstva (uticaj na cenzus)",
+          "Da li je obrazac potpuno popunjen"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu zahteva",
+          "RFZO obrađuje 15-30 dana, unosi u centralnu evidenciju",
+          "Pri sledećem pregledu - proverite da li se participacija ne naplaćuje",
+          "Za materijalni cenzus - obnova godišnje (sveža uverenja o primanjima)"
+        ]
+      },
       "ceste_greske": [
         {
-          "greska": "Ne traži se od izabranog lekara da upiše osnov u knjižicu",
+          "greska": "Ne traži se od izabranog lekara da evidentira dijagnozu kao osnov",
           "posledica": "Na šalteru se naplaćuje participacija",
-          "resenje": "Pri sledećoj poseti - 'Imam hroničnu dijagnozu [X], molim upišite to kao osnov za oslobađanje participacije'"
+          "resenje": "Pri sledećoj poseti - 'Imam dijagnozu [maligna/dijabetes/itd.], molim evidentirajte to kao osnov za oslobađanje participacije'"
         },
         {
-          "greska": "Plaća se participacija na šalteru iako je upisana dijagnoza",
+          "greska": "Misli da je 'hronicna bolest' = oslobađanje",
+          "posledica": "Ide u RFZO, dobija odbijanje",
+          "resenje": "Samo SPECIFIČNE bolesti su na listi: maligna, dijabetes, dijaliza, MS, psihoze, epilepsija, autoimune, retke. Hipertenzija i obična srčana NISU na listi - tu pomaže samo materijalni cenzus."
+        },
+        {
+          "greska": "Pogrešno računa cenzus (samo svoje primanje, ne članova)",
+          "posledica": "Zahtev odbijen",
+          "resenje": "Saberite SVE prihode SVIH članova domaćinstva i podelite sa brojem članova. Cenzus za 2025: 28.575 RSD/član u zajednici, 37.147 RSD za samce."
+        },
+        {
+          "greska": "Ne obnavlja materijalni cenzus godišnje",
+          "posledica": "Posle 12 meseci - opet plaća",
+          "resenje": "Postavite podsetnik 1-2 meseca pre isteka. Obnova sa svežim uverenjima o primanjima."
+        },
+        {
+          "greska": "Plaća participaciju iako je status već evidentiran",
           "posledica": "Bezveze izdvojen novac",
-          "resenje": "Ako vidite da plaćate - zaustavite postupak, tražite proveru. Možda osnov nije aktiviran."
-        },
-        {
-          "greska": "Misli da je oslobađanje trajno bez obnove",
-          "posledica": "Posle godinu dana - opet plaća",
-          "resenje": "Pri godišnjem kontrolnom pregledu - 'Da li je moj osnov oslobađanja još aktivan?'"
-        },
-        {
-          "greska": "Niska primanja - ne podnose zahtev jer 'znamo da participacija nije velika'",
-          "posledica": "Za hroničara - godišnje 10-30.000 RSD propušteno",
-          "resenje": "I za male iznose isplati se podneti - jednostavan postupak"
+          "resenje": "Ako vidite da plaćate - zaustavite postupak, tražite proveru. Možda osnov nije aktiviran ili je istekao."
         }
       ],
-      "rok_za_podnosenje": "Nema strogog roka - u bilo koje vreme. Bolje pre nego što idete na pregled.",
-      "prosecno_trajanje_postupka": "Isti dan kod izabranog lekara (za zdravstvene osnove) ili 30 dana u RFZO filijali (za socijalne)",
+      "rok_za_podnosenje": "Nema strogog roka - u bilo koje vreme. Bolje pre nego što idete na pregled. Materijalni cenzus se obnavlja godišnje.",
+      "prosecno_trajanje_postupka": "Medicinski osnov (kod izabranog lekara): isti dan. Materijalni / statusni (RFZO filijala): 15-30 dana.",
+      "spoljni_resursi": [
+        {
+          "naziv": "RFZO - Stranica o participaciji",
+          "url": "https://rfzo.rs/index.php/osiguranalica/participacija"
+        },
+        {
+          "naziv": "RFZO - Brošura participacija (PDF)",
+          "url": "https://rfzo.rs/download/brosure/Brosura-Participacija.pdf"
+        },
+        {
+          "naziv": "Zakon o zdravstvenom osiguranju - puni tekst",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_zdravstvenom_osiguranju.html"
+        }
+      ],
       "last_verified": "2026-05-22",
-      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE listu pokrivenih bolesti",
-      "napomena_za_urednika": "VERIFIKACIJA: (1) Tačna lista hroničnih bolesti koje daju pravo na oslobađanje (Pravilnik); (2) Tačan cenzus prihoda; (3) Da li je procedura digitalizovana (eUprava) ili samo papirna. Izvori: rfzo.rs, paragraf.rs, Zakon o zdravstvenom osiguranju."
+      "verified_by": "Claude draft sa verifikacijom kroz rfzo.rs i paragraf.rs (mart 2025 cenzusi). Cenzus i Pravilnik se godišnje menjaju - PROVERI za 2026 pre lansiranja.",
+      "napomena_za_urednika": "VERIFIKOVANO 2026-05-22 protiv rfzo.rs/index.php/osiguranalica/participacija i paragraf.rs: (1) Cenzus 28.575 RSD/član + 37.147 RSD samci - to su brojevi za 2025, godišnje se usklađuju sa minimalnom zaradom; (2) Pravilnik se donosi godišnje, poslednji od 06.03.2025; (3) Obrazac UP-1 podnosi se u matičnoj RFZO filijali; (4) Lista propisanih bolesti je SPECIFIČNA - ne sve hronične. Hipertenzija/srčana = NE oslobađa se osim kroz cenzus. STAVITI 'verified_by: Viktor [datum]' kada Viktor potvrdi."
     },
     {
       "id": "HB02",
