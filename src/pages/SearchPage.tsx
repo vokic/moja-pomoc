@@ -3,12 +3,14 @@ import { CategoryFilter } from '@/components/search/CategoryFilter';
 import { SearchBar } from '@/components/search/SearchBar';
 import { SearchResults } from '@/components/search/SearchResults';
 import { useCatalog } from '@/hooks/useCatalog';
+import { usePageTitle } from '@/hooks/usePageTitle';
 import { buildSearchIndex, search } from '@/lib/search-index';
 import type { Kategorija } from '@/types';
 
 const DEBOUNCE_MS = 200;
 
 export function SearchPage() {
+  usePageTitle('Pretraga prava');
   const { katalog, loading, error } = useCatalog();
   const [query, setQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');

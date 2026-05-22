@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 export function HomePage() {
+  usePageTitle();
   return (
     <div className="mx-auto max-w-4xl px-6 py-16 text-center sm:py-20">
       <h1 className="text-balance text-3xl font-bold leading-tight tracking-tight text-[#162e51] sm:text-4xl md:text-5xl">

@@ -9,6 +9,7 @@ import { TabUputstvo } from '@/components/pravo-detail/TabUputstvo';
 import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Badge } from '@/components/ui/badge';
 import { useCatalog } from '@/hooks/useCatalog';
+import { usePageTitle } from '@/hooks/usePageTitle';
 import { useScript } from '@/hooks/useScript';
 import { findPravo } from '@/lib/catalog';
 import { kategorijaLabel } from '@/lib/labels';
@@ -18,6 +19,8 @@ export function PravoDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { katalog, loading, error } = useCatalog();
   const { script } = useScript();
+  const pravoForTitle = id && katalog ? findPravo(katalog, id) : undefined;
+  usePageTitle(pravoForTitle ? pickScript(pravoForTitle.naziv, script) : 'Pravo');
 
   if (loading) {
     return (
@@ -35,7 +38,7 @@ export function PravoDetailPage() {
     );
   }
 
-  const pravo = id && katalog ? findPravo(katalog, id) : undefined;
+  const pravo = pravoForTitle;
 
   if (!pravo) {
     return (

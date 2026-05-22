@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 export function AboutPage() {
+  usePageTitle('O projektu');
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
       <h1 className="text-3xl font-bold text-[#162e51]">O projektu</h1>

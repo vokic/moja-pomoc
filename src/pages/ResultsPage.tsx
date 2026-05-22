@@ -6,6 +6,7 @@ import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Card } from '@/components/ui/card';
 import { useCatalog } from '@/hooks/useCatalog';
 import { useMatches } from '@/hooks/useMatches';
+import { usePageTitle } from '@/hooks/usePageTitle';
 import { useProfile } from '@/hooks/useProfile';
 import { kategorijaLabel } from '@/lib/labels';
 import type { Kategorija, MatchResult } from '@/types';
@@ -13,6 +14,7 @@ import type { Kategorija, MatchResult } from '@/types';
 type Filter = 'sve' | 'surprise' | 'high';
 
 export function ResultsPage() {
+  usePageTitle('Moji rezultati');
   const { complete, loaded } = useProfile();
   const { loading: catalogLoading, error: catalogError } = useCatalog();
   const { matches, count, surprises, categories, highPriority } = useMatches();

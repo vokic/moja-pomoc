@@ -1,6 +1,8 @@
 import { track } from '@/lib/analytics';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 export function DonatePage() {
+  usePageTitle('Podržite projekat');
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
       <h1 className="text-3xl font-bold text-[#162e51]">Podržite projekat</h1>

@@ -5,9 +5,11 @@ import { ProgressBar } from '@/components/wizard/ProgressBar';
 import { TOTAL_STEPS, WIZARD_STEPS } from '@/components/wizard/steps-config';
 import { WizardStep } from '@/components/wizard/WizardStep';
 import { useProfile } from '@/hooks/useProfile';
+import { usePageTitle } from '@/hooks/usePageTitle';
 import type { Profile } from '@/types';
 
 export function WizardPage() {
+  usePageTitle('Vodič za prava');
   const { profile, update, reset, complete } = useProfile();
   const navigate = useNavigate();
 
