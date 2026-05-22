@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schemas.lovable.dev/design-tokens/v1",
+  "name": "Moja Pomoć — Design Kit",
+  "description": "Dual-theme design system: USA.gov-style (Benefits.gov) and eUprava-style (Serbia gov).",
+  "themes": {
+    "usa": {
+      "label": "USA (Benefits.gov / USA.gov)",
+      "fonts": {
+        "body": "\"Public Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "display": "Merriweather, serif"
+      },
+      "colors": {
+        "background": "#ffffff",
+        "surface": "#f0f0f0",
+        "border": "#dfe1e2",
+        "text": "#1b1b1b",
+        "textMuted": "#565c65",
+        "brandPrimary": "#162e51",
+        "brandPrimaryDark": "#0b1f3f",
+        "brandAccent": "#00bde3",
+        "flagRed": "#C8102E",
+        "flagBlue": "#0C4076"
+      },
+      "header": {
+        "topBand": { "bg": "#f0f0f0", "fg": "#1b1b1b", "border": "#dfe1e2", "fontSize": "13px" },
+        "brandBand": { "bg": "#ffffff", "border": "#dfe1e2" },
+        "logo": { "shape": "circle", "size": "40px", "bg": "#162e51", "fg": "#ffffff", "text": "мп", "font": "Merriweather, serif" },
+        "nav": { "activeUnderline": "#00bde3", "underlineWidth": "3px", "underlineOffset": "6px" }
+      },
+      "footer": {
+        "bg": "#162e51",
+        "bottomBg": "#0b1f3f",
+        "fg": "#ffffff",
+        "fgMuted": "rgba(255,255,255,0.85)"
+      }
+    },
+    "srpski": {
+      "label": "Republika Srbija (eUprava-style)",
+      "fonts": {
+        "body": "\"PT Sans\", system-ui, sans-serif",
+        "display": "\"PT Sans Caption\", sans-serif"
+      },
+      "colors": {
+        "background": "#F2F4F7",
+        "surface": "#ffffff",
+        "border": "#D5DCE3",
+        "text": "#1b1b1b",
+        "textMuted": "#565c65",
+        "brandPrimary": "#1B3A6B",
+        "brandPrimaryDark": "#0F2547",
+        "brandPrimaryDarker": "#0A1A33",
+        "brandAccent": "#C8102E",
+        "flagRed": "#C8102E",
+        "flagBlue": "#1B3A6B"
+      },
+      "header": {
+        "topBand": { "bg": "#0A1A33", "fg": "rgba(255,255,255,0.85)", "fontSize": "12.5px", "uppercase": true },
+        "brandBand": { "bg": "#ffffff", "border": "#D5DCE3" },
+        "logo": {
+          "shape": "hexagon",
+          "clipPath": "polygon(50% 0%, 100% 30%, 100% 75%, 50% 100%, 0% 75%, 0% 30%)",
+          "size": "56px",
+          "bg": "#1B3A6B",
+          "fg": "#ffffff",
+          "text": "МП",
+          "font": "\"PT Sans Caption\", sans-serif"
+        },
+        "nav": { "bg": "#1B3A6B", "fg": "rgba(255,255,255,0.9)", "activeBg": "#0F2547", "activeFg": "#ffffff", "uppercase": false, "font": "\"PT Sans Caption\", sans-serif" }
+      },
+      "footer": {
+        "bg": "#0A1A33",
+        "brandBg": "#1B3A6B",
+        "bottomBg": "rgba(0,0,0,0.4)",
+        "fg": "#ffffff",
+        "fgMuted": "rgba(255,255,255,0.8)"
+      }
+    }
+  },
+  "layout": {
+    "container": { "maxWidth": "72rem", "paddingX": "1.5rem" },
+    "navItems": [
+      { "to": "/", "label": "Početna" },
+      { "to": "/wizard", "label": "Vodič za prava" },
+      { "to": "/pretraga", "label": "Sve pomoći i naknade" },
+      { "to": "/rezultati", "label": "Moji rezultati" },
+      { "to": "/o-projektu", "label": "O projektu" },
+      { "to": "/podrzite", "label": "Podržite" }
+    ]
+  },
+  "behavior": {
+    "scriptToggle": { "values": ["lat", "cyr"], "storageKey": "mp_script", "transliteration": "src/lib/script-context.tsx" },
+    "themeToggle": { "values": ["usa", "srpski"], "storageKey": "mp_theme", "default": "usa" }
+  }
+}
