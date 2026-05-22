@@ -28,7 +28,7 @@ jobs:
 
       - name: Build (Vite + tsc)
         env:
-          VITE_PLAUSIBLE_DOMAIN: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          VITE_GOATCOUNTER_CODE: ${{ secrets.GOATCOUNTER_CODE }}
         run: |
           npx tsc -b
           npx vite build
