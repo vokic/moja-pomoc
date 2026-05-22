@@ -1,4 +1,4 @@
-import type { Pravo } from '@/types';
+﻿import type { Pravo } from '@/types';
 
 type Props = { pravo: Pravo };
 
@@ -14,7 +14,7 @@ export function TabDokumenti({ pravo }: Props) {
       {pravo.dokumenti.map((d) => (
         <li key={d.id} className="rounded-md border border-[#dfe1e2] bg-white p-4">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="text-[15px] font-semibold text-[#162e51]">
+            <h3 className="text-[15px] font-semibold text-[var(--brand-primary)]">
               {d.naziv}
               {d.obavezno ? (
                 <span className="ml-2 rounded bg-rose-100 px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-rose-900">

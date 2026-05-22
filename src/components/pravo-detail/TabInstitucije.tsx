@@ -1,4 +1,4 @@
-import type { Pravo } from '@/types';
+﻿import type { Pravo } from '@/types';
 
 type Props = { pravo: Pravo };
 
@@ -12,7 +12,7 @@ export function TabInstitucije({ pravo }: Props) {
       {pravo.institucije.map((i, idx) => (
         <div key={idx} className="rounded-md border border-[#dfe1e2] bg-white p-4">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="text-[15px] font-semibold text-[#162e51]">{i.naziv}</h3>
+            <h3 className="text-[15px] font-semibold text-[var(--brand-primary)]">{i.naziv}</h3>
             <span className="text-[11px] font-bold uppercase tracking-wider text-[#565c65]">
               {i.tip}
             </span>
@@ -25,21 +25,21 @@ export function TabInstitucije({ pravo }: Props) {
             )}
             {i.telefon && (
               <Row label="Telefon">
-                <a href={`tel:${i.telefon}`} className="text-[#162e51] underline">
+                <a href={`tel:${i.telefon}`} className="text-[var(--brand-primary)] underline">
                   {i.telefon}
                 </a>
               </Row>
             )}
             {i.email && (
               <Row label="Email">
-                <a href={`mailto:${i.email}`} className="text-[#162e51] underline">
+                <a href={`mailto:${i.email}`} className="text-[var(--brand-primary)] underline">
                   {i.email}
                 </a>
               </Row>
             )}
             {i.url && (
               <Row label="Web">
-                <a href={i.url} target="_blank" rel="noreferrer" className="text-[#162e51] underline">
+                <a href={i.url} target="_blank" rel="noreferrer" className="text-[var(--brand-primary)] underline">
                   {i.url} ↗
                 </a>
               </Row>

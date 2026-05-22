@@ -1,4 +1,4 @@
-import { kategorijaLabel } from '@/lib/labels';
+﻿import { kategorijaLabel } from '@/lib/labels';
 import type { Kategorija } from '@/types';
 
 type Props = {
@@ -42,8 +42,8 @@ function Chip({
       aria-pressed={active}
       className={`rounded-full border px-3 py-1 text-[13px] font-semibold transition-colors ${
         active
-          ? 'border-[#162e51] bg-[#162e51] text-white'
-          : 'border-[#dfe1e2] bg-white text-[#1b1b1b] hover:border-[#162e51]/40 hover:bg-[#f0f0f0]'
+          ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white'
+          : 'border-[#dfe1e2] bg-white text-[#1b1b1b] hover:border-[var(--brand-primary)]/40 hover:bg-[#f0f0f0]'
       }`}
     >
       {children}

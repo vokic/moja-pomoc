@@ -1,4 +1,4 @@
-import {
+﻿import {
   Accessibility,
   ArrowRight,
   Baby,
@@ -149,8 +149,8 @@ function OptionButton({ opt, selected, role, onClick }: OptionButtonProps) {
       onClick={onClick}
       className={`flex w-full items-center gap-3 rounded-md border px-4 py-3 text-left text-[14.5px] transition-colors ${
         selected
-          ? 'border-[#162e51] bg-[#162e51]/5 text-[#162e51]'
-          : 'border-[#dfe1e2] bg-white text-[#1b1b1b] hover:border-[#162e51]/40 hover:bg-[#f0f0f0]'
+          ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)]/5 text-[var(--brand-primary)]'
+          : 'border-[#dfe1e2] bg-white text-[#1b1b1b] hover:border-[var(--brand-primary)]/40 hover:bg-[#f0f0f0]'
       } ${opt.exclusive ? 'italic' : ''}`}
     >
       <Icon name={opt.icon} />
@@ -158,7 +158,7 @@ function OptionButton({ opt, selected, role, onClick }: OptionButtonProps) {
       <span
         className={`flex h-5 w-5 shrink-0 items-center justify-center border ${
           role === 'radio' ? 'rounded-full' : 'rounded'
-        } ${selected ? 'border-[#162e51] bg-[#162e51]' : 'border-[#dfe1e2] bg-white'}`}
+        } ${selected ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)]' : 'border-[#dfe1e2] bg-white'}`}
         aria-hidden="true"
       >
         {selected && (

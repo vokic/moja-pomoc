@@ -1,4 +1,4 @@
-type Props = {
+﻿type Props = {
   current: number;
   total: number;
 };
@@ -20,8 +20,8 @@ export function ProgressBar({ current, total }: Props) {
             <div
               key={i}
               className={`h-1.5 flex-1 rounded-full transition-colors ${
-                filled ? 'bg-[#162e51]' : 'bg-[#dfe1e2]'
-              } ${active ? 'ring-2 ring-[#00bde3]/40 ring-offset-1' : ''}`}
+                filled ? 'bg-[var(--brand-primary)]' : 'bg-[#dfe1e2]'
+              } ${active ? 'ring-2 ring-[var(--brand-accent)]/40 ring-offset-1' : ''}`}
               aria-hidden="true"
             />
           );

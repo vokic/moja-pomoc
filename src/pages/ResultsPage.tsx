@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+﻿import { useMemo, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { ResultCard } from '@/components/results/ResultCard';
 import { Anketa } from '@/components/shared/Anketa';
@@ -51,7 +51,7 @@ export function ResultsPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-10">
       <header>
-        <h1 className="text-3xl font-bold text-[#162e51]">Moji rezultati</h1>
+        <h1 className="text-3xl font-bold text-[var(--brand-primary)]">Moji rezultati</h1>
         <p className="mt-2 text-[14px] text-[#565c65]">
           Pretraga je obavljena lokalno u vašem pretraživaču.
         </p>
@@ -165,8 +165,8 @@ function FilterChip({
       aria-pressed={active}
       className={`rounded-full border px-3 py-1 text-[12.5px] font-semibold transition-colors ${
         active
-          ? 'border-[#162e51] bg-[#162e51] text-white'
-          : 'border-[#dfe1e2] bg-white text-[#1b1b1b] hover:border-[#162e51]/40 hover:bg-[#f0f0f0]'
+          ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white'
+          : 'border-[#dfe1e2] bg-white text-[#1b1b1b] hover:border-[var(--brand-primary)]/40 hover:bg-[#f0f0f0]'
       }`}
     >
       {children}
@@ -177,7 +177,7 @@ function FilterChip({
 function SummaryCard({ label, value }: { label: string; value: number }) {
   return (
     <Card className="p-4 text-center">
-      <div className="text-[28px] font-bold leading-none text-[#162e51]">{value}</div>
+      <div className="text-[28px] font-bold leading-none text-[var(--brand-primary)]">{value}</div>
       <div className="mt-1 text-[12px] uppercase tracking-wider text-[#565c65]">
         {label}
       </div>

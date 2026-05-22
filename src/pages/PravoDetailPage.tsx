@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+﻿import { Link, useParams } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { TabDokumenti } from '@/components/pravo-detail/TabDokumenti';
 import { TabGreske } from '@/components/pravo-detail/TabGreske';
@@ -43,13 +43,13 @@ export function PravoDetailPage() {
   if (!pravo) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="text-2xl font-bold text-[#162e51]">Pravo nije pronađeno</h1>
+        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">Pravo nije pronađeno</h1>
         <p className="mt-2 text-[14px] text-[#565c65]">
           Pravo sa identifikatorom <code>{id}</code> ne postoji u katalogu.
         </p>
         <Link
           to="/pretraga"
-          className="mt-4 inline-block text-[14px] font-semibold text-[#162e51] underline"
+          className="mt-4 inline-block text-[14px] font-semibold text-[var(--brand-primary)] underline"
         >
           ← Vrati se na pretragu
         </Link>
@@ -64,13 +64,13 @@ export function PravoDetailPage() {
     <div className="mx-auto max-w-4xl px-6 py-8">
       <Link
         to="/pretraga"
-        className="text-[13px] font-semibold text-[#162e51] hover:underline"
+        className="text-[13px] font-semibold text-[var(--brand-primary)] hover:underline"
       >
         ← Nazad na pretragu
       </Link>
 
       <header className="mt-3">
-        <h1 className="text-balance text-3xl font-bold leading-tight text-[#162e51]">
+        <h1 className="text-balance text-3xl font-bold leading-tight text-[var(--brand-primary)]">
           {pickScript(pravo.naziv, script)}
         </h1>
 

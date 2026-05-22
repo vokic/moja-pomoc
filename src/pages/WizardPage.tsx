@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ProgressBar } from '@/components/wizard/ProgressBar';
@@ -28,7 +28,7 @@ export function WizardPage() {
   if (resumePrompt === true) {
     return (
       <div className="mx-auto max-w-2xl px-6 py-16">
-        <h1 className="text-2xl font-bold text-[#162e51]">Nastavite gde ste stali?</h1>
+        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">Nastavite gde ste stali?</h1>
         <p className="mt-3 text-[15px] text-[#565c65]">
           Imali smo započet vodič sačuvan u ovom pretraživaču. Možete da nastavite
           tamo gde ste stali ili krenete ispočetka.
@@ -65,7 +65,7 @@ export function WizardPage() {
       <ProgressBar current={currentStep} total={TOTAL_STEPS} />
 
       <div className="mt-8">
-        <h1 className="text-2xl font-bold text-[#162e51]">{step.q}</h1>
+        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">{step.q}</h1>
         {step.hint && <p className="mt-2 text-[14px] text-[#565c65]">{step.hint}</p>}
       </div>
 

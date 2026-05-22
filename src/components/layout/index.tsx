@@ -490,7 +490,11 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       : '"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif';
   const bg = theme === 'srpski' ? '#F2F4F7' : '#ffffff';
   return (
-    <div className="flex min-h-screen flex-col text-[#1b1b1b]" style={{ fontFamily, backgroundColor: bg }}>
+    <div
+      data-theme={theme}
+      className="flex min-h-screen flex-col text-[#1b1b1b]"
+      style={{ fontFamily, backgroundColor: bg }}
+    >
       <Header />
       <main className="flex-1" style={{ backgroundColor: bg }}>
         {children}

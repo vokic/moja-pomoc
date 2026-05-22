@@ -1,4 +1,4 @@
-import { formatIznos } from '@/lib/iznos';
+﻿import { formatIznos } from '@/lib/iznos';
 import { kategorijaLabel } from '@/lib/labels';
 import type { Pravo } from '@/types';
 
@@ -54,7 +54,7 @@ export function TabOsnovno({ pravo }: Props) {
                       href={ls.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-[#162e51] underline"
+                      className="text-[var(--brand-primary)] underline"
                     >
                       ↗
                     </a>

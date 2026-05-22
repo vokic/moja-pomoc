@@ -1,11 +1,11 @@
-import { track } from '@/lib/analytics';
+﻿import { track } from '@/lib/analytics';
 import { usePageTitle } from '@/hooks/usePageTitle';
 
 export function DonatePage() {
   usePageTitle('Podržite projekat');
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
-      <h1 className="text-3xl font-bold text-[#162e51]">Podržite projekat</h1>
+      <h1 className="text-3xl font-bold text-[var(--brand-primary)]">Podržite projekat</h1>
 
       <p className="mt-4 text-[15px] leading-relaxed text-[#1b1b1b]">
         Moja Pomoć je besplatan alat napravljen kao javno dobro. Nema reklama,
@@ -13,7 +13,7 @@ export function DonatePage() {
         alat pomogao — možete pomoći da nastavi da raste i pokriva više prava.
       </p>
 
-      <h2 className="mt-10 text-xl font-bold text-[#162e51]">Zašto donirati</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">Zašto donirati</h2>
       <ul className="mt-3 space-y-2 text-[14.5px] leading-relaxed text-[#1b1b1b]">
         <li>· Pravna provera kataloga (plaćeni pravnici proveravaju svako pravo)</li>
         <li>· Širenje kataloga (cilj: 80+ prava u V1.5, 200+ u V2)</li>
@@ -21,7 +21,7 @@ export function DonatePage() {
         <li>· Vreme za pisanje uputstava i odgovaranje na pitanja korisnika</li>
       </ul>
 
-      <h2 className="mt-10 text-xl font-bold text-[#162e51]">Načini podrške</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">Načini podrške</h2>
 
       <div className="mt-4 space-y-3">
         <DonateMethod
@@ -41,7 +41,7 @@ export function DonatePage() {
         />
       </div>
 
-      <h2 className="mt-10 text-xl font-bold text-[#162e51]">Drugi načini da pomognete</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">Drugi načini da pomognete</h2>
       <ul className="mt-3 space-y-2 text-[14.5px] leading-relaxed text-[#1b1b1b]">
         <li>
           · <strong>Predložite pravo</strong> — javite nam koje pravo treba dodati
@@ -78,7 +78,7 @@ export function DonatePage() {
                 });
             }
           }}
-          className="rounded-md border border-[#162e51] px-4 py-2 text-[14px] font-semibold text-[#162e51] hover:bg-[#162e51] hover:text-white"
+          className="rounded-md border border-[var(--brand-primary)] px-4 py-2 text-[14px] font-semibold text-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white"
         >
           Podeli sa drugima
         </button>
@@ -99,7 +99,7 @@ function DonateMethod({
   return (
     <div className="rounded-md border border-[#dfe1e2] bg-white p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-[15px] font-semibold text-[#162e51]">{title}</h3>
+        <h3 className="text-[15px] font-semibold text-[var(--brand-primary)]">{title}</h3>
         <span
           className={`rounded px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider ${
             status === 'aktivno'

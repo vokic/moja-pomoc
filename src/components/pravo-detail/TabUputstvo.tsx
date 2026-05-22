@@ -1,4 +1,4 @@
-import type { UputstvoZahteva } from '@/types';
+﻿import type { UputstvoZahteva } from '@/types';
 
 type Props = { uputstvo?: UputstvoZahteva };
 
@@ -14,7 +14,7 @@ export function TabUputstvo({ uputstvo }: Props) {
   return (
     <div className="space-y-6">
       <header>
-        <h3 className="text-[16px] font-bold text-[#162e51]">{uputstvo.naziv_zahteva}</h3>
+        <h3 className="text-[16px] font-bold text-[var(--brand-primary)]">{uputstvo.naziv_zahteva}</h3>
         <p className="mt-2 text-[13.5px] leading-relaxed text-[#565c65]">
           <strong className="text-[#1b1b1b]">Gde dobiti obrazac:</strong>{' '}
           {uputstvo.gde_dobiti_obrazac}
@@ -24,7 +24,7 @@ export function TabUputstvo({ uputstvo }: Props) {
             href={uputstvo.obrazac_url}
             target="_blank"
             rel="noreferrer"
-            className="mt-2 inline-block text-[13.5px] font-semibold text-[#162e51] underline"
+            className="mt-2 inline-block text-[13.5px] font-semibold text-[var(--brand-primary)] underline"
           >
             Pogledaj službeni obrazac ↗
           </a>
@@ -48,7 +48,7 @@ function Section({ title, items }: { title: string; items: string[] }) {
   if (items.length === 0) return null;
   return (
     <section>
-      <h4 className="text-[13px] font-bold uppercase tracking-wider text-[#162e51]">{title}</h4>
+      <h4 className="text-[13px] font-bold uppercase tracking-wider text-[var(--brand-primary)]">{title}</h4>
       <ul className="mt-2 list-disc space-y-1 pl-5 text-[14px] leading-relaxed text-[#1b1b1b]">
         {items.map((item, i) => (
           <li key={i}>{item}</li>

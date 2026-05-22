@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { formatIznos } from '@/lib/iznos';
@@ -16,11 +16,11 @@ export function ResultCard({ pravo }: Props) {
   return (
     <Link
       to={`/pravo/${pravo.id}`}
-      className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00bde3]"
+      className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
     >
       <Card className="p-5 transition-shadow hover:shadow-md">
         <div className="flex flex-wrap items-start justify-between gap-3">
-          <h3 className="text-balance text-[16px] font-semibold leading-snug text-[#162e51]">
+          <h3 className="text-balance text-[16px] font-semibold leading-snug text-[var(--brand-primary)]">
             {pickScript(pravo.naziv, script)}
           </h3>
           <span className="whitespace-nowrap text-[13px] font-semibold text-emerald-700">
@@ -46,7 +46,7 @@ export function ResultCard({ pravo }: Props) {
           {pickScript(pravo.kratak_opis, script)}
         </p>
 
-        <span className="mt-3 inline-block text-[13px] font-semibold text-[#162e51]">
+        <span className="mt-3 inline-block text-[13px] font-semibold text-[var(--brand-primary)]">
           Pogledaj detalje →
         </span>
       </Card>

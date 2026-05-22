@@ -119,6 +119,21 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+/* Theme-specific brand colors — keep interior pages in sync with the
+ * design-kit's themed Header/Footer (PageShell sets data-theme).
+ */
+[data-theme='usa'] {
+  --brand-primary: #162e51;
+  --brand-primary-dark: #0b1f3f;
+  --brand-accent: #00bde3;
+}
+
+[data-theme='srpski'] {
+  --brand-primary: #1B3A6B;
+  --brand-primary-dark: #0F2547;
+  --brand-accent: #C8102E;
+}
+
 @layer base {
   * {
     border-color: var(--color-border);

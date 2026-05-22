@@ -1,4 +1,4 @@
-import type { Pravo } from '@/types';
+﻿import type { Pravo } from '@/types';
 
 type Props = { pravo: Pravo };
 
@@ -25,7 +25,7 @@ export function TabGreske({ pravo }: Props) {
             </p>
           )}
           <p className="mt-2 text-[13.5px] leading-relaxed text-[#1b1b1b]">
-            <strong className="text-[#162e51]">Rešenje:</strong> {g.resenje}
+            <strong className="text-[var(--brand-primary)]">Rešenje:</strong> {g.resenje}
           </p>
         </li>
       ))}

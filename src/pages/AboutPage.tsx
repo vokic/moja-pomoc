@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { usePageTitle } from '@/hooks/usePageTitle';
 
 export function AboutPage() {
   usePageTitle('O projektu');
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
-      <h1 className="text-3xl font-bold text-[#162e51]">O projektu</h1>
+      <h1 className="text-3xl font-bold text-[var(--brand-primary)]">O projektu</h1>
 
       <section className="mt-6 text-[15px] leading-relaxed text-[#1b1b1b]">
         <p>
@@ -23,7 +23,7 @@ export function AboutPage() {
         </p>
       </section>
 
-      <h2 className="mt-10 text-xl font-bold text-[#162e51]">Kako radi</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">Kako radi</h2>
       <ol className="mt-3 space-y-3 text-[14.5px] leading-relaxed text-[#1b1b1b]">
         <Step
           n={1}
@@ -47,7 +47,7 @@ export function AboutPage() {
         />
       </ol>
 
-      <h2 className="mt-10 text-xl font-bold text-[#162e51]">Privatnost</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">Privatnost</h2>
       <ul className="mt-3 space-y-2 text-[14.5px] leading-relaxed text-[#1b1b1b]">
         <li>· Bez naloga, bez prijave, bez verifikacije identiteta.</li>
         <li>
@@ -61,7 +61,7 @@ export function AboutPage() {
         </li>
       </ul>
 
-      <h2 className="mt-10 text-xl font-bold text-[#162e51]">Otvoreni kod</h2>
+      <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">Otvoreni kod</h2>
       <p className="mt-3 text-[14.5px] leading-relaxed text-[#1b1b1b]">
         Kod je javan pod MIT licencom. Katalog prava je javan pod CC-BY-SA 4.0.
         Svako može da pregleda, prijavi grešku, predloži dodavanje prava ili
@@ -71,13 +71,13 @@ export function AboutPage() {
       <div className="mt-10 flex flex-wrap gap-3">
         <Link
           to="/podrzite"
-          className="rounded-md bg-[#162e51] px-4 py-2 text-[14px] font-semibold text-white hover:bg-[#0b1f3f]"
+          className="rounded-md bg-[var(--brand-primary)] px-4 py-2 text-[14px] font-semibold text-white hover:bg-[var(--brand-primary-dark)]"
         >
           Podržite projekat
         </Link>
         <Link
           to="/wizard"
-          className="rounded-md border border-[#162e51] px-4 py-2 text-[14px] font-semibold text-[#162e51] hover:bg-[#162e51] hover:text-white"
+          className="rounded-md border border-[var(--brand-primary)] px-4 py-2 text-[14px] font-semibold text-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white"
         >
           Pokrenite vodič
         </Link>
@@ -89,11 +89,11 @@ export function AboutPage() {
 function Step({ n, title, desc }: { n: number; title: string; desc: string }) {
   return (
     <li className="flex gap-4">
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#162e51] text-[13px] font-bold text-white">
+      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--brand-primary)] text-[13px] font-bold text-white">
         {n}
       </span>
       <div className="flex-1">
-        <h3 className="text-[15px] font-semibold text-[#162e51]">{title}</h3>
+        <h3 className="text-[15px] font-semibold text-[var(--brand-primary)]">{title}</h3>
         <p className="mt-0.5 text-[#1b1b1b]">{desc}</p>
       </div>
     </li>

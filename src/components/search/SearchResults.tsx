@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { useScript } from '@/hooks/useScript';
 import { pickScript } from '@/lib/script';
 import { kategorijaLabel } from '@/lib/labels';
@@ -22,7 +22,7 @@ export function SearchResults({ results, hasQuery }: Props) {
         </p>
         <p className="mt-3 text-[13.5px] text-[#565c65]">
           Probajte{' '}
-          <Link to="/wizard" className="font-semibold text-[#162e51] underline">
+          <Link to="/wizard" className="font-semibold text-[var(--brand-primary)] underline">
             vodič
           </Link>{' '}
           — postavićemo nekoliko pitanja i pokazaćemo prava o kojima niste razmišljali.
@@ -51,9 +51,9 @@ export function SearchResults({ results, hasQuery }: Props) {
               <li key={p.id}>
                 <Link
                   to={`/pravo/${p.id}`}
-                  className="flex items-start justify-between gap-3 px-4 py-3 text-[14px] text-[#1b1b1b] hover:bg-[#f0f0f0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00bde3]"
+                  className="flex items-start justify-between gap-3 px-4 py-3 text-[14px] text-[#1b1b1b] hover:bg-[#f0f0f0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
                 >
-                  <span className="font-medium text-[#162e51]">
+                  <span className="font-medium text-[var(--brand-primary)]">
                     {pickScript(p.naziv, script)}
                   </span>
                   <span className="shrink-0 text-[#565c65]">→</span>

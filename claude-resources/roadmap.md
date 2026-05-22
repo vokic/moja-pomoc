@@ -573,6 +573,31 @@ Ovo je nakon V1 produkcije, prema feedback-u:
 - [ ] Žalbe template
 - [ ] Šta god je top zahtev iz ankete
 
+### Dodatne TODO stavke (Viktor 2026-05-22)
+- [ ] **Detaljnija analitika behavior-a**: Dwell time po pravu, scroll depth na detail
+  stranicama, drop-off mesta u wizard-u (koji korak pa korisnik napušta),
+  click-through na pojedine tabove u PravoDetail-u, heatmap na Results filtere.
+  Plausible osnove + custom events. Cilj: identifikovati prava i mesta na kojima
+  korisnici provode najviše vremena (= najvažnija) i mesta gde se gube
+  (= UX problemi).
+- [ ] **Iscrpno istraživanje kataloga**: Mapirati SVE državne pomoći, naknade,
+  subvencije, popuste, oslobođenja koja postoje u Srbiji. Trenutni katalog ima
+  ~46 prava strukturiranih + 102 mapiranih. Cilj: pokriti 200+. Izvori:
+  - svaki resor (PIO, RFZO, NSZ, CSR, Ministarstvo finansija, lokalne uprave)
+  - lokalne (opštinske) odluke o socijalnoj zaštiti (Beograd, Novi Sad, Niš +
+    manje opštine)
+  - poreske olakšice za fizička lica
+  - sektorske subvencije (poljoprivreda, energetika, mali biznis)
+  - jednokratne pomoći za životne situacije (smrt, rođenje, požar, nasilje)
+  - dijaspora-specifična prava (35 bilateralnih sporazuma)
+  - prava EU integracija (kad/ako se otvore)
+  Cilj: postati referentni katalog u Srbiji.
+- [ ] **Design polish u skladu sa Lovable design-kit-om**: Interior stranice
+  (Home, Wizard, Results, Detail, About, Donate) trenutno koriste hardkodovan
+  USA navy (#162e51). Trebalo bi da budu theme-aware (USA #162e51 + cyan accent
+  vs SR #1B3A6B + crveni accent) — koristiti CSS varijable ili useBrand() hook
+  koji čita useTheme(). Pun parity sa headerom/footerom.
+
 ---
 
 ## VAŽNA PRAVILA
