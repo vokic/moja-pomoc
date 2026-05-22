@@ -497,10 +497,12 @@ export function PageShell({ children }: { children: React.ReactNode }) {
   // Theme distinction stays in headers (Merriweather logo USA, PT Sans Caption hexagon SR).
   const fontFamily = '"Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif';
   const bg = theme === 'srpski' ? '#F2F4F7' : '#ffffff';
-  // USA = top band ~30px + brand band ~70px = ~100px
-  // SR  = top band ~30px + brand band ~110px + nav ~50px = ~190px
+  // Header heights (measured incl. line-heights with Nunito Sans):
+  // USA = top band ~28px + brand band ~64px = ~92px (use 95 for safety)
+  // SR  = top band ~28px + brand band ~96px + nav ~41px = ~165px (use 165)
   // Hero on HomePage uses calc(100svh - var(--header-h)) to fill viewport.
-  const headerH = theme === 'srpski' ? '190px' : '100px';
+  // Footer ends up just below the fold — exactly where we want it.
+  const headerH = theme === 'srpski' ? '165px' : '95px';
   return (
     <div
       data-theme={theme}
