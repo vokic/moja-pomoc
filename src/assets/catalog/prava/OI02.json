@@ -1,0 +1,186 @@
+{
+  "id": "OI02",
+  "kategorija": "osi",
+
+  "naziv": {
+    "sr_cyr": "Комунални попуст 50% (струја, грејање, вода) за особе са инвалидитетом",
+    "sr_lat": "Komunalni popust 50% (struja, grejanje, voda) za osobe sa invaliditetom"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Особе са инвалидитетом 70%+ или корисници туђе неге имају попуст 50% на струју, грејање, воду. Уштеда 30.000-100.000 РСД годишње.",
+    "sr_lat": "Osobe sa invaliditetom 70%+ ili korisnici tuđe nege imaju popust 50% na struju, grejanje, vodu. Ušteda 30.000-100.000 RSD godišnje."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "surprise", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Uredba o energetski zaštićenom kupcu",
+      "url": "https://www.minrzs.gov.rs"
+    },
+    {
+      "zakon": "Lokalne odluke o komunalnim popustima",
+      "napomena": "Svaka opština/grad ima svoju odluku - varira pokrivenost"
+    }
+  ],
+
+  "iznos": {
+    "tip": "popust_procenat",
+    "procenat": 50,
+    "na_sta": "račun za struju, grejanje, vodu, komunalije (smece, voda)",
+    "napomena": "Tačan procenat može da bude 30-65% zavisno od opštine i kategorije. EPS struja - često 35% za energ. zaštićene kupce."
+  },
+
+  "ko_ima_pravo_opis": "Osobe sa najmanje 70% telesnog oštećenja, korisnici tuđe nege, slepi sa 90%+ oštećenjem vida, gluvi, samohrani roditelj sa detetom sa smetnjama, korisnici socijalne novčane pomoći. Konkretne kategorije i procenti zavise od opštine i komunalnog davaoca usluga.",
+
+  "uslovi": [
+    {
+      "tip": "ili",
+      "uslovi": [
+        { "tip": "zdravlje", "vrednost": ["invaliditet", "cula", "tudja_nega"] },
+        {
+          "tip": "i",
+          "uslovi": [
+            { "tip": "samohrani_roditelj", "vrednost": true },
+            { "tip": "ima_decu_smetnje", "vrednost": true }
+          ]
+        },
+        { "tip": "primanja_max_rsd", "vrednost": 13500, "po_clanu": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Najveći razlog: status 'energetski zaštićeni kupac' nije automatski - mora se podnijeti zahtev EPS-u sa dokumentima. Većina OSI plaća pun račun godinama, ne znajući da imaju pravo na popust. Lokalne komunalije (voda, grejanje, smece) imaju različite procedure - mora se podneti svaki posebno.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite rešenje o stepenu invaliditeta",
+      "opis": "Rešenje PIO ili Ministarstva za rad - minimum 70% obično, ili rešenje o korišćenju tuđe nege i pomoći (vidi HB03 i PN02)."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pribavite uverenja o primanjima (ako je osnov niska primanja)",
+      "opis": "Za sve članove domaćinstva - uverenja o primanjima u prethodna 3 meseca."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "EPS - status 'energetski zaštićeni kupac'",
+      "opis": "U EPS poslovnici (ili online) podnesite zahtev za status energetski zaštićenog kupca. Posle pozitivnog rešenja - račun za struju je smanjen za ~35%.",
+      "napomena": "Zahtev EPS-u sadrži: rešenje o invaliditetu ILI uverenja o niskim primanjima, ličnu kartu, broj brojila struje."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Lokalna komunalije - voda, smeće, grejanje",
+      "opis": "U opštinskoj komunalnoj službi (ili JKP) - zahtev za popust po istim osnovima. Procedura varira po opštini.",
+      "upozorenje": "Različita komunalna preduzeća = različiti zahtevi. Pitajte na šalteru u svom JKP-u."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Daljinsko grejanje (ako se koristi)",
+      "opis": "U lokalnoj distributivnoj kompaniji za daljinsko grejanje - poseban zahtev. Popust obično 30-50%."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Godišnja obnova",
+      "opis": "Većina komunalnih popusta važi 12 meseci - obnova svake godine sa svežaim dokumentima.",
+      "upozorenje": "Ako se ne obnovi - popust prestaje. Postavite podsetnik 1-2 meseca pre isteka."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "resenje_invalid",
+      "naziv": "Rešenje o procenti telesnog oštećenja (70%+)",
+      "obavezno": true,
+      "gde_se_nabavlja": "PIO",
+      "trosak_rsd": 0,
+      "napomena": "Ili rešenje o tuđoj nezi i pomoći (alternativni osnov)"
+    },
+    {
+      "id": "racun_brojilo",
+      "naziv": "Račun za struju sa brojem brojila",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaš poslednji EPS račun",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "uver_primanja",
+      "naziv": "Uverenja o primanjima (alternativni osnov)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "vlasnistvo_stana",
+      "naziv": "Dokaz vlasništva ili korišćenja stana",
+      "obavezno": false,
+      "gde_se_nabavlja": "Ugovor o kupovini / izjava vlasnika",
+      "trosak_rsd": 0,
+      "napomena": "Komunalije traže za vodu/smeće"
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "EPS - poslovnica (za struju)",
+      "tip": "filijala",
+      "url": "https://www.eps.rs"
+    },
+    {
+      "naziv": "JKP / Lokalna komunalna preduzeća (voda, smeće)",
+      "tip": "opstinska",
+      "napomena": "Varira po opštini - npr. JKP Beograd, JKP Vodovod NS"
+    },
+    {
+      "naziv": "Distributivno preduzeće za grejanje",
+      "tip": "opstinska",
+      "napomena": "Lokalno, npr. Beogradske elektrane, NS Toplana"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Misle da se popust dobija automatski po invalidskoj penziji",
+      "posledica": "Plate pun račun godinama",
+      "resenje": "Status energetski zaštićenog kupca se MORA tražiti zasebno - nije automatski"
+    },
+    {
+      "greska": "Podnesu zahtev samo EPS-u, ne i ostalim komunalnim",
+      "posledica": "Imaju popust na struju ali ne i na vodu, smeće, grejanje",
+      "resenje": "Podnesite zahtev SVIM komunalnim davaocima - struja (EPS), voda i smeće (lokalno JKP), grejanje (toplane)"
+    },
+    {
+      "greska": "Ne obnavljaju godišnje",
+      "posledica": "Popust prestaje, pun račun se vraća",
+      "resenje": "Postavite podsetnik 1-2 meseca pre isteka. Obnova sa svežim dokumentima."
+    },
+    {
+      "greska": "Promena adrese / brojila bez obaveštavanja EPS-a",
+      "posledica": "Popust ne prelazi automatski",
+      "resenje": "Pri svakom preseljenju - obavestite EPS i podnesite novi zahtev za novu adresu"
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema strogog roka - u bilo koje vreme",
+
+  "prosecno_trajanje_postupka": "EPS: 30 dana. Lokalna komunalna: 15-60 dana zavisno od opštine.",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE procente i procedure po opštinama",
+
+  "napomena_za_urednika": "VAŽNO: Pravila se znatno razlikuju između EPS-a (centralno) i lokalnih JKP-a (decentralizovano). Procenat popusta varira 30-65%. U V1 dati opšte smernice. U V1.5 dodati top 10 gradova sa lokalnim detaljima. Izvori: eps.rs, minrzs.gov.rs, lokalne opštine."
+}

@@ -1,0 +1,182 @@
+{
+  "id": "OI01",
+  "kategorija": "osi",
+
+  "naziv": {
+    "sr_cyr": "Рефундација ПДВ-а на увоз путничког возила (за особе са инвалидитетом)",
+    "sr_lat": "Refundacija PDV-a na uvoz putničkog vozila (za osobe sa invaliditetom)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Особе са инвалидитетом могу да увезу аутомобил без плаћања ПДВ-а или да добију рефундацију - уштеда 5.000-15.000 ЕУР.",
+    "sr_lat": "Osobe sa invaliditetom mogu da uvezu automobil bez plaćanja PDV-a ili da dobiju refundaciju - ušteda 5.000-15.000 EUR."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o PDV",
+      "clanovi": "26-27"
+    },
+    {
+      "zakon": "Pravilnik o oslobađanju od PDV-a za osobe sa invaliditetom",
+      "url": "https://www.poreska.gov.rs"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "Refundacija pune sume PDV-a na vozilo (20% cene). Maksimum: oko 5.500.000 RSD osnove (cena vozila bez PDV-a). Refundacija ide do ~1.100.000 RSD (oko 9.500 EUR). Pravo se može iskoristiti jednom u 5-7 godina."
+  },
+
+  "ko_ima_pravo_opis": "Osobe sa invaliditetom od najmanje 50% telesnog oštećenja, koje imaju potvrdu nadležnog organa (PIO ili Ministarstva). Vozilo mora biti za ličnu upotrebu OSI-a (ili člana porodice koji ga prevozi). Tip vozila: putnički automobil; postoje varijante za vozila sa adaptacijom.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "zdravlje", "vrednost": ["invaliditet", "cula"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Većina OSI ne zna da postoji - misle da je samo za ratne vojne invalide. Postupak je administrativno složen (procena oštećenja, posebne procedure pri carini, papirologija pri PIO). Trgovci automobilima i carinici često ne znaju proceduru pa ljude odbijaju.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite rešenje o procenti telesnog oštećenja",
+      "opis": "Ovo je preduslov - rešenje PIO o procenti telesnog oštećenja minimum 50% (vidi pravo HB03). Bez ovog rešenja - postupak ne može da krene."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Saznajte koja vozila imaju pravo",
+      "opis": "Putnički automobili do određene zapremine motora i određene cene. Postoje varijante: bez adaptacije (standardno), sa adaptacijom (ručni gas/kočnica/kvačilo - dodatni benefiti)."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Pribavite potvrdu PIO ili Ministarstva",
+      "opis": "PIO ili Ministarstvo za rad - potvrda da imate pravo na oslobađanje od PDV-a po osnovu invaliditeta. Ova potvrda je glavni dokument za carinu / Poresku upravu."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Kupovina vozila - varijante",
+      "opis": "(A) Uvoz iz inostranstva - na carini predajete potvrdu i ne plaćate PDV. (B) Kupovina u Srbiji - plaćate punu cenu sa PDV-om, potom podnosite zahtev za refundaciju Poreskoj upravi.",
+      "napomena": "Varijanta A (uvoz) je čistija ali zahteva da znate proceduru carine. Varijanta B (kupovina u SRB) je dostupnija ali se čeka refundacija 60-180 dana."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Podnošenje zahteva za refundaciju (varijanta B)",
+      "opis": "Poreskoj upravi - zahtev sa: potvrda invaliditeta, ugovor o kupovini, faktura sa iznosom PDV-a, lična karta. Refundacija na tekući račun za 60-180 dana."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Obaveze posle kupovine",
+      "opis": "Vozilo ne sme biti prodato narednih 3-5 godina (zavisi od propisa). Ako se proda - PDV se mora vratiti. Vozilo mora biti registrovano na ime OSI-a.",
+      "upozorenje": "Ako vozilo bude prodato pre roka - vraćate ceo iznos PDV-a Poreskoj upravi."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "resenje_oštećenje",
+      "naziv": "Rešenje o procenti telesnog oštećenja (minimum 50%)",
+      "obavezno": true,
+      "gde_se_nabavlja": "PIO ili Ministarstvo (po prethodnom postupku - vidi HB03)",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "potvrda_pdv",
+      "naziv": "Potvrda PIO/Ministarstva o pravu na oslobađanje od PDV-a",
+      "obavezno": true,
+      "gde_se_nabavlja": "PIO filijala",
+      "trosak_rsd": 0,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "ugovor_vozilo",
+      "naziv": "Ugovor o kupovini vozila",
+      "obavezno": true,
+      "gde_se_nabavlja": "Prodavac vozila",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "faktura_pdv",
+      "naziv": "Faktura sa jasno navedenim iznosom PDV-a",
+      "obavezno": true,
+      "gde_se_nabavlja": "Prodavac vozila",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "saobracajna",
+      "naziv": "Saobraćajna dozvola (po registraciji)",
+      "obavezno": true,
+      "gde_se_nabavlja": "MUP",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "PIO - filijala (za potvrdu invaliditeta i PDV oslobađanja)",
+      "tip": "filijala",
+      "url": "https://www.pio.rs"
+    },
+    {
+      "naziv": "Poreska uprava (za refundaciju PDV-a)",
+      "tip": "filijala",
+      "url": "https://www.poreska.gov.rs"
+    },
+    {
+      "naziv": "Carina (za uvoz vozila bez PDV-a)",
+      "tip": "filijala",
+      "url": "https://www.carina.rs"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Ne pokrenu postupak procene oštećenja prvo",
+      "posledica": "Nemaju osnov za PDV oslobađanje",
+      "resenje": "Prvo se mora pravo HB03 - procena oštećenja - a tek onda može se tražiti PDV"
+    },
+    {
+      "greska": "Veruju trgovcu koji kaže 'nemate pravo'",
+      "posledica": "Plate pun PDV bezveze",
+      "resenje": "Trgovci često ne znaju proceduru. Insistirajte ili promenite prodavca. Tražite od PIO konkretne pisane informacije."
+    },
+    {
+      "greska": "Prodaju vozilo pre isteka 3-5 godina",
+      "posledica": "Vraćaju ceo iznos PDV-a",
+      "resenje": "Pre prodaje - proverite trenutni zakonski rok. Ako je rok prošao - bez posledica."
+    },
+    {
+      "greska": "Ne registruju vozilo na ime OSI-a",
+      "posledica": "Pravo se gubi - mora biti registrovano na ime OSI",
+      "resenje": "Saobraćajna dozvola - na ime osobe sa invaliditetom, ne supruga ili roditelja"
+    }
+  ],
+
+  "rok_za_podnosenje": "Za refundaciju - 3-6 meseci od dana kupovine vozila",
+
+  "prosecno_trajanje_postupka": "60-180 dana za refundaciju Poreske uprave",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE - postupak je tehnički komplikovan",
+
+  "napomena_za_urednika": "VAŽNO - VERIFIKACIJA POTREBNA: (1) Tačan procenat oštećenja koji daje pravo (50% ili drugi); (2) Maksimum osnove za refundaciju (cena vozila bez PDV-a); (3) Trajanje obaveze (3, 5, 7 godina); (4) Procedura za adaptirana vozila (vozači sa invaliditetom u nogama). Izvori: poreska.gov.rs, carina.rs, paragraf.rs, Zakon o PDV. KONSULTOVATI ASOCIJACIJU CILS."
+}

@@ -191,7 +191,8 @@ function main(): void {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(OUT_FILE, JSON.stringify(katalog, null, 2));
 
-  console.log(`\nTotal: ${prava.length} pravo${prava.length === 1 ? '' : 'a'} -> ${path.relative(ROOT, OUT_FILE)}`);
+  const word = prava.length === 1 ? 'pravo' : 'prava';
+  console.log(`\nTotal: ${prava.length} ${word} -> ${path.relative(ROOT, OUT_FILE)}`);
 }
 
 main();

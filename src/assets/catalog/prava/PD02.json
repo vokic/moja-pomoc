@@ -1,0 +1,199 @@
+{
+  "id": "PD02",
+  "kategorija": "porodica_deca",
+
+  "naziv": {
+    "sr_cyr": "Родитељски додатак (једнократно по детету)",
+    "sr_lat": "Roditeljski dodatak (jednokratno po detetu)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Једнократна или ратнā новчана подршка пре рођењу или од рођења детета. Прво дете око 340.000 РСД, веће за наредну децу.",
+    "sr_lat": "Jednokratna ili ratna novčana podrška pre rođenja ili od rođenja deteta. Prvo dete oko 340.000 RSD, veće za narednu decu."
+  },
+
+  "prioritet_propusta": 3,
+
+  "tagovi": ["high_priority", "time_sensitive", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+      "clanovi": "10-15",
+      "sluzbeni_glasnik": "Sl. glasnik RS 113/2017 sa izmenama"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "Prvo dete ~340.000 RSD jednokratno; drugo dete ~520.000 RSD u 2 godišnje rate; treće dete ~3.100.000 RSD u 10 godišnjih rata; četvrto dete ~6.100.000 RSD u 10 rata. (Iznosi za 2024-2025, godišnje se usklađuju.)"
+  },
+
+  "ko_ima_pravo_opis": "Majka koja je državljanka Srbije, koja je rodila dete u Srbiji, koja ima prebivalište u Srbiji najmanje 1 godinu pre porođaja, i koja je sa detetom u zajedničkom domaćinstvu. Pravo se ne uslovljava primanjima.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "ima_decu", "uzrast": ["beba", "predskolsko", "osnovac", "srednjoskolac"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true },
+        { "tip": "pol", "vrednost": "z" }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Roditeljski dodatak je SAMO za majke (ne i očeve), što neki ne znaju. Rok je 6 meseci od rođenja deteta. Iznos za drugo i naredna deca dolazi u ratama tokom više godina pa porodice često zaborave da podnesu zahtev za naredne rate.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite izvod iz matične knjige rođenih za dete",
+      "opis": "Bez ovog dokumenta postupak ne može da krene. Izvod se traži u matičnoj službi mesta rođenja deteta.",
+      "napomena": "U mnogim porodilištima daju izvod automatski pri otpustu - pitajte."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pripremite uverenje o državljanstvu",
+      "opis": "Uverenje o državljanstvu Srbije ne starije od 6 meseci. Trošak: 370 RSD u matičnoj službi."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Otvorite tekući račun (ako nemate)",
+      "opis": "Iznos se isplaćuje isključivo na tekući račun majke - ne na muža, ne na drugog roditelja. Pripremite IBAN."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Podnesite zahtev opštinskom Centru za socijalni rad",
+      "opis": "Zahtev se podnosi na obrascu CSR-a. Posle prihvatanja, rešenje se donosi u roku od 30 dana.",
+      "upozorenje": "Rok je 6 meseci od rođenja deteta. Posle toga pravo se gubi."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Isplata prvog iznosa",
+      "opis": "Za prvo dete - jednokratna isplata u jednom navratu. Za drugo i naredna deca - prva rata + raspored narednih."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Naredne rate (drugo dete i više)",
+      "opis": "Za drugo dete: 2 rate na 1 godinu razmaka. Za treće: 10 rata na 10 godina. Svake godine CSR vrši proveru — dete mora i dalje da bude sa majkom u Srbiji."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta majke",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "mkr_dete",
+      "naziv": "Izvod iz matične knjige rođenih za dete",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba mesta rođenja",
+      "trosak_rsd": 440
+    },
+    {
+      "id": "drzav_majka",
+      "naziv": "Uverenje o državljanstvu majke",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 370,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "prebivaliste",
+      "naziv": "Uverenje o prebivalištu",
+      "obavezno": true,
+      "gde_se_nabavlja": "MUP / opština",
+      "trosak_rsd": 280,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "tek_racun_majka",
+      "naziv": "Broj tekućeg računa majke",
+      "obavezno": true,
+      "gde_se_nabavlja": "Banka majke",
+      "trosak_rsd": 0,
+      "napomena": "Mora biti na ime majke, ne supruga ili drugog roditelja"
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Centar za socijalni rad - opština prebivališta",
+      "tip": "opstinska",
+      "napomena": "U većim gradovima postoji 1 CSR po opštini. U Beogradu - opštinski (npr. CSR Vračar, CSR Novi Beograd)."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA RODITELJSKI DODATAK",
+    "gde_dobiti_obrazac": "Na šalteru CSR-a ili na minrzs.gov.rs (Ministarstvo za rad)",
+    "obrazac_url": "https://www.minrzs.gov.rs",
+    "pre_popunjavanja": [
+      "Pripremite IBAN tekućeg računa na ime majke",
+      "Pripremite kopije svih dokumenata + originali za uvid",
+      "Ako imate više dece - razdvojite po detetu (zahtev ide po detetu)",
+      "Pripremite kontakt telefon i email za CSR komunikaciju"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za roditeljski dodatak za [prvo/drugo/treće/četvrto] dete",
+      "Dete je rođeno [datum] u [mesto]",
+      "Molim potvrdu o prijemu sa pečatom i datumom"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li je naveden tačan IBAN majčinog tekućeg računa",
+      "Da li su podaci o detetu tačni (ime, prezime, JMBG, datum rođenja)",
+      "Da li je obrazac potpuno popunjen",
+      "Da li su priloženi svi dokumenti"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu - obavezno sa pečatom i datumom",
+      "Postupak traje do 30 dana - mora biti rešenje u tom roku",
+      "Za drugo i naredna deca - imajte podsetnik za naredne rate (svake godine ista procedura)",
+      "Ako se preselite - obavestite CSR da nove rate ne kasne"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Otac podnosi zahtev",
+      "posledica": "Zahtev se odbija - roditeljski dodatak je samo za majku",
+      "resenje": "Zahtev podnosi MAJKA. Otac može ako je majka preminula ili u izuzetnim okolnostima."
+    },
+    {
+      "greska": "Probija se rok od 6 meseci",
+      "posledica": "Pravo se gubi - nema naknadnog podnošenja",
+      "resenje": "Podnesite najkasnije do isteka 6 meseci od rođenja deteta. Preporuka: 3-4 meseca posle porođaja"
+    },
+    {
+      "greska": "Tekući račun na ime supruga",
+      "posledica": "Isplata se ne može izvršiti - mora biti račun majke",
+      "resenje": "Otvorite svoj tekući račun pre podnošenja zahteva ako nemate"
+    },
+    {
+      "greska": "Za drugo i naredna deca - zaboravlja se da postoji više rata",
+      "posledica": "Propust narednih rata = gubitak značajne sume",
+      "resenje": "Posle prve rate - postavite podsetnik (kalendar) godinu dana unapred. CSR ne podseća automatski."
+    },
+    {
+      "greska": "Promena prebivališta nije prijavljena CSR-u",
+      "posledica": "Naredne rate (za 2. i naredna deca) mogu da kasne ili se obustave",
+      "resenje": "Pri svakom preselenju - obavestite CSR pisanim putem. Rate ide na osnovu trenutnog prebivališta"
+    }
+  ],
+
+  "rok_za_podnosenje": "6 meseci od dana rođenja deteta",
+
+  "prosecno_trajanje_postupka": "Do 30 dana od podnošenja zahteva do rešenja",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznose za 2026",
+
+  "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Iznosi se godišnje usklađuju - proveri tačne iznose za 2026 na minrzs.gov.rs ili Sl. glasniku; (2) Da li je još uvek 6 meseci rok ili je promenjen; (3) Da li je samo majka može podnositi - bilo je predloga proširenja na očeve. Najbolji izvor: Ministarstvo za brigu o porodici i demografiju, minrzs.gov.rs."
+}

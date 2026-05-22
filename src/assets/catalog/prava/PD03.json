@@ -1,0 +1,207 @@
+{
+  "id": "PD03",
+  "kategorija": "porodica_deca",
+
+  "naziv": {
+    "sr_cyr": "Дечји додатак",
+    "sr_lat": "Dečji dodatak"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Месечна новчана помоћ за децу из породица са нижим примањима. Око 5.500 РСД месечно по детету, увећано за самохране родитеље.",
+    "sr_lat": "Mesečna novčana pomoć za decu iz porodica sa nižim primanjima. Oko 5.500 RSD mesečno po detetu, uvećano za samohrane roditelje."
+  },
+
+  "prioritet_propusta": 2,
+
+  "tagovi": ["high_priority"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+      "clanovi": "16-27",
+      "sluzbeni_glasnik": "Sl. glasnik RS 113/2017 sa izmenama"
+    }
+  ],
+
+  "iznos": {
+    "tip": "mesecno",
+    "vrednost_rsd": 5500,
+    "napomena": "Osnovni iznos po detetu (~2024-2025). Uvećano +30% za samohrane roditelje, +50% za decu sa smetnjama u razvoju. Tačan iznos za 2026 - verifikuj."
+  },
+
+  "ko_ima_pravo_opis": "Porodica koja ima decu predškolskog, osnovnoškolskog ili srednjoškolskog uzrasta, čiji prihodi po članu domaćinstva ne prelaze propisanu cenzus granicu (~13.500 RSD po članu mesečno za 2024-2025). Maksimalno za 4 deteta po porodici.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        {
+          "tip": "ima_decu",
+          "uzrast": ["beba", "predskolsko", "osnovac", "srednjoskolac"]
+        },
+        { "tip": "prebivaliste_srbija", "vrednost": true },
+        { "tip": "primanja_max_rsd", "vrednost": 13500, "po_clanu": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnoge porodice ne znaju za censuse niti misle da imaju pravo. Iznos je relativno mali pa se ne podnosi zahtev zbog 'malog para', ali za 12+ meseci sa 2-3 deteta ukupno bude ~150-200.000 RSD godišnje. Samohrani roditelji često ne prijavljuju jer ne znaju za uvećanje.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Procenite da li prilazite cenzusu",
+      "opis": "Saberite SVE prihode u domaćinstvu (plate, penzije, NSZ naknade, subvencije) za poslednja 3 meseca. Podelite sa brojem članova. Ako je rezultat manji od ~13.500 RSD - imate dobru šansu."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pribavite uverenja o primanjima svih članova",
+      "opis": "Za svakog odraslog člana - uverenje od poslodavca / Poreske / PIO / NSZ o primanjima u prethodna 3 meseca. Za nezaposlene - uverenje NSZ-a."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Pribavite osnovna dokumenta",
+      "opis": "Lične karte svih punoletnih članova, izvodi iz matičnih knjiga rođenih za decu, uverenje o državljanstvu, uverenje o prebivalištu."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Podnesite zahtev opštinskom CSR-u",
+      "opis": "Zahtev sa svim dokumentima. CSR rešava u roku od 30 dana."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Mesečna isplata na tekući račun",
+      "opis": "Po pozitivnom rešenju, isplata mesečno. Pravo važi 12 meseci, posle čega se zahtev MORA obnoviti.",
+      "upozorenje": "Po isteku 12 meseci - zahtev se obnavlja sa svežim uverenjima. Ako se zaboravi, pravo prestaje."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk_svi",
+      "naziv": "Lične karte svih punoletnih članova domaćinstva",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "mkr_deca",
+      "naziv": "Izvodi iz matične knjige rođenih za svu decu",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 440,
+      "vazi_meseci": 6,
+      "napomena": "Po jedan izvod po detetu"
+    },
+    {
+      "id": "uver_primanja",
+      "naziv": "Uverenje o primanjima za 3 meseca unazad",
+      "obavezno": true,
+      "gde_se_nabavlja": "Poslodavac / PIO / NSZ / Poreska uprava",
+      "trosak_rsd": 0,
+      "napomena": "Za sve punoletne članove. Plata, penzija, naknade NSZ, dohodak od preduzetništva, itd."
+    },
+    {
+      "id": "potvrda_skola",
+      "naziv": "Potvrda o redovnom školovanju (za decu školskog uzrasta)",
+      "obavezno": true,
+      "gde_se_nabavlja": "Škola koju dete pohađa",
+      "trosak_rsd": 0,
+      "vazi_meseci": 12
+    },
+    {
+      "id": "uver_kuca",
+      "naziv": "Uverenje o nepokretnostima (ako posedujete imovinu)",
+      "obavezno": false,
+      "gde_se_nabavlja": "RGZ / Katastar",
+      "trosak_rsd": 540,
+      "napomena": "Cenzus uzima u obzir i imovinu, ne samo prihode"
+    },
+    {
+      "id": "tek_racun",
+      "naziv": "Broj tekućeg računa",
+      "obavezno": true,
+      "gde_se_nabavlja": "Banka",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Centar za socijalni rad - opština prebivališta",
+      "tip": "opstinska"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA DEČJI DODATAK",
+    "gde_dobiti_obrazac": "Na šalteru CSR-a ili na sajtu Ministarstva za rad",
+    "obrazac_url": "https://www.minrzs.gov.rs",
+    "pre_popunjavanja": [
+      "Saberite sve prihode domaćinstva u poslednja 3 meseca i podelite sa brojem članova",
+      "Ako je rezultat preko ~14.000 RSD po članu - verovatno nemate pravo (iznos cenzusa proveriti za 2026)",
+      "Spremite IBAN tekućeg računa",
+      "Ako ste samohrani roditelj - napomenite to obavezno (uvećanje 30%)",
+      "Ako neko od dece ima smetnje u razvoju - donesite medicinsku dokumentaciju (uvećanje 50%)"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za dečji dodatak za [broj] dece",
+      "Prihodi domaćinstva po članu su [iznos] - smatram da ulazim u cenzus",
+      "Status: [samohrani roditelj / porodica / dete sa smetnjama] ako se primenjuje",
+      "Molim potvrdu o prijemu sa pečatom"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su navedena SVA deca koja imaju pravo (do 4 deteta)",
+      "Da li su uverenja o primanjima za sve punoletne članove",
+      "Da li je naveden tačan IBAN",
+      "Da li je dodato uvećanje (samohrani / dete sa smetnjama) ako se primenjuje"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Postupak - 30 dana",
+      "Pravo važi 12 meseci - postavite podsetnik 2 meseca pre isteka",
+      "Pri obnavljanju - svežaje uverenja o primanjima za 3 meseca"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne podnosi zahtev jer 'iznos je mali'",
+      "posledica": "Godišnje propušta 60-150.000 RSD",
+      "resenje": "5.500 RSD/mes × 12 meseci × broj dece = značajan iznos. Vredi truda."
+    },
+    {
+      "greska": "Ne navedi status samohranog roditelja",
+      "posledica": "Gubi 30% uvećanje (oko 1.650 RSD po detetu mesečno)",
+      "resenje": "Ako ste samohrani - obavezno priložite dokaz (presuda, izjava o samohranosti)"
+    },
+    {
+      "greska": "Zaboravlja da obnovi posle 12 meseci",
+      "posledica": "Pravo prestaje, isplata se zaustavlja",
+      "resenje": "Postavite podsetnik 2 meseca pre isteka. Obnova traje 30 dana."
+    },
+    {
+      "greska": "Ne prijavi sva primanja",
+      "posledica": "Ako CSR otkrije - tretira kao zloupotrebu, pravo se ukida",
+      "resenje": "Prijavite SVE prihode - i sive (poljoprivredni, NSZ, naknade)"
+    },
+    {
+      "greska": "Ne predaje uverenje o redovnom školovanju za decu školskog uzrasta",
+      "posledica": "Za to dete pravo se ne odobrava",
+      "resenje": "Za svako dete školskog uzrasta - potvrda od škole pri podnošenju i pri obnavljanju"
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema strogog roka, ali pravo važi od dana podnošenja zahteva - svaki dan kašnjenja = propušten dodatak",
+
+  "prosecno_trajanje_postupka": "30 dana",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznose i cenzus za 2026",
+
+  "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Tačan iznos osnove dečjeg dodatka za 2026; (2) Tačan cenzus prihoda po članu za 2026 (godišnje se menja); (3) % uvećanja za samohrane i decu sa smetnjama; (4) Da li je ograničenje od 4 deteta još uvek na snazi. Izvori: minrzs.gov.rs, paragraf.rs."
+}

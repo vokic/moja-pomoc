@@ -1,0 +1,165 @@
+{
+  "id": "NZ02",
+  "kategorija": "nezaposleni",
+
+  "naziv": {
+    "sr_cyr": "Преквалификације и доквалификације (НСЗ - бесплатне обуке)",
+    "sr_lat": "Prekvalifikacije i dokvalifikacije (NSZ - besplatne obuke)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Бесплатне обуке за нова занимања - програмирање, ИТ, обука у занатима, језичке школе, продаја. Уз НСЗ накнаду током обуке.",
+    "sr_lat": "Besplatne obuke za nova zanimanja - programiranje, IT, obuka u zanatima, jezičke škole, prodaja. Uz NSZ naknadu tokom obuke."
+  },
+
+  "prioritet_propusta": 3,
+
+  "tagovi": ["surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti"
+    },
+    {
+      "zakon": "Strategija razvoja obrazovanja i stručnog osposobljavanja u Srbiji"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "BESPLATNA obuka (vrednost komercijalnih: 30.000 - 500.000 RSD) + nadoknada NSZ-a tokom obuke (oko 5.000-15.000 RSD mesečno za putne troškove i hranu) + povezivanje sa poslodavcima."
+  },
+
+  "ko_ima_pravo_opis": "Lica prijavljena na evidenciji NSZ-a koja žele da promene zanimanje (prekvalifikacija) ili da nadograde postojeće (dokvalifikacija). Prioritet: mladi do 30 god, dugotrajno nezaposleni (preko 12 meseci), žene, OSI, lica iz teško razvijenih regiona, povratnici iz inostranstva.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        {
+          "tip": "zaposlenje",
+          "vrednost": ["nezaposlen", "nezaposlen_neprijavljen"]
+        },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Većina nezaposlenih dolazi u NSZ samo da preuzme novčanu naknadu - ne pita za obuke. NSZ savetnici ponekad ne pokrenu temu. Obuke su ograničene brojem mesta pa se čeka. Mnoge obuke su odlične (IT programiranje, online marketing, jezici) ali se ne reklamiraju proaktivno.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Prijavite se na evidenciju NSZ-a",
+      "opis": "Ako niste - prvi korak je prijava. Sve obuke su rezervisane za prijavljena nezaposlena lica."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Razgovor sa savetnikom NSZ-a",
+      "opis": "Tražite konkretno: 'Koje obuke trenutno NSZ organizuje?' Savetnik mora da vam pokaže katalog tekućih obuka.",
+      "napomena": "Ako savetnik ne zna - tražite šefa filijale ili pozovite centralu NSZ-a."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Identifikujte koja obuka vas zanima",
+      "opis": "Glavne kategorije: IT (programiranje Java/Python, web development, data science), engleski/nemački jezik, kursevi zanata (varenje, stolarstvo), administrativni kursevi, prodaja, ugostiteljstvo, frizerstvo, kozmetika."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Prijava na konkretnu obuku",
+      "opis": "Obuke se raspisuju u ciklusima. NSZ proverava da li ispunjavate uslove (npr. završena srednja škola za IT obuke). Konkurs se može objaviti na nsz.gov.rs ili u filijali."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Selekcijа kandidata",
+      "opis": "Ako je više prijavljenih nego mesta - NSZ selektira po kriterijumima (motivacija, prethodno obrazovanje, prioritet grupe). Razgovor sa komisijom je čest."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Obuka",
+      "opis": "Trajanje: 2-12 meseci zavisno od programa. Tokom obuke - dolazak obavezan, NSZ isplaćuje naknadu (~5.000-15.000 RSD mesečno) za putne troškove i hranu.",
+      "upozorenje": "Neopravdano izostajanje - obustava obuke + obaveza vraćanja naknade."
+    },
+    {
+      "redni_broj": 7,
+      "naslov": "Sertifikat + povezivanje sa poslodavcima",
+      "opis": "Po završetku - dobijate sertifikat (priznato u struci). NSZ često organizuje 'sajmove zapošljavanja' gde su pozvani poslodavci da intervjuišu sveže-osposobljene."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "evidencija_nsz",
+      "naziv": "Aktivna evidencija NSZ-a",
+      "obavezno": true,
+      "gde_se_nabavlja": "NSZ filijala",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "diploma",
+      "naziv": "Diploma poslednje završene škole",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaš diplomski document (sačuvali ste)",
+      "trosak_rsd": 0,
+      "napomena": "Za IT i veće kvalifikacije se često zahteva minimum srednja škola"
+    },
+    {
+      "id": "cv",
+      "naziv": "CV - kratak prikaz",
+      "obavezno": false,
+      "gde_se_nabavlja": "Vi sami",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Nacionalna služba za zapošljavanje - filijala",
+      "tip": "filijala",
+      "telefon": "0800 300 301",
+      "url": "https://www.nsz.gov.rs"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Dolaze u NSZ samo po naknadu, ne pitaju za obuke",
+      "posledica": "Propuštaju besplatne obuke vredne 30-500.000 RSD",
+      "resenje": "Pri svakoj poseti pitajte: 'Koje obuke trenutno organizujete?' Insistirajte."
+    },
+    {
+      "greska": "Misle da NSZ obuke 'nisu kvalitetne'",
+      "posledica": "Plaća privatne kurseve umesto besplatnih NSZ",
+      "resenje": "NSZ ulaže u kvalitet - često sarađuje sa Microsoft, Cisco, IBM partnerima. IT obuke su odlične."
+    },
+    {
+      "greska": "Izostajanje sa obuke bez opravdanja",
+      "posledica": "Obustava + obaveza vraćanja naknade",
+      "resenje": "Tretirajte obuku kao posao - prisustvo obavezno"
+    },
+    {
+      "greska": "Posle obuke - ne traže od NSZ-a posredovanje za poslodavce",
+      "posledica": "Završili obuku ali ne dolaze do posla",
+      "resenje": "Po završetku - 'Mogu li da dođem na sledeći sajam zapošljavanja?' NSZ aktivno povezuje."
+    }
+  ],
+
+  "rok_za_podnosenje": "Po raspisivanju konkursa za određenu obuku - rok 15-30 dana",
+
+  "prosecno_trajanje_postupka": "Od prijave do početka obuke: 2-6 meseci",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE trenutni katalog obuka NSZ-a",
+
+  "napomena_za_urednika": "Katalog obuka se menja kvartalno. U V1 dati GENERIČKI opis sa najpopularnijim kategorijama. U V1.5 - sinhronizovati sa nsz.gov.rs aktuelnim konkursima (možda preko API-ja ako postoji). Izvor: nsz.gov.rs/sr/usluge/za-nezaposlene."
+}

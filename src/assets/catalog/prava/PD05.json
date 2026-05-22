@@ -1,0 +1,211 @@
+{
+  "id": "PD05",
+  "kategorija": "porodica_deca",
+
+  "naziv": {
+    "sr_cyr": "Субвенција за вртић (умањење цене)",
+    "sr_lat": "Subvencija za vrtić (umanjenje cene)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Општина субвенционише цену вртића за породице са нижим примањима, самохране родитеље, и треће/четврто дете. Умањење 30-100% месечне цене.",
+    "sr_lat": "Opština subvencioniše cenu vrtića za porodice sa nižim primanjima, samohrane roditelje, i treće/četvrto dete. Umanjenje 30-100% mesečne cene."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o predškolskom vaspitanju i obrazovanju",
+      "sluzbeni_glasnik": "Sl. glasnik RS 18/2010 sa izmenama"
+    },
+    {
+      "zakon": "Odluka o cenovniku predškolskog vaspitanja (lokalna)",
+      "napomena": "Svaka opština ima svoju odluku - cenovnik i kriterijumi se razlikuju"
+    }
+  ],
+
+  "iznos": {
+    "tip": "popust_procenat",
+    "procenat": 50,
+    "na_sta": "mesečna cena vrtića",
+    "napomena": "30-100% u zavisnosti od opštine i kategorije. Treće dete u BG i NS - često 100% (besplatno). Samohrani roditelji - 50-70%. Niska primanja - 30-70%."
+  },
+
+  "ko_ima_pravo_opis": "Roditelji dece predškolskog uzrasta (od jasli do polaska u školu) koji su upisali dete u javni vrtić. Subvencija po kategorijama: niska primanja, samohrani roditelj, treće i naredna deca, deca sa smetnjama, deca bez roditeljskog staranja. Pravila variraju po opštini.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        {
+          "tip": "ima_decu",
+          "uzrast": ["beba", "predskolsko"]
+        },
+        {
+          "tip": "ili",
+          "uslovi": [
+            { "tip": "primanja_max_rsd", "vrednost": 30000, "po_clanu": true },
+            { "tip": "samohrani_roditelj", "vrednost": true },
+            { "tip": "ima_decu_smetnje", "vrednost": true }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi roditelji ne pitaju za subvenciju jer pretpostavljaju da je vrtić puna cena. Opštine retko sami objavljuju subvencije proaktivno. Treće dete često ima pravo na 100% subvenciju (besplatno) ali se zahtev ne podnosi. Razlike između opština su velike pa se ne zna šta važi.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Saznajte cenovnik vrtića u vašoj opštini",
+      "opis": "Cena vrtića varira: u Beogradu osnovna cena ~10.000-15.000 RSD/mes, u NS ~8.000-12.000, u manjim mestima manje. Saznajte tačnu cenu sa subvencijama u vašoj opštini."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pribavite uverenje o primanjima domaćinstva",
+      "opis": "Za sve punoletne članove - uverenje o primanjima u prethodna 3 meseca. Slično kao za dečji dodatak."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev opštinskom sekretarijatu za društvene delatnosti",
+      "opis": "Većina opština ima 'Odluku o cenovniku' sa pravom na umanjenje. Zahtev se podnosi u opštinskoj upravi - sektor za društvene delatnosti / prosvetu.",
+      "napomena": "U Beogradu - Sekretarijat za obrazovanje i dečju zaštitu. U NS - Gradska uprava za obrazovanje."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Provera komisije + obračun subvencije",
+      "opis": "Komisija proverava primanja i druge kriterijume, donosi rešenje o subvenciji (procenat). Postupak: 15-30 dana."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Umanjenje cene na mesečnoj uplatnici",
+      "opis": "Po pozitivnom rešenju, mesečna uplatnica za vrtić dolazi sa umanjenim iznosom. Ako je 100% - ne plaćate ništa.",
+      "upozorenje": "Subvencija se obnavlja godišnje - pre početka nove školske godine."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk_svi",
+      "naziv": "Lične karte roditelja",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "mkr_deca",
+      "naziv": "Izvodi iz matične knjige rođenih za svu decu",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 440
+    },
+    {
+      "id": "uver_primanja",
+      "naziv": "Uverenja o primanjima za 3 meseca",
+      "obavezno": true,
+      "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "potvrda_vrtic",
+      "naziv": "Potvrda o upisu deteta u vrtić",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vrtić",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "dokaz_samohrani",
+      "naziv": "Dokaz o statusu samohranog roditelja (ako se odnosi)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Sud (presuda o starateljstvu) ili matična služba (umrlica supruga/e)",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "med_smetnje",
+      "naziv": "Medicinska dokumentacija o smetnjama u razvoju (ako se odnosi)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Lekar / Komisija za procenu",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Opštinska / Gradska uprava - sektor za obrazovanje ili društvene delatnosti",
+      "tip": "opstinska",
+      "napomena": "U BG: Sekretarijat za obrazovanje i dečju zaštitu. U NS: Gradska uprava za obrazovanje. U manjim opštinama: Sektor za društvene delatnosti."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA UMANJENJE CENE PREDŠKOLSKE USTANOVE",
+    "gde_dobiti_obrazac": "Na sajtu opštine ili šalteru opštinskog sektora za obrazovanje",
+    "pre_popunjavanja": [
+      "Saznajte tačan procenat subvencije na koji imate pravo u vašoj opštini",
+      "Pribavite SVA uverenja o primanjima (svi članovi domaćinstva)",
+      "Ako ste samohrani / dete ima smetnje - dokaze obavezno",
+      "Pripremite potvrdu o upisu deteta u vrtić"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za umanjenje cene vrtića po osnovu [niskih primanja / samohranog roditelja / trećeg deteta / smetnji u razvoju]",
+      "Dete je upisano u vrtić [naziv] od [datum]",
+      "Molim potvrdu o prijemu"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su navedene SVE osnove za subvenciju (često se može kombinovati)",
+      "Da li su priložena uverenja o primanjima svih članova",
+      "Da li je naveden tačan vrtić i dete",
+      "Da li je popunjen IBAN (ako se vraća uplaćeno) ili samo zahtev za umanjenje"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Postupak - 15-30 dana",
+      "Po rešenju - obavestite vrtić (možda treba i njima kopija)",
+      "Obnova - svake školske godine pre 1. septembra (svežaje uverenja)"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne pitaju za subvenciju i plaćaju punu cenu",
+      "posledica": "Godišnje propušta 30.000-120.000 RSD",
+      "resenje": "PITAJTE u vrtiću ili na opštini. Mnogi imaju pravo a ne znaju."
+    },
+    {
+      "greska": "Treće dete - ne podnosi zahtev za 100% subvenciju",
+      "posledica": "Plaća punu cenu iako ima pravo na besplatno",
+      "resenje": "Za 3. dete u BG/NS - subvencija je obično 100%. Podnesite zahtev."
+    },
+    {
+      "greska": "Samohrani roditelj - ne navede status",
+      "posledica": "Gubi 30-50% uvećanja subvencije",
+      "resenje": "Pri zahtevu - obavezno navedite samohrani status sa dokazom (presuda, umrlica, izjava)"
+    },
+    {
+      "greska": "Zaboravlja godišnju obnovu",
+      "posledica": "Sledeća školska godina - puna cena",
+      "resenje": "Obnova pre 1. septembra svake godine - postavite podsetnik avgusta"
+    },
+    {
+      "greska": "Ne kombinuje osnove (npr. niska primanja + samohrani roditelj)",
+      "posledica": "Subvencija je niža od mogućeg",
+      "resenje": "Često se mogu kombinovati - navedite SVE relevantne osnove"
+    }
+  ],
+
+  "rok_za_podnosenje": "Pre početka školske godine (do 31. avgust); ali može se podneti i tokom godine",
+
+  "prosecno_trajanje_postupka": "15 - 30 dana",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE - varijabilnost po opštinama je velika",
+
+  "napomena_za_urednika": "VAŽNO: Pravila se znatno razlikuju po opštinama. Beograd ima drugačiji cenovnik od Novog Sada, koji se razlikuje od manjih mesta. U V1 prikazati GENERIČKE smernice, a u V1.5 dodati lokalne varijante (top 10 opština). Izvori: opštinski sajtovi (npr. beograd.gov.rs, novisad.rs), centralni sajt Ministarstva prosvete."
+}

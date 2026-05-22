@@ -1,0 +1,205 @@
+{
+  "id": "HB03",
+  "kategorija": "hronicni_bolesnici",
+
+  "naziv": {
+    "sr_cyr": "Процена телесног оштећења (отвара десетине других права)",
+    "sr_lat": "Procena telesnog oštećenja (otvara desetine drugih prava)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Решење о проценту телесног оштећења је \"кључ\" за многа права: пензије, накнаде, попусте у превозу, ослобађање пореза, бесплатну паркинг карту.",
+    "sr_lat": "Rešenje o procentu telesnog oštećenja je \"ključ\" za mnoga prava: penzije, naknade, popuste u prevozu, oslobađanje poreza, besplatnu parking kartu."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["gateway", "surprise", "high_priority"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+      "clanovi": "23-30"
+    },
+    {
+      "zakon": "Pravilnik o utvrđivanju procenta telesnog oštećenja"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "Procena sama po sebi nema iznos - ali otključava: invalidsku penziju, dodatak na tuđu negu, paušalnu naknadu za pomagala, popust u javnom prevozu, oslobađanje poreza na vozilo, popust komunalnih usluga, besplatnu parking kartu. Ukupna vrednost otključanih prava: 50.000-500.000 RSD godišnje zavisno od procenta."
+  },
+
+  "ko_ima_pravo_opis": "Bilo koje lice sa hroničnom bolešću ili invaliditetom koje smatra da ima trajno telesno oštećenje. Postupak utvrđuje procenat oštećenja (0-100%) - različiti procenti otvaraju različita prava. 50% i više obično otvara penziju i poreske olakšice. 30-50% otvara umerene benefite (prevoz, popust).",
+
+  "uslovi": [
+    {
+      "tip": "ili",
+      "uslovi": [
+        {
+          "tip": "zdravlje",
+          "vrednost": [
+            "invaliditet",
+            "hronicno",
+            "onkologija",
+            "dijaliza",
+            "cula",
+            "tudja_nega"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Ovo je 'meta-pravo' - sam postupak procene ne daje novac, ali OTVARA desetine drugih prava. Mnogi ljudi sa invaliditetom ili teškim hroničnim bolestima nikada ne pokrenu postupak procene jer ne znaju da je to KLJUČ za druge benefite. Sa rešenjem o 50%+ otvara se invalidska penzija, dodatak za negu, sve socijalne pogodnosti.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite svu medicinsku dokumentaciju",
+      "opis": "Što više nalaza, otpusnih lista, dijagnoza - to bolje. Specijalistički nalazi (neurolog, kardiolog, ortoped, onkolog) su najteže ocenjeni od lekarske komisije."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Podnesite zahtev PIO filijali",
+      "opis": "Zahtev se podnosi u PIO filijali prema prebivalištu. Pravo se može tražiti čak i ako niste osiguranik PIO-a (npr. domaćica) - kao 'lice koje nije osigurano'.",
+      "napomena": "Obrazac: 'Zahtev za utvrđivanje procenta telesnog oštećenja'"
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Pregled lekarske komisije",
+      "opis": "PIO zakazuje pregled u njihovoj lekarskoj komisiji. Komisija ocenjuje sve dijagnoze i izračunava procenat oštećenja po Pravilniku.",
+      "upozorenje": "Ne potcenjujte svoje simptome na pregledu. Govorite sve - bol, ograničenja, posledice. Komisija odlučuje na osnovu onoga što čuje + dokumentacije."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Donošenje rešenja sa procentom",
+      "opis": "Rešenje stiže za 2-6 meseci od pregleda sa konkretnim procentom (npr. '55% telesnog oštećenja po osnovu neurološke i kardiološke dijagnoze')."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Ulaganje žalbe ako je procenat nizak",
+      "opis": "Imate 15 dana da uložite žalbu Drugostepenom organu PIO. Često se procenat poveća sa žalbom + dodatnom dokumentacijom.",
+      "upozorenje": "Razlika 49% vs 50% je ogromna - prelaz u višu kategoriju otvara penziju. Vredi se boriti za svaki procenat."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Korišćenje rešenja za druga prava",
+      "opis": "Sa rešenjem aktivirajte: invalidsku penziju (50%+), dodatak za negu (paralelno), popust u javnom prevozu (lokalna karta), oslobađanje poreza na vozilo (50%+), parking karta za OSI (50%+), popust komunalnih usluga."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "mkr",
+      "naziv": "Izvod iz matične knjige rođenih",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 440
+    },
+    {
+      "id": "med_dokumentacija",
+      "naziv": "Kompletna medicinska dokumentacija",
+      "obavezno": true,
+      "gde_se_nabavlja": "Lekari, bolnice, ambulante",
+      "trosak_rsd": 0,
+      "napomena": "Najbitniji deo - što više, to bolje. Nalazi za poslednjih 5+ godina."
+    },
+    {
+      "id": "potvrda_izabrani",
+      "naziv": "Potvrda izabranog lekara",
+      "obavezno": true,
+      "gde_se_nabavlja": "Dom zdravlja",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Republički fond PIO - filijala",
+      "tip": "filijala",
+      "telefon": "0700 17 17 17",
+      "url": "https://www.pio.rs"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA UTVRĐIVANJE PROCENTA TELESNOG OŠTEĆENJA",
+    "gde_dobiti_obrazac": "Na šalteru PIO filijale",
+    "obrazac_url": "https://www.pio.rs/sr/obrasci",
+    "pre_popunjavanja": [
+      "Pribavite SVE medicinske dokumente - nalaze, otpusne liste, dijagnoze",
+      "Napravite spisak vaših ograničenja u dnevnom životu (šta ne možete sami)",
+      "Razgovarajte sa izabranim lekarom o potencijalnoj proceni",
+      "Pripremite osobu koja vas dobro poznaje (za svedočenje)",
+      "Saznajte vaše osiguraničko stanje (osiguranik PIO ili ne)"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za utvrđivanje procenta telesnog oštećenja",
+      "Imam dijagnoze: [navedite] i ograničenja: [konkretno]",
+      "Molim potvrdu o prijemu zahteva",
+      "Pitajte: 'Da li mogu da tražim pregled kod kuće ako ne mogu doći?'"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su navedene SVE dijagnoze",
+      "Da li je medicinska dokumentacija priložena",
+      "Da li je naveden tačan datum kad su simptomi počeli",
+      "Da li je obrazac potpuno popunjen"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Čekajte poziv za pregled (2-3 meseca)",
+      "Na pregled: SVA medicinska dokumenta + svedok",
+      "Posle rešenja - ako je procenat nizak ULOŽITE ŽALBU (15 dana)",
+      "Sa pozitivnim rešenjem - aktivirajte SVA prava koja ono otključava"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne podnose zahtev jer 'nemam invalidninu'",
+      "posledica": "Propušta otvaranje desetina drugih prava",
+      "resenje": "Procena se može tražiti SVAKO - i bez prethodnog statusa invalida. Ovo je prvi korak."
+    },
+    {
+      "greska": "Potcenjuju simptome na pregledu komisije",
+      "posledica": "Procenat je niži nego što treba",
+      "resenje": "Komisija ocenjuje na osnovu ONOGA što kažete + dokumentacije. Govorite konkretno o ograničenjima."
+    },
+    {
+      "greska": "Ne ulažu žalbu na nizak procenat",
+      "posledica": "Promašuje prag za invalidsku penziju (49% vs 50%)",
+      "resenje": "Žalba je BESPLATNA i često uspešna. Pribavite dodatne nalaze i pošaljite."
+    },
+    {
+      "greska": "Sa pozitivnim rešenjem ne aktiviraju ostala prava",
+      "posledica": "Imaju rešenje ali ne koriste benefite koje ono otvara",
+      "resenje": "Sa rešenjem - aktivirajte: penziju (PIO), tuđa nega (PIO), poreske olakšice (Poreska), prevoz (gradski), parking (lokalni)"
+    },
+    {
+      "greska": "Misli da je samo za teški invaliditet",
+      "posledica": "Hroničari ne pokušavaju (dijabetes + KOPB + visok pritisak može da bude 30-50%)",
+      "resenje": "Kombinovane hronične bolesti se sabiraju. Pokušajte."
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema roka - može u bilo koje vreme",
+
+  "prosecno_trajanje_postupka": "3 - 6 meseci od podnošenja do rešenja",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE detalje Pravilnika",
+
+  "napomena_za_urednika": "Ovo je 'gateway' pravo - otvara desetine drugih. Pri prikazu UI - obavezno povezati sa drugim pravima koje ono otključava (invalidska penzija, tuđa nega, OI poreske olakšice itd). VERIFIKACIJA: detaljni Pravilnik o utvrđivanju procenta telesnog oštećenja. Izvori: pio.rs, paragraf.rs."
+}

@@ -1,0 +1,187 @@
+{
+  "id": "PD01",
+  "kategorija": "porodica_deca",
+
+  "naziv": {
+    "sr_cyr": "Рефундација ПДВ-а за бебину опрему",
+    "sr_lat": "Refundacija PDV-a za bebinu opremu"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Држава враћа ПДВ плаћен на бебину опрему у првих годину дана детета — до 73.000 РСД јединствено по детету.",
+    "sr_lat": "Država vraća PDV plaćen na bebinu opremu u prvih godinu dana deteta — do 73.000 RSD jedinstveno po detetu."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["surprise", "high_priority", "time_sensitive", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+      "clanovi": "32-35",
+      "sluzbeni_glasnik": "Sl. glasnik RS 113/2017 sa izmenama"
+    },
+    {
+      "zakon": "Pravilnik o bližim uslovima i načinu ostvarivanja prava na novčana sredstva za izdržavanje deteta",
+      "url": "https://www.minrzs.gov.rs"
+    }
+  ],
+
+  "iznos": {
+    "tip": "refundacija",
+    "opis": "Refundacija PDV-a na opremu kupljenu u prvih 12 meseci života deteta",
+    "max_rsd": 73000,
+    "napomena": "Maksimalan iznos po detetu; tačan iznos zavisi od priloženih fiskalnih računa. VERIFIKUJ TAČAN MAX ZA 2026."
+  },
+
+  "ko_ima_pravo_opis": "Roditelj deteta starosti do 1 godinu života, koji je u tom periodu kupovao bebinu opremu (kolica, krevetac, autosedište, hranilice, presvlake, odeća i sl.) i sačuvao fiskalne račune. Refundacija ide po detetu, ne po roditelju.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "ima_decu", "uzrast": ["beba"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Većina roditelja ne zna da postoji ili ne čuva fiskalne račune. Rok je strog — godinu dana od rođenja, posle toga gubi se pravo. PDV iznos je značajan jer se bebina oprema kupuje u kratkom periodu i ukupna potrošnja često prelazi 300.000 RSD.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Čuvajte SVE fiskalne račune od prvog dana",
+      "opis": "Od trenutka rođenja deteta, čuvajte fiskalne račune za bilo šta što je namenjeno bebi: oprema, hrana, pelene, kozmetika, lekovi, igračke, odeća.",
+      "upozorenje": "Bez fiskalnih računa (samo slip kartice nije dovoljan), nema refundacije. Tražite fiskalni račun pri svakoj kupovini."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Sortirajte račune po kategorijama opreme",
+      "opis": "Pred kraj prve godine, podelite račune u kategorije (oprema, odeća, hrana, higijena, lekovi). Ukupna suma fiskalnih računa = osnova za refundaciju."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev opštinskom Centru za socijalni rad",
+      "opis": "Pre nego što istekne prva godina deteta, podnesite zahtev sa svim fiskalnim računima. U nekim opštinama postupak ide preko Lokalne samouprave (sektor za društvene delatnosti).",
+      "upozorenje": "Posle prve godine deteta pravo se GUBI — ne može se naknadno podneti."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Obrada zahteva — CSR proverava račune",
+      "opis": "CSR proverava fiskalne račune, evidentira PDV iznos i utvrđuje refundaciju (do zakonski propisanog maksimuma)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Isplata na tekući račun roditelja",
+      "opis": "Po donošenju rešenja, refundacija se isplaćuje na tekući račun podnosioca zahteva u roku od 30-60 dana."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta roditelja",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate - original + fotokopija",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "izvod_mkr",
+      "naziv": "Izvod iz matične knjige rođenih za dete",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba mesta rođenja",
+      "trosak_rsd": 440,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "fiskalni_racuni",
+      "naziv": "Originalni fiskalni računi",
+      "obavezno": true,
+      "gde_se_nabavlja": "Sačuvani od kupovine - originali (ne kopije)",
+      "trosak_rsd": 0,
+      "napomena": "Sortirano po datumu; preporučljivo da napravite tabelu (datum, prodavnica, iznos, PDV)"
+    },
+    {
+      "id": "tek_racun",
+      "naziv": "Broj tekućeg računa roditelja",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaša banka",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Centar za socijalni rad - opština prebivališta",
+      "tip": "opstinska",
+      "url": "https://www.minrzs.gov.rs/sr/dokumenti/spisak-csr",
+      "napomena": "Adresa i kontakt zavisi od opštine. U Beogradu - opštinski CSR. U manjim mestima - lokalna kancelarija."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA POVRAĆAJ PDV NA HRANU I OPREMU ZA BEBE",
+    "gde_dobiti_obrazac": "Na šalteru opštinskog Centra za socijalni rad ili na sajtu vaše opštine",
+    "pre_popunjavanja": [
+      "Sortirajte SVE fiskalne račune po datumu (mora biti u prvih 12 meseci života deteta)",
+      "Napravite Excel/papir tabelu: datum, prodavnica, ukupan iznos, PDV iznos",
+      "Pripremite izvod iz matične knjige rođenih za dete (svež, ne stariji od 6 meseci)",
+      "Pripremite svoj IBAN tekućeg računa",
+      "Ako ste samohrani roditelj — pripremite dokaz (presudu o starateljstvu ili izjavu)"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za refundaciju PDV-a na bebinu opremu po Zakonu o finansijskoj podršci porodici",
+      "Dete je rođeno [datum]; ovo su svi fiskalni računi iz prve godine",
+      "Molim potvrdu o prijemu zahteva sa pečatom i datumom"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su SVI fiskalni računi navedeni u zahtevu (i datumi se uklapaju u prvu godinu)",
+      "Da li je naveden tačan IBAN tekućeg računa",
+      "Da li su priložene fotokopije (i da imate originale kod sebe za kasniju proveru)",
+      "Da li je obrazac kompletno popunjen"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu sa pečatom",
+      "Postupak traje 30-60 dana; ne morate zvati svaki dan",
+      "Ako vas pozovu da dodate dokumentaciju — dostavite u roku od 8 dana",
+      "Po isplati, proverite iznos — ako se razlikuje od očekivanog, pitajte za detaljno obrazloženje"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne čuva fiskalne račune ili čuva samo slipove platne kartice",
+      "posledica": "Bez fiskalnih računa nema osnova za refundaciju — pravo se gubi",
+      "resenje": "Od dana rođenja: fiskalni račun za SVE što kupujete za bebu. Slip kartice nije fiskalni račun"
+    },
+    {
+      "greska": "Podnošenje zahteva posle isteka prve godine života deteta",
+      "posledica": "Pravo se gubi - nema naknadne refundacije",
+      "resenje": "Najkasnije do dana kad dete napuni 1 godinu - podnesite zahtev. Preporuka: 10. meseca"
+    },
+    {
+      "greska": "Uključivanje računa za artikle koji nisu za bebu",
+      "posledica": "CSR može da odbije ceo zahtev kao 'sumnja na zloupotrebu'",
+      "resenje": "Samo artikli koji su nedvosmisleno za bebu - oprema, hrana, higijena, odeća do veličine za bebu"
+    },
+    {
+      "greska": "Računi van Republike Srbije",
+      "posledica": "Nije refundabilno - PDV se vraća samo za domaće fiskalne račune",
+      "resenje": "Kupovine u inostranstvu - ne računaju se. Samo srpski PDV (na PDV registrovane prodavce)"
+    }
+  ],
+
+  "rok_za_podnosenje": "Do dana kada dete napuni 1 godinu života. Posle toga - pravo se gubi.",
+
+  "prosecno_trajanje_postupka": "30 - 60 dana od podnošenja zahteva",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos, rok, i opštinske procedure",
+
+  "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Tačan max iznos za 2026 (proveriti budžet i Zakon o finansijskoj podršci porodici - mogao se menjati); (2) Da li je rok striktno 1 godina ili može i posle uz obrazloženje; (3) Da li svi CSR-ovi prihvataju zahteve ili samo opštinske uprave - varira; (4) Da li postoji obrazac broj/url. Izvori za proveru: minrzs.gov.rs, paragraf.rs, kontakt CSR Vračar/Stari grad."
+}

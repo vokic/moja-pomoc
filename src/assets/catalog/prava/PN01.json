@@ -1,0 +1,157 @@
+{
+  "id": "PN01",
+  "kategorija": "penzioneri",
+
+  "naziv": {
+    "sr_cyr": "Пензионерска картица (попусти у трговини, услугама и превозу)",
+    "sr_lat": "Penzionerska kartica (popusti u trgovini, uslugama i prevozu)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Бесплатна картица са попустима 5-30% у партнерским трговинама, апотекама, ресторанима и превозу. Месечно вреди 3.000-10.000 РСД.",
+    "sr_lat": "Besplatna kartica sa popustima 5-30% u partnerskim trgovinama, apotekama, restoranima i prevozu. Mesečno vredi 3.000-10.000 RSD."
+  },
+
+  "prioritet_propusta": 3,
+
+  "tagovi": ["surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Program socijalne kohezije Republike Srbije",
+      "napomena": "Program je više inicijativa - karticu izdaju Udruženje penzionera Srbije, neki gradovi (BG, NS), trgovinski lanci"
+    }
+  ],
+
+  "iznos": {
+    "tip": "popust_procenat",
+    "procenat": 15,
+    "na_sta": "kupovinu, lekove, prevoz, restoran u partnerskim mestima",
+    "napomena": "Procenat varira 5-30% po partneru. Mesečna vrednost zavisi od potrošnje (procena 3-10.000 RSD)."
+  },
+
+  "ko_ima_pravo_opis": "Svaki penzioner (starosna, invalidska ili porodična penzija) sa prebivalištem u Srbiji. Postoji više varijanti kartica - centralna (Udruženje penzionera Srbije), gradske (BG, NS), i komercijalne (DIS, Idea, Maxi, apoteke). Kartica je besplatna.",
+
+  "uslovi": [
+    {
+      "tip": "ili",
+      "uslovi": [
+        { "tip": "starost_min", "vrednost": 65 },
+        { "tip": "zaposlenje", "vrednost": ["penzioner"] }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi penzioneri ne znaju da postoji centralna penzionerska kartica osim onih iz trgovina. Procesi izdavanja su konfuzni — koji partner, koja kartica, koja je gradska, koja republička. Ukupna vrednost popusta tokom godine je značajna ali se ne meri jer su pojedinačni popusti mali.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Odaberite koju karticu izvaditi",
+      "opis": "Glavne opcije: (a) Udruženje penzionera Srbije (republička), (b) Beogradska/Novosadska penzionerska kartica (gradska, šire popuste), (c) komercijalne (DIS, IDEA, Maxi, Galenika, Jugoremedija) - svaka radnja zasebno.",
+      "napomena": "Možete imati sve - one ne isključuju jedna drugu."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pribavite dokumenta",
+      "opis": "Lična karta + poslednji rešenje PIO o penziji ili obrazac M-4 (potvrda o korišćenju penzije). Za gradske kartice - dokaz o prebivalištu."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Posetite mesto izdavanja",
+      "opis": "Za republičku - kancelarije Udruženja penzionera (Beograd, Knez Mihajlova br. 1 ili po gradovima). Za gradske - opštinski sekretarijat za socijalnu zaštitu. Za komercijalne - blagajna trgovine."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Popunjavanje obrasca i fotografisanje",
+      "opis": "Većina kartica zahteva fotografiju (kao za ličnu) i osnovne podatke. Kartica se izrađuje za 7-30 dana zavisno od tipa."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Korišćenje na kasama partnerskih mesta",
+      "opis": "Pri plaćanju u partnerskoj radnji - pokažite karticu PRE plaćanja (ne posle). Popust se obračunava na kasi.",
+      "upozorenje": "Posle plaćanja - popust se ne može retroaktivno primeniti."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "resenje_pio",
+      "naziv": "Rešenje PIO o korišćenju penzije / Obrazac M-4",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaša PIO filijala (možete tražiti ažuriran)",
+      "trosak_rsd": 0,
+      "napomena": "Možda staro rešenje koje već imate - obično važi"
+    },
+    {
+      "id": "foto",
+      "naziv": "Fotografija (kao za ličnu kartu)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Foto-studio (~200 RSD) ili može telefonski snimak",
+      "trosak_rsd": 200,
+      "napomena": "Samo za neke tipove kartica"
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Udruženje penzionera Srbije (republička)",
+      "tip": "centralna",
+      "adresa": "Beograd, Knez Mihajlova 1",
+      "url": "https://penzioneri.org.rs",
+      "napomena": "Filijale po većim gradovima"
+    },
+    {
+      "naziv": "Grad Beograd - Sekretarijat za socijalnu zaštitu (BG kartica)",
+      "tip": "opstinska",
+      "url": "https://www.beograd.gov.rs"
+    },
+    {
+      "naziv": "Komercijalne kartice (DIS, IDEA, Maxi, apoteke)",
+      "tip": "externa",
+      "napomena": "Tražite na blagajni / kassama svake od ovih trgovina"
+    }
+  ],
+
+  "filijala_pravilo": "po_izboru",
+
+  "ceste_greske": [
+    {
+      "greska": "Verovanje da je samo jedna kartica - centralna",
+      "posledica": "Propuštaju gradske i komercijalne kartice",
+      "resenje": "Imajte sve - svaka pokriva druge popuste"
+    },
+    {
+      "greska": "Ne pokazivanje kartice pre plaćanja",
+      "posledica": "Popust se ne obračunava",
+      "resenje": "PRE plaćanja - 'imam penzionerski popust' i pokažite karticu"
+    },
+    {
+      "greska": "Ne traži se popust u apotekama",
+      "posledica": "U apoteci se često ne pita za karticu, gubi se 5-10% na lekove",
+      "resenje": "U apoteci uvek pitajte: 'Imate li penzionerski popust?'"
+    },
+    {
+      "greska": "Ne aktiviraju kartice gradske / opštinske",
+      "posledica": "Gradske kartice imaju popuste i na javni prevoz, kulturu, sport",
+      "resenje": "Posetite opštinski sekretarijat za socijalnu zaštitu - obavestite se o lokalnoj kartici"
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema roka - može se podneti u bilo koje vreme",
+
+  "prosecno_trajanje_postupka": "7-30 dana za izradu kartice",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE liste partnera",
+
+  "napomena_za_urednika": "Ovo je posebno teško za precizan opis jer je decentralizovano - svaka kartica ima svoju listu partnera koja se menja. U V1 dati opšti opis + glavne 3-4 kartice. U V1.5 - po gradu lokalne liste partnera. Izvori: penzioneri.org.rs, beograd.gov.rs, novisad.rs."
+}

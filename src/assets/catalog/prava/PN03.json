@@ -1,0 +1,196 @@
+{
+  "id": "PN03",
+  "kategorija": "penzioneri",
+
+  "naziv": {
+    "sr_cyr": "Накнада погребних трошкова (после смрти пензионера)",
+    "sr_lat": "Naknada pogrebnih troškova (posle smrti penzionera)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Једнократна накнада за погребне трошкове након смрти корисника пензије. Око 85.000 РСД (2024-2025), исплаћује ПИО члану породице.",
+    "sr_lat": "Jednokratna naknada za pogrebne troškove nakon smrti korisnika penzije. Oko 85.000 RSD (2024-2025), isplaćuje PIO članu porodice."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+      "clanovi": "70-72"
+    }
+  ],
+
+  "iznos": {
+    "tip": "jednokratno",
+    "vrednost_rsd": 85000,
+    "napomena": "Iznos za 2024-2025 - jednokratno. Tačan iznos za 2026 verifikovati."
+  },
+
+  "ko_ima_pravo_opis": "Bliski srodnik koji je snosio troškove sahrane korisnika penzije (preminulog). Pravo ima onaj ko je platio sahranu - bračni drug, deca, roditelj, brat/sestra ili druga lica koja su dokumentovano snosila trošak.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "situacija", "vrednost": ["smrt_porodice"] }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Većina porodica u trenutku smrti ne misli o naknadama - već o organizaciji sahrane. Rok je relativno kratak (često 6 meseci od smrti). Mnogi misle da je za sahranu već dobijena 'pomoć' kroz penziju za poslednji mesec - ne znaju da postoji posebna naknada.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite izvod iz matične knjige umrlih",
+      "opis": "Posle sahrane, iz matične službe vadite izvod o smrti preminulog. Ovo je osnovni dokument za sva naredna ostvarivanja prava (naknada, ostavinski postupak, prenos računa)."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Sačuvajte račune pogrebnog preduzeća",
+      "opis": "Pogrebni račun (od pogrebnog preduzeća), račun za sanduk, kremiranje (ako se odnosi), prevoz, parcelu na groblju, vence."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev PIO filijali preminulog",
+      "opis": "Zahtev se podnosi u filijali PIO gde je preminuli imao prebivalište. Donesite izvod o smrti, račun pogrebnog preduzeća, vašu ličnu kartu i dokaz srodstva."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Dokazivanje srodstva",
+      "opis": "Bračni drug - izvod iz MKV (matica venčanih). Dete - izvod iz MKR. Drugi članovi porodice - izvod iz MKR i potvrda o srodstvu. Ako ste platili sahranu a niste blizak srodnik - potvrda o uplati."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Donošenje rešenja i isplata",
+      "opis": "Rešenje u roku od 30 dana. Isplata u jednom navratu na tekući račun podnosioca zahteva.",
+      "napomena": "Iznos se ne menja u zavisnosti od stvarne cene sahrane - fiksan je."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "izvod_mku",
+      "naziv": "Izvod iz matične knjige umrlih za preminulog",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba mesta smrti",
+      "trosak_rsd": 440,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "lk_podnosilac",
+      "naziv": "Lična karta podnosioca",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "racun_sahrana",
+      "naziv": "Račun pogrebnog preduzeća",
+      "obavezno": true,
+      "gde_se_nabavlja": "Pogrebno preduzeće gde je organizovana sahrana",
+      "trosak_rsd": 0,
+      "napomena": "Original ili overena kopija"
+    },
+    {
+      "id": "dokaz_srodstva",
+      "naziv": "Dokaz srodstva (izvod iz MKV ili MKR)",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 440,
+      "napomena": "Za bračnog druga - izvod iz matične knjige venčanih"
+    },
+    {
+      "id": "resenje_pio_preminuli",
+      "naziv": "Rešenje PIO o korišćenju penzije preminulog",
+      "obavezno": false,
+      "gde_se_nabavlja": "Možda u dokumentima preminulog",
+      "trosak_rsd": 0,
+      "napomena": "PIO ima u svojoj evidenciji - obično nije potrebno doneti"
+    },
+    {
+      "id": "tek_racun",
+      "naziv": "Broj tekućeg računa podnosioca",
+      "obavezno": true,
+      "gde_se_nabavlja": "Banka",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Republički fond PIO - Filijala prebivališta preminulog",
+      "tip": "filijala",
+      "url": "https://www.pio.rs"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA NAKNADU POGREBNIH TROŠKOVA",
+    "gde_dobiti_obrazac": "Na šalteru PIO filijale",
+    "obrazac_url": "https://www.pio.rs/sr/obrasci",
+    "pre_popunjavanja": [
+      "Pribavite izvod iz matične knjige umrlih (svežaj, do 6 meseci)",
+      "Pripremite račun pogrebnog preduzeća (original)",
+      "Pripremite dokaz srodstva - izvod iz MKV ili MKR",
+      "Pripremite svoj IBAN",
+      "Saznajte podatke o pokojnikovoj penziji (JMBG, mesto stalnog boravka)"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za naknadu pogrebnih troškova za [ime preminulog]",
+      "Preminuli je bio korisnik [starosna/invalidska/porodična] penzije",
+      "Srodstvo: [bračni drug / dete / roditelj / itd.]",
+      "Molim potvrdu o prijemu zahteva"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su podaci preminulog tačni (ime, JMBG, datum smrti)",
+      "Da li je dokaz srodstva odgovarajući",
+      "Da li je naveden tačan IBAN",
+      "Da li je račun pogrebnog priložen"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Postupak - 30 dana",
+      "Isplata na tekući račun u jednom navratu",
+      "Ako je odbijeno - moguća žalba u 15 dana"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Probija se rok za podnošenje (često 6 meseci)",
+      "posledica": "Gubitak prava",
+      "resenje": "Podnesite zahtev što pre - najbolje u prvih 30 dana posle sahrane"
+    },
+    {
+      "greska": "Nemaju račun pogrebnog preduzeća",
+      "posledica": "Zahtev se odbija",
+      "resenje": "Sačuvajte SVE račune - pogrebno, kovčeg, prevoz, parcelu"
+    },
+    {
+      "greska": "Više ljudi (dva sina) podnose zahtev",
+      "posledica": "Konfuzija - PIO traži dogovor ko će biti podnosilac",
+      "resenje": "JEDAN član porodice podnosi (najčešće onaj ko je platio sahranu). Drugi podržavaju izjavom."
+    },
+    {
+      "greska": "Misli da je iznos već uračunat u poslednju penziju",
+      "posledica": "Propušta jednokratnih 85.000+",
+      "resenje": "Poslednja penzija i naknada za sahranu su DVE RAZLIČITE stvari. Tražite obe."
+    }
+  ],
+
+  "rok_za_podnosenje": "Obično 6 meseci od dana smrti - verifikuj tačan rok u trenutnom Zakonu",
+
+  "prosecno_trajanje_postupka": "30 dana",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos i rok",
+
+  "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan iznos za 2026; (2) Tačan rok za podnošenje (6 meseci? godina dana?); (3) Da li se primenjuje i kad je preminuli imao samo deo staža (ne punu penziju). Izvori: pio.rs, paragraf.rs."
+}

@@ -1,0 +1,190 @@
+{
+  "id": "HB01",
+  "kategorija": "hronicni_bolesnici",
+
+  "naziv": {
+    "sr_cyr": "Ослобађање партиципације РФЗО (бесплатна здравствена услуга)",
+    "sr_lat": "Oslobađanje participacije RFZO (besplatna zdravstvena usluga)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Особе са одређеним хроничним болестима, ниским примањима, или статусом, не плаћају партиципацију за здравствене услуге. Уштеда 5-50.000 РСД годишње.",
+    "sr_lat": "Osobe sa određenim hroničnim bolestima, niskim primanjima, ili statusom, ne plaćaju participaciju za zdravstvene usluge. Ušteda 5-50.000 RSD godišnje."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "surprise", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zdravstvenom osiguranju",
+      "clanovi": "27-30",
+      "sluzbeni_glasnik": "Sl. glasnik RS 25/2019 sa izmenama"
+    },
+    {
+      "zakon": "Pravilnik o obrascu zdravstvene knjižice",
+      "url": "https://www.rfzo.rs"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "Oslobađanje od participacije za zdravstvene usluge (lekarske preglede, lekove sa pozitivne liste, dijagnostiku, bolničko lečenje). Vrednost godišnje: 5.000 RSD (umereni korisnici) do 50.000+ RSD (česti korisnici sa skupim lekovima)."
+  },
+
+  "ko_ima_pravo_opis": "Osobe sa jednim od ovih osnova: (a) hronične bolesti sa propisane liste (dijabetes, hipertenzija, srčana, KOPB, onkologija, dijaliza, dijaliza...), (b) niska primanja (po članu domaćinstva ispod cenzusa), (c) deca do 18 godina, (d) trudnice i porodilje, (e) osobe sa invaliditetom, (f) ratni vojni invalidi, (g) korisnici socijalne pomoći.",
+
+  "uslovi": [
+    {
+      "tip": "ili",
+      "uslovi": [
+        {
+          "tip": "zdravlje",
+          "vrednost": [
+            "hronicno",
+            "onkologija",
+            "dijaliza",
+            "mentalno",
+            "invaliditet",
+            "autoimuna",
+            "tudja_nega"
+          ]
+        },
+        { "tip": "starost_max", "vrednost": 18 },
+        {
+          "tip": "i",
+          "uslovi": [
+            { "tip": "pol", "vrednost": "z" },
+            { "tip": "situacija", "vrednost": ["rodjeno_dete"] }
+          ]
+        },
+        { "tip": "primanja_max_rsd", "vrednost": 13500, "po_clanu": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi pacijenti plaćaju participaciju iako imaju pravo na oslobađanje. Osnov mora da bude upisan u zdravstvenu knjižicu od strane izabranog lekara - bez toga, na svakom šalteru se traži participacija. Postupak je jednostavan ali nije jasan - lekari često ne objašnjavaju.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite medicinsku dokumentaciju za dijagnozu",
+      "opis": "Ako imate hroničnu bolest - pribavite nalaze (krvni pritisak, krvne analize, EKG, nalaz onkologa...) sa kojom dokazujete trajnu dijagnozu. Za druge osnove - dokumente za primanja, invaliditet, itd."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Posetite izabranog lekara",
+      "opis": "Izabrani lekar (Dom zdravlja) upisuje dijagnozu u vašu zdravstvenu knjižicu kao osnov za oslobađanje. Tražite da se to upiše JASNO sa kodom dijagnoze i datumom."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Za druge osnove - obratite se RFZO filijali",
+      "opis": "Ako je osnov niska primanja - donesite uverenja o primanjima. Ako socijalna pomoć - rešenje CSR-a. RFZO upisuje status u knjižicu."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Provera u zdravstvenoj knjižici",
+      "opis": "Pre sledećeg pregleda - proverite da li je status oslobađanja vidljiv u knjižici (digitalna kartica ili pečat u papirnoj knjižici)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Korišćenje pri svakom pregledu",
+      "opis": "Pri pregledu / izdavanju recepta / dijagnostici - sestra na kasi vidi da ste oslobođeni i ne naplaćuje participaciju.",
+      "upozorenje": "Ako vam je ipak naplaćeno - tražite ponovno proveru. Možda osnov nije pravilno upisan."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Obnova statusa (godišnje)",
+      "opis": "Status oslobađanja se obnavlja godišnje za većinu osnova - tražite od izabranog lekara da proveri i obnovi pri redovnoj kontroli."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "zdrav_knjizica",
+      "naziv": "Zdravstvena knjižica (kartica)",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "med_dokumentacija",
+      "naziv": "Medicinska dokumentacija za dijagnozu",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaš izabrani lekar / specijalisti",
+      "trosak_rsd": 0,
+      "napomena": "Nalazi koji dokazuju hroničnu dijagnozu"
+    },
+    {
+      "id": "uver_primanja",
+      "naziv": "Uverenja o primanjima (ako je osnov niska primanja)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "resenje_csr",
+      "naziv": "Rešenje CSR o socijalnoj pomoći (ako se odnosi)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Centar za socijalni rad",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Vaš izabrani lekar (Dom zdravlja)",
+      "tip": "filijala",
+      "napomena": "Za upisivanje hroničnih bolesti kao osnov"
+    },
+    {
+      "naziv": "Republički fond za zdravstveno osiguranje (RFZO) - filijala",
+      "tip": "filijala",
+      "telefon": "0700 33 33 33",
+      "url": "https://www.rfzo.rs"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Ne traži se od izabranog lekara da upiše osnov u knjižicu",
+      "posledica": "Na šalteru se naplaćuje participacija",
+      "resenje": "Pri sledećoj poseti - 'Imam hroničnu dijagnozu [X], molim upišite to kao osnov za oslobađanje participacije'"
+    },
+    {
+      "greska": "Plaća se participacija na šalteru iako je upisana dijagnoza",
+      "posledica": "Bezveze izdvojen novac",
+      "resenje": "Ako vidite da plaćate - zaustavite postupak, tražite proveru. Možda osnov nije aktiviran."
+    },
+    {
+      "greska": "Misli da je oslobađanje trajno bez obnove",
+      "posledica": "Posle godinu dana - opet plaća",
+      "resenje": "Pri godišnjem kontrolnom pregledu - 'Da li je moj osnov oslobađanja još aktivan?'"
+    },
+    {
+      "greska": "Niska primanja - ne podnose zahtev jer 'znamo da participacija nije velika'",
+      "posledica": "Za hroničara - godišnje 10-30.000 RSD propušteno",
+      "resenje": "I za male iznose isplati se podneti - jednostavan postupak"
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema strogog roka - u bilo koje vreme. Bolje pre nego što idete na pregled.",
+
+  "prosecno_trajanje_postupka": "Isti dan kod izabranog lekara (za zdravstvene osnove) ili 30 dana u RFZO filijali (za socijalne)",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE listu pokrivenih bolesti",
+
+  "napomena_za_urednika": "VERIFIKACIJA: (1) Tačna lista hroničnih bolesti koje daju pravo na oslobađanje (Pravilnik); (2) Tačan cenzus prihoda; (3) Da li je procedura digitalizovana (eUprava) ili samo papirna. Izvori: rfzo.rs, paragraf.rs, Zakon o zdravstvenom osiguranju."
+}

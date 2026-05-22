@@ -1,4 +1,5 @@
 ﻿import { Link } from 'react-router-dom';
+import { DataFreshness } from '@/components/shared/DataFreshness';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { formatIznos } from '@/lib/iznos';
@@ -46,9 +47,12 @@ export function ResultCard({ pravo }: Props) {
           {pickScript(pravo.kratak_opis, script)}
         </p>
 
-        <span className="mt-3 inline-block text-[13px] font-semibold text-[var(--brand-primary)]">
-          Pogledaj detalje →
-        </span>
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+          <span className="text-[13px] font-semibold text-[var(--brand-primary)]">
+            Pogledaj detalje →
+          </span>
+          <DataFreshness lastVerified={pravo.last_verified} />
+        </div>
       </Card>
     </Link>
   );

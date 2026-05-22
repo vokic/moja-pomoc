@@ -7,6 +7,7 @@ import { TabInstitucije } from '@/components/pravo-detail/TabInstitucije';
 import { TabKoraci } from '@/components/pravo-detail/TabKoraci';
 import { TabOsnovno } from '@/components/pravo-detail/TabOsnovno';
 import { TabUputstvo } from '@/components/pravo-detail/TabUputstvo';
+import { DataFreshness } from '@/components/shared/DataFreshness';
 import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Badge } from '@/components/ui/badge';
 import { useCatalog } from '@/hooks/useCatalog';
@@ -105,7 +106,9 @@ export function PravoDetailPage() {
         </p>
       </header>
 
-      <Disclaimer className="mt-6" />
+      <DataFreshness lastVerified={pravo.last_verified} variant="banner" className="mt-5" />
+
+      <Disclaimer className="mt-3" />
 
       <div className="mt-6">
         <Tabs

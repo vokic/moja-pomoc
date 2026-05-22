@@ -1,0 +1,222 @@
+{
+  "id": "HB02",
+  "kategorija": "hronicni_bolesnici",
+
+  "naziv": {
+    "sr_cyr": "Бањско лечење преко РФЗО (бесплатна рехабилитација)",
+    "sr_lat": "Banjsko lečenje preko RFZO (besplatna rehabilitacija)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "14 дана бесплатне бањске рехабилитације у партнерским бањама за хроничне болеснике (срчане, локомоторне, неуролошке). Једном у 1-3 године.",
+    "sr_lat": "14 dana besplatne banjske rehabilitacije u partnerskim banjama za hronične bolesnike (srčane, lokomotorne, neurološke). Jednom u 1-3 godine."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "surprise", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Pravilnik o medicinskoj rehabilitaciji u stacionarnim zdravstvenim ustanovama",
+      "url": "https://www.rfzo.rs"
+    },
+    {
+      "zakon": "Zakon o zdravstvenom osiguranju",
+      "clanovi": "44-46"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "14 dana boravka i terapije u banjskoj rehabilitacionoj ustanovi (smeštaj puni pansion + terapije). Vrednost ~80.000-150.000 RSD po boravku"
+  },
+
+  "ko_ima_pravo_opis": "Osobe sa hroničnim oboljenjima koja su na listi RFZO za rehabilitaciju: srčana oboljenja, hipertenzija, dijabetes, KOPB, reuma, posle moždanog udara, posle hirurških intervencija (kuk, koleno), neuroloških oboljenja. Pravo na rehabilitaciju zavisi od dijagnoze - različite dijagnoze imaju različite intervale (jednom godišnje, jednom u 2 godine, ili 3 godine).",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        {
+          "tip": "zdravlje",
+          "vrednost": ["hronicno", "invaliditet", "autoimuna", "tudja_nega"]
+        },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi hroničari ne znaju da imaju pravo na BESPLATNU rehabilitaciju preko RFZO-a. Misle da je banja samo za 'one koji plaćaju'. Postupak ide preko izabranog lekara koji upućuje specijalisti - mnogi ne traže uput. Ekstremno vredan benefit koji se propušta godinama.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Razgovor sa izabranim lekarom",
+      "opis": "Tražite od izabranog lekara da vas uputi na konzultaciju kod specijaliste (kardiologa, fizijatra, neurologa...) sa zahtevom za banjsko lečenje preko RFZO-a."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Specijalistički pregled + obrazac za RFZO",
+      "opis": "Specijalista pregledava medicinsku dokumentaciju, ocenjuje indikaciju za banjsko lečenje, popunjava obrazac (uput) za RFZO sa preporukom za određene tipove terapije i listom banja.",
+      "napomena": "Tražite specijalistu da vam dā konkretne banje (Vrnjačka, Banja Koviljača, Niška Banja, Banja Junaković...) - lista zavisi od dijagnoze."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev RFZO filijali",
+      "opis": "Sa uputom specijaliste i medicinskom dokumentacijom, podnesite zahtev u RFZO filijali. RFZO odobrava (ili odbija) na osnovu liste prioritets."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Lista čekanja",
+      "opis": "Posle odobrenja, ulazite na listu čekanja koja zavisi od popularnosti banje. Prosečno čekanje: 3-12 meseci.",
+      "napomena": "RFZO će vas pozvati telefonom ili pismom kada dođe red. Imate obično 7 dana da potvrdite ili odložite za naredni red."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Odlazak u banju",
+      "opis": "14 dana - smeštaj, hrana, terapije (fizikalna, kupke, masaže, vežbe...). Putni troškovi se često ne pokrivaju ili pokrivaju delom (proveriti)."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Ponavljanje",
+      "opis": "Posle 14 dana, pravo se može aktivirati ponovo posle 1-3 godine zavisno od dijagnoze. Ponovo isti postupak."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "zdrav_knjizica",
+      "naziv": "Zdravstvena knjižica",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "uput_specijaliste",
+      "naziv": "Uput specijaliste sa preporukom za banjsko lečenje",
+      "obavezno": true,
+      "gde_se_nabavlja": "Specijalista (kardiolog, fizijatar, neurolog...)",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "med_dokumentacija",
+      "naziv": "Kompletna medicinska dokumentacija",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaši lekari, otpusne liste, nalazi",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "izvod_pio",
+      "naziv": "Potvrda o korišćenju penzije (za penzionere)",
+      "obavezno": false,
+      "gde_se_nabavlja": "PIO filijala",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Vaš izabrani lekar - inicijalni razgovor",
+      "tip": "filijala"
+    },
+    {
+      "naziv": "RFZO filijala prema prebivalištu",
+      "tip": "filijala",
+      "telefon": "0700 33 33 33",
+      "url": "https://www.rfzo.rs"
+    },
+    {
+      "naziv": "Banje partneri RFZO-a",
+      "tip": "externa",
+      "url": "https://www.rfzo.rs",
+      "napomena": "Vrnjačka, Banja Koviljača, Niška Banja, Banja Junaković, Sokobanja, Prolom Banja, Vranjska Banja, Mataruška Banja, itd."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA UPUĆIVANJE NA STACIONARNU MEDICINSKU REHABILITACIJU",
+    "gde_dobiti_obrazac": "Na šalteru RFZO ili kod specijaliste",
+    "obrazac_url": "https://www.rfzo.rs",
+    "pre_popunjavanja": [
+      "Razgovarajte sa izabranim lekarom - tražite uput za specijalistu",
+      "Pribavite SVU medicinsku dokumentaciju (nalazi, otpusne liste, dijagnoze)",
+      "Saznajte koje banje su odgovarajuće za vašu dijagnozu",
+      "Pripremite spisak terapija koje su vam preporučili lekari",
+      "Razmislite o terminu (proleće/jesen su najpopularnije; zimi je manje čekanja)"
+    ],
+    "sta_reci_na_salteru": [
+      "Imam dijagnozu [X] - po preporuci specijaliste tražim banjsko lečenje",
+      "Specijalista mi je dao uput za sledeće banje: [lista]",
+      "Molim potvrdu o prijemu zahteva",
+      "Pitajte: 'Koliko je očekivano čekanje za [navedena banja]?'"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li je uput specijaliste priložen",
+      "Da li su navedene banje koje vam odgovaraju",
+      "Da li je medicinska dokumentacija kompletna",
+      "Da li je naveden kontakt telefon za poziv"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Čekajte poziv RFZO-a (može biti i 3-12 meseci)",
+      "Telefon mora biti uvek dostupan - ne propusti poziv",
+      "Po dobijanju termina - imate 7 dana da potvrdite ili otkažete"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne traži se uput za specijalistu od izabranog lekara",
+      "posledica": "Postupak ne može da se pokrene",
+      "resenje": "Pri redovnom pregledu - 'Imam hroničnu dijagnozu, želim banjsko lečenje preko RFZO. Molim uput za specijalistu.'"
+    },
+    {
+      "greska": "Misli da je banja samo za penzionere",
+      "posledica": "Mlađi hroničari ne pokušavaju",
+      "resenje": "Banjska rehabilitacija je za sve sa odgovarajućom dijagnozom - bez obzira na starost"
+    },
+    {
+      "greska": "Ne odgovara na poziv RFZO-a",
+      "posledica": "Termin se daje drugome, vraćate se na kraj liste",
+      "resenje": "Telefon mora biti dostupan. Ako menjate broj - obavestite RFZO."
+    },
+    {
+      "greska": "Otkazuje termin u poslednji čas zbog 'nešto je iskrslo'",
+      "posledica": "Ide na kraj liste, čeka ponovo",
+      "resenje": "Otkazujte rano (ne par dana pre) - RFZO može da prebaci termin"
+    },
+    {
+      "greska": "Ne ponavlja postupak posle 2-3 godine",
+      "posledica": "Propuštanje narednih ciklusa rehabilitacije",
+      "resenje": "Postavite podsetnik 1-2 godine posle prošlog odlaska. Postupak treba ponavljati."
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema strogog roka",
+
+  "prosecno_trajanje_postupka": "Odobrenje RFZO 30 dana + lista čekanja 3-12 meseci",
+
+  "spoljni_resursi": [
+    {
+      "naziv": "Lista banja partnera RFZO-a",
+      "url": "https://www.rfzo.rs",
+      "opis": "Aktuelni spisak ustanova za medicinsku rehabilitaciju"
+    }
+  ],
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE listu banja i intervale",
+
+  "napomena_za_urednika": "VERIFIKACIJA: (1) Tačna lista banja partnera RFZO-a; (2) Tačan interval po dijagnozi (jednom godišnje vs 2-3 godine); (3) Da li RFZO pokriva putne troškove; (4) Trenutna prosečna lista čekanja. Izvori: rfzo.rs, paragraf.rs, kontakt udruženja hroničnih bolesnika."
+}

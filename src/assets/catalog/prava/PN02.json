@@ -1,0 +1,215 @@
+{
+  "id": "PN02",
+  "kategorija": "penzioneri",
+
+  "naziv": {
+    "sr_cyr": "Туђа нега и помоћ (новчана накнада)",
+    "sr_lat": "Tuđa nega i pomoć (novčana naknada)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Месечна накнада за лица која због здравственог стања не могу самостално да обављају дневне животне активности. Око 33.000 РСД месечно (2024-2025).",
+    "sr_lat": "Mesečna naknada za lica koja zbog zdravstvenog stanja ne mogu samostalno da obavljaju dnevne životne aktivnosti. Oko 33.000 RSD mesečno (2024-2025)."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "gateway"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+      "clanovi": "75-80"
+    },
+    {
+      "zakon": "Pravilnik o utvrđivanju potrebe za tuđom negom i pomoći",
+      "url": "https://www.pio.rs"
+    }
+  ],
+
+  "iznos": {
+    "tip": "mesecno",
+    "vrednost_rsd": 33000,
+    "napomena": "Iznos za 2024-2025. Usklađuje se sa kretanjem prosečne neto zarade. VERIFIKOVATI tačan iznos za 2026."
+  },
+
+  "ko_ima_pravo_opis": "Lica koja zbog zdravstvenog stanja (telesno oštećenje, mentalno stanje, hronična bolest) nisu u stanju da samostalno obavljaju osnovne dnevne aktivnosti — ishrana, oblačenje, kupanje, kretanje. Potrebna je medicinska procena lekarskog veća pri PIO. Ne zavisi od primanja, ne zavisi od starosti.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "prebivaliste_srbija", "vrednost": true },
+        {
+          "tip": "zdravlje",
+          "vrednost": [
+            "invaliditet",
+            "tudja_nega",
+            "hronicno",
+            "onkologija",
+            "dijaliza"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Najveći razlog: nedostatak informacije. Mnogi misle da je tuđa nega samo za invalide, ne i za starije sa Alzheimerom, Parkinsonovom bolešću, ili posledicama moždanog udara. Postupak komisije može biti odbijen prvi put — mnogi ne ulažu žalbu iako bi po pravilu mogli da dobiju.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pribavite medicinsku dokumentaciju",
+      "opis": "Sva relevantna medicinska dokumentacija (nalazi specijalista, otpusne liste, dijagnoze) - što više dokumentacije, to bolje. Naročito su važne dijagnoze koje pokazuju onemogućenost samostalnog obavljanja aktivnosti."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Podnesite zahtev PIO filijali prema prebivalištu",
+      "opis": "Zahtev za pravo na novčanu naknadu za tuđu negu i pomoć. Obrazac na šalteru PIO. Priložite ličnu kartu, izvod iz MKR ili pasoš, i medicinsku dokumentaciju."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Pregled lekarskog veća PIO",
+      "opis": "PIO zakazuje pregled u lekarskoj komisiji. Komisija ocenjuje sposobnost obavljanja dnevnih aktivnosti. Pregledat može biti u PIO ili kod kuće ako se ne može doći.",
+      "napomena": "Pregled traje 30-60 min. Sa sobom donesite SVA medicinska dokumenta + nekoga ko vas dobro poznaje da svedoči."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Donošenje rešenja PIO",
+      "opis": "PIO donosi rešenje u roku od 2-6 meseci od pregleda. Ako je pozitivno - početak isplate mesečne naknade."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Ako je odbijeno - ŽALBA",
+      "opis": "Imate 15 dana od dana prijema rešenja da uložite žalbu Drugostepenom organu PIO. Žalba je BESPLATNA i često uspešna pri novom pregledu sa dodatnom dokumentacijom.",
+      "upozorenje": "BEZ ŽALBE - ne možete tražiti ponovo godinu dana. ULOŽITE ŽALBU."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Isplata na tekući račun",
+      "opis": "Mesečno na tekući račun korisnika. Isplata teče od dana podnošenja zahteva (ne unazad od ranije).",
+      "napomena": "Korisnik (ili staratelj ako je tako rešeno) može da daje novac osobi koja brine o njemu."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "mkr",
+      "naziv": "Izvod iz matične knjige rođenih",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 440,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "med_dokumentacija",
+      "naziv": "Kompletna medicinska dokumentacija",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaš izabrani lekar, specijalisti, bolnice gde ste bili",
+      "trosak_rsd": 0,
+      "napomena": "Što više - to bolje. Nalazi neurologa, kardiologa, ortopeda, otpusne liste, dijagnoze."
+    },
+    {
+      "id": "potvrda_izabrani_lekar",
+      "naziv": "Potvrda izabranog lekara o stanju",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaš izabrani lekar (Dom zdravlja)",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "tek_racun",
+      "naziv": "Broj tekućeg računa",
+      "obavezno": true,
+      "gde_se_nabavlja": "Banka",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Republički fond PIO - Filijala prema prebivalištu",
+      "tip": "filijala",
+      "telefon": "0700 17 17 17",
+      "url": "https://www.pio.rs",
+      "napomena": "Spisak filijala: pio.rs/sr/kontakti"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA NOVČANU NAKNADU ZA POMOĆ I NEGU DRUGOG LICA",
+    "gde_dobiti_obrazac": "Na šalteru PIO filijale",
+    "obrazac_url": "https://www.pio.rs/sr/obrasci",
+    "pre_popunjavanja": [
+      "Pribavite SVU medicinsku dokumentaciju - što više, to bolje",
+      "Razgovarajte sa izabranim lekarom da izda detaljnu potvrdu o stanju",
+      "Pripremite popis dnevnih aktivnosti koje ne možete sami (kupanje, oblačenje, hrana, kretanje)",
+      "Pripremite IBAN tekućeg računa",
+      "Ako se ne možete kretati - tražite pregled kod kuće na šalteru"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za novčanu naknadu za tuđu negu i pomoć",
+      "Moja dijagnoza je [navedite] i ne mogu sam/a da obavljam [konkretne aktivnosti]",
+      "Da li mogu da tražim pregled kod kuće? (ako ne možete doći)",
+      "Molim potvrdu o prijemu zahteva"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su navedene SVE dijagnoze",
+      "Da li su priložena SVA medicinska dokumenta",
+      "Da li je naveden tačan IBAN",
+      "Da li je obrazac potpun"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Sačekajte poziv za pregled lekarske komisije (2-3 meseca)",
+      "Na pregled donesite SVA medicinska dokumenta + osobu koja vas dobro poznaje",
+      "Ako je odbijeno - U ROKU OD 15 DANA uložite žalbu Drugostepenom organu PIO (besplatno)"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne podnosi žalbu na odbijajuće rešenje",
+      "posledica": "Gubi se pravo na ponovno traženje godinu dana, propušta 400+ hiljada RSD",
+      "resenje": "ULOŽITE ŽALBU. Žalba je besplatna i često uspešna sa dodatnom dokumentacijom."
+    },
+    {
+      "greska": "Idu na pregled bez kompletne medicinske dokumentacije",
+      "posledica": "Lekarska komisija ne može objektivno da oceni - često odbija",
+      "resenje": "Donesite SVE - nalaze, otpusne liste, dijagnoze. Više dokumenata = veće šanse"
+    },
+    {
+      "greska": "Ne navedu konkretne aktivnosti koje ne mogu samostalno",
+      "posledica": "Komisija ne shvati ograničenja",
+      "resenje": "Pripremite spisak: 'Ne mogu sam/a da se okupam', 'Ne mogu sam/a da spremim hranu', 'Ne mogu da pišem/čitam zbog vida', itd. Konkretno."
+    },
+    {
+      "greska": "Misli da treba da bude trajno invalidski - i ne podnosi",
+      "posledica": "Mnogi stariji ljudi (Parkinsons, Alzheimer, posle moždanog udara) imaju pravo a ne pokušavaju",
+      "resenje": "Probajte - lekarska komisija odlučuje. Mnogi stariji koji ne mogu samostalno - imaju pravo."
+    },
+    {
+      "greska": "Ne traži pregled kod kuće kad ne može da dođe",
+      "posledica": "Propušteni termin pregleda - postupak se obustavlja",
+      "resenje": "Pri podnošenju zahteva - napomenite da ne možete da dođete u PIO. Pregled može biti kod kuće."
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema roka - može se podneti u bilo koje vreme",
+
+  "prosecno_trajanje_postupka": "3 - 6 meseci od podnošenja do prve isplate (uključujući pregled lekarske komisije)",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos za 2026",
+
+  "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan mesečni iznos za 2026 (godišnje se usklađuje sa zaradama); (2) Da li postoji dvostepena ili viša naknada (postoji 'tuđa nega i pomoć' i 'uvećana tuđa nega'); (3) Da li je promenjen postupak žalbe. Izvori: pio.rs, paragraf.rs, Pravilnik o utvrđivanju potrebe za tuđom negom i pomoći."
+}

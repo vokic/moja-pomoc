@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "last_update": "2026-05-22",
-  "total_prava": 1,
+  "total_prava": 16,
   "prava": [
     {
       "id": "DJ01",
@@ -284,6 +284,2833 @@
       "last_verified": "2026-05-18",
       "verified_by": "Viktor Stojanović (osnov: web search pio.rs, paragraf.rs, MFA Srbije)",
       "napomena_za_urednika": "Lista sporazuma se širi - novi sporazumi sa Albanijom i Portugalom očekuju se 2026. Treba ažurirati listu zemalja godišnje. Iznosi penzija se ne mogu generalizovati - svaka zemlja ima različite obračune."
+    },
+    {
+      "id": "HB01",
+      "kategorija": "hronicni_bolesnici",
+      "naziv": {
+        "sr_cyr": "Ослобађање партиципације РФЗО (бесплатна здравствена услуга)",
+        "sr_lat": "Oslobađanje participacije RFZO (besplatna zdravstvena usluga)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Особе са одређеним хроничним болестима, ниским примањима, или статусом, не плаћају партиципацију за здравствене услуге. Уштеда 5-50.000 РСД годишње.",
+        "sr_lat": "Osobe sa određenim hroničnim bolestima, niskim primanjima, ili statusom, ne plaćaju participaciju za zdravstvene usluge. Ušteda 5-50.000 RSD godišnje."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "surprise",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zdravstvenom osiguranju",
+          "clanovi": "27-30",
+          "sluzbeni_glasnik": "Sl. glasnik RS 25/2019 sa izmenama"
+        },
+        {
+          "zakon": "Pravilnik o obrascu zdravstvene knjižice",
+          "url": "https://www.rfzo.rs"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "Oslobađanje od participacije za zdravstvene usluge (lekarske preglede, lekove sa pozitivne liste, dijagnostiku, bolničko lečenje). Vrednost godišnje: 5.000 RSD (umereni korisnici) do 50.000+ RSD (česti korisnici sa skupim lekovima)."
+      },
+      "ko_ima_pravo_opis": "Osobe sa jednim od ovih osnova: (a) hronične bolesti sa propisane liste (dijabetes, hipertenzija, srčana, KOPB, onkologija, dijaliza, dijaliza...), (b) niska primanja (po članu domaćinstva ispod cenzusa), (c) deca do 18 godina, (d) trudnice i porodilje, (e) osobe sa invaliditetom, (f) ratni vojni invalidi, (g) korisnici socijalne pomoći.",
+      "uslovi": [
+        {
+          "tip": "ili",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "hronicno",
+                "onkologija",
+                "dijaliza",
+                "mentalno",
+                "invaliditet",
+                "autoimuna",
+                "tudja_nega"
+              ]
+            },
+            {
+              "tip": "starost_max",
+              "vrednost": 18
+            },
+            {
+              "tip": "i",
+              "uslovi": [
+                {
+                  "tip": "pol",
+                  "vrednost": "z"
+                },
+                {
+                  "tip": "situacija",
+                  "vrednost": [
+                    "rodjeno_dete"
+                  ]
+                }
+              ]
+            },
+            {
+              "tip": "primanja_max_rsd",
+              "vrednost": 13500,
+              "po_clanu": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi pacijenti plaćaju participaciju iako imaju pravo na oslobađanje. Osnov mora da bude upisan u zdravstvenu knjižicu od strane izabranog lekara - bez toga, na svakom šalteru se traži participacija. Postupak je jednostavan ali nije jasan - lekari često ne objašnjavaju.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite medicinsku dokumentaciju za dijagnozu",
+          "opis": "Ako imate hroničnu bolest - pribavite nalaze (krvni pritisak, krvne analize, EKG, nalaz onkologa...) sa kojom dokazujete trajnu dijagnozu. Za druge osnove - dokumente za primanja, invaliditet, itd."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Posetite izabranog lekara",
+          "opis": "Izabrani lekar (Dom zdravlja) upisuje dijagnozu u vašu zdravstvenu knjižicu kao osnov za oslobađanje. Tražite da se to upiše JASNO sa kodom dijagnoze i datumom."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Za druge osnove - obratite se RFZO filijali",
+          "opis": "Ako je osnov niska primanja - donesite uverenja o primanjima. Ako socijalna pomoć - rešenje CSR-a. RFZO upisuje status u knjižicu."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Provera u zdravstvenoj knjižici",
+          "opis": "Pre sledećeg pregleda - proverite da li je status oslobađanja vidljiv u knjižici (digitalna kartica ili pečat u papirnoj knjižici)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Korišćenje pri svakom pregledu",
+          "opis": "Pri pregledu / izdavanju recepta / dijagnostici - sestra na kasi vidi da ste oslobođeni i ne naplaćuje participaciju.",
+          "upozorenje": "Ako vam je ipak naplaćeno - tražite ponovno proveru. Možda osnov nije pravilno upisan."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Obnova statusa (godišnje)",
+          "opis": "Status oslobađanja se obnavlja godišnje za većinu osnova - tražite od izabranog lekara da proveri i obnovi pri redovnoj kontroli."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica (kartica)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "med_dokumentacija",
+          "naziv": "Medicinska dokumentacija za dijagnozu",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaš izabrani lekar / specijalisti",
+          "trosak_rsd": 0,
+          "napomena": "Nalazi koji dokazuju hroničnu dijagnozu"
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenja o primanjima (ako je osnov niska primanja)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "resenje_csr",
+          "naziv": "Rešenje CSR o socijalnoj pomoći (ako se odnosi)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Centar za socijalni rad",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Vaš izabrani lekar (Dom zdravlja)",
+          "tip": "filijala",
+          "napomena": "Za upisivanje hroničnih bolesti kao osnov"
+        },
+        {
+          "naziv": "Republički fond za zdravstveno osiguranje (RFZO) - filijala",
+          "tip": "filijala",
+          "telefon": "0700 33 33 33",
+          "url": "https://www.rfzo.rs"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Ne traži se od izabranog lekara da upiše osnov u knjižicu",
+          "posledica": "Na šalteru se naplaćuje participacija",
+          "resenje": "Pri sledećoj poseti - 'Imam hroničnu dijagnozu [X], molim upišite to kao osnov za oslobađanje participacije'"
+        },
+        {
+          "greska": "Plaća se participacija na šalteru iako je upisana dijagnoza",
+          "posledica": "Bezveze izdvojen novac",
+          "resenje": "Ako vidite da plaćate - zaustavite postupak, tražite proveru. Možda osnov nije aktiviran."
+        },
+        {
+          "greska": "Misli da je oslobađanje trajno bez obnove",
+          "posledica": "Posle godinu dana - opet plaća",
+          "resenje": "Pri godišnjem kontrolnom pregledu - 'Da li je moj osnov oslobađanja još aktivan?'"
+        },
+        {
+          "greska": "Niska primanja - ne podnose zahtev jer 'znamo da participacija nije velika'",
+          "posledica": "Za hroničara - godišnje 10-30.000 RSD propušteno",
+          "resenje": "I za male iznose isplati se podneti - jednostavan postupak"
+        }
+      ],
+      "rok_za_podnosenje": "Nema strogog roka - u bilo koje vreme. Bolje pre nego što idete na pregled.",
+      "prosecno_trajanje_postupka": "Isti dan kod izabranog lekara (za zdravstvene osnove) ili 30 dana u RFZO filijali (za socijalne)",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE listu pokrivenih bolesti",
+      "napomena_za_urednika": "VERIFIKACIJA: (1) Tačna lista hroničnih bolesti koje daju pravo na oslobađanje (Pravilnik); (2) Tačan cenzus prihoda; (3) Da li je procedura digitalizovana (eUprava) ili samo papirna. Izvori: rfzo.rs, paragraf.rs, Zakon o zdravstvenom osiguranju."
+    },
+    {
+      "id": "HB02",
+      "kategorija": "hronicni_bolesnici",
+      "naziv": {
+        "sr_cyr": "Бањско лечење преко РФЗО (бесплатна рехабилитација)",
+        "sr_lat": "Banjsko lečenje preko RFZO (besplatna rehabilitacija)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "14 дана бесплатне бањске рехабилитације у партнерским бањама за хроничне болеснике (срчане, локомоторне, неуролошке). Једном у 1-3 године.",
+        "sr_lat": "14 dana besplatne banjske rehabilitacije u partnerskim banjama za hronične bolesnike (srčane, lokomotorne, neurološke). Jednom u 1-3 godine."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "surprise",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Pravilnik o medicinskoj rehabilitaciji u stacionarnim zdravstvenim ustanovama",
+          "url": "https://www.rfzo.rs"
+        },
+        {
+          "zakon": "Zakon o zdravstvenom osiguranju",
+          "clanovi": "44-46"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "14 dana boravka i terapije u banjskoj rehabilitacionoj ustanovi (smeštaj puni pansion + terapije). Vrednost ~80.000-150.000 RSD po boravku"
+      },
+      "ko_ima_pravo_opis": "Osobe sa hroničnim oboljenjima koja su na listi RFZO za rehabilitaciju: srčana oboljenja, hipertenzija, dijabetes, KOPB, reuma, posle moždanog udara, posle hirurških intervencija (kuk, koleno), neuroloških oboljenja. Pravo na rehabilitaciju zavisi od dijagnoze - različite dijagnoze imaju različite intervale (jednom godišnje, jednom u 2 godine, ili 3 godine).",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "hronicno",
+                "invaliditet",
+                "autoimuna",
+                "tudja_nega"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi hroničari ne znaju da imaju pravo na BESPLATNU rehabilitaciju preko RFZO-a. Misle da je banja samo za 'one koji plaćaju'. Postupak ide preko izabranog lekara koji upućuje specijalisti - mnogi ne traže uput. Ekstremno vredan benefit koji se propušta godinama.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Razgovor sa izabranim lekarom",
+          "opis": "Tražite od izabranog lekara da vas uputi na konzultaciju kod specijaliste (kardiologa, fizijatra, neurologa...) sa zahtevom za banjsko lečenje preko RFZO-a."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Specijalistički pregled + obrazac za RFZO",
+          "opis": "Specijalista pregledava medicinsku dokumentaciju, ocenjuje indikaciju za banjsko lečenje, popunjava obrazac (uput) za RFZO sa preporukom za određene tipove terapije i listom banja.",
+          "napomena": "Tražite specijalistu da vam dā konkretne banje (Vrnjačka, Banja Koviljača, Niška Banja, Banja Junaković...) - lista zavisi od dijagnoze."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev RFZO filijali",
+          "opis": "Sa uputom specijaliste i medicinskom dokumentacijom, podnesite zahtev u RFZO filijali. RFZO odobrava (ili odbija) na osnovu liste prioritets."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Lista čekanja",
+          "opis": "Posle odobrenja, ulazite na listu čekanja koja zavisi od popularnosti banje. Prosečno čekanje: 3-12 meseci.",
+          "napomena": "RFZO će vas pozvati telefonom ili pismom kada dođe red. Imate obično 7 dana da potvrdite ili odložite za naredni red."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Odlazak u banju",
+          "opis": "14 dana - smeštaj, hrana, terapije (fizikalna, kupke, masaže, vežbe...). Putni troškovi se često ne pokrivaju ili pokrivaju delom (proveriti)."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Ponavljanje",
+          "opis": "Posle 14 dana, pravo se može aktivirati ponovo posle 1-3 godine zavisno od dijagnoze. Ponovo isti postupak."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uput_specijaliste",
+          "naziv": "Uput specijaliste sa preporukom za banjsko lečenje",
+          "obavezno": true,
+          "gde_se_nabavlja": "Specijalista (kardiolog, fizijatar, neurolog...)",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "med_dokumentacija",
+          "naziv": "Kompletna medicinska dokumentacija",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaši lekari, otpusne liste, nalazi",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_pio",
+          "naziv": "Potvrda o korišćenju penzije (za penzionere)",
+          "obavezno": false,
+          "gde_se_nabavlja": "PIO filijala",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Vaš izabrani lekar - inicijalni razgovor",
+          "tip": "filijala"
+        },
+        {
+          "naziv": "RFZO filijala prema prebivalištu",
+          "tip": "filijala",
+          "telefon": "0700 33 33 33",
+          "url": "https://www.rfzo.rs"
+        },
+        {
+          "naziv": "Banje partneri RFZO-a",
+          "tip": "externa",
+          "url": "https://www.rfzo.rs",
+          "napomena": "Vrnjačka, Banja Koviljača, Niška Banja, Banja Junaković, Sokobanja, Prolom Banja, Vranjska Banja, Mataruška Banja, itd."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA UPUĆIVANJE NA STACIONARNU MEDICINSKU REHABILITACIJU",
+        "gde_dobiti_obrazac": "Na šalteru RFZO ili kod specijaliste",
+        "obrazac_url": "https://www.rfzo.rs",
+        "pre_popunjavanja": [
+          "Razgovarajte sa izabranim lekarom - tražite uput za specijalistu",
+          "Pribavite SVU medicinsku dokumentaciju (nalazi, otpusne liste, dijagnoze)",
+          "Saznajte koje banje su odgovarajuće za vašu dijagnozu",
+          "Pripremite spisak terapija koje su vam preporučili lekari",
+          "Razmislite o terminu (proleće/jesen su najpopularnije; zimi je manje čekanja)"
+        ],
+        "sta_reci_na_salteru": [
+          "Imam dijagnozu [X] - po preporuci specijaliste tražim banjsko lečenje",
+          "Specijalista mi je dao uput za sledeće banje: [lista]",
+          "Molim potvrdu o prijemu zahteva",
+          "Pitajte: 'Koliko je očekivano čekanje za [navedena banja]?'"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li je uput specijaliste priložen",
+          "Da li su navedene banje koje vam odgovaraju",
+          "Da li je medicinska dokumentacija kompletna",
+          "Da li je naveden kontakt telefon za poziv"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Čekajte poziv RFZO-a (može biti i 3-12 meseci)",
+          "Telefon mora biti uvek dostupan - ne propusti poziv",
+          "Po dobijanju termina - imate 7 dana da potvrdite ili otkažete"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne traži se uput za specijalistu od izabranog lekara",
+          "posledica": "Postupak ne može da se pokrene",
+          "resenje": "Pri redovnom pregledu - 'Imam hroničnu dijagnozu, želim banjsko lečenje preko RFZO. Molim uput za specijalistu.'"
+        },
+        {
+          "greska": "Misli da je banja samo za penzionere",
+          "posledica": "Mlađi hroničari ne pokušavaju",
+          "resenje": "Banjska rehabilitacija je za sve sa odgovarajućom dijagnozom - bez obzira na starost"
+        },
+        {
+          "greska": "Ne odgovara na poziv RFZO-a",
+          "posledica": "Termin se daje drugome, vraćate se na kraj liste",
+          "resenje": "Telefon mora biti dostupan. Ako menjate broj - obavestite RFZO."
+        },
+        {
+          "greska": "Otkazuje termin u poslednji čas zbog 'nešto je iskrslo'",
+          "posledica": "Ide na kraj liste, čeka ponovo",
+          "resenje": "Otkazujte rano (ne par dana pre) - RFZO može da prebaci termin"
+        },
+        {
+          "greska": "Ne ponavlja postupak posle 2-3 godine",
+          "posledica": "Propuštanje narednih ciklusa rehabilitacije",
+          "resenje": "Postavite podsetnik 1-2 godine posle prošlog odlaska. Postupak treba ponavljati."
+        }
+      ],
+      "rok_za_podnosenje": "Nema strogog roka",
+      "prosecno_trajanje_postupka": "Odobrenje RFZO 30 dana + lista čekanja 3-12 meseci",
+      "spoljni_resursi": [
+        {
+          "naziv": "Lista banja partnera RFZO-a",
+          "url": "https://www.rfzo.rs",
+          "opis": "Aktuelni spisak ustanova za medicinsku rehabilitaciju"
+        }
+      ],
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE listu banja i intervale",
+      "napomena_za_urednika": "VERIFIKACIJA: (1) Tačna lista banja partnera RFZO-a; (2) Tačan interval po dijagnozi (jednom godišnje vs 2-3 godine); (3) Da li RFZO pokriva putne troškove; (4) Trenutna prosečna lista čekanja. Izvori: rfzo.rs, paragraf.rs, kontakt udruženja hroničnih bolesnika."
+    },
+    {
+      "id": "HB03",
+      "kategorija": "hronicni_bolesnici",
+      "naziv": {
+        "sr_cyr": "Процена телесног оштећења (отвара десетине других права)",
+        "sr_lat": "Procena telesnog oštećenja (otvara desetine drugih prava)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Решење о проценту телесног оштећења је \"кључ\" за многа права: пензије, накнаде, попусте у превозу, ослобађање пореза, бесплатну паркинг карту.",
+        "sr_lat": "Rešenje o procentu telesnog oštećenja je \"ključ\" za mnoga prava: penzije, naknade, popuste u prevozu, oslobađanje poreza, besplatnu parking kartu."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "gateway",
+        "surprise",
+        "high_priority"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+          "clanovi": "23-30"
+        },
+        {
+          "zakon": "Pravilnik o utvrđivanju procenta telesnog oštećenja"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "Procena sama po sebi nema iznos - ali otključava: invalidsku penziju, dodatak na tuđu negu, paušalnu naknadu za pomagala, popust u javnom prevozu, oslobađanje poreza na vozilo, popust komunalnih usluga, besplatnu parking kartu. Ukupna vrednost otključanih prava: 50.000-500.000 RSD godišnje zavisno od procenta."
+      },
+      "ko_ima_pravo_opis": "Bilo koje lice sa hroničnom bolešću ili invaliditetom koje smatra da ima trajno telesno oštećenje. Postupak utvrđuje procenat oštećenja (0-100%) - različiti procenti otvaraju različita prava. 50% i više obično otvara penziju i poreske olakšice. 30-50% otvara umerene benefite (prevoz, popust).",
+      "uslovi": [
+        {
+          "tip": "ili",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "invaliditet",
+                "hronicno",
+                "onkologija",
+                "dijaliza",
+                "cula",
+                "tudja_nega"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Ovo je 'meta-pravo' - sam postupak procene ne daje novac, ali OTVARA desetine drugih prava. Mnogi ljudi sa invaliditetom ili teškim hroničnim bolestima nikada ne pokrenu postupak procene jer ne znaju da je to KLJUČ za druge benefite. Sa rešenjem o 50%+ otvara se invalidska penzija, dodatak za negu, sve socijalne pogodnosti.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite svu medicinsku dokumentaciju",
+          "opis": "Što više nalaza, otpusnih lista, dijagnoza - to bolje. Specijalistički nalazi (neurolog, kardiolog, ortoped, onkolog) su najteže ocenjeni od lekarske komisije."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Podnesite zahtev PIO filijali",
+          "opis": "Zahtev se podnosi u PIO filijali prema prebivalištu. Pravo se može tražiti čak i ako niste osiguranik PIO-a (npr. domaćica) - kao 'lice koje nije osigurano'.",
+          "napomena": "Obrazac: 'Zahtev za utvrđivanje procenta telesnog oštećenja'"
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Pregled lekarske komisije",
+          "opis": "PIO zakazuje pregled u njihovoj lekarskoj komisiji. Komisija ocenjuje sve dijagnoze i izračunava procenat oštećenja po Pravilniku.",
+          "upozorenje": "Ne potcenjujte svoje simptome na pregledu. Govorite sve - bol, ograničenja, posledice. Komisija odlučuje na osnovu onoga što čuje + dokumentacije."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Donošenje rešenja sa procentom",
+          "opis": "Rešenje stiže za 2-6 meseci od pregleda sa konkretnim procentom (npr. '55% telesnog oštećenja po osnovu neurološke i kardiološke dijagnoze')."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Ulaganje žalbe ako je procenat nizak",
+          "opis": "Imate 15 dana da uložite žalbu Drugostepenom organu PIO. Često se procenat poveća sa žalbom + dodatnom dokumentacijom.",
+          "upozorenje": "Razlika 49% vs 50% je ogromna - prelaz u višu kategoriju otvara penziju. Vredi se boriti za svaki procenat."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Korišćenje rešenja za druga prava",
+          "opis": "Sa rešenjem aktivirajte: invalidsku penziju (50%+), dodatak za negu (paralelno), popust u javnom prevozu (lokalna karta), oslobađanje poreza na vozilo (50%+), parking karta za OSI (50%+), popust komunalnih usluga."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "mkr",
+          "naziv": "Izvod iz matične knjige rođenih",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 440
+        },
+        {
+          "id": "med_dokumentacija",
+          "naziv": "Kompletna medicinska dokumentacija",
+          "obavezno": true,
+          "gde_se_nabavlja": "Lekari, bolnice, ambulante",
+          "trosak_rsd": 0,
+          "napomena": "Najbitniji deo - što više, to bolje. Nalazi za poslednjih 5+ godina."
+        },
+        {
+          "id": "potvrda_izabrani",
+          "naziv": "Potvrda izabranog lekara",
+          "obavezno": true,
+          "gde_se_nabavlja": "Dom zdravlja",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Republički fond PIO - filijala",
+          "tip": "filijala",
+          "telefon": "0700 17 17 17",
+          "url": "https://www.pio.rs"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA UTVRĐIVANJE PROCENTA TELESNOG OŠTEĆENJA",
+        "gde_dobiti_obrazac": "Na šalteru PIO filijale",
+        "obrazac_url": "https://www.pio.rs/sr/obrasci",
+        "pre_popunjavanja": [
+          "Pribavite SVE medicinske dokumente - nalaze, otpusne liste, dijagnoze",
+          "Napravite spisak vaših ograničenja u dnevnom životu (šta ne možete sami)",
+          "Razgovarajte sa izabranim lekarom o potencijalnoj proceni",
+          "Pripremite osobu koja vas dobro poznaje (za svedočenje)",
+          "Saznajte vaše osiguraničko stanje (osiguranik PIO ili ne)"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za utvrđivanje procenta telesnog oštećenja",
+          "Imam dijagnoze: [navedite] i ograničenja: [konkretno]",
+          "Molim potvrdu o prijemu zahteva",
+          "Pitajte: 'Da li mogu da tražim pregled kod kuće ako ne mogu doći?'"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li su navedene SVE dijagnoze",
+          "Da li je medicinska dokumentacija priložena",
+          "Da li je naveden tačan datum kad su simptomi počeli",
+          "Da li je obrazac potpuno popunjen"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Čekajte poziv za pregled (2-3 meseca)",
+          "Na pregled: SVA medicinska dokumenta + svedok",
+          "Posle rešenja - ako je procenat nizak ULOŽITE ŽALBU (15 dana)",
+          "Sa pozitivnim rešenjem - aktivirajte SVA prava koja ono otključava"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne podnose zahtev jer 'nemam invalidninu'",
+          "posledica": "Propušta otvaranje desetina drugih prava",
+          "resenje": "Procena se može tražiti SVAKO - i bez prethodnog statusa invalida. Ovo je prvi korak."
+        },
+        {
+          "greska": "Potcenjuju simptome na pregledu komisije",
+          "posledica": "Procenat je niži nego što treba",
+          "resenje": "Komisija ocenjuje na osnovu ONOGA što kažete + dokumentacije. Govorite konkretno o ograničenjima."
+        },
+        {
+          "greska": "Ne ulažu žalbu na nizak procenat",
+          "posledica": "Promašuje prag za invalidsku penziju (49% vs 50%)",
+          "resenje": "Žalba je BESPLATNA i često uspešna. Pribavite dodatne nalaze i pošaljite."
+        },
+        {
+          "greska": "Sa pozitivnim rešenjem ne aktiviraju ostala prava",
+          "posledica": "Imaju rešenje ali ne koriste benefite koje ono otvara",
+          "resenje": "Sa rešenjem - aktivirajte: penziju (PIO), tuđa nega (PIO), poreske olakšice (Poreska), prevoz (gradski), parking (lokalni)"
+        },
+        {
+          "greska": "Misli da je samo za teški invaliditet",
+          "posledica": "Hroničari ne pokušavaju (dijabetes + KOPB + visok pritisak može da bude 30-50%)",
+          "resenje": "Kombinovane hronične bolesti se sabiraju. Pokušajte."
+        }
+      ],
+      "rok_za_podnosenje": "Nema roka - može u bilo koje vreme",
+      "prosecno_trajanje_postupka": "3 - 6 meseci od podnošenja do rešenja",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE detalje Pravilnika",
+      "napomena_za_urednika": "Ovo je 'gateway' pravo - otvara desetine drugih. Pri prikazu UI - obavezno povezati sa drugim pravima koje ono otključava (invalidska penzija, tuđa nega, OI poreske olakšice itd). VERIFIKACIJA: detaljni Pravilnik o utvrđivanju procenta telesnog oštećenja. Izvori: pio.rs, paragraf.rs."
+    },
+    {
+      "id": "NZ01",
+      "kategorija": "nezaposleni",
+      "naziv": {
+        "sr_cyr": "Субвенција за самозапошљавање (НСЗ)",
+        "sr_lat": "Subvencija za samozapošljavanje (NSZ)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Једнократна субвенција за оснивање сопственог посла - око 300.000 РСД (или више за приоритетне групе и неразвијене регионе).",
+        "sr_lat": "Jednokratna subvencija za osnivanje sopstvenog posla - oko 300.000 RSD (ili više za prioritetne grupe i nerazvijene regione)."
+      },
+      "prioritet_propusta": 3,
+      "tagovi": [
+        "big_money",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti"
+        },
+        {
+          "zakon": "Pravilnik o uslovima za dodelu subvencija za samozapošljavanje (NSZ)",
+          "url": "https://www.nsz.gov.rs"
+        }
+      ],
+      "iznos": {
+        "tip": "jednokratno",
+        "vrednost_rsd": 300000,
+        "napomena": "Osnovni iznos. Uvećano za teže zapošljive (žene > 50 god, OSI, samohrani roditelji) i za nerazvijene regione - do 400.000+ RSD. Tačan iznos za 2026 - verifikovati na nsz.gov.rs."
+      },
+      "ko_ima_pravo_opis": "Lica prijavljena na evidenciji NSZ-a kao nezaposlena, koja imaju biznis ideju i izrade biznis plan, prošla NSZ obuku za preduzetništvo, i koja žele da otvore preduzetničku radnju ili pravni subjekt. Prioritet imaju mladi do 30 godina, žene preko 50, OSI, samohrani roditelji.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "nezaposlen"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi nezaposleni ne znaju da subvencija postoji ili misle da je 'samo za firme'. NSZ ne reklamira proaktivno - mora se traziti na šalteru. Postupak je administrativno složen (biznis plan, obuka, pravna registracija). Konkursi su povremeni - propušteni rok znači čekanje 6+ meseci.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Prijavite se na NSZ kao nezaposleno lice",
+          "opis": "Ako nije već - prvi korak je prijava na evidenciji NSZ-a. Za samozapošljavanje obično se traži da ste prijavljen 6+ meseci unazad."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Razvijte biznis ideju",
+          "opis": "Konkretna delatnost (npr. frizerski salon, IT konsalting, prodavnica, agrobiznis...). Pripremite okvirni plan: čime se bavite, ko su kupci, gde se nalazi, koje su početne investicije, kako će se rentabilizovati."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "NSZ obuka za preduzetništvo (obavezna)",
+          "opis": "NSZ organizuje obuke (obično 5-10 dana) gde se uče osnove preduzetništva, knjigovodstva, marketing-a. Tokom obuke pišete formalni biznis plan.",
+          "upozorenje": "Bez završene obuke - zahtev se ne uzima u razmatranje."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Konkurs - prijava sa biznis planom",
+          "opis": "Konkursi se raspisuju 1-3 puta godišnje. Pratite nsz.gov.rs. Prijava: lična karta, dokaz o evidenciji NSZ-a, biznis plan, dokaz o završenoj obuci, izjava o spremnosti za osnivanje firme."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Procena komisije + rangiranje",
+          "opis": "Komisija boduje biznis planove. Bodovi: kvalitet plana, održivost, doprinos zapošljavanju, prioritetne grupe. Lista se objavljuje sa rangom."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Pozitivno rešenje - osnivanje firme",
+          "opis": "Po pozitivnom rešenju - imate 30-60 dana da osnujete firmu (preduzetnik/DOO) u APR-u. NSZ isplaćuje subvenciju u 1-2 rate posle dokaza o osnivanju.",
+          "napomena": "Najčešće: 1. rata po osnivanju (50%), 2. rata posle 3-6 meseci poslovanja (50%)."
+        },
+        {
+          "redni_broj": 7,
+          "naslov": "Obaveze posle isplate",
+          "opis": "Firmu morate održavati u funkciji najmanje 12-24 meseca (zavisno od konkursa). Ako se zatvori ranije - vraćate subvenciju.",
+          "upozorenje": "Provera NSZ-a - 6 i 12 meseci posle isplate. Da li je firma aktivna, da li su uplaćeni doprinosi."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "evidencija_nsz",
+          "naziv": "Potvrda o aktivnoj evidenciji NSZ-a",
+          "obavezno": true,
+          "gde_se_nabavlja": "NSZ filijala",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "biznis_plan",
+          "naziv": "Biznis plan",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vi sami - kroz NSZ obuku",
+          "trosak_rsd": 0,
+          "napomena": "Standardni obrazac NSZ-a sa svim delovima (rezime, plan investicija, marketing, finansije)"
+        },
+        {
+          "id": "dokaz_obuka",
+          "naziv": "Dokaz o završenoj NSZ obuci za preduzetništvo",
+          "obavezno": true,
+          "gde_se_nabavlja": "NSZ - po završetku obuke",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uverenje_dugovanja",
+          "naziv": "Uverenje da nemate dugovanja prema državi",
+          "obavezno": true,
+          "gde_se_nabavlja": "Poreska uprava + Lokalna poreska",
+          "trosak_rsd": 0,
+          "vazi_meseci": 1
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Nacionalna služba za zapošljavanje - filijala",
+          "tip": "filijala",
+          "telefon": "0800 300 301",
+          "url": "https://www.nsz.gov.rs"
+        },
+        {
+          "naziv": "Agencija za privredne registre (APR) - za osnivanje firme",
+          "tip": "centralna",
+          "url": "https://www.apr.gov.rs"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA DODELU SUBVENCIJE ZA SAMOZAPOŠLJAVANJE",
+        "gde_dobiti_obrazac": "NSZ filijala ili nsz.gov.rs (raspisani konkursi)",
+        "obrazac_url": "https://www.nsz.gov.rs",
+        "pre_popunjavanja": [
+          "Prijavite se na evidenciju NSZ-a (ako niste)",
+          "Razvijte konkretnu biznis ideju (delatnost, lokacija, ciljna grupa)",
+          "Prijavite se na NSZ obuku za preduzetništvo",
+          "Pratite raspisane konkurse - obično 1-3 godišnje",
+          "Pripremite biznis plan tokom obuke (NSZ daje obrazac)"
+        ],
+        "sta_reci_na_salteru": [
+          "Prijavljen sam na evidenciji NSZ-a, želim da apliciram za subvenciju za samozapošljavanje",
+          "Da li je trenutno otvoren konkurs ili kad sledeći?",
+          "Kako da se prijavim za obuku za preduzetništvo?",
+          "Pripremio sam biznis plan za [opis delatnosti]"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li je biznis plan kompletan (svi obavezni delovi)",
+          "Da li je naveden iznos investicije realan",
+          "Da li su naveden tačan datum planiranog osnivanja firme",
+          "Da li su priložena sva uverenja (bez dugovanja, evidencija)"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Pratite rangiranje (NSZ objavljuje listu)",
+          "Po pozitivnom rešenju - 30-60 dana za osnivanje firme",
+          "Posle osnivanja - prva rata. Posle 3-6 meseci - druga rata."
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Apliciraju bez biznis plana ili sa slabim planom",
+          "posledica": "Niski bodovi - propuštaju subvenciju",
+          "resenje": "Kvalitet biznis plana je KLJUČNI - investirajte vreme u realan plan sa proverljivim brojevima"
+        },
+        {
+          "greska": "Zatvore firmu pre isteka obaveze (12-24 meseca)",
+          "posledica": "Vraćaju ceo iznos subvencije",
+          "resenje": "Pre osnivanja - razmislite realno o održivosti. NE osnivajte 'za subvenciju' - osnujte zato što vam je biznis održiv."
+        },
+        {
+          "greska": "Ne plaćaju doprinose / poreze",
+          "posledica": "NSZ obustavlja drugu ratu i traži povraćaj",
+          "resenje": "Od dana osnivanja - redovno plaćajte sve obaveze. NSZ proverava."
+        },
+        {
+          "greska": "Propušta konkurs ili se kasno prijavi",
+          "posledica": "Čeka 6-12 meseci za naredni",
+          "resenje": "Postavite alerts za nsz.gov.rs ili posetite NSZ filijalu mesečno"
+        },
+        {
+          "greska": "Nije završio NSZ obuku",
+          "posledica": "Zahtev se odbija automatski",
+          "resenje": "Prijavite se za obuku ODMAH - ne čekajte raspisivanje konkursa"
+        }
+      ],
+      "rok_za_podnosenje": "Po raspisivanju konkursa NSZ-a - rok 15-30 dana. Propuštanje = čekanje narednog ciklusa",
+      "prosecno_trajanje_postupka": "Od prijave do isplate: 6-12 meseci (uključuje obuku, konkurs, osnivanje firme)",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznose i uslove za 2026",
+      "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan iznos za 2026 (osnovni i uvećani); (2) Trenutno raspisani konkurs ili kalendar; (3) Trajanje obaveze održavanja firme; (4) Prioritetne grupe (mladi, žene > 50, OSI). Izvori: nsz.gov.rs, lokalne NSZ filijale."
+    },
+    {
+      "id": "NZ02",
+      "kategorija": "nezaposleni",
+      "naziv": {
+        "sr_cyr": "Преквалификације и доквалификације (НСЗ - бесплатне обуке)",
+        "sr_lat": "Prekvalifikacije i dokvalifikacije (NSZ - besplatne obuke)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Бесплатне обуке за нова занимања - програмирање, ИТ, обука у занатима, језичке школе, продаја. Уз НСЗ накнаду током обуке.",
+        "sr_lat": "Besplatne obuke za nova zanimanja - programiranje, IT, obuka u zanatima, jezičke škole, prodaja. Uz NSZ naknadu tokom obuke."
+      },
+      "prioritet_propusta": 3,
+      "tagovi": [
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti"
+        },
+        {
+          "zakon": "Strategija razvoja obrazovanja i stručnog osposobljavanja u Srbiji"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "BESPLATNA obuka (vrednost komercijalnih: 30.000 - 500.000 RSD) + nadoknada NSZ-a tokom obuke (oko 5.000-15.000 RSD mesečno za putne troškove i hranu) + povezivanje sa poslodavcima."
+      },
+      "ko_ima_pravo_opis": "Lica prijavljena na evidenciji NSZ-a koja žele da promene zanimanje (prekvalifikacija) ili da nadograde postojeće (dokvalifikacija). Prioritet: mladi do 30 god, dugotrajno nezaposleni (preko 12 meseci), žene, OSI, lica iz teško razvijenih regiona, povratnici iz inostranstva.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "nezaposlen",
+                "nezaposlen_neprijavljen"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Većina nezaposlenih dolazi u NSZ samo da preuzme novčanu naknadu - ne pita za obuke. NSZ savetnici ponekad ne pokrenu temu. Obuke su ograničene brojem mesta pa se čeka. Mnoge obuke su odlične (IT programiranje, online marketing, jezici) ali se ne reklamiraju proaktivno.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Prijavite se na evidenciju NSZ-a",
+          "opis": "Ako niste - prvi korak je prijava. Sve obuke su rezervisane za prijavljena nezaposlena lica."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Razgovor sa savetnikom NSZ-a",
+          "opis": "Tražite konkretno: 'Koje obuke trenutno NSZ organizuje?' Savetnik mora da vam pokaže katalog tekućih obuka.",
+          "napomena": "Ako savetnik ne zna - tražite šefa filijale ili pozovite centralu NSZ-a."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Identifikujte koja obuka vas zanima",
+          "opis": "Glavne kategorije: IT (programiranje Java/Python, web development, data science), engleski/nemački jezik, kursevi zanata (varenje, stolarstvo), administrativni kursevi, prodaja, ugostiteljstvo, frizerstvo, kozmetika."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Prijava na konkretnu obuku",
+          "opis": "Obuke se raspisuju u ciklusima. NSZ proverava da li ispunjavate uslove (npr. završena srednja škola za IT obuke). Konkurs se može objaviti na nsz.gov.rs ili u filijali."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Selekcijа kandidata",
+          "opis": "Ako je više prijavljenih nego mesta - NSZ selektira po kriterijumima (motivacija, prethodno obrazovanje, prioritet grupe). Razgovor sa komisijom je čest."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Obuka",
+          "opis": "Trajanje: 2-12 meseci zavisno od programa. Tokom obuke - dolazak obavezan, NSZ isplaćuje naknadu (~5.000-15.000 RSD mesečno) za putne troškove i hranu.",
+          "upozorenje": "Neopravdano izostajanje - obustava obuke + obaveza vraćanja naknade."
+        },
+        {
+          "redni_broj": 7,
+          "naslov": "Sertifikat + povezivanje sa poslodavcima",
+          "opis": "Po završetku - dobijate sertifikat (priznato u struci). NSZ često organizuje 'sajmove zapošljavanja' gde su pozvani poslodavci da intervjuišu sveže-osposobljene."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "evidencija_nsz",
+          "naziv": "Aktivna evidencija NSZ-a",
+          "obavezno": true,
+          "gde_se_nabavlja": "NSZ filijala",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "diploma",
+          "naziv": "Diploma poslednje završene škole",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaš diplomski document (sačuvali ste)",
+          "trosak_rsd": 0,
+          "napomena": "Za IT i veće kvalifikacije se često zahteva minimum srednja škola"
+        },
+        {
+          "id": "cv",
+          "naziv": "CV - kratak prikaz",
+          "obavezno": false,
+          "gde_se_nabavlja": "Vi sami",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Nacionalna služba za zapošljavanje - filijala",
+          "tip": "filijala",
+          "telefon": "0800 300 301",
+          "url": "https://www.nsz.gov.rs"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Dolaze u NSZ samo po naknadu, ne pitaju za obuke",
+          "posledica": "Propuštaju besplatne obuke vredne 30-500.000 RSD",
+          "resenje": "Pri svakoj poseti pitajte: 'Koje obuke trenutno organizujete?' Insistirajte."
+        },
+        {
+          "greska": "Misle da NSZ obuke 'nisu kvalitetne'",
+          "posledica": "Plaća privatne kurseve umesto besplatnih NSZ",
+          "resenje": "NSZ ulaže u kvalitet - često sarađuje sa Microsoft, Cisco, IBM partnerima. IT obuke su odlične."
+        },
+        {
+          "greska": "Izostajanje sa obuke bez opravdanja",
+          "posledica": "Obustava + obaveza vraćanja naknade",
+          "resenje": "Tretirajte obuku kao posao - prisustvo obavezno"
+        },
+        {
+          "greska": "Posle obuke - ne traže od NSZ-a posredovanje za poslodavce",
+          "posledica": "Završili obuku ali ne dolaze do posla",
+          "resenje": "Po završetku - 'Mogu li da dođem na sledeći sajam zapošljavanja?' NSZ aktivno povezuje."
+        }
+      ],
+      "rok_za_podnosenje": "Po raspisivanju konkursa za određenu obuku - rok 15-30 dana",
+      "prosecno_trajanje_postupka": "Od prijave do početka obuke: 2-6 meseci",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE trenutni katalog obuka NSZ-a",
+      "napomena_za_urednika": "Katalog obuka se menja kvartalno. U V1 dati GENERIČKI opis sa najpopularnijim kategorijama. U V1.5 - sinhronizovati sa nsz.gov.rs aktuelnim konkursima (možda preko API-ja ako postoji). Izvor: nsz.gov.rs/sr/usluge/za-nezaposlene."
+    },
+    {
+      "id": "OI01",
+      "kategorija": "osi",
+      "naziv": {
+        "sr_cyr": "Рефундација ПДВ-а на увоз путничког возила (за особе са инвалидитетом)",
+        "sr_lat": "Refundacija PDV-a na uvoz putničkog vozila (za osobe sa invaliditetom)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Особе са инвалидитетом могу да увезу аутомобил без плаћања ПДВ-а или да добију рефундацију - уштеда 5.000-15.000 ЕУР.",
+        "sr_lat": "Osobe sa invaliditetom mogu da uvezu automobil bez plaćanja PDV-a ili da dobiju refundaciju - ušteda 5.000-15.000 EUR."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o PDV",
+          "clanovi": "26-27"
+        },
+        {
+          "zakon": "Pravilnik o oslobađanju od PDV-a za osobe sa invaliditetom",
+          "url": "https://www.poreska.gov.rs"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "Refundacija pune sume PDV-a na vozilo (20% cene). Maksimum: oko 5.500.000 RSD osnove (cena vozila bez PDV-a). Refundacija ide do ~1.100.000 RSD (oko 9.500 EUR). Pravo se može iskoristiti jednom u 5-7 godina."
+      },
+      "ko_ima_pravo_opis": "Osobe sa invaliditetom od najmanje 50% telesnog oštećenja, koje imaju potvrdu nadležnog organa (PIO ili Ministarstva). Vozilo mora biti za ličnu upotrebu OSI-a (ili člana porodice koji ga prevozi). Tip vozila: putnički automobil; postoje varijante za vozila sa adaptacijom.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "invaliditet",
+                "cula"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Većina OSI ne zna da postoji - misle da je samo za ratne vojne invalide. Postupak je administrativno složen (procena oštećenja, posebne procedure pri carini, papirologija pri PIO). Trgovci automobilima i carinici često ne znaju proceduru pa ljude odbijaju.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite rešenje o procenti telesnog oštećenja",
+          "opis": "Ovo je preduslov - rešenje PIO o procenti telesnog oštećenja minimum 50% (vidi pravo HB03). Bez ovog rešenja - postupak ne može da krene."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Saznajte koja vozila imaju pravo",
+          "opis": "Putnički automobili do određene zapremine motora i određene cene. Postoje varijante: bez adaptacije (standardno), sa adaptacijom (ručni gas/kočnica/kvačilo - dodatni benefiti)."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Pribavite potvrdu PIO ili Ministarstva",
+          "opis": "PIO ili Ministarstvo za rad - potvrda da imate pravo na oslobađanje od PDV-a po osnovu invaliditeta. Ova potvrda je glavni dokument za carinu / Poresku upravu."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Kupovina vozila - varijante",
+          "opis": "(A) Uvoz iz inostranstva - na carini predajete potvrdu i ne plaćate PDV. (B) Kupovina u Srbiji - plaćate punu cenu sa PDV-om, potom podnosite zahtev za refundaciju Poreskoj upravi.",
+          "napomena": "Varijanta A (uvoz) je čistija ali zahteva da znate proceduru carine. Varijanta B (kupovina u SRB) je dostupnija ali se čeka refundacija 60-180 dana."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Podnošenje zahteva za refundaciju (varijanta B)",
+          "opis": "Poreskoj upravi - zahtev sa: potvrda invaliditeta, ugovor o kupovini, faktura sa iznosom PDV-a, lična karta. Refundacija na tekući račun za 60-180 dana."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Obaveze posle kupovine",
+          "opis": "Vozilo ne sme biti prodato narednih 3-5 godina (zavisi od propisa). Ako se proda - PDV se mora vratiti. Vozilo mora biti registrovano na ime OSI-a.",
+          "upozorenje": "Ako vozilo bude prodato pre roka - vraćate ceo iznos PDV-a Poreskoj upravi."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "resenje_oštećenje",
+          "naziv": "Rešenje o procenti telesnog oštećenja (minimum 50%)",
+          "obavezno": true,
+          "gde_se_nabavlja": "PIO ili Ministarstvo (po prethodnom postupku - vidi HB03)",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "potvrda_pdv",
+          "naziv": "Potvrda PIO/Ministarstva o pravu na oslobađanje od PDV-a",
+          "obavezno": true,
+          "gde_se_nabavlja": "PIO filijala",
+          "trosak_rsd": 0,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "ugovor_vozilo",
+          "naziv": "Ugovor o kupovini vozila",
+          "obavezno": true,
+          "gde_se_nabavlja": "Prodavac vozila",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "faktura_pdv",
+          "naziv": "Faktura sa jasno navedenim iznosom PDV-a",
+          "obavezno": true,
+          "gde_se_nabavlja": "Prodavac vozila",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "saobracajna",
+          "naziv": "Saobraćajna dozvola (po registraciji)",
+          "obavezno": true,
+          "gde_se_nabavlja": "MUP",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "PIO - filijala (za potvrdu invaliditeta i PDV oslobađanja)",
+          "tip": "filijala",
+          "url": "https://www.pio.rs"
+        },
+        {
+          "naziv": "Poreska uprava (za refundaciju PDV-a)",
+          "tip": "filijala",
+          "url": "https://www.poreska.gov.rs"
+        },
+        {
+          "naziv": "Carina (za uvoz vozila bez PDV-a)",
+          "tip": "filijala",
+          "url": "https://www.carina.rs"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Ne pokrenu postupak procene oštećenja prvo",
+          "posledica": "Nemaju osnov za PDV oslobađanje",
+          "resenje": "Prvo se mora pravo HB03 - procena oštećenja - a tek onda može se tražiti PDV"
+        },
+        {
+          "greska": "Veruju trgovcu koji kaže 'nemate pravo'",
+          "posledica": "Plate pun PDV bezveze",
+          "resenje": "Trgovci često ne znaju proceduru. Insistirajte ili promenite prodavca. Tražite od PIO konkretne pisane informacije."
+        },
+        {
+          "greska": "Prodaju vozilo pre isteka 3-5 godina",
+          "posledica": "Vraćaju ceo iznos PDV-a",
+          "resenje": "Pre prodaje - proverite trenutni zakonski rok. Ako je rok prošao - bez posledica."
+        },
+        {
+          "greska": "Ne registruju vozilo na ime OSI-a",
+          "posledica": "Pravo se gubi - mora biti registrovano na ime OSI",
+          "resenje": "Saobraćajna dozvola - na ime osobe sa invaliditetom, ne supruga ili roditelja"
+        }
+      ],
+      "rok_za_podnosenje": "Za refundaciju - 3-6 meseci od dana kupovine vozila",
+      "prosecno_trajanje_postupka": "60-180 dana za refundaciju Poreske uprave",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE - postupak je tehnički komplikovan",
+      "napomena_za_urednika": "VAŽNO - VERIFIKACIJA POTREBNA: (1) Tačan procenat oštećenja koji daje pravo (50% ili drugi); (2) Maksimum osnove za refundaciju (cena vozila bez PDV-a); (3) Trajanje obaveze (3, 5, 7 godina); (4) Procedura za adaptirana vozila (vozači sa invaliditetom u nogama). Izvori: poreska.gov.rs, carina.rs, paragraf.rs, Zakon o PDV. KONSULTOVATI ASOCIJACIJU CILS."
+    },
+    {
+      "id": "OI02",
+      "kategorija": "osi",
+      "naziv": {
+        "sr_cyr": "Комунални попуст 50% (струја, грејање, вода) за особе са инвалидитетом",
+        "sr_lat": "Komunalni popust 50% (struja, grejanje, voda) za osobe sa invaliditetom"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Особе са инвалидитетом 70%+ или корисници туђе неге имају попуст 50% на струју, грејање, воду. Уштеда 30.000-100.000 РСД годишње.",
+        "sr_lat": "Osobe sa invaliditetom 70%+ ili korisnici tuđe nege imaju popust 50% na struju, grejanje, vodu. Ušteda 30.000-100.000 RSD godišnje."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "surprise",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Uredba o energetski zaštićenom kupcu",
+          "url": "https://www.minrzs.gov.rs"
+        },
+        {
+          "zakon": "Lokalne odluke o komunalnim popustima",
+          "napomena": "Svaka opština/grad ima svoju odluku - varira pokrivenost"
+        }
+      ],
+      "iznos": {
+        "tip": "popust_procenat",
+        "procenat": 50,
+        "na_sta": "račun za struju, grejanje, vodu, komunalije (smece, voda)",
+        "napomena": "Tačan procenat može da bude 30-65% zavisno od opštine i kategorije. EPS struja - često 35% za energ. zaštićene kupce."
+      },
+      "ko_ima_pravo_opis": "Osobe sa najmanje 70% telesnog oštećenja, korisnici tuđe nege, slepi sa 90%+ oštećenjem vida, gluvi, samohrani roditelj sa detetom sa smetnjama, korisnici socijalne novčane pomoći. Konkretne kategorije i procenti zavise od opštine i komunalnog davaoca usluga.",
+      "uslovi": [
+        {
+          "tip": "ili",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "invaliditet",
+                "cula",
+                "tudja_nega"
+              ]
+            },
+            {
+              "tip": "i",
+              "uslovi": [
+                {
+                  "tip": "samohrani_roditelj",
+                  "vrednost": true
+                },
+                {
+                  "tip": "ima_decu_smetnje",
+                  "vrednost": true
+                }
+              ]
+            },
+            {
+              "tip": "primanja_max_rsd",
+              "vrednost": 13500,
+              "po_clanu": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Najveći razlog: status 'energetski zaštićeni kupac' nije automatski - mora se podnijeti zahtev EPS-u sa dokumentima. Većina OSI plaća pun račun godinama, ne znajući da imaju pravo na popust. Lokalne komunalije (voda, grejanje, smece) imaju različite procedure - mora se podneti svaki posebno.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite rešenje o stepenu invaliditeta",
+          "opis": "Rešenje PIO ili Ministarstva za rad - minimum 70% obično, ili rešenje o korišćenju tuđe nege i pomoći (vidi HB03 i PN02)."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pribavite uverenja o primanjima (ako je osnov niska primanja)",
+          "opis": "Za sve članove domaćinstva - uverenja o primanjima u prethodna 3 meseca."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "EPS - status 'energetski zaštićeni kupac'",
+          "opis": "U EPS poslovnici (ili online) podnesite zahtev za status energetski zaštićenog kupca. Posle pozitivnog rešenja - račun za struju je smanjen za ~35%.",
+          "napomena": "Zahtev EPS-u sadrži: rešenje o invaliditetu ILI uverenja o niskim primanjima, ličnu kartu, broj brojila struje."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Lokalna komunalije - voda, smeće, grejanje",
+          "opis": "U opštinskoj komunalnoj službi (ili JKP) - zahtev za popust po istim osnovima. Procedura varira po opštini.",
+          "upozorenje": "Različita komunalna preduzeća = različiti zahtevi. Pitajte na šalteru u svom JKP-u."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Daljinsko grejanje (ako se koristi)",
+          "opis": "U lokalnoj distributivnoj kompaniji za daljinsko grejanje - poseban zahtev. Popust obično 30-50%."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Godišnja obnova",
+          "opis": "Većina komunalnih popusta važi 12 meseci - obnova svake godine sa svežaim dokumentima.",
+          "upozorenje": "Ako se ne obnovi - popust prestaje. Postavite podsetnik 1-2 meseca pre isteka."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "resenje_invalid",
+          "naziv": "Rešenje o procenti telesnog oštećenja (70%+)",
+          "obavezno": true,
+          "gde_se_nabavlja": "PIO",
+          "trosak_rsd": 0,
+          "napomena": "Ili rešenje o tuđoj nezi i pomoći (alternativni osnov)"
+        },
+        {
+          "id": "racun_brojilo",
+          "naziv": "Račun za struju sa brojem brojila",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaš poslednji EPS račun",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenja o primanjima (alternativni osnov)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "vlasnistvo_stana",
+          "naziv": "Dokaz vlasništva ili korišćenja stana",
+          "obavezno": false,
+          "gde_se_nabavlja": "Ugovor o kupovini / izjava vlasnika",
+          "trosak_rsd": 0,
+          "napomena": "Komunalije traže za vodu/smeće"
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "EPS - poslovnica (za struju)",
+          "tip": "filijala",
+          "url": "https://www.eps.rs"
+        },
+        {
+          "naziv": "JKP / Lokalna komunalna preduzeća (voda, smeće)",
+          "tip": "opstinska",
+          "napomena": "Varira po opštini - npr. JKP Beograd, JKP Vodovod NS"
+        },
+        {
+          "naziv": "Distributivno preduzeće za grejanje",
+          "tip": "opstinska",
+          "napomena": "Lokalno, npr. Beogradske elektrane, NS Toplana"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Misle da se popust dobija automatski po invalidskoj penziji",
+          "posledica": "Plate pun račun godinama",
+          "resenje": "Status energetski zaštićenog kupca se MORA tražiti zasebno - nije automatski"
+        },
+        {
+          "greska": "Podnesu zahtev samo EPS-u, ne i ostalim komunalnim",
+          "posledica": "Imaju popust na struju ali ne i na vodu, smeće, grejanje",
+          "resenje": "Podnesite zahtev SVIM komunalnim davaocima - struja (EPS), voda i smeće (lokalno JKP), grejanje (toplane)"
+        },
+        {
+          "greska": "Ne obnavljaju godišnje",
+          "posledica": "Popust prestaje, pun račun se vraća",
+          "resenje": "Postavite podsetnik 1-2 meseca pre isteka. Obnova sa svežim dokumentima."
+        },
+        {
+          "greska": "Promena adrese / brojila bez obaveštavanja EPS-a",
+          "posledica": "Popust ne prelazi automatski",
+          "resenje": "Pri svakom preseljenju - obavestite EPS i podnesite novi zahtev za novu adresu"
+        }
+      ],
+      "rok_za_podnosenje": "Nema strogog roka - u bilo koje vreme",
+      "prosecno_trajanje_postupka": "EPS: 30 dana. Lokalna komunalna: 15-60 dana zavisno od opštine.",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE procente i procedure po opštinama",
+      "napomena_za_urednika": "VAŽNO: Pravila se znatno razlikuju između EPS-a (centralno) i lokalnih JKP-a (decentralizovano). Procenat popusta varira 30-65%. U V1 dati opšte smernice. U V1.5 dodati top 10 gradova sa lokalnim detaljima. Izvori: eps.rs, minrzs.gov.rs, lokalne opštine."
+    },
+    {
+      "id": "PD01",
+      "kategorija": "porodica_deca",
+      "naziv": {
+        "sr_cyr": "Рефундација ПДВ-а за бебину опрему",
+        "sr_lat": "Refundacija PDV-a za bebinu opremu"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Држава враћа ПДВ плаћен на бебину опрему у првих годину дана детета — до 73.000 РСД јединствено по детету.",
+        "sr_lat": "Država vraća PDV plaćen na bebinu opremu u prvih godinu dana deteta — do 73.000 RSD jedinstveno po detetu."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "surprise",
+        "high_priority",
+        "time_sensitive",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+          "clanovi": "32-35",
+          "sluzbeni_glasnik": "Sl. glasnik RS 113/2017 sa izmenama"
+        },
+        {
+          "zakon": "Pravilnik o bližim uslovima i načinu ostvarivanja prava na novčana sredstva za izdržavanje deteta",
+          "url": "https://www.minrzs.gov.rs"
+        }
+      ],
+      "iznos": {
+        "tip": "refundacija",
+        "opis": "Refundacija PDV-a na opremu kupljenu u prvih 12 meseci života deteta",
+        "max_rsd": 73000,
+        "napomena": "Maksimalan iznos po detetu; tačan iznos zavisi od priloženih fiskalnih računa. VERIFIKUJ TAČAN MAX ZA 2026."
+      },
+      "ko_ima_pravo_opis": "Roditelj deteta starosti do 1 godinu života, koji je u tom periodu kupovao bebinu opremu (kolica, krevetac, autosedište, hranilice, presvlake, odeća i sl.) i sačuvao fiskalne račune. Refundacija ide po detetu, ne po roditelju.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "ima_decu",
+              "uzrast": [
+                "beba"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Većina roditelja ne zna da postoji ili ne čuva fiskalne račune. Rok je strog — godinu dana od rođenja, posle toga gubi se pravo. PDV iznos je značajan jer se bebina oprema kupuje u kratkom periodu i ukupna potrošnja često prelazi 300.000 RSD.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Čuvajte SVE fiskalne račune od prvog dana",
+          "opis": "Od trenutka rođenja deteta, čuvajte fiskalne račune za bilo šta što je namenjeno bebi: oprema, hrana, pelene, kozmetika, lekovi, igračke, odeća.",
+          "upozorenje": "Bez fiskalnih računa (samo slip kartice nije dovoljan), nema refundacije. Tražite fiskalni račun pri svakoj kupovini."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Sortirajte račune po kategorijama opreme",
+          "opis": "Pred kraj prve godine, podelite račune u kategorije (oprema, odeća, hrana, higijena, lekovi). Ukupna suma fiskalnih računa = osnova za refundaciju."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev opštinskom Centru za socijalni rad",
+          "opis": "Pre nego što istekne prva godina deteta, podnesite zahtev sa svim fiskalnim računima. U nekim opštinama postupak ide preko Lokalne samouprave (sektor za društvene delatnosti).",
+          "upozorenje": "Posle prve godine deteta pravo se GUBI — ne može se naknadno podneti."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Obrada zahteva — CSR proverava račune",
+          "opis": "CSR proverava fiskalne račune, evidentira PDV iznos i utvrđuje refundaciju (do zakonski propisanog maksimuma)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Isplata na tekući račun roditelja",
+          "opis": "Po donošenju rešenja, refundacija se isplaćuje na tekući račun podnosioca zahteva u roku od 30-60 dana."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta roditelja",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate - original + fotokopija",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_mkr",
+          "naziv": "Izvod iz matične knjige rođenih za dete",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba mesta rođenja",
+          "trosak_rsd": 440,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "fiskalni_racuni",
+          "naziv": "Originalni fiskalni računi",
+          "obavezno": true,
+          "gde_se_nabavlja": "Sačuvani od kupovine - originali (ne kopije)",
+          "trosak_rsd": 0,
+          "napomena": "Sortirano po datumu; preporučljivo da napravite tabelu (datum, prodavnica, iznos, PDV)"
+        },
+        {
+          "id": "tek_racun",
+          "naziv": "Broj tekućeg računa roditelja",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaša banka",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Centar za socijalni rad - opština prebivališta",
+          "tip": "opstinska",
+          "url": "https://www.minrzs.gov.rs/sr/dokumenti/spisak-csr",
+          "napomena": "Adresa i kontakt zavisi od opštine. U Beogradu - opštinski CSR. U manjim mestima - lokalna kancelarija."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA POVRAĆAJ PDV NA HRANU I OPREMU ZA BEBE",
+        "gde_dobiti_obrazac": "Na šalteru opštinskog Centra za socijalni rad ili na sajtu vaše opštine",
+        "pre_popunjavanja": [
+          "Sortirajte SVE fiskalne račune po datumu (mora biti u prvih 12 meseci života deteta)",
+          "Napravite Excel/papir tabelu: datum, prodavnica, ukupan iznos, PDV iznos",
+          "Pripremite izvod iz matične knjige rođenih za dete (svež, ne stariji od 6 meseci)",
+          "Pripremite svoj IBAN tekućeg računa",
+          "Ako ste samohrani roditelj — pripremite dokaz (presudu o starateljstvu ili izjavu)"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za refundaciju PDV-a na bebinu opremu po Zakonu o finansijskoj podršci porodici",
+          "Dete je rođeno [datum]; ovo su svi fiskalni računi iz prve godine",
+          "Molim potvrdu o prijemu zahteva sa pečatom i datumom"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li su SVI fiskalni računi navedeni u zahtevu (i datumi se uklapaju u prvu godinu)",
+          "Da li je naveden tačan IBAN tekućeg računa",
+          "Da li su priložene fotokopije (i da imate originale kod sebe za kasniju proveru)",
+          "Da li je obrazac kompletno popunjen"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu sa pečatom",
+          "Postupak traje 30-60 dana; ne morate zvati svaki dan",
+          "Ako vas pozovu da dodate dokumentaciju — dostavite u roku od 8 dana",
+          "Po isplati, proverite iznos — ako se razlikuje od očekivanog, pitajte za detaljno obrazloženje"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne čuva fiskalne račune ili čuva samo slipove platne kartice",
+          "posledica": "Bez fiskalnih računa nema osnova za refundaciju — pravo se gubi",
+          "resenje": "Od dana rođenja: fiskalni račun za SVE što kupujete za bebu. Slip kartice nije fiskalni račun"
+        },
+        {
+          "greska": "Podnošenje zahteva posle isteka prve godine života deteta",
+          "posledica": "Pravo se gubi - nema naknadne refundacije",
+          "resenje": "Najkasnije do dana kad dete napuni 1 godinu - podnesite zahtev. Preporuka: 10. meseca"
+        },
+        {
+          "greska": "Uključivanje računa za artikle koji nisu za bebu",
+          "posledica": "CSR može da odbije ceo zahtev kao 'sumnja na zloupotrebu'",
+          "resenje": "Samo artikli koji su nedvosmisleno za bebu - oprema, hrana, higijena, odeća do veličine za bebu"
+        },
+        {
+          "greska": "Računi van Republike Srbije",
+          "posledica": "Nije refundabilno - PDV se vraća samo za domaće fiskalne račune",
+          "resenje": "Kupovine u inostranstvu - ne računaju se. Samo srpski PDV (na PDV registrovane prodavce)"
+        }
+      ],
+      "rok_za_podnosenje": "Do dana kada dete napuni 1 godinu života. Posle toga - pravo se gubi.",
+      "prosecno_trajanje_postupka": "30 - 60 dana od podnošenja zahteva",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos, rok, i opštinske procedure",
+      "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Tačan max iznos za 2026 (proveriti budžet i Zakon o finansijskoj podršci porodici - mogao se menjati); (2) Da li je rok striktno 1 godina ili može i posle uz obrazloženje; (3) Da li svi CSR-ovi prihvataju zahteve ili samo opštinske uprave - varira; (4) Da li postoji obrazac broj/url. Izvori za proveru: minrzs.gov.rs, paragraf.rs, kontakt CSR Vračar/Stari grad."
+    },
+    {
+      "id": "PD02",
+      "kategorija": "porodica_deca",
+      "naziv": {
+        "sr_cyr": "Родитељски додатак (једнократно по детету)",
+        "sr_lat": "Roditeljski dodatak (jednokratno po detetu)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Једнократна или ратнā новчана подршка пре рођењу или од рођења детета. Прво дете око 340.000 РСД, веће за наредну децу.",
+        "sr_lat": "Jednokratna ili ratna novčana podrška pre rođenja ili od rođenja deteta. Prvo dete oko 340.000 RSD, veće za narednu decu."
+      },
+      "prioritet_propusta": 3,
+      "tagovi": [
+        "high_priority",
+        "time_sensitive",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+          "clanovi": "10-15",
+          "sluzbeni_glasnik": "Sl. glasnik RS 113/2017 sa izmenama"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "Prvo dete ~340.000 RSD jednokratno; drugo dete ~520.000 RSD u 2 godišnje rate; treće dete ~3.100.000 RSD u 10 godišnjih rata; četvrto dete ~6.100.000 RSD u 10 rata. (Iznosi za 2024-2025, godišnje se usklađuju.)"
+      },
+      "ko_ima_pravo_opis": "Majka koja je državljanka Srbije, koja je rodila dete u Srbiji, koja ima prebivalište u Srbiji najmanje 1 godinu pre porođaja, i koja je sa detetom u zajedničkom domaćinstvu. Pravo se ne uslovljava primanjima.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "ima_decu",
+              "uzrast": [
+                "beba",
+                "predskolsko",
+                "osnovac",
+                "srednjoskolac"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            },
+            {
+              "tip": "pol",
+              "vrednost": "z"
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Roditeljski dodatak je SAMO za majke (ne i očeve), što neki ne znaju. Rok je 6 meseci od rođenja deteta. Iznos za drugo i naredna deca dolazi u ratama tokom više godina pa porodice često zaborave da podnesu zahtev za naredne rate.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite izvod iz matične knjige rođenih za dete",
+          "opis": "Bez ovog dokumenta postupak ne može da krene. Izvod se traži u matičnoj službi mesta rođenja deteta.",
+          "napomena": "U mnogim porodilištima daju izvod automatski pri otpustu - pitajte."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pripremite uverenje o državljanstvu",
+          "opis": "Uverenje o državljanstvu Srbije ne starije od 6 meseci. Trošak: 370 RSD u matičnoj službi."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Otvorite tekući račun (ako nemate)",
+          "opis": "Iznos se isplaćuje isključivo na tekući račun majke - ne na muža, ne na drugog roditelja. Pripremite IBAN."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Podnesite zahtev opštinskom Centru za socijalni rad",
+          "opis": "Zahtev se podnosi na obrascu CSR-a. Posle prihvatanja, rešenje se donosi u roku od 30 dana.",
+          "upozorenje": "Rok je 6 meseci od rođenja deteta. Posle toga pravo se gubi."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Isplata prvog iznosa",
+          "opis": "Za prvo dete - jednokratna isplata u jednom navratu. Za drugo i naredna deca - prva rata + raspored narednih."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Naredne rate (drugo dete i više)",
+          "opis": "Za drugo dete: 2 rate na 1 godinu razmaka. Za treće: 10 rata na 10 godina. Svake godine CSR vrši proveru — dete mora i dalje da bude sa majkom u Srbiji."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta majke",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "mkr_dete",
+          "naziv": "Izvod iz matične knjige rođenih za dete",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba mesta rođenja",
+          "trosak_rsd": 440
+        },
+        {
+          "id": "drzav_majka",
+          "naziv": "Uverenje o državljanstvu majke",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 370,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "prebivaliste",
+          "naziv": "Uverenje o prebivalištu",
+          "obavezno": true,
+          "gde_se_nabavlja": "MUP / opština",
+          "trosak_rsd": 280,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "tek_racun_majka",
+          "naziv": "Broj tekućeg računa majke",
+          "obavezno": true,
+          "gde_se_nabavlja": "Banka majke",
+          "trosak_rsd": 0,
+          "napomena": "Mora biti na ime majke, ne supruga ili drugog roditelja"
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Centar za socijalni rad - opština prebivališta",
+          "tip": "opstinska",
+          "napomena": "U većim gradovima postoji 1 CSR po opštini. U Beogradu - opštinski (npr. CSR Vračar, CSR Novi Beograd)."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA RODITELJSKI DODATAK",
+        "gde_dobiti_obrazac": "Na šalteru CSR-a ili na minrzs.gov.rs (Ministarstvo za rad)",
+        "obrazac_url": "https://www.minrzs.gov.rs",
+        "pre_popunjavanja": [
+          "Pripremite IBAN tekućeg računa na ime majke",
+          "Pripremite kopije svih dokumenata + originali za uvid",
+          "Ako imate više dece - razdvojite po detetu (zahtev ide po detetu)",
+          "Pripremite kontakt telefon i email za CSR komunikaciju"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za roditeljski dodatak za [prvo/drugo/treće/četvrto] dete",
+          "Dete je rođeno [datum] u [mesto]",
+          "Molim potvrdu o prijemu sa pečatom i datumom"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li je naveden tačan IBAN majčinog tekućeg računa",
+          "Da li su podaci o detetu tačni (ime, prezime, JMBG, datum rođenja)",
+          "Da li je obrazac potpuno popunjen",
+          "Da li su priloženi svi dokumenti"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu - obavezno sa pečatom i datumom",
+          "Postupak traje do 30 dana - mora biti rešenje u tom roku",
+          "Za drugo i naredna deca - imajte podsetnik za naredne rate (svake godine ista procedura)",
+          "Ako se preselite - obavestite CSR da nove rate ne kasne"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Otac podnosi zahtev",
+          "posledica": "Zahtev se odbija - roditeljski dodatak je samo za majku",
+          "resenje": "Zahtev podnosi MAJKA. Otac može ako je majka preminula ili u izuzetnim okolnostima."
+        },
+        {
+          "greska": "Probija se rok od 6 meseci",
+          "posledica": "Pravo se gubi - nema naknadnog podnošenja",
+          "resenje": "Podnesite najkasnije do isteka 6 meseci od rođenja deteta. Preporuka: 3-4 meseca posle porođaja"
+        },
+        {
+          "greska": "Tekući račun na ime supruga",
+          "posledica": "Isplata se ne može izvršiti - mora biti račun majke",
+          "resenje": "Otvorite svoj tekući račun pre podnošenja zahteva ako nemate"
+        },
+        {
+          "greska": "Za drugo i naredna deca - zaboravlja se da postoji više rata",
+          "posledica": "Propust narednih rata = gubitak značajne sume",
+          "resenje": "Posle prve rate - postavite podsetnik (kalendar) godinu dana unapred. CSR ne podseća automatski."
+        },
+        {
+          "greska": "Promena prebivališta nije prijavljena CSR-u",
+          "posledica": "Naredne rate (za 2. i naredna deca) mogu da kasne ili se obustave",
+          "resenje": "Pri svakom preselenju - obavestite CSR pisanim putem. Rate ide na osnovu trenutnog prebivališta"
+        }
+      ],
+      "rok_za_podnosenje": "6 meseci od dana rođenja deteta",
+      "prosecno_trajanje_postupka": "Do 30 dana od podnošenja zahteva do rešenja",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznose za 2026",
+      "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Iznosi se godišnje usklađuju - proveri tačne iznose za 2026 na minrzs.gov.rs ili Sl. glasniku; (2) Da li je još uvek 6 meseci rok ili je promenjen; (3) Da li je samo majka može podnositi - bilo je predloga proširenja na očeve. Najbolji izvor: Ministarstvo za brigu o porodici i demografiju, minrzs.gov.rs."
+    },
+    {
+      "id": "PD03",
+      "kategorija": "porodica_deca",
+      "naziv": {
+        "sr_cyr": "Дечји додатак",
+        "sr_lat": "Dečji dodatak"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Месечна новчана помоћ за децу из породица са нижим примањима. Око 5.500 РСД месечно по детету, увећано за самохране родитеље.",
+        "sr_lat": "Mesečna novčana pomoć za decu iz porodica sa nižim primanjima. Oko 5.500 RSD mesečno po detetu, uvećano za samohrane roditelje."
+      },
+      "prioritet_propusta": 2,
+      "tagovi": [
+        "high_priority"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+          "clanovi": "16-27",
+          "sluzbeni_glasnik": "Sl. glasnik RS 113/2017 sa izmenama"
+        }
+      ],
+      "iznos": {
+        "tip": "mesecno",
+        "vrednost_rsd": 5500,
+        "napomena": "Osnovni iznos po detetu (~2024-2025). Uvećano +30% za samohrane roditelje, +50% za decu sa smetnjama u razvoju. Tačan iznos za 2026 - verifikuj."
+      },
+      "ko_ima_pravo_opis": "Porodica koja ima decu predškolskog, osnovnoškolskog ili srednjoškolskog uzrasta, čiji prihodi po članu domaćinstva ne prelaze propisanu cenzus granicu (~13.500 RSD po članu mesečno za 2024-2025). Maksimalno za 4 deteta po porodici.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "ima_decu",
+              "uzrast": [
+                "beba",
+                "predskolsko",
+                "osnovac",
+                "srednjoskolac"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            },
+            {
+              "tip": "primanja_max_rsd",
+              "vrednost": 13500,
+              "po_clanu": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnoge porodice ne znaju za censuse niti misle da imaju pravo. Iznos je relativno mali pa se ne podnosi zahtev zbog 'malog para', ali za 12+ meseci sa 2-3 deteta ukupno bude ~150-200.000 RSD godišnje. Samohrani roditelji često ne prijavljuju jer ne znaju za uvećanje.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Procenite da li prilazite cenzusu",
+          "opis": "Saberite SVE prihode u domaćinstvu (plate, penzije, NSZ naknade, subvencije) za poslednja 3 meseca. Podelite sa brojem članova. Ako je rezultat manji od ~13.500 RSD - imate dobru šansu."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pribavite uverenja o primanjima svih članova",
+          "opis": "Za svakog odraslog člana - uverenje od poslodavca / Poreske / PIO / NSZ o primanjima u prethodna 3 meseca. Za nezaposlene - uverenje NSZ-a."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Pribavite osnovna dokumenta",
+          "opis": "Lične karte svih punoletnih članova, izvodi iz matičnih knjiga rođenih za decu, uverenje o državljanstvu, uverenje o prebivalištu."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Podnesite zahtev opštinskom CSR-u",
+          "opis": "Zahtev sa svim dokumentima. CSR rešava u roku od 30 dana."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Mesečna isplata na tekući račun",
+          "opis": "Po pozitivnom rešenju, isplata mesečno. Pravo važi 12 meseci, posle čega se zahtev MORA obnoviti.",
+          "upozorenje": "Po isteku 12 meseci - zahtev se obnavlja sa svežim uverenjima. Ako se zaboravi, pravo prestaje."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk_svi",
+          "naziv": "Lične karte svih punoletnih članova domaćinstva",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "mkr_deca",
+          "naziv": "Izvodi iz matične knjige rođenih za svu decu",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 440,
+          "vazi_meseci": 6,
+          "napomena": "Po jedan izvod po detetu"
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenje o primanjima za 3 meseca unazad",
+          "obavezno": true,
+          "gde_se_nabavlja": "Poslodavac / PIO / NSZ / Poreska uprava",
+          "trosak_rsd": 0,
+          "napomena": "Za sve punoletne članove. Plata, penzija, naknade NSZ, dohodak od preduzetništva, itd."
+        },
+        {
+          "id": "potvrda_skola",
+          "naziv": "Potvrda o redovnom školovanju (za decu školskog uzrasta)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Škola koju dete pohađa",
+          "trosak_rsd": 0,
+          "vazi_meseci": 12
+        },
+        {
+          "id": "uver_kuca",
+          "naziv": "Uverenje o nepokretnostima (ako posedujete imovinu)",
+          "obavezno": false,
+          "gde_se_nabavlja": "RGZ / Katastar",
+          "trosak_rsd": 540,
+          "napomena": "Cenzus uzima u obzir i imovinu, ne samo prihode"
+        },
+        {
+          "id": "tek_racun",
+          "naziv": "Broj tekućeg računa",
+          "obavezno": true,
+          "gde_se_nabavlja": "Banka",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Centar za socijalni rad - opština prebivališta",
+          "tip": "opstinska"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA DEČJI DODATAK",
+        "gde_dobiti_obrazac": "Na šalteru CSR-a ili na sajtu Ministarstva za rad",
+        "obrazac_url": "https://www.minrzs.gov.rs",
+        "pre_popunjavanja": [
+          "Saberite sve prihode domaćinstva u poslednja 3 meseca i podelite sa brojem članova",
+          "Ako je rezultat preko ~14.000 RSD po članu - verovatno nemate pravo (iznos cenzusa proveriti za 2026)",
+          "Spremite IBAN tekućeg računa",
+          "Ako ste samohrani roditelj - napomenite to obavezno (uvećanje 30%)",
+          "Ako neko od dece ima smetnje u razvoju - donesite medicinsku dokumentaciju (uvećanje 50%)"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za dečji dodatak za [broj] dece",
+          "Prihodi domaćinstva po članu su [iznos] - smatram da ulazim u cenzus",
+          "Status: [samohrani roditelj / porodica / dete sa smetnjama] ako se primenjuje",
+          "Molim potvrdu o prijemu sa pečatom"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li su navedena SVA deca koja imaju pravo (do 4 deteta)",
+          "Da li su uverenja o primanjima za sve punoletne članove",
+          "Da li je naveden tačan IBAN",
+          "Da li je dodato uvećanje (samohrani / dete sa smetnjama) ako se primenjuje"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Postupak - 30 dana",
+          "Pravo važi 12 meseci - postavite podsetnik 2 meseca pre isteka",
+          "Pri obnavljanju - svežaje uverenja o primanjima za 3 meseca"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne podnosi zahtev jer 'iznos je mali'",
+          "posledica": "Godišnje propušta 60-150.000 RSD",
+          "resenje": "5.500 RSD/mes × 12 meseci × broj dece = značajan iznos. Vredi truda."
+        },
+        {
+          "greska": "Ne navedi status samohranog roditelja",
+          "posledica": "Gubi 30% uvećanje (oko 1.650 RSD po detetu mesečno)",
+          "resenje": "Ako ste samohrani - obavezno priložite dokaz (presuda, izjava o samohranosti)"
+        },
+        {
+          "greska": "Zaboravlja da obnovi posle 12 meseci",
+          "posledica": "Pravo prestaje, isplata se zaustavlja",
+          "resenje": "Postavite podsetnik 2 meseca pre isteka. Obnova traje 30 dana."
+        },
+        {
+          "greska": "Ne prijavi sva primanja",
+          "posledica": "Ako CSR otkrije - tretira kao zloupotrebu, pravo se ukida",
+          "resenje": "Prijavite SVE prihode - i sive (poljoprivredni, NSZ, naknade)"
+        },
+        {
+          "greska": "Ne predaje uverenje o redovnom školovanju za decu školskog uzrasta",
+          "posledica": "Za to dete pravo se ne odobrava",
+          "resenje": "Za svako dete školskog uzrasta - potvrda od škole pri podnošenju i pri obnavljanju"
+        }
+      ],
+      "rok_za_podnosenje": "Nema strogog roka, ali pravo važi od dana podnošenja zahteva - svaki dan kašnjenja = propušten dodatak",
+      "prosecno_trajanje_postupka": "30 dana",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznose i cenzus za 2026",
+      "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Tačan iznos osnove dečjeg dodatka za 2026; (2) Tačan cenzus prihoda po članu za 2026 (godišnje se menja); (3) % uvećanja za samohrane i decu sa smetnjama; (4) Da li je ograničenje od 4 deteta još uvek na snazi. Izvori: minrzs.gov.rs, paragraf.rs."
+    },
+    {
+      "id": "PD04",
+      "kategorija": "porodica_deca",
+      "naziv": {
+        "sr_cyr": "Накнада зараде за време породиљског одсуства",
+        "sr_lat": "Naknada zarade za vreme porodiljskog odsustva"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Накнада плате током породиљског и одсуства за негу детета - 100% просечне зараде из последњих 18 месеци, ограничено максимумом 5 просечних зарада у РС.",
+        "sr_lat": "Naknada plate tokom porodiljskog i odsustva za negu deteta - 100% prosečne zarade iz poslednjih 18 meseci, ograničeno maksimumom 5 prosečnih zarada u RS."
+      },
+      "prioritet_propusta": 2,
+      "tagovi": [
+        "high_priority",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+          "clanovi": "12-15"
+        },
+        {
+          "zakon": "Zakon o radu",
+          "clanovi": "94"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "100% prosečne mesečne zarade iz poslednjih 18 meseci pre otpočinjanja porodiljskog. Ograničeno gornjom granicom (~5 prosečnih republičkih zarada - oko 600.000 RSD mesečno za 2024-2025). Trajanje: ~365 dana (porodiljsko + odsustvo za negu deteta)."
+      },
+      "ko_ima_pravo_opis": "Zaposlena žena (puno ili nepuno radno vreme) koja je rodila dete. Pravo na porodiljsko odsustvo traje godinu dana (3 meseca pre + 9 meseci posle porođaja, ili 11 meseci posle ako se počne pred porođaj). Otac ima pravo na deo odsustva u određenim slučajevima.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "ima_decu",
+              "uzrast": [
+                "beba"
+              ]
+            },
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "zaposlen",
+                "na_bolovanju"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnoge zaposlene žene ne znaju da je iznos 100% prosečne zarade iz 18 meseci - ne 12. Ako su nedavno povećale platu, prosek je niži. Takođe, postoji 'mali staž = umanjen procenat' pravilo koje treba proveriti. Otac retko zna da može da preuzme deo odsustva.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Obavestite poslodavca pred porođaj",
+          "opis": "Najmanje 30 dana pre planiranog početka porodiljskog odsustva - pisani zahtev poslodavcu sa medicinskom potvrdom od lekara o očekivanom datumu porođaja."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Otvorite porodiljsko bolovanje (eUputnica iz porodilišta)",
+          "opis": "Po porođaju, porodilište izda eUputnicu - to je osnov za naknadu. Predajete je poslodavcu (i on Fondu za zdravstveno osiguranje)."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Poslodavac podnosi zahtev RFZO-u",
+          "opis": "Poslodavac isplaćuje vam zaradu kao da ste na bolovanju, pa zahteva refundaciju od RFZO-a u roku od 30 dana.",
+          "napomena": "Ako poslodavac kasni sa isplatom - obratite se inspekciji rada."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Isplata se vrši preko poslodavca - mesečno",
+          "opis": "Iznos vam stiže na tekući račun isto kao i plata - mesečno. Iznos je 100% prosečne zarade iz prethodnih 18 meseci."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Po isteku 365 dana - povratak na posao",
+          "opis": "365 dana od početka odsustva (ili 2 godine ako je za 3. ili više dete). Poslodavac je dužan da vas primi na isto ili slično radno mesto.",
+          "upozorenje": "Ako poslodavac otkaže ugovor zbog porodiljskog - to je nezakonito. Obratite se inspekciji rada / Agenciji za rodnu ravnopravnost."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "potvrda_trudnoca",
+          "naziv": "Lekarska potvrda o trudnoći / porođaju",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaš ginekolog / porodilište",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "mkr_dete",
+          "naziv": "Izvod iz matične knjige rođenih za dete",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 440
+        },
+        {
+          "id": "eUputnica",
+          "naziv": "eUputnica za porodiljsko odsustvo",
+          "obavezno": true,
+          "gde_se_nabavlja": "Porodilište / RFZO",
+          "trosak_rsd": 0,
+          "napomena": "Generiše se automatski u porodilištu"
+        },
+        {
+          "id": "ugovor_o_radu",
+          "naziv": "Ugovor o radu (kopija)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Vaš poslodavac",
+          "trosak_rsd": 0,
+          "napomena": "Poslodavac ima - obično ne morate da dostavljate"
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Vaš poslodavac (HR / kadrovska služba)",
+          "tip": "pratilac_pravnog_lica",
+          "napomena": "Primarno preko poslodavca - on rešava sa RFZO-om"
+        },
+        {
+          "naziv": "Republički fond za zdravstveno osiguranje (RFZO)",
+          "tip": "centralna",
+          "url": "https://www.rfzo.rs"
+        },
+        {
+          "naziv": "Inspekcija rada (ako postoje problemi)",
+          "tip": "centralna",
+          "url": "https://www.minrzs.gov.rs/sr/inspekcija-rada"
+        }
+      ],
+      "filijala_pravilo": "pratilac_pravnog_lica",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA PORODILJSKO ODSUSTVO (kod poslodavca)",
+        "gde_dobiti_obrazac": "Kod poslodavca (HR) - svaki poslodavac ima svoj obrazac",
+        "pre_popunjavanja": [
+          "Pripremite lekarsku potvrdu o trudnoći sa očekivanim datumom porođaja",
+          "Saznajte vašu prosečnu zaradu iz poslednjih 18 meseci (pitajte HR ili pogledajte M obrazac)",
+          "Odredite datum kada želite da krenete na odsustvo (preporuka: 4-6 nedelja pre poroda)",
+          "Ako planirate da otac preuzme deo odsustva - razgovarajte sa njim"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za porodiljsko odsustvo, datum porođaja [datum]",
+          "Molim potvrdu o prijemu zahteva",
+          "Pitajte za očekivani iznos naknade (HR može da izračuna)"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Datum početka odsustva",
+          "Iznos naknade (100% prosečne zarade iz 18 meseci - proveriti izračun)",
+          "Da li je naveden tačan IBAN",
+          "Ako preuzima otac deo - sporazum potpisan"
+        ],
+        "posle_predaje": [
+          "Sačuvajte primerak zahteva sa pečatom poslodavca",
+          "Po porođaju - dostavite eUputnicu iz porodilišta i izvod iz MKR",
+          "Prva isplata stiže u roku od mesec dana od početka odsustva",
+          "Ako poslodavac kasni - obratite se inspekciji rada"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Otkazivanje ugovora zbog trudnoće - prihvatanje",
+          "posledica": "Gubitak prava na porodiljsko",
+          "resenje": "Otkaz zbog trudnoće je nezakonit. Obratite se inspekciji rada i tužbom"
+        },
+        {
+          "greska": "Plata kao 'minimalac' u poslednjim mesecima",
+          "posledica": "Naknada je niža (jer se računa iz 18 meseci)",
+          "resenje": "Pravo se računa po 18 meseci - ako ste poslednjih 6 imali nižu platu, dobićete prosek. Ne paničite."
+        },
+        {
+          "greska": "Otac ne preuzima deo odsustva",
+          "posledica": "Propušten benefit po Zakonu - otac može na deo nakon prvih 3 meseca",
+          "resenje": "Ako majka treba na posao ranije - otac može da preuzme deo (90+ dana)"
+        },
+        {
+          "greska": "Povratak na posao bez prijave",
+          "posledica": "Naknada se prekida ali pravo na povratak može biti dovedeno u pitanje",
+          "resenje": "Pre povratka - obavestite poslodavca pismenim putem. Imate pravo na isto radno mesto."
+        }
+      ],
+      "rok_za_podnosenje": "Najkasnije 30 dana pre planiranog početka odsustva (može i ranije)",
+      "prosecno_trajanje_postupka": "Prva isplata u roku od 30 dana od početka odsustva",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE gornju granicu i tačan iznos prosečne zarade za 2026",
+      "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Tačna gornja granica naknade za 2026 (5 prosečnih republičkih zarada); (2) Trajanje odsustva za 1./2./3. dete (mogu da se razlikuju); (3) Detalji o tome kako otac preuzima deo odsustva; (4) Procedura sa eUputnicom. Izvori: rfzo.rs, minrzs.gov.rs, paragraf.rs."
+    },
+    {
+      "id": "PD05",
+      "kategorija": "porodica_deca",
+      "naziv": {
+        "sr_cyr": "Субвенција за вртић (умањење цене)",
+        "sr_lat": "Subvencija za vrtić (umanjenje cene)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Општина субвенционише цену вртића за породице са нижим примањима, самохране родитеље, и треће/четврто дете. Умањење 30-100% месечне цене.",
+        "sr_lat": "Opština subvencioniše cenu vrtića za porodice sa nižim primanjima, samohrane roditelje, i treće/četvrto dete. Umanjenje 30-100% mesečne cene."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o predškolskom vaspitanju i obrazovanju",
+          "sluzbeni_glasnik": "Sl. glasnik RS 18/2010 sa izmenama"
+        },
+        {
+          "zakon": "Odluka o cenovniku predškolskog vaspitanja (lokalna)",
+          "napomena": "Svaka opština ima svoju odluku - cenovnik i kriterijumi se razlikuju"
+        }
+      ],
+      "iznos": {
+        "tip": "popust_procenat",
+        "procenat": 50,
+        "na_sta": "mesečna cena vrtića",
+        "napomena": "30-100% u zavisnosti od opštine i kategorije. Treće dete u BG i NS - često 100% (besplatno). Samohrani roditelji - 50-70%. Niska primanja - 30-70%."
+      },
+      "ko_ima_pravo_opis": "Roditelji dece predškolskog uzrasta (od jasli do polaska u školu) koji su upisali dete u javni vrtić. Subvencija po kategorijama: niska primanja, samohrani roditelj, treće i naredna deca, deca sa smetnjama, deca bez roditeljskog staranja. Pravila variraju po opštini.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "ima_decu",
+              "uzrast": [
+                "beba",
+                "predskolsko"
+              ]
+            },
+            {
+              "tip": "ili",
+              "uslovi": [
+                {
+                  "tip": "primanja_max_rsd",
+                  "vrednost": 30000,
+                  "po_clanu": true
+                },
+                {
+                  "tip": "samohrani_roditelj",
+                  "vrednost": true
+                },
+                {
+                  "tip": "ima_decu_smetnje",
+                  "vrednost": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi roditelji ne pitaju za subvenciju jer pretpostavljaju da je vrtić puna cena. Opštine retko sami objavljuju subvencije proaktivno. Treće dete često ima pravo na 100% subvenciju (besplatno) ali se zahtev ne podnosi. Razlike između opština su velike pa se ne zna šta važi.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Saznajte cenovnik vrtića u vašoj opštini",
+          "opis": "Cena vrtića varira: u Beogradu osnovna cena ~10.000-15.000 RSD/mes, u NS ~8.000-12.000, u manjim mestima manje. Saznajte tačnu cenu sa subvencijama u vašoj opštini."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pribavite uverenje o primanjima domaćinstva",
+          "opis": "Za sve punoletne članove - uverenje o primanjima u prethodna 3 meseca. Slično kao za dečji dodatak."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev opštinskom sekretarijatu za društvene delatnosti",
+          "opis": "Većina opština ima 'Odluku o cenovniku' sa pravom na umanjenje. Zahtev se podnosi u opštinskoj upravi - sektor za društvene delatnosti / prosvetu.",
+          "napomena": "U Beogradu - Sekretarijat za obrazovanje i dečju zaštitu. U NS - Gradska uprava za obrazovanje."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Provera komisije + obračun subvencije",
+          "opis": "Komisija proverava primanja i druge kriterijume, donosi rešenje o subvenciji (procenat). Postupak: 15-30 dana."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Umanjenje cene na mesečnoj uplatnici",
+          "opis": "Po pozitivnom rešenju, mesečna uplatnica za vrtić dolazi sa umanjenim iznosom. Ako je 100% - ne plaćate ništa.",
+          "upozorenje": "Subvencija se obnavlja godišnje - pre početka nove školske godine."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk_svi",
+          "naziv": "Lične karte roditelja",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "mkr_deca",
+          "naziv": "Izvodi iz matične knjige rođenih za svu decu",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 440
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenja o primanjima za 3 meseca",
+          "obavezno": true,
+          "gde_se_nabavlja": "Poslodavac / PIO / NSZ",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "potvrda_vrtic",
+          "naziv": "Potvrda o upisu deteta u vrtić",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vrtić",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "dokaz_samohrani",
+          "naziv": "Dokaz o statusu samohranog roditelja (ako se odnosi)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Sud (presuda o starateljstvu) ili matična služba (umrlica supruga/e)",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "med_smetnje",
+          "naziv": "Medicinska dokumentacija o smetnjama u razvoju (ako se odnosi)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Lekar / Komisija za procenu",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Opštinska / Gradska uprava - sektor za obrazovanje ili društvene delatnosti",
+          "tip": "opstinska",
+          "napomena": "U BG: Sekretarijat za obrazovanje i dečju zaštitu. U NS: Gradska uprava za obrazovanje. U manjim opštinama: Sektor za društvene delatnosti."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA UMANJENJE CENE PREDŠKOLSKE USTANOVE",
+        "gde_dobiti_obrazac": "Na sajtu opštine ili šalteru opštinskog sektora za obrazovanje",
+        "pre_popunjavanja": [
+          "Saznajte tačan procenat subvencije na koji imate pravo u vašoj opštini",
+          "Pribavite SVA uverenja o primanjima (svi članovi domaćinstva)",
+          "Ako ste samohrani / dete ima smetnje - dokaze obavezno",
+          "Pripremite potvrdu o upisu deteta u vrtić"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za umanjenje cene vrtića po osnovu [niskih primanja / samohranog roditelja / trećeg deteta / smetnji u razvoju]",
+          "Dete je upisano u vrtić [naziv] od [datum]",
+          "Molim potvrdu o prijemu"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li su navedene SVE osnove za subvenciju (često se može kombinovati)",
+          "Da li su priložena uverenja o primanjima svih članova",
+          "Da li je naveden tačan vrtić i dete",
+          "Da li je popunjen IBAN (ako se vraća uplaćeno) ili samo zahtev za umanjenje"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Postupak - 15-30 dana",
+          "Po rešenju - obavestite vrtić (možda treba i njima kopija)",
+          "Obnova - svake školske godine pre 1. septembra (svežaje uverenja)"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne pitaju za subvenciju i plaćaju punu cenu",
+          "posledica": "Godišnje propušta 30.000-120.000 RSD",
+          "resenje": "PITAJTE u vrtiću ili na opštini. Mnogi imaju pravo a ne znaju."
+        },
+        {
+          "greska": "Treće dete - ne podnosi zahtev za 100% subvenciju",
+          "posledica": "Plaća punu cenu iako ima pravo na besplatno",
+          "resenje": "Za 3. dete u BG/NS - subvencija je obično 100%. Podnesite zahtev."
+        },
+        {
+          "greska": "Samohrani roditelj - ne navede status",
+          "posledica": "Gubi 30-50% uvećanja subvencije",
+          "resenje": "Pri zahtevu - obavezno navedite samohrani status sa dokazom (presuda, umrlica, izjava)"
+        },
+        {
+          "greska": "Zaboravlja godišnju obnovu",
+          "posledica": "Sledeća školska godina - puna cena",
+          "resenje": "Obnova pre 1. septembra svake godine - postavite podsetnik avgusta"
+        },
+        {
+          "greska": "Ne kombinuje osnove (npr. niska primanja + samohrani roditelj)",
+          "posledica": "Subvencija je niža od mogućeg",
+          "resenje": "Često se mogu kombinovati - navedite SVE relevantne osnove"
+        }
+      ],
+      "rok_za_podnosenje": "Pre početka školske godine (do 31. avgust); ali može se podneti i tokom godine",
+      "prosecno_trajanje_postupka": "15 - 30 dana",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE - varijabilnost po opštinama je velika",
+      "napomena_za_urednika": "VAŽNO: Pravila se znatno razlikuju po opštinama. Beograd ima drugačiji cenovnik od Novog Sada, koji se razlikuje od manjih mesta. U V1 prikazati GENERIČKE smernice, a u V1.5 dodati lokalne varijante (top 10 opština). Izvori: opštinski sajtovi (npr. beograd.gov.rs, novisad.rs), centralni sajt Ministarstva prosvete."
+    },
+    {
+      "id": "PN01",
+      "kategorija": "penzioneri",
+      "naziv": {
+        "sr_cyr": "Пензионерска картица (попусти у трговини, услугама и превозу)",
+        "sr_lat": "Penzionerska kartica (popusti u trgovini, uslugama i prevozu)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Бесплатна картица са попустима 5-30% у партнерским трговинама, апотекама, ресторанима и превозу. Месечно вреди 3.000-10.000 РСД.",
+        "sr_lat": "Besplatna kartica sa popustima 5-30% u partnerskim trgovinama, apotekama, restoranima i prevozu. Mesečno vredi 3.000-10.000 RSD."
+      },
+      "prioritet_propusta": 3,
+      "tagovi": [
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Program socijalne kohezije Republike Srbije",
+          "napomena": "Program je više inicijativa - karticu izdaju Udruženje penzionera Srbije, neki gradovi (BG, NS), trgovinski lanci"
+        }
+      ],
+      "iznos": {
+        "tip": "popust_procenat",
+        "procenat": 15,
+        "na_sta": "kupovinu, lekove, prevoz, restoran u partnerskim mestima",
+        "napomena": "Procenat varira 5-30% po partneru. Mesečna vrednost zavisi od potrošnje (procena 3-10.000 RSD)."
+      },
+      "ko_ima_pravo_opis": "Svaki penzioner (starosna, invalidska ili porodična penzija) sa prebivalištem u Srbiji. Postoji više varijanti kartica - centralna (Udruženje penzionera Srbije), gradske (BG, NS), i komercijalne (DIS, Idea, Maxi, apoteke). Kartica je besplatna.",
+      "uslovi": [
+        {
+          "tip": "ili",
+          "uslovi": [
+            {
+              "tip": "starost_min",
+              "vrednost": 65
+            },
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "penzioner"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi penzioneri ne znaju da postoji centralna penzionerska kartica osim onih iz trgovina. Procesi izdavanja su konfuzni — koji partner, koja kartica, koja je gradska, koja republička. Ukupna vrednost popusta tokom godine je značajna ali se ne meri jer su pojedinačni popusti mali.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Odaberite koju karticu izvaditi",
+          "opis": "Glavne opcije: (a) Udruženje penzionera Srbije (republička), (b) Beogradska/Novosadska penzionerska kartica (gradska, šire popuste), (c) komercijalne (DIS, IDEA, Maxi, Galenika, Jugoremedija) - svaka radnja zasebno.",
+          "napomena": "Možete imati sve - one ne isključuju jedna drugu."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pribavite dokumenta",
+          "opis": "Lična karta + poslednji rešenje PIO o penziji ili obrazac M-4 (potvrda o korišćenju penzije). Za gradske kartice - dokaz o prebivalištu."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Posetite mesto izdavanja",
+          "opis": "Za republičku - kancelarije Udruženja penzionera (Beograd, Knez Mihajlova br. 1 ili po gradovima). Za gradske - opštinski sekretarijat za socijalnu zaštitu. Za komercijalne - blagajna trgovine."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Popunjavanje obrasca i fotografisanje",
+          "opis": "Većina kartica zahteva fotografiju (kao za ličnu) i osnovne podatke. Kartica se izrađuje za 7-30 dana zavisno od tipa."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Korišćenje na kasama partnerskih mesta",
+          "opis": "Pri plaćanju u partnerskoj radnji - pokažite karticu PRE plaćanja (ne posle). Popust se obračunava na kasi.",
+          "upozorenje": "Posle plaćanja - popust se ne može retroaktivno primeniti."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "resenje_pio",
+          "naziv": "Rešenje PIO o korišćenju penzije / Obrazac M-4",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaša PIO filijala (možete tražiti ažuriran)",
+          "trosak_rsd": 0,
+          "napomena": "Možda staro rešenje koje već imate - obično važi"
+        },
+        {
+          "id": "foto",
+          "naziv": "Fotografija (kao za ličnu kartu)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Foto-studio (~200 RSD) ili može telefonski snimak",
+          "trosak_rsd": 200,
+          "napomena": "Samo za neke tipove kartica"
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Udruženje penzionera Srbije (republička)",
+          "tip": "centralna",
+          "adresa": "Beograd, Knez Mihajlova 1",
+          "url": "https://penzioneri.org.rs",
+          "napomena": "Filijale po većim gradovima"
+        },
+        {
+          "naziv": "Grad Beograd - Sekretarijat za socijalnu zaštitu (BG kartica)",
+          "tip": "opstinska",
+          "url": "https://www.beograd.gov.rs"
+        },
+        {
+          "naziv": "Komercijalne kartice (DIS, IDEA, Maxi, apoteke)",
+          "tip": "externa",
+          "napomena": "Tražite na blagajni / kassama svake od ovih trgovina"
+        }
+      ],
+      "filijala_pravilo": "po_izboru",
+      "ceste_greske": [
+        {
+          "greska": "Verovanje da je samo jedna kartica - centralna",
+          "posledica": "Propuštaju gradske i komercijalne kartice",
+          "resenje": "Imajte sve - svaka pokriva druge popuste"
+        },
+        {
+          "greska": "Ne pokazivanje kartice pre plaćanja",
+          "posledica": "Popust se ne obračunava",
+          "resenje": "PRE plaćanja - 'imam penzionerski popust' i pokažite karticu"
+        },
+        {
+          "greska": "Ne traži se popust u apotekama",
+          "posledica": "U apoteci se često ne pita za karticu, gubi se 5-10% na lekove",
+          "resenje": "U apoteci uvek pitajte: 'Imate li penzionerski popust?'"
+        },
+        {
+          "greska": "Ne aktiviraju kartice gradske / opštinske",
+          "posledica": "Gradske kartice imaju popuste i na javni prevoz, kulturu, sport",
+          "resenje": "Posetite opštinski sekretarijat za socijalnu zaštitu - obavestite se o lokalnoj kartici"
+        }
+      ],
+      "rok_za_podnosenje": "Nema roka - može se podneti u bilo koje vreme",
+      "prosecno_trajanje_postupka": "7-30 dana za izradu kartice",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE liste partnera",
+      "napomena_za_urednika": "Ovo je posebno teško za precizan opis jer je decentralizovano - svaka kartica ima svoju listu partnera koja se menja. U V1 dati opšti opis + glavne 3-4 kartice. U V1.5 - po gradu lokalne liste partnera. Izvori: penzioneri.org.rs, beograd.gov.rs, novisad.rs."
+    },
+    {
+      "id": "PN02",
+      "kategorija": "penzioneri",
+      "naziv": {
+        "sr_cyr": "Туђа нега и помоћ (новчана накнада)",
+        "sr_lat": "Tuđa nega i pomoć (novčana naknada)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Месечна накнада за лица која због здравственог стања не могу самостално да обављају дневне животне активности. Око 33.000 РСД месечно (2024-2025).",
+        "sr_lat": "Mesečna naknada za lica koja zbog zdravstvenog stanja ne mogu samostalno da obavljaju dnevne životne aktivnosti. Oko 33.000 RSD mesečno (2024-2025)."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "gateway"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+          "clanovi": "75-80"
+        },
+        {
+          "zakon": "Pravilnik o utvrđivanju potrebe za tuđom negom i pomoći",
+          "url": "https://www.pio.rs"
+        }
+      ],
+      "iznos": {
+        "tip": "mesecno",
+        "vrednost_rsd": 33000,
+        "napomena": "Iznos za 2024-2025. Usklađuje se sa kretanjem prosečne neto zarade. VERIFIKOVATI tačan iznos za 2026."
+      },
+      "ko_ima_pravo_opis": "Lica koja zbog zdravstvenog stanja (telesno oštećenje, mentalno stanje, hronična bolest) nisu u stanju da samostalno obavljaju osnovne dnevne aktivnosti — ishrana, oblačenje, kupanje, kretanje. Potrebna je medicinska procena lekarskog veća pri PIO. Ne zavisi od primanja, ne zavisi od starosti.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            },
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "invaliditet",
+                "tudja_nega",
+                "hronicno",
+                "onkologija",
+                "dijaliza"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Najveći razlog: nedostatak informacije. Mnogi misle da je tuđa nega samo za invalide, ne i za starije sa Alzheimerom, Parkinsonovom bolešću, ili posledicama moždanog udara. Postupak komisije može biti odbijen prvi put — mnogi ne ulažu žalbu iako bi po pravilu mogli da dobiju.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite medicinsku dokumentaciju",
+          "opis": "Sva relevantna medicinska dokumentacija (nalazi specijalista, otpusne liste, dijagnoze) - što više dokumentacije, to bolje. Naročito su važne dijagnoze koje pokazuju onemogućenost samostalnog obavljanja aktivnosti."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Podnesite zahtev PIO filijali prema prebivalištu",
+          "opis": "Zahtev za pravo na novčanu naknadu za tuđu negu i pomoć. Obrazac na šalteru PIO. Priložite ličnu kartu, izvod iz MKR ili pasoš, i medicinsku dokumentaciju."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Pregled lekarskog veća PIO",
+          "opis": "PIO zakazuje pregled u lekarskoj komisiji. Komisija ocenjuje sposobnost obavljanja dnevnih aktivnosti. Pregledat može biti u PIO ili kod kuće ako se ne može doći.",
+          "napomena": "Pregled traje 30-60 min. Sa sobom donesite SVA medicinska dokumenta + nekoga ko vas dobro poznaje da svedoči."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Donošenje rešenja PIO",
+          "opis": "PIO donosi rešenje u roku od 2-6 meseci od pregleda. Ako je pozitivno - početak isplate mesečne naknade."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Ako je odbijeno - ŽALBA",
+          "opis": "Imate 15 dana od dana prijema rešenja da uložite žalbu Drugostepenom organu PIO. Žalba je BESPLATNA i često uspešna pri novom pregledu sa dodatnom dokumentacijom.",
+          "upozorenje": "BEZ ŽALBE - ne možete tražiti ponovo godinu dana. ULOŽITE ŽALBU."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Isplata na tekući račun",
+          "opis": "Mesečno na tekući račun korisnika. Isplata teče od dana podnošenja zahteva (ne unazad od ranije).",
+          "napomena": "Korisnik (ili staratelj ako je tako rešeno) može da daje novac osobi koja brine o njemu."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "mkr",
+          "naziv": "Izvod iz matične knjige rođenih",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 440,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "med_dokumentacija",
+          "naziv": "Kompletna medicinska dokumentacija",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaš izabrani lekar, specijalisti, bolnice gde ste bili",
+          "trosak_rsd": 0,
+          "napomena": "Što više - to bolje. Nalazi neurologa, kardiologa, ortopeda, otpusne liste, dijagnoze."
+        },
+        {
+          "id": "potvrda_izabrani_lekar",
+          "naziv": "Potvrda izabranog lekara o stanju",
+          "obavezno": true,
+          "gde_se_nabavlja": "Vaš izabrani lekar (Dom zdravlja)",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "tek_racun",
+          "naziv": "Broj tekućeg računa",
+          "obavezno": true,
+          "gde_se_nabavlja": "Banka",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Republički fond PIO - Filijala prema prebivalištu",
+          "tip": "filijala",
+          "telefon": "0700 17 17 17",
+          "url": "https://www.pio.rs",
+          "napomena": "Spisak filijala: pio.rs/sr/kontakti"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA NOVČANU NAKNADU ZA POMOĆ I NEGU DRUGOG LICA",
+        "gde_dobiti_obrazac": "Na šalteru PIO filijale",
+        "obrazac_url": "https://www.pio.rs/sr/obrasci",
+        "pre_popunjavanja": [
+          "Pribavite SVU medicinsku dokumentaciju - što više, to bolje",
+          "Razgovarajte sa izabranim lekarom da izda detaljnu potvrdu o stanju",
+          "Pripremite popis dnevnih aktivnosti koje ne možete sami (kupanje, oblačenje, hrana, kretanje)",
+          "Pripremite IBAN tekućeg računa",
+          "Ako se ne možete kretati - tražite pregled kod kuće na šalteru"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za novčanu naknadu za tuđu negu i pomoć",
+          "Moja dijagnoza je [navedite] i ne mogu sam/a da obavljam [konkretne aktivnosti]",
+          "Da li mogu da tražim pregled kod kuće? (ako ne možete doći)",
+          "Molim potvrdu o prijemu zahteva"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li su navedene SVE dijagnoze",
+          "Da li su priložena SVA medicinska dokumenta",
+          "Da li je naveden tačan IBAN",
+          "Da li je obrazac potpun"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Sačekajte poziv za pregled lekarske komisije (2-3 meseca)",
+          "Na pregled donesite SVA medicinska dokumenta + osobu koja vas dobro poznaje",
+          "Ako je odbijeno - U ROKU OD 15 DANA uložite žalbu Drugostepenom organu PIO (besplatno)"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne podnosi žalbu na odbijajuće rešenje",
+          "posledica": "Gubi se pravo na ponovno traženje godinu dana, propušta 400+ hiljada RSD",
+          "resenje": "ULOŽITE ŽALBU. Žalba je besplatna i često uspešna sa dodatnom dokumentacijom."
+        },
+        {
+          "greska": "Idu na pregled bez kompletne medicinske dokumentacije",
+          "posledica": "Lekarska komisija ne može objektivno da oceni - često odbija",
+          "resenje": "Donesite SVE - nalaze, otpusne liste, dijagnoze. Više dokumenata = veće šanse"
+        },
+        {
+          "greska": "Ne navedu konkretne aktivnosti koje ne mogu samostalno",
+          "posledica": "Komisija ne shvati ograničenja",
+          "resenje": "Pripremite spisak: 'Ne mogu sam/a da se okupam', 'Ne mogu sam/a da spremim hranu', 'Ne mogu da pišem/čitam zbog vida', itd. Konkretno."
+        },
+        {
+          "greska": "Misli da treba da bude trajno invalidski - i ne podnosi",
+          "posledica": "Mnogi stariji ljudi (Parkinsons, Alzheimer, posle moždanog udara) imaju pravo a ne pokušavaju",
+          "resenje": "Probajte - lekarska komisija odlučuje. Mnogi stariji koji ne mogu samostalno - imaju pravo."
+        },
+        {
+          "greska": "Ne traži pregled kod kuće kad ne može da dođe",
+          "posledica": "Propušteni termin pregleda - postupak se obustavlja",
+          "resenje": "Pri podnošenju zahteva - napomenite da ne možete da dođete u PIO. Pregled može biti kod kuće."
+        }
+      ],
+      "rok_za_podnosenje": "Nema roka - može se podneti u bilo koje vreme",
+      "prosecno_trajanje_postupka": "3 - 6 meseci od podnošenja do prve isplate (uključujući pregled lekarske komisije)",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos za 2026",
+      "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan mesečni iznos za 2026 (godišnje se usklađuje sa zaradama); (2) Da li postoji dvostepena ili viša naknada (postoji 'tuđa nega i pomoć' i 'uvećana tuđa nega'); (3) Da li je promenjen postupak žalbe. Izvori: pio.rs, paragraf.rs, Pravilnik o utvrđivanju potrebe za tuđom negom i pomoći."
+    },
+    {
+      "id": "PN03",
+      "kategorija": "penzioneri",
+      "naziv": {
+        "sr_cyr": "Накнада погребних трошкова (после смрти пензионера)",
+        "sr_lat": "Naknada pogrebnih troškova (posle smrti penzionera)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Једнократна накнада за погребне трошкове након смрти корисника пензије. Око 85.000 РСД (2024-2025), исплаћује ПИО члану породице.",
+        "sr_lat": "Jednokratna naknada za pogrebne troškove nakon smrti korisnika penzije. Oko 85.000 RSD (2024-2025), isplaćuje PIO članu porodice."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+          "clanovi": "70-72"
+        }
+      ],
+      "iznos": {
+        "tip": "jednokratno",
+        "vrednost_rsd": 85000,
+        "napomena": "Iznos za 2024-2025 - jednokratno. Tačan iznos za 2026 verifikovati."
+      },
+      "ko_ima_pravo_opis": "Bliski srodnik koji je snosio troškove sahrane korisnika penzije (preminulog). Pravo ima onaj ko je platio sahranu - bračni drug, deca, roditelj, brat/sestra ili druga lica koja su dokumentovano snosila trošak.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "smrt_porodice"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Većina porodica u trenutku smrti ne misli o naknadama - već o organizaciji sahrane. Rok je relativno kratak (često 6 meseci od smrti). Mnogi misle da je za sahranu već dobijena 'pomoć' kroz penziju za poslednji mesec - ne znaju da postoji posebna naknada.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pribavite izvod iz matične knjige umrlih",
+          "opis": "Posle sahrane, iz matične službe vadite izvod o smrti preminulog. Ovo je osnovni dokument za sva naredna ostvarivanja prava (naknada, ostavinski postupak, prenos računa)."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Sačuvajte račune pogrebnog preduzeća",
+          "opis": "Pogrebni račun (od pogrebnog preduzeća), račun za sanduk, kremiranje (ako se odnosi), prevoz, parcelu na groblju, vence."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev PIO filijali preminulog",
+          "opis": "Zahtev se podnosi u filijali PIO gde je preminuli imao prebivalište. Donesite izvod o smrti, račun pogrebnog preduzeća, vašu ličnu kartu i dokaz srodstva."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Dokazivanje srodstva",
+          "opis": "Bračni drug - izvod iz MKV (matica venčanih). Dete - izvod iz MKR. Drugi članovi porodice - izvod iz MKR i potvrda o srodstvu. Ako ste platili sahranu a niste blizak srodnik - potvrda o uplati."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Donošenje rešenja i isplata",
+          "opis": "Rešenje u roku od 30 dana. Isplata u jednom navratu na tekući račun podnosioca zahteva.",
+          "napomena": "Iznos se ne menja u zavisnosti od stvarne cene sahrane - fiksan je."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "izvod_mku",
+          "naziv": "Izvod iz matične knjige umrlih za preminulog",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba mesta smrti",
+          "trosak_rsd": 440,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "lk_podnosilac",
+          "naziv": "Lična karta podnosioca",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "racun_sahrana",
+          "naziv": "Račun pogrebnog preduzeća",
+          "obavezno": true,
+          "gde_se_nabavlja": "Pogrebno preduzeće gde je organizovana sahrana",
+          "trosak_rsd": 0,
+          "napomena": "Original ili overena kopija"
+        },
+        {
+          "id": "dokaz_srodstva",
+          "naziv": "Dokaz srodstva (izvod iz MKV ili MKR)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matična služba",
+          "trosak_rsd": 440,
+          "napomena": "Za bračnog druga - izvod iz matične knjige venčanih"
+        },
+        {
+          "id": "resenje_pio_preminuli",
+          "naziv": "Rešenje PIO o korišćenju penzije preminulog",
+          "obavezno": false,
+          "gde_se_nabavlja": "Možda u dokumentima preminulog",
+          "trosak_rsd": 0,
+          "napomena": "PIO ima u svojoj evidenciji - obično nije potrebno doneti"
+        },
+        {
+          "id": "tek_racun",
+          "naziv": "Broj tekućeg računa podnosioca",
+          "obavezno": true,
+          "gde_se_nabavlja": "Banka",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Republički fond PIO - Filijala prebivališta preminulog",
+          "tip": "filijala",
+          "url": "https://www.pio.rs"
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "ZAHTEV ZA NAKNADU POGREBNIH TROŠKOVA",
+        "gde_dobiti_obrazac": "Na šalteru PIO filijale",
+        "obrazac_url": "https://www.pio.rs/sr/obrasci",
+        "pre_popunjavanja": [
+          "Pribavite izvod iz matične knjige umrlih (svežaj, do 6 meseci)",
+          "Pripremite račun pogrebnog preduzeća (original)",
+          "Pripremite dokaz srodstva - izvod iz MKV ili MKR",
+          "Pripremite svoj IBAN",
+          "Saznajte podatke o pokojnikovoj penziji (JMBG, mesto stalnog boravka)"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za naknadu pogrebnih troškova za [ime preminulog]",
+          "Preminuli je bio korisnik [starosna/invalidska/porodična] penzije",
+          "Srodstvo: [bračni drug / dete / roditelj / itd.]",
+          "Molim potvrdu o prijemu zahteva"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Da li su podaci preminulog tačni (ime, JMBG, datum smrti)",
+          "Da li je dokaz srodstva odgovarajući",
+          "Da li je naveden tačan IBAN",
+          "Da li je račun pogrebnog priložen"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "Postupak - 30 dana",
+          "Isplata na tekući račun u jednom navratu",
+          "Ako je odbijeno - moguća žalba u 15 dana"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Probija se rok za podnošenje (često 6 meseci)",
+          "posledica": "Gubitak prava",
+          "resenje": "Podnesite zahtev što pre - najbolje u prvih 30 dana posle sahrane"
+        },
+        {
+          "greska": "Nemaju račun pogrebnog preduzeća",
+          "posledica": "Zahtev se odbija",
+          "resenje": "Sačuvajte SVE račune - pogrebno, kovčeg, prevoz, parcelu"
+        },
+        {
+          "greska": "Više ljudi (dva sina) podnose zahtev",
+          "posledica": "Konfuzija - PIO traži dogovor ko će biti podnosilac",
+          "resenje": "JEDAN član porodice podnosi (najčešće onaj ko je platio sahranu). Drugi podržavaju izjavom."
+        },
+        {
+          "greska": "Misli da je iznos već uračunat u poslednju penziju",
+          "posledica": "Propušta jednokratnih 85.000+",
+          "resenje": "Poslednja penzija i naknada za sahranu su DVE RAZLIČITE stvari. Tražite obe."
+        }
+      ],
+      "rok_za_podnosenje": "Obično 6 meseci od dana smrti - verifikuj tačan rok u trenutnom Zakonu",
+      "prosecno_trajanje_postupka": "30 dana",
+      "last_verified": "2026-05-22",
+      "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos i rok",
+      "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan iznos za 2026; (2) Tačan rok za podnošenje (6 meseci? godina dana?); (3) Da li se primenjuje i kad je preminuli imao samo deo staža (ne punu penziju). Izvori: pio.rs, paragraf.rs."
     }
   ]
 }

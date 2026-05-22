@@ -1,0 +1,214 @@
+{
+  "id": "NZ01",
+  "kategorija": "nezaposleni",
+
+  "naziv": {
+    "sr_cyr": "Субвенција за самозапошљавање (НСЗ)",
+    "sr_lat": "Subvencija za samozapošljavanje (NSZ)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Једнократна субвенција за оснивање сопственог посла - око 300.000 РСД (или више за приоритетне групе и неразвијене регионе).",
+    "sr_lat": "Jednokratna subvencija za osnivanje sopstvenog posla - oko 300.000 RSD (ili više za prioritetne grupe i nerazvijene regione)."
+  },
+
+  "prioritet_propusta": 3,
+
+  "tagovi": ["big_money", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti"
+    },
+    {
+      "zakon": "Pravilnik o uslovima za dodelu subvencija za samozapošljavanje (NSZ)",
+      "url": "https://www.nsz.gov.rs"
+    }
+  ],
+
+  "iznos": {
+    "tip": "jednokratno",
+    "vrednost_rsd": 300000,
+    "napomena": "Osnovni iznos. Uvećano za teže zapošljive (žene > 50 god, OSI, samohrani roditelji) i za nerazvijene regione - do 400.000+ RSD. Tačan iznos za 2026 - verifikovati na nsz.gov.rs."
+  },
+
+  "ko_ima_pravo_opis": "Lica prijavljena na evidenciji NSZ-a kao nezaposlena, koja imaju biznis ideju i izrade biznis plan, prošla NSZ obuku za preduzetništvo, i koja žele da otvore preduzetničku radnju ili pravni subjekt. Prioritet imaju mladi do 30 godina, žene preko 50, OSI, samohrani roditelji.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "zaposlenje", "vrednost": ["nezaposlen"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi nezaposleni ne znaju da subvencija postoji ili misle da je 'samo za firme'. NSZ ne reklamira proaktivno - mora se traziti na šalteru. Postupak je administrativno složen (biznis plan, obuka, pravna registracija). Konkursi su povremeni - propušteni rok znači čekanje 6+ meseci.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Prijavite se na NSZ kao nezaposleno lice",
+      "opis": "Ako nije već - prvi korak je prijava na evidenciji NSZ-a. Za samozapošljavanje obično se traži da ste prijavljen 6+ meseci unazad."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Razvijte biznis ideju",
+      "opis": "Konkretna delatnost (npr. frizerski salon, IT konsalting, prodavnica, agrobiznis...). Pripremite okvirni plan: čime se bavite, ko su kupci, gde se nalazi, koje su početne investicije, kako će se rentabilizovati."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "NSZ obuka za preduzetništvo (obavezna)",
+      "opis": "NSZ organizuje obuke (obično 5-10 dana) gde se uče osnove preduzetništva, knjigovodstva, marketing-a. Tokom obuke pišete formalni biznis plan.",
+      "upozorenje": "Bez završene obuke - zahtev se ne uzima u razmatranje."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Konkurs - prijava sa biznis planom",
+      "opis": "Konkursi se raspisuju 1-3 puta godišnje. Pratite nsz.gov.rs. Prijava: lična karta, dokaz o evidenciji NSZ-a, biznis plan, dokaz o završenoj obuci, izjava o spremnosti za osnivanje firme."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Procena komisije + rangiranje",
+      "opis": "Komisija boduje biznis planove. Bodovi: kvalitet plana, održivost, doprinos zapošljavanju, prioritetne grupe. Lista se objavljuje sa rangom."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Pozitivno rešenje - osnivanje firme",
+      "opis": "Po pozitivnom rešenju - imate 30-60 dana da osnujete firmu (preduzetnik/DOO) u APR-u. NSZ isplaćuje subvenciju u 1-2 rate posle dokaza o osnivanju.",
+      "napomena": "Najčešće: 1. rata po osnivanju (50%), 2. rata posle 3-6 meseci poslovanja (50%)."
+    },
+    {
+      "redni_broj": 7,
+      "naslov": "Obaveze posle isplate",
+      "opis": "Firmu morate održavati u funkciji najmanje 12-24 meseca (zavisno od konkursa). Ako se zatvori ranije - vraćate subvenciju.",
+      "upozorenje": "Provera NSZ-a - 6 i 12 meseci posle isplate. Da li je firma aktivna, da li su uplaćeni doprinosi."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "evidencija_nsz",
+      "naziv": "Potvrda o aktivnoj evidenciji NSZ-a",
+      "obavezno": true,
+      "gde_se_nabavlja": "NSZ filijala",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "biznis_plan",
+      "naziv": "Biznis plan",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vi sami - kroz NSZ obuku",
+      "trosak_rsd": 0,
+      "napomena": "Standardni obrazac NSZ-a sa svim delovima (rezime, plan investicija, marketing, finansije)"
+    },
+    {
+      "id": "dokaz_obuka",
+      "naziv": "Dokaz o završenoj NSZ obuci za preduzetništvo",
+      "obavezno": true,
+      "gde_se_nabavlja": "NSZ - po završetku obuke",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "uverenje_dugovanja",
+      "naziv": "Uverenje da nemate dugovanja prema državi",
+      "obavezno": true,
+      "gde_se_nabavlja": "Poreska uprava + Lokalna poreska",
+      "trosak_rsd": 0,
+      "vazi_meseci": 1
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Nacionalna služba za zapošljavanje - filijala",
+      "tip": "filijala",
+      "telefon": "0800 300 301",
+      "url": "https://www.nsz.gov.rs"
+    },
+    {
+      "naziv": "Agencija za privredne registre (APR) - za osnivanje firme",
+      "tip": "centralna",
+      "url": "https://www.apr.gov.rs"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA DODELU SUBVENCIJE ZA SAMOZAPOŠLJAVANJE",
+    "gde_dobiti_obrazac": "NSZ filijala ili nsz.gov.rs (raspisani konkursi)",
+    "obrazac_url": "https://www.nsz.gov.rs",
+    "pre_popunjavanja": [
+      "Prijavite se na evidenciju NSZ-a (ako niste)",
+      "Razvijte konkretnu biznis ideju (delatnost, lokacija, ciljna grupa)",
+      "Prijavite se na NSZ obuku za preduzetništvo",
+      "Pratite raspisane konkurse - obično 1-3 godišnje",
+      "Pripremite biznis plan tokom obuke (NSZ daje obrazac)"
+    ],
+    "sta_reci_na_salteru": [
+      "Prijavljen sam na evidenciji NSZ-a, želim da apliciram za subvenciju za samozapošljavanje",
+      "Da li je trenutno otvoren konkurs ili kad sledeći?",
+      "Kako da se prijavim za obuku za preduzetništvo?",
+      "Pripremio sam biznis plan za [opis delatnosti]"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li je biznis plan kompletan (svi obavezni delovi)",
+      "Da li je naveden iznos investicije realan",
+      "Da li su naveden tačan datum planiranog osnivanja firme",
+      "Da li su priložena sva uverenja (bez dugovanja, evidencija)"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "Pratite rangiranje (NSZ objavljuje listu)",
+      "Po pozitivnom rešenju - 30-60 dana za osnivanje firme",
+      "Posle osnivanja - prva rata. Posle 3-6 meseci - druga rata."
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Apliciraju bez biznis plana ili sa slabim planom",
+      "posledica": "Niski bodovi - propuštaju subvenciju",
+      "resenje": "Kvalitet biznis plana je KLJUČNI - investirajte vreme u realan plan sa proverljivim brojevima"
+    },
+    {
+      "greska": "Zatvore firmu pre isteka obaveze (12-24 meseca)",
+      "posledica": "Vraćaju ceo iznos subvencije",
+      "resenje": "Pre osnivanja - razmislite realno o održivosti. NE osnivajte 'za subvenciju' - osnujte zato što vam je biznis održiv."
+    },
+    {
+      "greska": "Ne plaćaju doprinose / poreze",
+      "posledica": "NSZ obustavlja drugu ratu i traži povraćaj",
+      "resenje": "Od dana osnivanja - redovno plaćajte sve obaveze. NSZ proverava."
+    },
+    {
+      "greska": "Propušta konkurs ili se kasno prijavi",
+      "posledica": "Čeka 6-12 meseci za naredni",
+      "resenje": "Postavite alerts za nsz.gov.rs ili posetite NSZ filijalu mesečno"
+    },
+    {
+      "greska": "Nije završio NSZ obuku",
+      "posledica": "Zahtev se odbija automatski",
+      "resenje": "Prijavite se za obuku ODMAH - ne čekajte raspisivanje konkursa"
+    }
+  ],
+
+  "rok_za_podnosenje": "Po raspisivanju konkursa NSZ-a - rok 15-30 dana. Propuštanje = čekanje narednog ciklusa",
+
+  "prosecno_trajanje_postupka": "Od prijave do isplate: 6-12 meseci (uključuje obuku, konkurs, osnivanje firme)",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznose i uslove za 2026",
+
+  "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan iznos za 2026 (osnovni i uvećani); (2) Trenutno raspisani konkurs ili kalendar; (3) Trajanje obaveze održavanja firme; (4) Prioritetne grupe (mladi, žene > 50, OSI). Izvori: nsz.gov.rs, lokalne NSZ filijale."
+}

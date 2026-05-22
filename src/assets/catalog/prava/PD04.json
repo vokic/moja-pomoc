@@ -1,0 +1,199 @@
+{
+  "id": "PD04",
+  "kategorija": "porodica_deca",
+
+  "naziv": {
+    "sr_cyr": "Накнада зараде за време породиљског одсуства",
+    "sr_lat": "Naknada zarade za vreme porodiljskog odsustva"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Накнада плате током породиљског и одсуства за негу детета - 100% просечне зараде из последњих 18 месеци, ограничено максимумом 5 просечних зарада у РС.",
+    "sr_lat": "Naknada plate tokom porodiljskog i odsustva za negu deteta - 100% prosečne zarade iz poslednjih 18 meseci, ograničeno maksimumom 5 prosečnih zarada u RS."
+  },
+
+  "prioritet_propusta": 2,
+
+  "tagovi": ["high_priority", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o finansijskoj podršci porodici sa decom",
+      "clanovi": "12-15"
+    },
+    {
+      "zakon": "Zakon o radu",
+      "clanovi": "94"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "100% prosečne mesečne zarade iz poslednjih 18 meseci pre otpočinjanja porodiljskog. Ograničeno gornjom granicom (~5 prosečnih republičkih zarada - oko 600.000 RSD mesečno za 2024-2025). Trajanje: ~365 dana (porodiljsko + odsustvo za negu deteta)."
+  },
+
+  "ko_ima_pravo_opis": "Zaposlena žena (puno ili nepuno radno vreme) koja je rodila dete. Pravo na porodiljsko odsustvo traje godinu dana (3 meseca pre + 9 meseci posle porođaja, ili 11 meseci posle ako se počne pred porođaj). Otac ima pravo na deo odsustva u određenim slučajevima.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "ima_decu", "uzrast": ["beba"] },
+        { "tip": "zaposlenje", "vrednost": ["zaposlen", "na_bolovanju"] }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnoge zaposlene žene ne znaju da je iznos 100% prosečne zarade iz 18 meseci - ne 12. Ako su nedavno povećale platu, prosek je niži. Takođe, postoji 'mali staž = umanjen procenat' pravilo koje treba proveriti. Otac retko zna da može da preuzme deo odsustva.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Obavestite poslodavca pred porođaj",
+      "opis": "Najmanje 30 dana pre planiranog početka porodiljskog odsustva - pisani zahtev poslodavcu sa medicinskom potvrdom od lekara o očekivanom datumu porođaja."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Otvorite porodiljsko bolovanje (eUputnica iz porodilišta)",
+      "opis": "Po porođaju, porodilište izda eUputnicu - to je osnov za naknadu. Predajete je poslodavcu (i on Fondu za zdravstveno osiguranje)."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Poslodavac podnosi zahtev RFZO-u",
+      "opis": "Poslodavac isplaćuje vam zaradu kao da ste na bolovanju, pa zahteva refundaciju od RFZO-a u roku od 30 dana.",
+      "napomena": "Ako poslodavac kasni sa isplatom - obratite se inspekciji rada."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Isplata se vrši preko poslodavca - mesečno",
+      "opis": "Iznos vam stiže na tekući račun isto kao i plata - mesečno. Iznos je 100% prosečne zarade iz prethodnih 18 meseci."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Po isteku 365 dana - povratak na posao",
+      "opis": "365 dana od početka odsustva (ili 2 godine ako je za 3. ili više dete). Poslodavac je dužan da vas primi na isto ili slično radno mesto.",
+      "upozorenje": "Ako poslodavac otkaže ugovor zbog porodiljskog - to je nezakonito. Obratite se inspekciji rada / Agenciji za rodnu ravnopravnost."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "potvrda_trudnoca",
+      "naziv": "Lekarska potvrda o trudnoći / porođaju",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaš ginekolog / porodilište",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "mkr_dete",
+      "naziv": "Izvod iz matične knjige rođenih za dete",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba",
+      "trosak_rsd": 440
+    },
+    {
+      "id": "eUputnica",
+      "naziv": "eUputnica za porodiljsko odsustvo",
+      "obavezno": true,
+      "gde_se_nabavlja": "Porodilište / RFZO",
+      "trosak_rsd": 0,
+      "napomena": "Generiše se automatski u porodilištu"
+    },
+    {
+      "id": "ugovor_o_radu",
+      "naziv": "Ugovor o radu (kopija)",
+      "obavezno": false,
+      "gde_se_nabavlja": "Vaš poslodavac",
+      "trosak_rsd": 0,
+      "napomena": "Poslodavac ima - obično ne morate da dostavljate"
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Vaš poslodavac (HR / kadrovska služba)",
+      "tip": "pratilac_pravnog_lica",
+      "napomena": "Primarno preko poslodavca - on rešava sa RFZO-om"
+    },
+    {
+      "naziv": "Republički fond za zdravstveno osiguranje (RFZO)",
+      "tip": "centralna",
+      "url": "https://www.rfzo.rs"
+    },
+    {
+      "naziv": "Inspekcija rada (ako postoje problemi)",
+      "tip": "centralna",
+      "url": "https://www.minrzs.gov.rs/sr/inspekcija-rada"
+    }
+  ],
+
+  "filijala_pravilo": "pratilac_pravnog_lica",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA PORODILJSKO ODSUSTVO (kod poslodavca)",
+    "gde_dobiti_obrazac": "Kod poslodavca (HR) - svaki poslodavac ima svoj obrazac",
+    "pre_popunjavanja": [
+      "Pripremite lekarsku potvrdu o trudnoći sa očekivanim datumom porođaja",
+      "Saznajte vašu prosečnu zaradu iz poslednjih 18 meseci (pitajte HR ili pogledajte M obrazac)",
+      "Odredite datum kada želite da krenete na odsustvo (preporuka: 4-6 nedelja pre poroda)",
+      "Ako planirate da otac preuzme deo odsustva - razgovarajte sa njim"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za porodiljsko odsustvo, datum porođaja [datum]",
+      "Molim potvrdu o prijemu zahteva",
+      "Pitajte za očekivani iznos naknade (HR može da izračuna)"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Datum početka odsustva",
+      "Iznos naknade (100% prosečne zarade iz 18 meseci - proveriti izračun)",
+      "Da li je naveden tačan IBAN",
+      "Ako preuzima otac deo - sporazum potpisan"
+    ],
+    "posle_predaje": [
+      "Sačuvajte primerak zahteva sa pečatom poslodavca",
+      "Po porođaju - dostavite eUputnicu iz porodilišta i izvod iz MKR",
+      "Prva isplata stiže u roku od mesec dana od početka odsustva",
+      "Ako poslodavac kasni - obratite se inspekciji rada"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Otkazivanje ugovora zbog trudnoće - prihvatanje",
+      "posledica": "Gubitak prava na porodiljsko",
+      "resenje": "Otkaz zbog trudnoće je nezakonit. Obratite se inspekciji rada i tužbom"
+    },
+    {
+      "greska": "Plata kao 'minimalac' u poslednjim mesecima",
+      "posledica": "Naknada je niža (jer se računa iz 18 meseci)",
+      "resenje": "Pravo se računa po 18 meseci - ako ste poslednjih 6 imali nižu platu, dobićete prosek. Ne paničite."
+    },
+    {
+      "greska": "Otac ne preuzima deo odsustva",
+      "posledica": "Propušten benefit po Zakonu - otac može na deo nakon prvih 3 meseca",
+      "resenje": "Ako majka treba na posao ranije - otac može da preuzme deo (90+ dana)"
+    },
+    {
+      "greska": "Povratak na posao bez prijave",
+      "posledica": "Naknada se prekida ali pravo na povratak može biti dovedeno u pitanje",
+      "resenje": "Pre povratka - obavestite poslodavca pismenim putem. Imate pravo na isto radno mesto."
+    }
+  ],
+
+  "rok_za_podnosenje": "Najkasnije 30 dana pre planiranog početka odsustva (može i ranije)",
+
+  "prosecno_trajanje_postupka": "Prva isplata u roku od 30 dana od početka odsustva",
+
+  "last_verified": "2026-05-22",
+
+  "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE gornju granicu i tačan iznos prosečne zarade za 2026",
+
+  "napomena_za_urednika": "VERIFIKACIJA POTREBNA: (1) Tačna gornja granica naknade za 2026 (5 prosečnih republičkih zarada); (2) Trajanje odsustva za 1./2./3. dete (mogu da se razlikuju); (3) Detalji o tome kako otac preuzima deo odsustva; (4) Procedura sa eUputnicom. Izvori: rfzo.rs, minrzs.gov.rs, paragraf.rs."
+}
