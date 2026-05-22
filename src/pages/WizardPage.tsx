@@ -6,6 +6,7 @@ import { TOTAL_STEPS, WIZARD_STEPS } from '@/components/wizard/steps-config';
 import { WizardStep } from '@/components/wizard/WizardStep';
 import { useProfile } from '@/hooks/useProfile';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import { track } from '@/lib/analytics';
 import type { Profile } from '@/types';
 
 export function WizardPage() {
@@ -22,6 +23,7 @@ export function WizardPage() {
       setResumePrompt(true);
     } else {
       setResumePrompt(false);
+      track('wizard_started');
     }
   }, [profile, complete, resumePrompt]);
 
@@ -86,7 +88,14 @@ export function WizardPage() {
             Sledeće
           </Button>
         ) : (
-          <Button onClick={() => navigate('/rezultati')}>Pokaži šta mi pripada</Button>
+          <Button
+            onClick={() => {
+              track('wizard_completed');
+              navigate('/rezultati');
+            }}
+          >
+            Pokaži šta mi pripada
+          </Button>
         )}
       </div>
     </div>

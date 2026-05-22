@@ -1,4 +1,5 @@
-﻿import { Link, useParams } from 'react-router-dom';
+﻿import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { TabDokumenti } from '@/components/pravo-detail/TabDokumenti';
 import { TabGreske } from '@/components/pravo-detail/TabGreske';
@@ -11,6 +12,7 @@ import { Badge } from '@/components/ui/badge';
 import { useCatalog } from '@/hooks/useCatalog';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import { useScript } from '@/hooks/useScript';
+import { track } from '@/lib/analytics';
 import { findPravo } from '@/lib/catalog';
 import { kategorijaLabel } from '@/lib/labels';
 import { pickScript } from '@/lib/script';
@@ -21,6 +23,10 @@ export function PravoDetailPage() {
   const { script } = useScript();
   const pravoForTitle = id && katalog ? findPravo(katalog, id) : undefined;
   usePageTitle(pravoForTitle ? pickScript(pravoForTitle.naziv, script) : 'Pravo');
+
+  useEffect(() => {
+    if (pravoForTitle) track('pravo_viewed', { pravo_id: pravoForTitle.id });
+  }, [pravoForTitle]);
 
   if (loading) {
     return (
