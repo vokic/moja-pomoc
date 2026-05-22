@@ -10,6 +10,7 @@ import { SearchPage } from '@/pages/SearchPage';
 import { ResultsPage } from '@/pages/ResultsPage';
 import { AboutPage } from '@/pages/AboutPage';
 import { DonatePage } from '@/pages/DonatePage';
+import { PravoDetailPage } from '@/pages/PravoDetailPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                   <Route path="/wizard" element={<WizardPage />} />
                   <Route path="/pretraga" element={<SearchPage />} />
                   <Route path="/rezultati" element={<ResultsPage />} />
+                  <Route path="/pravo/:id" element={<PravoDetailPage />} />
                   <Route path="/o-projektu" element={<AboutPage />} />
                   <Route path="/podrzite" element={<DonatePage />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
