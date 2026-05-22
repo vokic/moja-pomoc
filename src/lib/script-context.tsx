@@ -1,10 +1,14 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import { DEFAULT_SCRIPT, getScript, pickScript, setScript as setScriptStorage } from './script';
+import type { Script } from './script';
+import type { LocalizedText } from '@/types';
 
-export type Script = 'lat' | 'cyr';
+export type { Script } from './script';
+
 type Ctx = {
   script: Script;
   setScript: (s: Script) => void;
-  t: (v: { sr_lat: string; sr_cyr: string }) => string;
+  t: (v: LocalizedText) => string;
 };
 
 const ScriptContext = createContext<Ctx | null>(null);
@@ -50,17 +54,19 @@ export function cyrToLat(s: string): string {
 }
 
 export function ScriptProvider({ children }: { children: ReactNode }) {
-  const [script, setScriptState] = useState<Script>('lat');
+  const [script, setScriptState] = useState<Script>(DEFAULT_SCRIPT);
+
   useEffect(() => {
-    const v =
-      (typeof window !== 'undefined' && localStorage.getItem('mp_script')) as Script | null;
-    if (v === 'lat' || v === 'cyr') setScriptState(v);
+    setScriptState(getScript());
   }, []);
+
   const setScript = (s: Script) => {
     setScriptState(s);
-    if (typeof window !== 'undefined') localStorage.setItem('mp_script', s);
+    setScriptStorage(s);
   };
-  const t = (v: { sr_lat: string; sr_cyr: string }) => (script === 'cyr' ? v.sr_cyr : v.sr_lat);
+
+  const t = (v: LocalizedText) => pickScript(v, script);
+
   return (
     <ScriptContext.Provider value={{ script, setScript, t }}>{children}</ScriptContext.Provider>
   );
@@ -70,9 +76,9 @@ export function useScript() {
   const v = useContext(ScriptContext);
   if (!v) {
     return {
-      script: 'lat' as Script,
+      script: DEFAULT_SCRIPT,
       setScript: () => {},
-      t: (x: { sr_lat: string; sr_cyr: string }) => x.sr_lat,
+      t: (x: LocalizedText) => x.sr_lat,
     };
   }
   return v;
