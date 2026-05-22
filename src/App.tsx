@@ -2,6 +2,8 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { ScriptProvider } from '@/lib/script-context';
 import { ThemeProvider } from '@/lib/theme-context';
 import { PageShell } from '@/components/layout';
+import { CatalogProvider } from '@/hooks/useCatalog';
+import { ProfileProvider } from '@/hooks/useProfile';
 import { HomePage } from '@/pages/HomePage';
 import { WizardPage } from '@/pages/WizardPage';
 import { SearchPage } from '@/pages/SearchPage';
@@ -13,19 +15,23 @@ function App() {
   return (
     <ThemeProvider>
       <ScriptProvider>
-        <BrowserRouter>
-          <PageShell>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/wizard" element={<WizardPage />} />
-              <Route path="/pretraga" element={<SearchPage />} />
-              <Route path="/rezultati" element={<ResultsPage />} />
-              <Route path="/o-projektu" element={<AboutPage />} />
-              <Route path="/podrzite" element={<DonatePage />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </PageShell>
-        </BrowserRouter>
+        <CatalogProvider>
+          <ProfileProvider>
+            <BrowserRouter>
+              <PageShell>
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/wizard" element={<WizardPage />} />
+                  <Route path="/pretraga" element={<SearchPage />} />
+                  <Route path="/rezultati" element={<ResultsPage />} />
+                  <Route path="/o-projektu" element={<AboutPage />} />
+                  <Route path="/podrzite" element={<DonatePage />} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+              </PageShell>
+            </BrowserRouter>
+          </ProfileProvider>
+        </CatalogProvider>
       </ScriptProvider>
     </ThemeProvider>
   );
