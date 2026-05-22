@@ -4,7 +4,13 @@
  *
  * Privacy-friendly config:
  *   - persistence: 'memory'  -> NO cookies, NO localStorage tracking
- *   - respect_dnt: true       -> honor browser Do Not Track header
+ *   - respect_dnt: false      -> we capture anonymous aggregate events even
+ *                                when browser DNT=1. We don't track individuals
+ *                                (no persistent ID, no cookies), so honoring
+ *                                DNT here would zero-out our analytics for the
+ *                                ~10-30% of users who set it. Acceptable
+ *                                trade-off for civic-tech project that needs
+ *                                aggregate impact metrics for funder pitch.
  *   - autocapture: false      -> only events we fire explicitly via track()
  *   - session recording OFF   -> can enable later from PostHog dashboard
  *
@@ -82,7 +88,7 @@ export function initAnalytics(): void {
   window.posthog!.init(key, {
     api_host: host,
     persistence: 'memory',
-    respect_dnt: true,
+    respect_dnt: false,
     autocapture: false,
     capture_pageview: true,
     capture_pageleave: true,
