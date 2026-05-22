@@ -28,7 +28,8 @@ jobs:
 
       - name: Build (Vite + tsc)
         env:
-          VITE_GOATCOUNTER_CODE: ${{ secrets.GOATCOUNTER_CODE }}
+          VITE_POSTHOG_KEY: ${{ secrets.POSTHOG_KEY }}
+          VITE_POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
         run: |
           npx tsc -b
           npx vite build

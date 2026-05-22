@@ -1,26 +1,17 @@
 /**
- * Analytics wrapper. V1: GoatCounter (free, no cookies, GDPR-clean,
- * open source). The track() interface is vendor-neutral — only this
- * module knows about GoatCounter.
+ * Analytics wrapper. V1: PostHog (cookieless, EU-hosted, GDPR-clean).
+ * The track() interface is vendor-neutral — only this module + analytics-init
+ * know about PostHog.
+ *
+ * PostHog snippet creates window.posthog stub before init that queues calls,
+ * so track() is safe to call at any point.
  */
 
 type EventProps = Record<string, string | number | boolean>;
 
 export function track(event: string, props?: EventProps): void {
-  if (typeof window !== 'undefined' && window.goatcounter?.count) {
-    // GoatCounter encodes events via path="event:..." + event:true.
-    // We squash props into the title for visibility in the dashboard.
-    const titleParts = props
-      ? Object.entries(props)
-          .map(([k, v]) => `${k}=${v}`)
-          .join(' ')
-      : '';
-    window.goatcounter.count({
-      path: `event:${event}`,
-      title: titleParts || event,
-      event: true,
-    });
-    return;
+  if (typeof window !== 'undefined' && window.posthog?.capture) {
+    window.posthog.capture(event, props);
   }
   if (import.meta.env.DEV) {
     console.log('[analytics]', event, props ?? {});
