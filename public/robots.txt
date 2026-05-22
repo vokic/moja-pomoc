@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moja-pomoc.netlify.app/sitemap.xml
