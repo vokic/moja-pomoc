@@ -1,0 +1,291 @@
+{
+  "id": "DJ01",
+
+  "kategorija": "dijaspora",
+
+  "naziv": {
+    "sr_cyr": "Пензије по споразумима са ЕУ/дијаспором",
+    "sr_lat": "Penzije po sporazumima sa EU/dijasporom"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Стаж из иностранства може да се сабере са српским. Захтев се подноси САМО у Србији ако овде живите.",
+    "sr_lat": "Staž iz inostranstva može da se sabere sa srpskim. Zahtev se podnosi SAMO u Srbiji ako ovde živite."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["surprise", "high_priority", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+      "clanovi": "208-220",
+      "sluzbeni_glasnik": "Sl. glasnik RS 34/2003 sa izmenama",
+      "url": "https://www.pio.rs/sr/medunarodni-ugovori"
+    },
+    {
+      "zakon": "Bilateralni sporazumi o socijalnom osiguranju",
+      "clanovi": "35 sporazuma sa različitim zemljama"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "Mesečna penzija srazmerno stažu u svakoj zemlji - značajno (često hiljade EUR godišnje)"
+  },
+
+  "ko_ima_pravo_opis": "Lica koja su radila u zemljama sa kojima Srbija ima sporazum o socijalnom osiguranju (35 zemalja: DE, AT, CH, SE, FR, IT, NL, BE, HU, BG, MK, HR, BiH, SI, CG, CZ, SK, PL, RO, GR, CY, LU, DK, NO, FI, UK, RU, BY, TR, CA, i druge), a koje žive u Srbiji.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "prebivaliste_srbija", "vrednost": true },
+        { "tip": "staz_u_inostranstvu", "min_meseci": 1 },
+        { "tip": "starost_min", "vrednost": 60 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi povratnici ne aktiviraju pravo iz Nemačke/Austrije/Švedske misleći da treba podneti zahtev u svakoj zemlji posebno, ili da će srpski staž umanjiti inostranu penziju. Oba mita su pogrešna.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pripremite dokumentaciju o stažu u inostranstvu",
+      "opis": "Sakupite sve papire koje imate o radu u inostranstvu: ugovori o radu, M obrasci, kartice penzijskog osiguranja, plate.",
+      "napomena": "Ako nemate sve dokumente - nije problem. PIO će zatražiti od stranih fondova."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pronađite nadležnu filijalu PIO",
+      "opis": "Filijala prema mestu prebivališta u Srbiji. Spisak svih filijala: pio.rs/sr/kontakti"
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Odlazak u filijalu - bez zakazivanja",
+      "opis": "Radno vreme sa strankama 08:00 - 14:00. Preporuka: dođite ujutru. Sa sobom svu dokumentaciju + ličnu kartu."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Popunjavanje dvojezičnog obrasca zahteva",
+      "opis": "Šalterski radnik daje obrazac. Precizno navedite SVE zemlje gde ste radili, imena poslodavaca, mesta, periode rada.",
+      "upozorenje": "Čak i ako niste sigurni da li su doprinosi plaćeni - navedite period. PIO će proveriti sa stranim fondovima."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Predaja zahteva i obavezna potvrda o prijemu",
+      "opis": "Insistirajte na potvrdi o prijemu sa pečatom i datumom - to je vaš dokaz da je zahtev podnesen.",
+      "upozorenje": "Bez potvrde sa pečatom nemate dokaz da je zahtev primljen - može se izgubiti u sistemu."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "PIO utvrđuje srpski staž i šalje zahtev stranim fondovima",
+      "opis": "PIO prvo donosi rešenje o srpskom delu, zatim komunicira sa stranim fondovima. Svaka zemlja posebno odlučuje o svom delu."
+    },
+    {
+      "redni_broj": 7,
+      "naslov": "Rešenja stižu posebno iz svake zemlje",
+      "opis": "Možete dobiti rešenje iz Srbije pre nego iz Nemačke, ili obrnuto. Strani fondovi odlučuju po svojim propisima."
+    },
+    {
+      "redni_broj": 8,
+      "naslov": "Isplata na devizni račun u srpskoj banci",
+      "opis": "Inostrane penzije se obično isplaćuju kvartalno (na 3 meseca) na devizni račun. Mogu se prebaciti i na dinarski sa konverzijom.",
+      "napomena": "Godišnje strani fondovi traže potvrdu o životu - PIO filijala je besplatno overava (nije potreban notar)."
+    }
+  ],
+
+  "dokumenti": [
+    {
+      "id": "lk",
+      "naziv": "Lična karta",
+      "obavezno": true,
+      "gde_se_nabavlja": "Već imate - donesite original + jednu fotokopiju",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "uver_drzav",
+      "naziv": "Uverenje o državljanstvu",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba opštine prebivališta",
+      "trosak_rsd": 370,
+      "vazi_meseci": 6
+    },
+    {
+      "id": "mkr",
+      "naziv": "Izvod iz matične knjige rođenih",
+      "obavezno": true,
+      "gde_se_nabavlja": "Matična služba mesta rođenja",
+      "trosak_rsd": 440,
+      "napomena": "Internacionalna forma ako se traži (ne uvek)"
+    },
+    {
+      "id": "radna_knjizica",
+      "naziv": "Radna knjižica",
+      "obavezno": false,
+      "gde_se_nabavlja": "Vaša lična - ako je nemate, PIO će tražiti od stranih fondova",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "dokazi_inostranstvo",
+      "naziv": "Dokazi o stažu u inostranstvu",
+      "obavezno": false,
+      "gde_se_nabavlja": "Vaše lične kopije - ugovori o radu, prijave (Anmeldung u Nemačkoj), platni listići",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "listing_inostr_fond",
+      "naziv": "Listing penzijskog osiguranja iz strane zemlje",
+      "obavezno": false,
+      "gde_se_nabavlja": "Online preko portala stranog fonda (u Nemačkoj: Versicherungsverlauf od Deutsche Rentenversicherung)",
+      "trosak_rsd": 0
+    },
+    {
+      "id": "iban_devizni",
+      "naziv": "Broj deviznog računa u srpskoj banci",
+      "obavezno": true,
+      "gde_se_nabavlja": "Vaša srpska banka - IBAN deviznog računa. Otvoriti pre odlaska u PIO ako nemate.",
+      "trosak_rsd": 0
+    }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Republički fond PIO - Direkcija",
+      "tip": "centralna",
+      "adresa": "Dr Aleksandra Kostića 9, Beograd",
+      "telefon": "0700 17 17 17",
+      "email": "kontakt@pio.rs",
+      "url": "https://www.pio.rs",
+      "radno_vreme": "Pon-pet 07:30 - 15:30 (stranke 08:00 - 14:00)"
+    },
+    {
+      "naziv": "Filijale PIO po Srbiji",
+      "tip": "filijala",
+      "url": "https://www.pio.rs/sr/kontakti",
+      "napomena": "Spisak svih filijala i ispostava - prema mestu prebivališta korisnika"
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "ZAHTEV ZA OSTVARIVANJE PRAVA NA PENZIJU PO MEĐUNARODNOM UGOVORU O SOCIJALNOM OSIGURANJU",
+    "gde_dobiti_obrazac": "Na šalteru nadležne filijale PIO - šalterski radnik vam daje dvojezični obrazac",
+    "obrazac_url": "https://www.pio.rs/sr/obrasci/republicki-fond",
+    "pre_popunjavanja": [
+      "Pripremite IBAN deviznog računa u srpskoj banci",
+      "Imajte sve datume staža (početak/kraj) za svaku zemlju gde ste radili",
+      "Pripremite imena svih poslodavaca i mesta rada",
+      "Pripremite brojeve penzijskog osiguranja iz stranih zemalja ako ih imate"
+    ],
+    "sta_reci_na_salteru": [
+      "Tražim obrazac za zahtev za inostranu penziju po međunarodnom sporazumu",
+      "Imam staž u [navedite zemlje] - želim da podnesem zahtev za sve zemlje odjednom",
+      "Posle popunjavanja, molim potvrdu o prijemu sa pečatom i datumom"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Da li su navedene SVE zemlje gde ste radili (čak i kratki periodi)",
+      "Da li su podaci o poslodavcima tačni i kompletni",
+      "Da li su datumi staža precizni",
+      "Da li je naveden tačan IBAN deviznog računa",
+      "Da li je obrazac kompletno popunjen (bez praznih obaveznih polja)"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu - to je vaš dokaz",
+      "Postupak traje 6 - 24 meseca - ne morate zvati svakog meseca",
+      "Ako dobijete pismo iz PIO sa traženjem dodatnih dokumenata - dostavite u roku",
+      "Kada počne isplata, godišnje će tražiti potvrdu o životu (PIO je overava besplatno)"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne prijavljujete srpski staž jer mislite da će umanjiti inostranu penziju",
+      "posledica": "Gubite srpski deo penzije bez ikakvog razloga",
+      "resenje": "Način obračuna isključuje tu mogućnost - niže srpske zarade ne mogu da umanje nemačku ili švedsku penziju. Uvek prijavite oba"
+    },
+    {
+      "greska": "Podnosite zahtev i u Srbiji i u stranom fondu",
+      "posledica": "Dupliranje može da uspori postupak za mesece",
+      "resenje": "Dovoljno je u jednoj zemlji - onoj gde živite. PIO sam komunicira sa stranim fondovima"
+    },
+    {
+      "greska": "Ne navedete sve zemlje gde ste radili",
+      "posledica": "Kasnije aktiviranje prava ili gubitak dela penzije iz te zemlje",
+      "resenje": "Čak i kratki periodi (par meseci) u trećoj zemlji se moraju navesti - PIO će proveriti"
+    },
+    {
+      "greska": "Zaboravljate na potvrdu o životu",
+      "posledica": "Isplata penzije iz inostranstva se obustavlja",
+      "resenje": "Strani fondovi godišnje traže potvrdu da ste živi. PIO filijale je BESPLATNO overavaju - ne morate kod notara"
+    },
+    {
+      "greska": "Ne tražite potvrdu o prijemu zahteva",
+      "posledica": "Bez dokaza da je zahtev podnesen, može se izgubiti u sistemu",
+      "resenje": "Uvek insistirajte na potvrdi sa pečatom i datumom"
+    },
+    {
+      "greska": "Niste otvorili devizni račun unapred",
+      "posledica": "Zahtev ne može da se obradi do kraja",
+      "resenje": "Otvorite devizni račun u banci PRE odlaska u PIO"
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema strogog roka, ali što kasnije podnesete - kasnije počinje isplata. Isplata ide od datuma podnošenja zahteva, ne unazad.",
+
+  "prosecno_trajanje_postupka": "6 - 24 meseca od podnošenja zahteva do prvog primanja penzije",
+
+  "spoljni_resursi": [
+    {
+      "naziv": "Deutsche Rentenversicherung",
+      "url": "https://www.deutsche-rentenversicherung.de",
+      "opis": "Nemački penzijski fond - tu se traži Versicherungsverlauf",
+      "drzava": "DE"
+    },
+    {
+      "naziv": "Pensionsversicherungsanstalt",
+      "url": "https://www.pensionsversicherung.at",
+      "opis": "Austrijski penzijski fond",
+      "drzava": "AT"
+    },
+    {
+      "naziv": "Försäkringskassan",
+      "url": "https://www.forsakringskassan.se",
+      "opis": "Švedski socijalni fond",
+      "drzava": "SE"
+    },
+    {
+      "naziv": "AHV/IV Schweiz",
+      "url": "https://www.ahv-iv.ch",
+      "opis": "Švajcarski penzijski fond",
+      "drzava": "CH"
+    },
+    {
+      "naziv": "L'Assurance Retraite",
+      "url": "https://www.lassuranceretraite.fr",
+      "opis": "Francuski penzijski fond",
+      "drzava": "FR"
+    },
+    {
+      "naziv": "INPS",
+      "url": "https://www.inps.it",
+      "opis": "Italijanski penzijski fond",
+      "drzava": "IT"
+    },
+    {
+      "naziv": "Sociale Verzekeringsbank",
+      "url": "https://www.svb.nl",
+      "opis": "Holandski penzijski fond",
+      "drzava": "NL"
+    }
+  ],
+
+  "last_verified": "2026-05-18",
+
+  "verified_by": "Viktor Stojanović (osnov: web search pio.rs, paragraf.rs, MFA Srbije)",
+
+  "napomena_za_urednika": "Lista sporazuma se širi - novi sporazumi sa Albanijom i Portugalom očekuju se 2026. Treba ažurirati listu zemalja godišnje. Iznosi penzija se ne mogu generalizovati - svaka zemlja ima različite obračune."
+}

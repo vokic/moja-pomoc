@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moja Pomoć</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --blue: #0C4DA2;
+  --blue-dark: #073B7E;
+  --blue-deep: #022047;
+  --blue-tint: #F0F5FB;
+  --red: #C8102E;
+  --text: #1A1A1A;
+  --text-soft: #555;
+  --text-muted: #888;
+  --border: #DEE3EA;
+}
+
+html, body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: white;
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ============ HEADER ============ */
+.header {
+  border-bottom: 3px solid var(--blue);
+  padding: 20px 0;
+}
+
+.header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  background: var(--blue);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.brand-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.005em;
+}
+
+.brand-name span {
+  color: var(--blue);
+}
+
+.script-toggle {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.script-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding: 0;
+}
+
+.script-toggle button.active {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* ============ MAIN ============ */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 24px 64px;
+}
+
+.hero {
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.hero h1 em {
+  color: var(--blue);
+  font-style: normal;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: var(--text-soft);
+  margin-bottom: 40px;
+}
+
+/* Search */
+.search-form {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 24px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 22px 24px 22px 60px;
+  font-family: inherit;
+  font-size: 17px;
+  border: 2px solid var(--border);
+  background: white;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(12, 77, 162, 0.08);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-icon {
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-form:focus-within .search-icon {
+  color: var(--blue);
+}
+
+/* Wizard button (primary CTA) */
+.wizard-button {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  background: var(--blue);
+  color: white;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: background 0.15s;
+  border: 2px solid var(--blue);
+}
+
+.wizard-button:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
+.wizard-button-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.wizard-button-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.wizard-button-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+.wizard-button-arrow {
+  flex-shrink: 0;
+  transition: transform 0.15s;
+}
+
+.wizard-button:hover .wizard-button-arrow {
+  transform: translateX(4px);
+}
+
+/* Divider */
+.search-divider {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.search-divider::before,
+.search-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ============ CATEGORIES ============ */
+.cats-section {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.cats-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.cat {
+  background: white;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: background 0.15s;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+.cat:hover {
+  background: var(--blue-tint);
+}
+
+.cat-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.cat-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cat-count strong {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-inner a {
+  color: var(--text-muted);
+  margin-left: 16px;
+}
+
+.footer-inner a:hover {
+  color: var(--blue);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 720px) {
+  main { padding: 48px 16px 40px; }
+  .hero { margin-bottom: 40px; }
+  .cats-grid { grid-template-columns: repeat(2, 1fr); }
+  .search-input { padding: 18px 20px 18px 52px; font-size: 16px; }
+  .search-icon { left: 18px; }
+  .footer-inner { flex-direction: column; gap: 8px; }
+  .footer-inner a { margin-left: 0; margin-right: 16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="brand">
+      <div class="brand-mark"></div>
+      <span class="brand-name">Moja <span>Pomoć</span></span>
+    </a>
+    <div class="script-toggle">
+      <button class="active">Latinica</button>
+      <button>Ћирилица</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>Šta vam <em>pripada</em>?</h1>
+    <p class="hero-sub">
+      Pretražite katalog prava i pomoći Republike Srbije.
+    </p>
+  </div>
+
+  <a href="/wizard" class="wizard-button">
+    <div class="wizard-button-text">
+      <span class="wizard-button-title">Pokreni vodič</span>
+      <span class="wizard-button-sub">Odgovorite na 9 pitanja i otkrijte šta vam pripada</span>
+    </div>
+    <svg class="wizard-button-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+  </a>
+
+  <div class="search-divider">
+    <span>ili pretražite katalog</span>
+  </div>
+
+  <form class="search-form" onsubmit="return false">
+    <svg class="search-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/>
+      <path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="text" class="search-input" placeholder="Pretražite pravo, naknadu ili pomoć…">
+  </form>
+
+  <div style="height: 80px"></div>
+
+  <div class="cats-section">
+    <div class="cats-label">— Pregled po kategoriji</div>
+    <div class="cats-grid">
+      <a href="/kategorija/hronicni-bolesnici" class="cat">
+        <div class="cat-name">Hronični bolesnici</div>
+        <div class="cat-count"><strong>16</strong> prava</div>
+      </a>
+      <a href="/kategorija/porodica" class="cat">
+        <div class="cat-name">Porodica i deca</div>
+        <div class="cat-count"><strong>13</strong> prava</div>
+      </a>
+      <a href="/kategorija/penzioneri" class="cat">
+        <div class="cat-name">Penzioneri</div>
+        <div class="cat-count"><strong>10</strong> prava</div>
+      </a>
+      <a href="/kategorija/osi" class="cat">
+        <div class="cat-name">Osobe sa invaliditetom</div>
+        <div class="cat-count"><strong>10</strong> prava</div>
+      </a>
+      <a href="/kategorija/nezaposleni" class="cat">
+        <div class="cat-name">Nezaposleni</div>
+        <div class="cat-count"><strong>7</strong> prava</div>
+      </a>
+      <a href="/kategorija/borci" class="cat">
+        <div class="cat-name">Borci i invalidi rata</div>
+        <div class="cat-count"><strong>7</strong> prava</div>
+      </a>
+      <a href="/kategorija/prosveta" class="cat">
+        <div class="cat-name">Obrazovanje</div>
+        <div class="cat-count"><strong>5</strong> prava</div>
+      </a>
+      <a href="/kategorija/energetska" class="cat">
+        <div class="cat-name">Energetska zaštita</div>
+        <div class="cat-count"><strong>3</strong> prava</div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Moja Pomoć · Informativni alat</span>
+    <span>
+      <a href="/o-projektu">O projektu</a>
+      <a href="/podrzite">Podržite</a>
+      <a href="https://github.com">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.script-toggle button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.script-toggle button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+{
+  "_INSTRUKCIJE_": [
+    "===================================================================",
+    "PREDLOŽAK ZA NOVO PRAVO U KATALOGU MOJA POMOĆ",
+    "===================================================================",
+    "",
+    "Kako koristiti:",
+    "1. Kopiraj ovaj fajl i preimenuj u 'XX##_naziv_prava.json'",
+    "   (XX = kod kategorije: HB, PD, PN, OI, NZ, BR, EN, PR, PO, ZP, HR, ST, ZZ, MZ, SM, RZ, DJ, ZS, MO)",
+    "2. Popuni sve obavezne fields. Obavezna polja su označena * u komentarima.",
+    "3. Briši sve _COMMENT_ ključeve pre nego što ubaciš u katalog (oni su samo uputstvo).",
+    "4. Posle popunjavanja - validuj kroz validate.ts (kad bude napravljen).",
+    "",
+    "Vreme po pravu: 30-60 min uz oficijalne izvore.",
+    "",
+    "Glavni oficijalni izvori:",
+    "- PIO: pio.rs",
+    "- RFZO: rfzo.rs",
+    "- NSZ: nsz.gov.rs",
+    "- Ministarstvo za rad: minrzs.gov.rs",
+    "- Zakoni: paragraf.rs, propisi.net",
+    "- eUprava: euprava.gov.rs",
+    "==================================================================="
+  ],
+
+  "id": "XX##",
+  "_COMMENT_id": "* Unique ID: XX = kategorija (HB=hron.bolesnici, PD=porodica, PN=penzioneri, OI=OSI, NZ=nezaposleni, BR=borci, EN=energetska, PR=prosveta, PO=poljoprivreda, ZP=žrtve nasilja, HR=hraniteljstvo, ST=stanovanje, ZZ=zdravlje žena, MZ=mentalno, SM=smrt porodice, RZ=razvod, DJ=dijaspora, ZS=životne situacije, MO=mladi), ## = sekvencijalni broj. Primer: 'HB07', 'DJ01'",
+
+  "kategorija": "",
+  "_COMMENT_kategorija": "* Jedna od: hronicni_bolesnici, porodica_deca, penzioneri, osi, nezaposleni, borci_invalidi, energetska, prosveta, porezi, poljoprivreda, zrtve_nasilja, hraniteljstvo, stanovanje, zdravlje_zena, mentalno_zdravlje, smrt_porodice, razvod, dijaspora, zivotne_situacije, mladi",
+
+  "naziv": {
+    "sr_cyr": "",
+    "sr_lat": ""
+  },
+  "_COMMENT_naziv": "* Pun naziv prava. Mora biti i na ćirilici i latinici. Primer: 'Penzije po sporazumima sa EU/dijasporom'",
+
+  "kratak_opis": {
+    "sr_cyr": "",
+    "sr_lat": ""
+  },
+  "_COMMENT_kratak_opis": "* 1-2 rečenice za karticu u rezultatima. Treba da brzo objasni o čemu se radi. Maksimum 150 karaktera.",
+
+  "prioritet_propusta": 0,
+  "_COMMENT_prioritet": "* Broj 1-5. 5 = skoro niko ne zna (najveći prioritet). 1 = svi znaju. Većina prava bi trebalo biti 3-5.",
+
+  "tagovi": [],
+  "_COMMENT_tagovi": "Lista od 0+ tagova. Opcije: 'surprise' (verovatno niste znali), 'high_priority' (visok prioritet), 'time_sensitive' (ima rok), 'gateway' (otvara lanac drugih prava), 'big_money' (značajan iznos)",
+
+  "pravni_osnov": [
+    {
+      "zakon": "",
+      "clanovi": "",
+      "sluzbeni_glasnik": "",
+      "url": ""
+    }
+  ],
+  "_COMMENT_pravni_osnov": "* Lista zakona/pravilnika. Minimum 1. Polja: zakon (obavezno), clanovi (opciono), sluzbeni_glasnik (opciono), url (opciono). Primer: { zakon: 'Zakon o PIO', clanovi: '208-220' }",
+
+  "iznos": {
+    "tip": "",
+    "vrednost_opis": ""
+  },
+  "_COMMENT_iznos": "* TIPOVI: 'mesecno' (sa vrednost_rsd), 'mesecno_raspon' (sa min_rsd i max_rsd), 'jednokratno' (sa vrednost_rsd), 'jednokratno_raspon', 'popust_procenat' (sa procenat i na_sta), 'usluga_besplatna' (sa opis), 'refundacija' (sa opis, max_rsd opciono), 'opisno' (sa vrednost_opis kada je iznos složen). PRIMERI ispod su za različite tipove.",
+  "_PRIMERI_iznos": {
+    "mesecno": { "tip": "mesecno", "vrednost_rsd": 33172, "napomena": "iznos u 2025." },
+    "jednokratno": { "tip": "jednokratno", "vrednost_rsd": 70000, "napomena": "max iznos" },
+    "popust": { "tip": "popust_procenat", "procenat": 50, "na_sta": "pretplata Telekom" },
+    "besplatno": { "tip": "usluga_besplatna", "opis": "Banjska rehabilitacija" },
+    "refund": { "tip": "refundacija", "opis": "PDV na bebi opremu", "max_rsd": 70000 },
+    "opisno": { "tip": "opisno", "vrednost_opis": "Mesečna penzija srazmerno stažu u svakoj zemlji" }
+  },
+
+  "ko_ima_pravo_opis": "",
+  "_COMMENT_ko_ima_pravo_opis": "* Ljudski opis ko ima pravo, 1-3 rečenice. Primer: 'Lica koja su radila u zemljama sa kojima Srbija ima sporazum o socijalnom osiguranju, žive u Srbiji'",
+
+  "uslovi": [],
+  "_COMMENT_uslovi": "* Lista rule-engine uslova. Rule engine ovo evaluira protiv Profile-a iz wizarda. Vidi _PRIMERI_uslovi ispod za sintaksu.",
+  "_PRIMERI_uslovi": [
+    { "tip": "starost_min", "vrednost": 60 },
+    { "tip": "zaposlenje", "vrednost": ["nezaposlen", "nezaposlen_neprijavljen"] },
+    { "tip": "zdravlje", "vrednost": ["hronicno", "onkologija"] },
+    { "tip": "ima_decu", "uzrast": ["beba", "predskolsko"] },
+    { "tip": "primanja_max_rsd", "vrednost": 13441, "po_clanu": true },
+    { "tip": "i", "uslovi": [
+      { "tip": "starost_min", "vrednost": 18 },
+      { "tip": "starost_max", "vrednost": 43 },
+      { "tip": "pol", "vrednost": "z" }
+    ]}
+  ],
+
+  "zasto_se_propusta": "",
+  "_COMMENT_zasto_se_propusta": "* 1-3 rečenice zašto većina ljudi ne zna za ovo pravo ili ga ne aktiviraju. Koristi se u kartici rezultata kao 'Verovatno niste znali' objašnjenje.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "",
+      "opis": "",
+      "napomena": "",
+      "upozorenje": ""
+    }
+  ],
+  "_COMMENT_koraci": "* Lista koraka postupka, redom. Minimum 3 koraka, preporučeno 5-8. Naslov je kratak (do 60 karaktera), opis 1-2 rečenice. napomena/upozorenje su opcioni - briši ako ne koristiš.",
+
+  "dokumenti": [
+    {
+      "id": "",
+      "naziv": "",
+      "obavezno": true,
+      "gde_se_nabavlja": "",
+      "trosak_rsd": 0,
+      "vazi_meseci": 0,
+      "napomena": ""
+    }
+  ],
+  "_COMMENT_dokumenti": "* Lista dokumenata. id = kratki kod (lk, uver_drzav, mkr...), naziv = ljudski naziv, obavezno = true/false. gde_se_nabavlja: konkretno mesto (matična služba, opštinska uprava...). trosak_rsd: 0 ako besplatno. vazi_meseci: opciono, briši ako ne ograničava (npr. uverenje o državljanstvu važi 6 meseci).",
+
+  "institucije": [
+    {
+      "naziv": "",
+      "tip": "",
+      "adresa": "",
+      "telefon": "",
+      "email": "",
+      "url": "",
+      "radno_vreme": "",
+      "napomena": ""
+    }
+  ],
+  "_COMMENT_institucije": "* Lista institucija gde se obratiti. tip: 'centralna' (1 republička), 'filijala' (više po gradovima), 'opstinska' (na nivou opštine), 'externa' (npr. strani fond). Briši polja koja su prazna pre commit-a.",
+
+  "filijala_pravilo": "",
+  "_COMMENT_filijala_pravilo": "* Kako wizard određuje koju filijalu da prikaže: 'prema_prebivalistu' (filijala u korisnikovom mestu), 'jedinstvena' (jedna centralna institucija), 'po_izboru' (korisnik bira), 'pratilac_pravnog_lica' (preko poslodavca)",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "",
+    "gde_dobiti_obrazac": "",
+    "obrazac_url": "",
+    "pre_popunjavanja": [],
+    "sta_reci_na_salteru": [],
+    "sta_proveriti_pre_potpisa": [],
+    "posle_predaje": []
+  },
+  "_COMMENT_uputstvo_zahteva": "OPCIONO. MVP odluka: NE popunjavamo zahtev. Ovde idu UPUTSTVA korisniku kako da popuni i šta da pita. obrazac_url je opcioni link do službenog obrasca. Briši celu sekciju ako pravo nema zahtev (npr. automatske penzionerske popuste).",
+
+  "ceste_greske": [
+    {
+      "greska": "",
+      "posledica": "",
+      "resenje": ""
+    }
+  ],
+  "_COMMENT_ceste_greske": "* Lista čestih grešaka. Minimum 2, preporučeno 4-6. greska (šta korisnik često uradi pogrešno), posledica (šta se desi - opciono), resenje (kako da je izbegne).",
+
+  "rok_za_podnosenje": "",
+  "_COMMENT_rok_za_podnosenje": "Opciono. Ljudski opis roka. Primer: '15 dana od rešenja o odbijanju', 'Do kraja kalendarske godine', 'Nema roka'",
+
+  "prosecno_trajanje_postupka": "",
+  "_COMMENT_prosecno_trajanje_postupka": "Opciono. Koliko dugo traje obrada. Primer: '60 dana', '6 - 24 meseca'",
+
+  "spoljni_resursi": [
+    {
+      "naziv": "",
+      "url": "",
+      "opis": "",
+      "drzava": ""
+    }
+  ],
+  "_COMMENT_spoljni_resursi": "Opciono. Linkovi za dodatne informacije. drzava je ISO 2-slovni kod ako se odnosi na specifičnu zemlju. Briši ako nema.",
+
+  "last_verified": "",
+  "_COMMENT_last_verified": "* ISO datum poslednje verifikacije podataka (YYYY-MM-DD). Primer: '2026-05-18'",
+
+  "verified_by": "",
+  "_COMMENT_verified_by": "* Ko je verifikovao. Primer: 'Viktor Stojanović', 'Marko Marković (pro bono advokat)', 'A11 pravni tim'",
+
+  "napomena_za_urednika": "",
+  "_COMMENT_napomena_za_urednika": "Opciono. Interni komentar za buduće update-e (NE prikazuje se korisniku). Primer: 'Iznos se godišnje menja - ažurirati januara'"
+}
