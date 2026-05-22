@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { ResultCard } from '@/components/results/ResultCard';
+import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Card } from '@/components/ui/card';
 import { useCatalog } from '@/hooks/useCatalog';
 import { useMatches } from '@/hooks/useMatches';
@@ -59,11 +60,7 @@ export function ResultsPage() {
         <SummaryCard label="Kategorija" value={categories.length} />
       </section>
 
-      <aside className="mt-6 rounded-md border border-amber-200 bg-amber-50 p-4 text-[13.5px] leading-relaxed text-amber-900">
-        Ovo je informativni alat. Konačnu odluku donose nadležne institucije. Pre
-        podnošenja zahteva, proverite uslove sa nadležnom institucijom. Aplikacija ne
-        čuva vaše lične podatke van vašeg pretraživača.
-      </aside>
+      <Disclaimer className="mt-6" />
 
       {matches.length > 0 && (
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3">

@@ -6,6 +6,7 @@ import { TabInstitucije } from '@/components/pravo-detail/TabInstitucije';
 import { TabKoraci } from '@/components/pravo-detail/TabKoraci';
 import { TabOsnovno } from '@/components/pravo-detail/TabOsnovno';
 import { TabUputstvo } from '@/components/pravo-detail/TabUputstvo';
+import { Disclaimer } from '@/components/shared/Disclaimer';
 import { Badge } from '@/components/ui/badge';
 import { useCatalog } from '@/hooks/useCatalog';
 import { useScript } from '@/hooks/useScript';
@@ -89,10 +90,7 @@ export function PravoDetailPage() {
         </p>
       </header>
 
-      <aside className="mt-6 rounded-md border border-amber-200 bg-amber-50 p-4 text-[13px] leading-relaxed text-amber-900">
-        Moja Pomoć je informativni alat. Konačnu odluku donose nadležne institucije.
-        Pre podnošenja zahteva, proverite uslove sa nadležnom institucijom.
-      </aside>
+      <Disclaimer className="mt-6" />
 
       <div className="mt-6">
         <Tabs defaultValue="osnovno">
