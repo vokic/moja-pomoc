@@ -5,7 +5,7 @@ import { usePageTitle } from '@/hooks/usePageTitle';
 export function HomePage() {
   usePageTitle();
   return (
-    <section className="relative isolate flex min-h-[calc(100svh-160px)] flex-col justify-center overflow-hidden">
+    <section className="relative isolate flex flex-1 flex-col justify-center overflow-hidden">
       {/* Background image + gradient overlays */}
       <div className="absolute inset-0 -z-10" aria-hidden="true">
         <img
