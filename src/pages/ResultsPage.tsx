@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { ResultCard } from '@/components/results/ResultCard';
 import { Anketa } from '@/components/shared/Anketa';
 import { Disclaimer } from '@/components/shared/Disclaimer';
+import { PdfExportButton } from '@/components/shared/PdfExportButton';
 import { Card } from '@/components/ui/card';
 import { useCatalog } from '@/hooks/useCatalog';
 import { useMatches } from '@/hooks/useMatches';
@@ -114,6 +115,12 @@ export function ResultsPage() {
           </div>
         )}
       </section>
+
+      {matches.length > 0 && (
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <PdfExportButton prava={matches.map((m) => m.pravo)} />
+        </div>
+      )}
 
       {matches.length > 0 && <Anketa />}
     </div>
