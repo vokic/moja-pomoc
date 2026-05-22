@@ -3,23 +3,27 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ProgressBar } from '@/components/wizard/ProgressBar';
 import { TOTAL_STEPS, WIZARD_STEPS } from '@/components/wizard/steps-config';
+import { WizardStep } from '@/components/wizard/WizardStep';
 import { useProfile } from '@/hooks/useProfile';
+import type { Profile } from '@/types';
 
 export function WizardPage() {
-  const { profile, reset, complete } = useProfile();
+  const { profile, update, reset, complete } = useProfile();
   const navigate = useNavigate();
 
   const [currentStep, setCurrentStep] = useState(0);
-  const [resumePrompt, setResumePrompt] = useState(false);
+  const [resumePrompt, setResumePrompt] = useState<boolean | null>(null);
 
   useEffect(() => {
-    // Show resume prompt if a non-empty, incomplete profile exists on first mount.
+    if (resumePrompt !== null) return;
     if (profile && !complete && Object.keys(profile).length > 0) {
       setResumePrompt(true);
+    } else {
+      setResumePrompt(false);
     }
-  }, [profile, complete]);
+  }, [profile, complete, resumePrompt]);
 
-  if (resumePrompt) {
+  if (resumePrompt === true) {
     return (
       <div className="mx-auto max-w-2xl px-6 py-16">
         <h1 className="text-2xl font-bold text-[#162e51]">Nastavite gde ste stali?</h1>
@@ -47,6 +51,13 @@ export function WizardPage() {
   const step = WIZARD_STEPS[currentStep];
   const isLast = currentStep === TOTAL_STEPS - 1;
 
+  const rawValue = profile?.[step.id];
+  const value: string | string[] | undefined = rawValue as string | string[] | undefined;
+
+  const handleChange = (next: string | string[]) => {
+    update(step.id, next as Profile[typeof step.id]);
+  };
+
   return (
     <div className="mx-auto max-w-2xl px-6 py-10">
       <ProgressBar current={currentStep} total={TOTAL_STEPS} />
@@ -56,17 +67,11 @@ export function WizardPage() {
         {step.hint && <p className="mt-2 text-[14px] text-[#565c65]">{step.hint}</p>}
       </div>
 
-      <div className="mt-6 rounded-lg border border-dashed border-[#dfe1e2] bg-white p-6 text-center text-[13.5px] text-[#565c65]">
-        <p>
-          Opcije za ovaj korak ({step.type === 'single' ? 'jedan izbor' : 'više izbora'})
-          dolaze u sledećem zadatku — Sprint 2.3 (WizardStep komponenta).
-        </p>
-        <p className="mt-2 text-[12px]">
-          Polje: <code>{step.id}</code> · {step.options.length} opcija
-        </p>
+      <div className="mt-6">
+        <WizardStep step={step} value={value} onChange={handleChange} />
       </div>
 
-      <div className="mt-8 flex items-center justify-between">
+      <div className="mt-8 flex items-center justify-between gap-3">
         <Button
           variant="outline"
           disabled={currentStep === 0}
