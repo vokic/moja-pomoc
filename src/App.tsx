@@ -11,7 +11,6 @@ import { ResultsPage } from '@/pages/ResultsPage';
 import { AboutPage } from '@/pages/AboutPage';
 import { DonatePage } from '@/pages/DonatePage';
 import { PravoDetailPage } from '@/pages/PravoDetailPage';
-import { DebugEventsPage } from '@/pages/DebugEventsPage';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
                   <Route path="/pravo/:id" element={<PravoDetailPage />} />
                   <Route path="/o-projektu" element={<AboutPage />} />
                   <Route path="/podrzite" element={<DonatePage />} />
-                  <Route path="/debug-events" element={<DebugEventsPage />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
               </PageShell>
