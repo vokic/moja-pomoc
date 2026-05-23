@@ -3,7 +3,7 @@ import { useLang } from '@/lib/lang-context';
 import { usePageTitle } from '@/hooks/usePageTitle';
 
 export function AboutPage() {
-  const { t, lang } = useLang();
+  const { t } = useLang();
   usePageTitle(t('about.page_title'));
 
   return (
@@ -27,33 +27,10 @@ export function AboutPage() {
 
       <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">{t('about.privacy')}</h2>
       <ul className="mt-3 space-y-2 text-[14.5px] leading-relaxed text-[#1b1b1b]">
-        <li>
-          · {lang === 'en'
-            ? 'No accounts, no signup, no identity verification.'
-            : 'Bez naloga, bez prijave, bez verifikacije identiteta.'}
-        </li>
-        <li>
-          · {lang === 'en' ? (
-            <>
-              User profile lives only in browser <code>localStorage</code>. Nothing goes to a server.
-            </>
-          ) : (
-            <>
-              Profil korisnika živi samo u <code>localStorage</code> vašeg pretraživača. Ne odlazi na
-              server.
-            </>
-          )}
-        </li>
-        <li>
-          · {lang === 'en'
-            ? 'No tracking cookies. No Google Analytics, no Facebook Pixel.'
-            : 'Bez kolačića za praćenje. Bez Google Analytics, bez Facebook Pixel.'}
-        </li>
-        <li>
-          · {lang === 'en'
-            ? 'Aggregate analytics via PostHog (page count + click count, no personal data). GDPR-compliant by design.'
-            : 'Agregisana analitika preko PostHog-a (samo broj poseta i klikova, bez ličnih podataka). GDPR-compliant by design.'}
-        </li>
+        <li>· <span dangerouslySetInnerHTML={{ __html: t('about.privacy.1') }} /></li>
+        <li>· <span dangerouslySetInnerHTML={{ __html: t('about.privacy.2') }} /></li>
+        <li>· <span dangerouslySetInnerHTML={{ __html: t('about.privacy.3') }} /></li>
+        <li>· <span dangerouslySetInnerHTML={{ __html: t('about.privacy.4') }} /></li>
       </ul>
 
       <h2 className="mt-10 text-xl font-bold text-[var(--brand-primary)]">

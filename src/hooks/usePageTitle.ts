@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useLang } from '@/lib/lang-context';
 
 const BASE = 'Moja Pomoć';
 
@@ -7,10 +8,13 @@ const BASE = 'Moja Pomoć';
  * on unmount so back navigation feels right.
  */
 export function usePageTitle(title?: string): void {
+  const { t } = useLang();
+  const suffix = t('page_title.default_suffix');
   useEffect(() => {
-    document.title = title ? `${title} · ${BASE}` : `${BASE} — vodič kroz državna prava u Srbiji`;
+    const full = title ? `${title} · ${BASE}` : `${BASE} — ${suffix}`;
+    document.title = full;
     return () => {
-      document.title = `${BASE} — vodič kroz državna prava u Srbiji`;
+      document.title = `${BASE} — ${suffix}`;
     };
-  }, [title]);
+  }, [title, suffix]);
 }

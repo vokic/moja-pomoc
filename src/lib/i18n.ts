@@ -195,6 +195,13 @@ export const TRANSLATIONS = {
     'about.opensource': 'Otvoreni kod',
     'about.opensource.body':
       'Kod je javan pod MIT licencom. Katalog prava je javan pod CC-BY-SA 4.0. Svako može da pregleda, prijavi grešku, predloži dodavanje prava ili dopune.',
+    'about.privacy.1': 'Bez naloga, bez prijave, bez verifikacije identiteta.',
+    'about.privacy.2':
+      'Profil korisnika živi samo u <code>localStorage</code> vašeg pretraživača. Ne odlazi na server.',
+    'about.privacy.3': 'Bez kolačića za praćenje. Bez Google Analytics, bez Facebook Pixel.',
+    'about.privacy.4':
+      'Agregisana analitika preko PostHog-a (samo broj poseta i klikova, bez ličnih podataka). GDPR-compliant by design.',
+    'page_title.default_suffix': 'vodič kroz državna prava u Srbiji',
     'about.cta.support': 'Podrška projektu',
     'about.cta.wizard': 'Pokrenite vodič',
     'about.plan.title': 'Plan razvoja',
@@ -444,6 +451,14 @@ export const TRANSLATIONS = {
     'about.opensource': 'Open source',
     'about.opensource.body':
       'Code is public under MIT license. Rights catalog is public under CC-BY-SA 4.0. Anyone can review, report errors, propose new rights or improvements.',
+    'about.privacy.1': 'No accounts, no signup, no identity verification.',
+    'about.privacy.2':
+      'User profile lives only in your browser <code>localStorage</code>. Nothing is sent to a server.',
+    'about.privacy.3':
+      'No tracking cookies. No Google Analytics, no Facebook Pixel.',
+    'about.privacy.4':
+      'Aggregate analytics via PostHog (page count + click count, no personal data). GDPR-compliant by design.',
+    'page_title.default_suffix': 'guide to state rights in Serbia',
     'about.cta.support': 'Supporters',
     'about.cta.wizard': 'Start the guide',
     'about.plan.title': 'Development roadmap',

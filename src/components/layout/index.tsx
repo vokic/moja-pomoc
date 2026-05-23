@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { TrackedLink } from '@/components/shared/TrackedLink';
 import { useLang, type Lang } from '@/lib/lang-context';
 import type { TKey } from '@/lib/i18n';
-import { useTheme, type Theme } from '@/lib/theme-context';
+import { useTheme } from '@/lib/theme-context';
 
 const NAV: ReadonlyArray<{ to: string; key: TKey }> = [
   { to: '/', key: 'nav.home' },
@@ -17,37 +17,9 @@ const NAV: ReadonlyArray<{ to: string; key: TKey }> = [
 //  THEME TOKENS
 //  USA  — USA.gov / Benefits.gov (Nunito Sans + Merriweather logo)
 //  SR   — eUprava-style (Nunito Sans body + PT Sans Caption logo)
+//  ThemeSwitch UI temporarily hidden — restore from git history once we
+//  decide which theme to keep long-term.
 // ============================================================
-
-function ThemeSwitch() {
-  const { theme, setTheme } = useTheme();
-  return (
-    <div className="flex items-center gap-0">
-      {(['usa', 'srpski'] as Theme[]).map((t, i) => (
-        <button
-          key={t}
-          onClick={() => setTheme(t)}
-          className={`${i > 0 ? '-ml-px' : ''} border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider ${
-            theme === t
-              ? 'border-current bg-current'
-              : 'border-[#dfe1e2] bg-white text-[#565c65] hover:text-[#1b1b1b]'
-          }`}
-          style={
-            theme === t
-              ? {
-                  color: t === 'usa' ? '#162e51' : '#1B3A6B',
-                  backgroundColor: t === 'usa' ? '#162e51' : '#1B3A6B',
-                }
-              : undefined
-          }
-          aria-pressed={theme === t}
-        >
-          <span className={theme === t ? 'text-white' : ''}>{t === 'usa' ? 'USA' : 'SR'}</span>
-        </button>
-      ))}
-    </div>
-  );
-}
 
 function LanguageSwitch({ activeBg }: { activeBg: string }) {
   const { lang, setLang } = useLang();
@@ -88,15 +60,9 @@ function UsaHeader() {
       <div className="border-b border-[#dfe1e2] bg-[#f0f0f0] text-[13px] text-[#1b1b1b]">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-6 py-1.5">
           <div className="flex items-center gap-2">
-            <span className="inline-flex h-3 w-5 overflow-hidden border border-black/10" aria-hidden>
-              <span className="h-full w-1/3 bg-[#C8102E]" />
-              <span className="h-full w-1/3 bg-[#0C4076]" />
-              <span className="h-full w-1/3 bg-white" />
-            </span>
             <span>{t('header.usa.country_label')}</span>
           </div>
           <div className="flex items-center gap-3">
-            <ThemeSwitch />
             <LanguageSwitch activeBg="#162e51" />
           </div>
         </div>
@@ -267,7 +233,6 @@ function SrHeader() {
             {t('header.sr.tool_label')}
           </span>
           <div className="flex items-center gap-3">
-            <ThemeSwitch />
             <LanguageSwitch activeBg="#1B3A6B" />
           </div>
         </div>
@@ -297,14 +262,6 @@ function SrHeader() {
               <span className="block text-[12px] text-[#565c65]">{t('brand.tagline.short')}</span>
             </span>
           </Link>
-          <div className="hidden items-center gap-2 text-[12px] text-[#565c65] md:flex">
-            <span className="inline-flex h-5 w-7 overflow-hidden border border-[#D5DCE3]" aria-hidden>
-              <span className="h-full w-1/3 bg-[#C8102E]" />
-              <span className="h-full w-1/3 bg-[#1B3A6B]" />
-              <span className="h-full w-1/3 bg-white" />
-            </span>
-            <span>RS · SRB</span>
-          </div>
         </div>
       </div>
 
