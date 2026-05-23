@@ -1,28 +1,31 @@
+import type { Lang } from './i18n';
 import type { Kategorija } from '@/types';
 
-export const KATEGORIJA_LABELS: Record<Kategorija, string> = {
-  hronicni_bolesnici: 'Hronični bolesnici',
-  porodica_deca: 'Porodica i deca',
-  penzioneri: 'Penzioneri',
-  osi: 'Osobe sa invaliditetom',
-  nezaposleni: 'Nezaposleni',
-  borci_invalidi: 'Borci i invalidi',
-  energetska: 'Energetska zaštita',
-  prosveta: 'Prosveta',
-  porezi: 'Porezi',
-  poljoprivreda: 'Poljoprivreda',
-  zrtve_nasilja: 'Žrtve nasilja',
-  hraniteljstvo: 'Hraniteljstvo',
-  stanovanje: 'Stanovanje',
-  zdravlje_zena: 'Zdravlje žena',
-  mentalno_zdravlje: 'Mentalno zdravlje',
-  smrt_porodice: 'Smrt u porodici',
-  razvod: 'Razvod',
-  dijaspora: 'Dijaspora',
-  zivotne_situacije: 'Životne situacije',
-  mladi: 'Mladi',
+export const KATEGORIJA_LABELS: Record<Kategorija, { sr: string; en: string }> = {
+  hronicni_bolesnici: { sr: 'Hronični bolesnici', en: 'Chronic patients' },
+  porodica_deca: { sr: 'Porodica i deca', en: 'Family & children' },
+  penzioneri: { sr: 'Penzioneri', en: 'Retirees' },
+  osi: { sr: 'Osobe sa invaliditetom', en: 'Persons with disability' },
+  nezaposleni: { sr: 'Nezaposleni', en: 'Unemployed' },
+  borci_invalidi: { sr: 'Borci i invalidi', en: 'Veterans & disabled' },
+  energetska: { sr: 'Energetska zaštita', en: 'Energy protection' },
+  prosveta: { sr: 'Prosveta', en: 'Education' },
+  porezi: { sr: 'Porezi', en: 'Taxes' },
+  poljoprivreda: { sr: 'Poljoprivreda', en: 'Agriculture' },
+  zrtve_nasilja: { sr: 'Žrtve nasilja', en: 'Violence victims' },
+  hraniteljstvo: { sr: 'Hraniteljstvo', en: 'Foster care' },
+  stanovanje: { sr: 'Stanovanje', en: 'Housing' },
+  zdravlje_zena: { sr: 'Zdravlje žena', en: "Women's health" },
+  mentalno_zdravlje: { sr: 'Mentalno zdravlje', en: 'Mental health' },
+  smrt_porodice: { sr: 'Smrt u porodici', en: 'Family bereavement' },
+  razvod: { sr: 'Razvod', en: 'Divorce' },
+  dijaspora: { sr: 'Dijaspora', en: 'Diaspora' },
+  zivotne_situacije: { sr: 'Životne situacije', en: 'Life events' },
+  mladi: { sr: 'Mladi', en: 'Youth' },
 };
 
-export function kategorijaLabel(kat: Kategorija): string {
-  return KATEGORIJA_LABELS[kat] ?? kat.replace(/_/g, ' ');
+export function kategorijaLabel(kat: Kategorija, lang: Lang = 'sr'): string {
+  const entry = KATEGORIJA_LABELS[kat];
+  if (!entry) return kat.replace(/_/g, ' ');
+  return entry[lang] ?? entry.sr;
 }

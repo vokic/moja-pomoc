@@ -1,5 +1,6 @@
 import { Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
+import { useLang } from '@/lib/lang-context';
 
 type Props = {
   value: string;
@@ -8,6 +9,7 @@ type Props = {
 };
 
 export function SearchBar({ value, onChange, placeholder }: Props) {
+  const { t } = useLang();
   return (
     <div className="relative">
       <Search
@@ -18,8 +20,8 @@ export function SearchBar({ value, onChange, placeholder }: Props) {
         type="search"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder ?? 'Pretražite po nazivu prava…'}
-        aria-label="Pretraga prava"
+        placeholder={placeholder ?? t('search.placeholder')}
+        aria-label={t('search.aria_label')}
         className="h-11 pl-9"
       />
     </div>

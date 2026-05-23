@@ -9,7 +9,7 @@ type Props = {
 };
 
 export function SearchResults({ results, hasQuery }: Props) {
-  const { t, pickLocalized } = useLang();
+  const { t, pickLocalized, lang } = useLang();
 
   if (results.length === 0) {
     return (
@@ -40,7 +40,7 @@ export function SearchResults({ results, hasQuery }: Props) {
       {Array.from(groups.entries()).map(([kat, items]) => (
         <section key={kat}>
           <h2 className="text-[12px] font-bold uppercase tracking-wider text-[#565c65]">
-            {kategorijaLabel(kat)} <span className="text-[#9aa3ad]">({items.length})</span>
+            {kategorijaLabel(kat, lang)} <span className="text-[#9aa3ad]">({items.length})</span>
           </h2>
           <ul className="mt-2 divide-y divide-[#dfe1e2] rounded-md border border-[#dfe1e2] bg-white">
             {items.map((p) => (

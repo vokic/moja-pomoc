@@ -1,4 +1,5 @@
-﻿import { kategorijaLabel } from '@/lib/labels';
+import { kategorijaLabel } from '@/lib/labels';
+import { useLang } from '@/lib/lang-context';
 import type { Kategorija } from '@/types';
 
 type Props = {
@@ -8,18 +9,19 @@ type Props = {
 };
 
 export function CategoryFilter({ available, selected, onChange }: Props) {
+  const { t, lang } = useLang();
   const toggle = (k: Kategorija) => {
     onChange(selected.includes(k) ? selected.filter((x) => x !== k) : [...selected, k]);
   };
 
   return (
-    <div className="flex flex-wrap gap-2" role="group" aria-label="Filter po kategoriji">
+    <div className="flex flex-wrap gap-2" role="group" aria-label={t('search.category_filter.label')}>
       <Chip active={selected.length === 0} onClick={() => onChange([])}>
-        Sve
+        {t('search.filter.all')}
       </Chip>
       {available.map((k) => (
         <Chip key={k} active={selected.includes(k)} onClick={() => toggle(k)}>
-          {kategorijaLabel(k)}
+          {kategorijaLabel(k, lang)}
         </Chip>
       ))}
     </div>

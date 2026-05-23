@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { track } from '@/lib/analytics';
+import { useLang } from '@/lib/lang-context';
 import type { Pravo } from '@/types';
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
 };
 
 export function PdfExportButton({ prava, source = 'rezultati' }: Props) {
+  const { t } = useLang();
   const [busy, setBusy] = useState(false);
 
   const onClick = async () => {
@@ -35,7 +37,7 @@ export function PdfExportButton({ prava, source = 'rezultati' }: Props) {
       className="gap-2"
     >
       <Download className="h-4 w-4" aria-hidden />
-      {busy ? 'Generisanje…' : 'Sačuvaj kao PDF'}
+      {busy ? t('results.pdf.busy') : t('results.pdf')}
     </Button>
   );
 }
