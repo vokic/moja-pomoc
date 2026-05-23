@@ -11,6 +11,7 @@ import { buildSearchIndex, search } from '@/lib/search-index';
 import type { Kategorija } from '@/types';
 
 const DEBOUNCE_MS = 200;
+const TRACK_DEBOUNCE_MS = 1200;
 const MIN_QUERY_LEN = 3;
 
 export function SearchPage() {
@@ -46,17 +47,22 @@ export function SearchPage() {
     return Array.from(set).sort();
   }, [katalog]);
 
-  // Fire one event per stable (debounced) query, not on every keystroke.
+  // Fire tracking only after user has fully stopped typing (1.2s settling).
+  // This prevents partial substrings like "coko", "cokol", "cokoladn" from
+  // polluting analytics while the user is still typing.
   useEffect(() => {
     const q = debouncedQuery.trim();
     if (q.length < MIN_QUERY_LEN) return;
-    track('search_query', {
-      length: q.length,
-      has_filter: selectedCats.length > 0,
-    });
-    if (results.length === 0) {
-      track('search_no_results', { query: q.slice(0, 30) });
-    }
+    const timer = window.setTimeout(() => {
+      track('search_query', {
+        length: q.length,
+        has_filter: selectedCats.length > 0,
+      });
+      if (results.length === 0) {
+        track('search_no_results', { query: q.slice(0, 30) });
+      }
+    }, TRACK_DEBOUNCE_MS);
+    return () => window.clearTimeout(timer);
   }, [debouncedQuery, results.length, selectedCats.length]);
 
   if (loading) {
