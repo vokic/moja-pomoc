@@ -131,6 +131,15 @@ export const TRANSLATIONS = {
     'detail.badge.surprise': 'Verovatno niste znali',
     'detail.badge.high': 'Visok prioritet',
 
+    // Per-pravo feedback widget
+    'pravo.feedback.question': 'Da li je ovo pravo tačno i od pomoći?',
+    'pravo.feedback.subtitle': 'Vaš glas pomaže nam da ispravimo greške i odredimo koja prava treba dopuniti.',
+    'pravo.feedback.up': 'Korisno',
+    'pravo.feedback.down': 'Nije korisno',
+    'pravo.feedback.thanks': 'Hvala na povratnoj informaciji!',
+    'pravo.feedback.thanks.up': 'Drago nam je da je informacija od pomoći.',
+    'pravo.feedback.thanks.down': 'Pregledaćemo i ispraviti. Ako želite konkretno da nam javite šta nedostaje - pišite nam preko stranice Podrška.',
+
     // Search
     'search.page_title': 'Sve pomoći i naknade',
     'search.intro':
@@ -395,6 +404,15 @@ export const TRANSLATIONS = {
     'detail.tab.greske': 'Common mistakes',
     'detail.badge.surprise': 'You probably did not know',
     'detail.badge.high': 'High priority',
+
+    // Per-pravo feedback widget
+    'pravo.feedback.question': 'Is this right accurate and helpful?',
+    'pravo.feedback.subtitle': 'Your vote helps us correct mistakes and decide which rights to expand.',
+    'pravo.feedback.up': 'Helpful',
+    'pravo.feedback.down': 'Not helpful',
+    'pravo.feedback.thanks': 'Thanks for the feedback!',
+    'pravo.feedback.thanks.up': "We're glad this was useful.",
+    'pravo.feedback.thanks.down': "We'll review and fix. If you want to tell us specifically what's missing, write to us via the Support page.",
 
     // Search
     'search.page_title': 'All benefits and allowances',

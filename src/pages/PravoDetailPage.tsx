@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { PravoFeedback } from '@/components/pravo-detail/PravoFeedback';
 import { TabDokumenti } from '@/components/pravo-detail/TabDokumenti';
 import { TabGreske } from '@/components/pravo-detail/TabGreske';
 import { TabInstitucije } from '@/components/pravo-detail/TabInstitucije';
@@ -152,6 +153,8 @@ export function PravoDetailPage() {
           </div>
         </Tabs>
       </div>
+
+      <PravoFeedback pravoId={pravo.id} />
     </div>
   );
 }
