@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ProgressBar } from '@/components/wizard/ProgressBar';
@@ -8,10 +8,12 @@ import { useProfile } from '@/hooks/useProfile';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import { usePageDwell } from '@/hooks/usePageDwell';
 import { track } from '@/lib/analytics';
+import { useLang } from '@/lib/lang-context';
 import type { Profile } from '@/types';
 
 export function WizardPage() {
-  usePageTitle('Vodič za prava');
+  const { t, lang } = useLang();
+  usePageTitle(t('wizard.page_title'));
   usePageDwell('wizard');
   const { profile, update, reset, complete } = useProfile();
   const navigate = useNavigate();
@@ -41,13 +43,10 @@ export function WizardPage() {
   if (resumePrompt === true) {
     return (
       <div className="mx-auto max-w-2xl px-6 py-16">
-        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">Nastavite gde ste stali?</h1>
-        <p className="mt-3 text-[15px] text-[#565c65]">
-          Imali smo započet vodič sačuvan u ovom pretraživaču. Možete da nastavite
-          tamo gde ste stali ili krenete ispočetka.
-        </p>
+        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">{t('wizard.resume.title')}</h1>
+        <p className="mt-3 text-[15px] text-[#565c65]">{t('wizard.resume.body')}</p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Button onClick={() => setResumePrompt(false)}>Nastavi</Button>
+          <Button onClick={() => setResumePrompt(false)}>{t('wizard.resume.continue')}</Button>
           <Button
             variant="outline"
             onClick={() => {
@@ -56,7 +55,7 @@ export function WizardPage() {
               setCurrentStep(0);
             }}
           >
-            Kreni ispočetka
+            {t('wizard.resume.restart')}
           </Button>
         </div>
       </div>
@@ -75,8 +74,8 @@ export function WizardPage() {
       <ProgressBar current={currentStep} total={TOTAL_STEPS} />
 
       <div className="mt-8">
-        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">{step.q}</h1>
-        {step.hint && <p className="mt-2 text-[14px] text-[#565c65]">{step.hint}</p>}
+        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">{step.q[lang]}</h1>
+        {step.hint && <p className="mt-2 text-[14px] text-[#565c65]">{step.hint[lang]}</p>}
       </div>
 
       <div className="mt-6">
@@ -92,11 +91,11 @@ export function WizardPage() {
             setCurrentStep((s) => Math.max(0, s - 1));
           }}
         >
-          Nazad
+          {t('wizard.nav.back')}
         </Button>
         {!isLast ? (
           <Button onClick={() => setCurrentStep((s) => Math.min(TOTAL_STEPS - 1, s + 1))}>
-            Sledeće
+            {t('wizard.nav.next')}
           </Button>
         ) : (
           <Button
@@ -105,7 +104,7 @@ export function WizardPage() {
               navigate('/rezultati');
             }}
           >
-            Pokaži šta mi pripada
+            {t('wizard.nav.finish')}
           </Button>
         )}
       </div>

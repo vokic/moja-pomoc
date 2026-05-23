@@ -12,12 +12,14 @@ import { usePageTitle } from '@/hooks/usePageTitle';
 import { useProfile } from '@/hooks/useProfile';
 import { track } from '@/lib/analytics';
 import { kategorijaLabel } from '@/lib/labels';
+import { useLang } from '@/lib/lang-context';
 import type { Kategorija, MatchResult } from '@/types';
 
 type Filter = 'sve' | 'surprise' | 'high';
 
 export function ResultsPage() {
-  usePageTitle('Moji rezultati');
+  const { t, lang } = useLang();
+  usePageTitle(t('results.page_title'));
   usePageDwell('rezultati');
   const { complete, loaded } = useProfile();
   const { loading: catalogLoading, error: catalogError } = useCatalog();
@@ -39,7 +41,7 @@ export function ResultsPage() {
   if (!loaded || catalogLoading) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16 text-center text-[#565c65]">
-        Učitavanje…
+        {t('common.loading')}
       </div>
     );
   }
@@ -47,7 +49,7 @@ export function ResultsPage() {
   if (catalogError) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16 text-center text-rose-700">
-        Greška pri učitavanju kataloga: {catalogError.message}
+        {t('common.error.catalog')}: {catalogError.message}
       </div>
     );
   }
@@ -55,16 +57,14 @@ export function ResultsPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-10">
       <header>
-        <h1 className="text-3xl font-bold text-[var(--brand-primary)]">Moji rezultati</h1>
-        <p className="mt-2 text-[14px] text-[#565c65]">
-          Pretraga je obavljena lokalno u vašem pretraživaču.
-        </p>
+        <h1 className="text-3xl font-bold text-[var(--brand-primary)]">{t('results.page_title')}</h1>
+        <p className="mt-2 text-[14px] text-[#565c65]">{t('results.subtitle')}</p>
       </header>
 
       <section className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
-        <SummaryCard label="Pronađeno prava" value={count} />
-        <SummaryCard label="Verovatno niste znali" value={surprises} />
-        <SummaryCard label="Kategorija" value={categories.length} />
+        <SummaryCard label={t('results.summary.found')} value={count} />
+        <SummaryCard label={t('results.summary.surprise')} value={surprises} />
+        <SummaryCard label={t('results.summary.categories')} value={categories.length} />
       </section>
 
       <Disclaimer className="mt-6" />
@@ -79,7 +79,7 @@ export function ResultsPage() {
                 setFilter('sve');
               }}
             >
-              Sve ({matches.length})
+              {t('results.filter.all')} ({matches.length})
             </FilterChip>
             {surprises > 0 && (
               <FilterChip
@@ -89,7 +89,7 @@ export function ResultsPage() {
                   setFilter('surprise');
                 }}
               >
-                Verovatno niste znali ({surprises})
+                {t('results.filter.surprise')} ({surprises})
               </FilterChip>
             )}
             {highPriority > 0 && (
@@ -100,7 +100,7 @@ export function ResultsPage() {
                   setFilter('high');
                 }}
               >
-                Visok prioritet ({highPriority})
+                {t('results.filter.high')} ({highPriority})
               </FilterChip>
             )}
           </div>
@@ -115,7 +115,7 @@ export function ResultsPage() {
               }}
               className="h-4 w-4"
             />
-            Pokaži po kategorijama
+            {t('results.view.grouped')}
           </label>
         </div>
       )}
@@ -123,12 +123,10 @@ export function ResultsPage() {
       <section className="mt-6">
         {filtered.length === 0 ? (
           <p className="rounded-md border border-dashed border-[#dfe1e2] p-6 text-center text-[14px] text-[#565c65]">
-            {matches.length === 0
-              ? 'Na osnovu vaših odgovora nismo pronašli prava u trenutnom katalogu. Katalog se redovno proširuje — vratite se kasnije ili kontaktirajte nas sa predlogom prava koje treba dodati.'
-              : 'Nijedno pravo ne odgovara izabranom filteru.'}
+            {matches.length === 0 ? t('results.empty.no_match') : t('results.empty.filtered')}
           </p>
         ) : groupByCategory ? (
-          <GroupedResults results={filtered} />
+          <GroupedResults results={filtered} lang={lang} />
         ) : (
           <div className="space-y-3">
             {filtered.map((m) => (
@@ -149,7 +147,7 @@ export function ResultsPage() {
   );
 }
 
-function GroupedResults({ results }: { results: MatchResult[] }) {
+function GroupedResults({ results, lang }: { results: MatchResult[]; lang: 'sr' | 'en' }) {
   const groups = useMemo(() => {
     const map = new Map<Kategorija, MatchResult[]>();
     for (const m of results) {
@@ -165,7 +163,7 @@ function GroupedResults({ results }: { results: MatchResult[] }) {
       {groups.map(([kat, items]) => (
         <section key={kat}>
           <h2 className="text-[12px] font-bold uppercase tracking-wider text-[#565c65]">
-            {kategorijaLabel(kat)} <span className="text-[#9aa3ad]">({items.length})</span>
+            {kategorijaLabel(kat, lang)} <span className="text-[#9aa3ad]">({items.length})</span>
           </h2>
           <div className="mt-2 space-y-3">
             {items.map((m) => (

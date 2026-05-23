@@ -22,7 +22,7 @@ import { useLang } from '@/lib/lang-context';
 export function PravoDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { katalog, loading, error } = useCatalog();
-  const { t, pickLocalized } = useLang();
+  const { t, lang, pickLocalized } = useLang();
   const pravoForTitle = id && katalog ? findPravo(katalog, id) : undefined;
   usePageTitle(pravoForTitle ? pickLocalized(pravoForTitle.naziv) : t('detail.not_found.title'));
   usePageDwell('pravo_detail');
@@ -101,7 +101,7 @@ export function PravoDetailPage() {
               {t('detail.badge.high')}
             </Badge>
           )}
-          <Badge variant="secondary">{kategorijaLabel(pravo.kategorija)}</Badge>
+          <Badge variant="secondary">{kategorijaLabel(pravo.kategorija, lang)}</Badge>
         </div>
 
         <p className="mt-4 text-pretty text-[15px] leading-relaxed text-[#1b1b1b]">

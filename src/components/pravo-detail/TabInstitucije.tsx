@@ -1,11 +1,13 @@
 ﻿import { TrackedLink } from '@/components/shared/TrackedLink';
+import { useLang } from '@/lib/lang-context';
 import type { Pravo } from '@/types';
 
 type Props = { pravo: Pravo };
 
 export function TabInstitucije({ pravo }: Props) {
+  const { t } = useLang();
   if (pravo.institucije.length === 0) {
-    return <p className="text-[14px] text-[#565c65]">Nema definisanih institucija.</p>;
+    return <p className="text-[14px] text-[#565c65]">{t('detail.institucije.empty')}</p>;
   }
 
   return (
@@ -20,12 +22,12 @@ export function TabInstitucije({ pravo }: Props) {
           </div>
           <dl className="mt-3 grid grid-cols-1 gap-2 text-[13.5px] sm:grid-cols-2">
             {i.adresa && (
-              <Row label="Adresa">
+              <Row label={t('detail.institucije.adresa')}>
                 <span>{i.adresa}</span>
               </Row>
             )}
             {i.telefon && (
-              <Row label="Telefon">
+              <Row label={t('detail.institucije.telefon')}>
                 <TrackedLink
                   source="institucija"
                   href={`tel:${i.telefon}`}
@@ -36,7 +38,7 @@ export function TabInstitucije({ pravo }: Props) {
               </Row>
             )}
             {i.email && (
-              <Row label="Email">
+              <Row label={t('detail.institucije.email')}>
                 <TrackedLink
                   source="institucija"
                   href={`mailto:${i.email}`}
@@ -47,7 +49,7 @@ export function TabInstitucije({ pravo }: Props) {
               </Row>
             )}
             {i.url && (
-              <Row label="Web">
+              <Row label={t('detail.institucije.web')}>
                 <TrackedLink
                   source="institucija"
                   href={i.url}
@@ -60,7 +62,7 @@ export function TabInstitucije({ pravo }: Props) {
               </Row>
             )}
             {i.radno_vreme && (
-              <Row label="Radno vreme">
+              <Row label={t('detail.institucije.radno_vreme')}>
                 <span>{i.radno_vreme}</span>
               </Row>
             )}

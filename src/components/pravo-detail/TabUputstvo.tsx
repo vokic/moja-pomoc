@@ -1,15 +1,13 @@
-﻿import { TrackedLink } from '@/components/shared/TrackedLink';
+import { TrackedLink } from '@/components/shared/TrackedLink';
+import { useLang } from '@/lib/lang-context';
 import type { UputstvoZahteva } from '@/types';
 
 type Props = { uputstvo?: UputstvoZahteva };
 
 export function TabUputstvo({ uputstvo }: Props) {
+  const { t } = useLang();
   if (!uputstvo) {
-    return (
-      <p className="text-[14px] text-[#565c65]">
-        Uputstvo za ovo pravo još nije pripremljeno.
-      </p>
-    );
+    return <p className="text-[14px] text-[#565c65]">{t('detail.uputstvo.empty')}</p>;
   }
 
   return (
@@ -17,7 +15,7 @@ export function TabUputstvo({ uputstvo }: Props) {
       <header>
         <h3 className="text-[16px] font-bold text-[var(--brand-primary)]">{uputstvo.naziv_zahteva}</h3>
         <p className="mt-2 text-[13.5px] leading-relaxed text-[#565c65]">
-          <strong className="text-[#1b1b1b]">Gde dobiti obrazac:</strong>{' '}
+          <strong className="text-[#1b1b1b]">{t('detail.uputstvo.gde_obrazac')}:</strong>{' '}
           {uputstvo.gde_dobiti_obrazac}
         </p>
         {uputstvo.obrazac_url && (
@@ -28,19 +26,18 @@ export function TabUputstvo({ uputstvo }: Props) {
             rel="noreferrer"
             className="mt-2 inline-block text-[13.5px] font-semibold text-[var(--brand-primary)] underline"
           >
-            Pogledaj službeni obrazac ↗
+            {t('detail.uputstvo.pogledaj_obrazac')}
           </TrackedLink>
         )}
       </header>
 
-      <Section title="Pre nego što odete" items={uputstvo.pre_popunjavanja} />
-      <Section title="Šta tačno reći na šalteru" items={uputstvo.sta_reci_na_salteru} />
-      <Section title="Šta proveriti pre potpisa" items={uputstvo.sta_proveriti_pre_potpisa} />
-      <Section title="Posle predaje zahteva" items={uputstvo.posle_predaje} />
+      <Section title={t('detail.uputstvo.section.pre')} items={uputstvo.pre_popunjavanja} />
+      <Section title={t('detail.uputstvo.section.salter')} items={uputstvo.sta_reci_na_salteru} />
+      <Section title={t('detail.uputstvo.section.potpis')} items={uputstvo.sta_proveriti_pre_potpisa} />
+      <Section title={t('detail.uputstvo.section.posle')} items={uputstvo.posle_predaje} />
 
       <p className="rounded-md border border-amber-200 bg-amber-50 p-3 text-[13px] leading-relaxed text-amber-900">
-        Moja Pomoć ne popunjava obrasce za vas. Dajemo uputstvo — vi predajete zahtev.
-        Pre potpisa, proverite sve podatke sami.
+        {t('detail.uputstvo.note')}
       </p>
     </div>
   );

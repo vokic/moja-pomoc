@@ -1,14 +1,17 @@
-﻿type Props = {
+import { useLang } from '@/lib/lang-context';
+
+type Props = {
   current: number;
   total: number;
 };
 
 export function ProgressBar({ current, total }: Props) {
+  const { t } = useLang();
   return (
     <div>
       <div className="mb-2 flex items-center justify-between text-[12px] text-[#565c65]">
         <span className="font-semibold uppercase tracking-wider">
-          Korak {current + 1} od {total}
+          {t('wizard.progress', { current: String(current + 1), total: String(total) })}
         </span>
         <span>{Math.round(((current + 1) / total) * 100)}%</span>
       </div>

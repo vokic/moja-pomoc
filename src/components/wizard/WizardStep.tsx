@@ -34,6 +34,7 @@
   X,
   type LucideIcon,
 } from 'lucide-react';
+import { useLang } from '@/lib/lang-context';
 import type { WizardOption, WizardStepDef } from './steps-config';
 
 const ICONS: Record<string, LucideIcon> = {
@@ -84,14 +85,16 @@ type Props = {
 };
 
 export function WizardStep({ step, value, onChange }: Props) {
+  const { lang } = useLang();
   if (step.type === 'single') {
     const selected = typeof value === 'string' ? value : undefined;
     return (
-      <div role="radiogroup" aria-label={step.q} className="space-y-2">
+      <div role="radiogroup" aria-label={step.q[lang]} className="space-y-2">
         {step.options.map((opt) => (
           <OptionButton
             key={opt.val}
             opt={opt}
+            label={opt.label[lang]}
             selected={selected === opt.val}
             role="radio"
             onClick={() => onChange(opt.val)}
@@ -119,11 +122,12 @@ export function WizardStep({ step, value, onChange }: Props) {
   };
 
   return (
-    <div role="group" aria-label={step.q} className="space-y-2">
+    <div role="group" aria-label={step.q[lang]} className="space-y-2">
       {step.options.map((opt) => (
         <OptionButton
           key={opt.val}
           opt={opt}
+          label={opt.label[lang]}
           selected={selected.includes(opt.val)}
           role="checkbox"
           onClick={() => toggle(opt)}
@@ -135,12 +139,13 @@ export function WizardStep({ step, value, onChange }: Props) {
 
 type OptionButtonProps = {
   opt: WizardOption;
+  label: string;
   selected: boolean;
   role: 'radio' | 'checkbox';
   onClick: () => void;
 };
 
-function OptionButton({ opt, selected, role, onClick }: OptionButtonProps) {
+function OptionButton({ opt, label, selected, role, onClick }: OptionButtonProps) {
   return (
     <button
       type="button"
@@ -154,7 +159,7 @@ function OptionButton({ opt, selected, role, onClick }: OptionButtonProps) {
       } ${opt.exclusive ? 'italic' : ''}`}
     >
       <Icon name={opt.icon} />
-      <span className="flex-1">{opt.label}</span>
+      <span className="flex-1">{label}</span>
       <span
         className={`flex h-5 w-5 shrink-0 items-center justify-center border ${
           role === 'radio' ? 'rounded-full' : 'rounded'

@@ -6,6 +6,7 @@ import { useCatalog } from '@/hooks/useCatalog';
 import { usePageDwell } from '@/hooks/usePageDwell';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import { track } from '@/lib/analytics';
+import { useLang } from '@/lib/lang-context';
 import { buildSearchIndex, search } from '@/lib/search-index';
 import type { Kategorija } from '@/types';
 
@@ -13,7 +14,8 @@ const DEBOUNCE_MS = 200;
 const MIN_QUERY_LEN = 3;
 
 export function SearchPage() {
-  usePageTitle('Pretraga prava');
+  const { t } = useLang();
+  usePageTitle(t('search.page_title'));
   usePageDwell('pretraga');
   const { katalog, loading, error } = useCatalog();
   const [query, setQuery] = useState('');
@@ -60,7 +62,7 @@ export function SearchPage() {
   if (loading) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16 text-center text-[#565c65]">
-        Učitavanje kataloga…
+        {t('common.loading')}
       </div>
     );
   }
@@ -68,17 +70,15 @@ export function SearchPage() {
   if (error) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16 text-center text-rose-700">
-        Greška: {error.message}
+        {t('common.error_prefix')}: {error.message}
       </div>
     );
   }
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-10">
-      <h1 className="text-3xl font-bold text-[var(--brand-primary)]">Sve pomoći i naknade</h1>
-      <p className="mt-2 text-[14px] text-[#565c65]">
-        Pretraga radi za oba pisma — kucate "decji", pronaći ćete i "Дечји додатак".
-      </p>
+      <h1 className="text-3xl font-bold text-[var(--brand-primary)]">{t('search.page_title')}</h1>
+      <p className="mt-2 text-[14px] text-[#565c65]">{t('search.intro')}</p>
 
       <div className="mt-6">
         <SearchBar value={query} onChange={setQuery} />

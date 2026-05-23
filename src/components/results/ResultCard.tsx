@@ -10,7 +10,7 @@ import type { Pravo } from '@/types';
 type Props = { pravo: Pravo };
 
 export function ResultCard({ pravo }: Props) {
-  const { t, pickLocalized } = useLang();
+  const { t, lang, pickLocalized } = useLang();
   const isSurprise = pravo.tagovi.includes('surprise');
   const isHigh = pravo.prioritet_propusta >= 4;
 
@@ -40,7 +40,7 @@ export function ResultCard({ pravo }: Props) {
               {t('detail.badge.high')}
             </Badge>
           )}
-          <Badge variant="secondary">{kategorijaLabel(pravo.kategorija)}</Badge>
+          <Badge variant="secondary">{kategorijaLabel(pravo.kategorija, lang)}</Badge>
         </div>
 
         <p className="mt-3 text-pretty text-[14px] leading-relaxed text-[#565c65]">

@@ -54,7 +54,7 @@ export const TRANSLATIONS = {
     'wizard.nav.back': 'Nazad',
     'wizard.nav.next': 'Sledeće',
     'wizard.nav.finish': 'Pokaži šta mi pripada',
-    'wizard.progress': 'Korak',
+    'wizard.progress': 'Korak {current} od {total}',
 
     // Results
     'results.page_title': 'Moji rezultati',
@@ -304,7 +304,7 @@ export const TRANSLATIONS = {
     'wizard.nav.back': 'Back',
     'wizard.nav.next': 'Next',
     'wizard.nav.finish': 'Show what I qualify for',
-    'wizard.progress': 'Step',
+    'wizard.progress': 'Step {current} of {total}',
 
     // Results
     'results.page_title': 'My results',

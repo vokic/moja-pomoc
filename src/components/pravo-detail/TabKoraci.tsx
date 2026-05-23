@@ -1,10 +1,12 @@
-﻿import type { Pravo } from '@/types';
+import { useLang } from '@/lib/lang-context';
+import type { Pravo } from '@/types';
 
 type Props = { pravo: Pravo };
 
 export function TabKoraci({ pravo }: Props) {
+  const { t } = useLang();
   if (pravo.koraci.length === 0) {
-    return <p className="text-[14px] text-[#565c65]">Nema definisanih koraka.</p>;
+    return <p className="text-[14px] text-[#565c65]">{t('detail.koraci.empty')}</p>;
   }
 
   return (
@@ -19,12 +21,12 @@ export function TabKoraci({ pravo }: Props) {
             <p className="mt-1 text-[14px] leading-relaxed text-[#1b1b1b]">{k.opis}</p>
             {k.napomena && (
               <p className="mt-2 rounded-md bg-[#f0f0f0] px-3 py-2 text-[13px] leading-relaxed text-[#1b1b1b]">
-                <strong>Napomena:</strong> {k.napomena}
+                <strong>{t('detail.koraci.napomena')}:</strong> {k.napomena}
               </p>
             )}
             {k.upozorenje && (
               <p className="mt-2 rounded-md border-l-4 border-amber-500 bg-amber-50 px-3 py-2 text-[13px] leading-relaxed text-amber-900">
-                <strong>Pažnja:</strong> {k.upozorenje}
+                <strong>{t('detail.koraci.upozorenje')}:</strong> {k.upozorenje}
               </p>
             )}
           </div>
