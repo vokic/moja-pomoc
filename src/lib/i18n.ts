@@ -139,6 +139,10 @@ export const TRANSLATIONS = {
     'pravo.feedback.thanks': 'Hvala na povratnoj informaciji!',
     'pravo.feedback.thanks.up': 'Drago nam je da je informacija od pomoći.',
     'pravo.feedback.thanks.down': 'Pregledaćemo i ispraviti. Ako želite konkretno da nam javite šta nedostaje - pišite nam preko stranice Podrška.',
+    'pravo.feedback.comment.prompt': 'Šta je netačno ili nedostaje? (opciono, anonimno)',
+    'pravo.feedback.comment.placeholder': 'Npr. iznos je pogrešan, koraci nisu jasni, link ne radi...',
+    'pravo.feedback.comment.submit': 'Pošalji',
+    'pravo.feedback.comment.skip': 'Preskoči',
 
     // Search
     'search.page_title': 'Sve pomoći i naknade',
@@ -413,6 +417,10 @@ export const TRANSLATIONS = {
     'pravo.feedback.thanks': 'Thanks for the feedback!',
     'pravo.feedback.thanks.up': "We're glad this was useful.",
     'pravo.feedback.thanks.down': "We'll review and fix. If you want to tell us specifically what's missing, write to us via the Support page.",
+    'pravo.feedback.comment.prompt': 'What is incorrect or missing? (optional, anonymous)',
+    'pravo.feedback.comment.placeholder': 'E.g. the amount is wrong, steps are unclear, link is broken...',
+    'pravo.feedback.comment.submit': 'Send',
+    'pravo.feedback.comment.skip': 'Skip',
 
     // Search
     'search.page_title': 'All benefits and allowances',
