@@ -6,12 +6,12 @@ import { useLang } from '@/lib/lang-context';
 type Vote = 'up' | 'down';
 type Phase = 'idle' | 'commenting' | 'done';
 
-type Props = { pravoId: string };
+type Props = { pravoId: string; pravoNaziv: string };
 
 const STORAGE_KEY = (id: string) => `mp_pravo_feedback_${id}`;
 const MAX_COMMENT_LEN = 500;
 
-export function PravoFeedback({ pravoId }: Props) {
+export function PravoFeedback({ pravoId, pravoNaziv }: Props) {
   const { t } = useLang();
   const [phase, setPhase] = useState<Phase>('idle');
   const [vote, setVote] = useState<Vote | null>(null);
@@ -45,7 +45,7 @@ export function PravoFeedback({ pravoId }: Props) {
     setVote('up');
     setPhase('done');
     persistVote('up');
-    track('pravo_feedback', { pravo_id: pravoId, vote: 'up' });
+    track('pravo_feedback', { pravo_id: pravoId, pravo_naziv: pravoNaziv, vote: 'up' });
   };
 
   const handleDown = () => {
@@ -58,7 +58,12 @@ export function PravoFeedback({ pravoId }: Props) {
     const c = comment.trim().slice(0, MAX_COMMENT_LEN);
     setPhase('done');
     persistVote('down');
-    track('pravo_feedback', c ? { pravo_id: pravoId, vote: 'down', comment: c } : { pravo_id: pravoId, vote: 'down' });
+    track(
+      'pravo_feedback',
+      c
+        ? { pravo_id: pravoId, pravo_naziv: pravoNaziv, vote: 'down', comment: c }
+        : { pravo_id: pravoId, pravo_naziv: pravoNaziv, vote: 'down' },
+    );
   };
 
   if (phase === 'done' && vote) {

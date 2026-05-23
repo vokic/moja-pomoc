@@ -154,7 +154,7 @@ export function PravoDetailPage() {
         </Tabs>
       </div>
 
-      <PravoFeedback pravoId={pravo.id} />
+      <PravoFeedback pravoId={pravo.id} pravoNaziv={pickLocalized(pravo.naziv)} />
     </div>
   );
 }
