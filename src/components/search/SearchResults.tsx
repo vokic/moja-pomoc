@@ -1,7 +1,6 @@
-﻿import { Link } from 'react-router-dom';
-import { useScript } from '@/hooks/useScript';
-import { pickScript } from '@/lib/script';
+import { Link } from 'react-router-dom';
 import { kategorijaLabel } from '@/lib/labels';
+import { useLang } from '@/lib/lang-context';
 import type { Kategorija, Pravo } from '@/types';
 
 type Props = {
@@ -10,28 +9,25 @@ type Props = {
 };
 
 export function SearchResults({ results, hasQuery }: Props) {
-  const { script } = useScript();
+  const { t, pickLocalized } = useLang();
 
   if (results.length === 0) {
     return (
       <div className="rounded-md border border-dashed border-[#dfe1e2] p-8 text-center">
         <p className="text-[14px] text-[#565c65]">
-          {hasQuery
-            ? 'Nismo pronašli pravo koje odgovara pretrazi.'
-            : 'Nema prava u izabranoj kategoriji.'}
+          {hasQuery ? t('search.empty.with_query') : t('search.empty.no_query')}
         </p>
         <p className="mt-3 text-[13.5px] text-[#565c65]">
-          Probajte{' '}
           <Link to="/wizard" className="font-semibold text-[var(--brand-primary)] underline">
-            vodič
-          </Link>{' '}
-          — postavićemo nekoliko pitanja i pokazaćemo prava o kojima niste razmišljali.
+            {t('nav.wizard')}
+          </Link>
+          {' — '}
+          {t('search.empty.cta')}
         </p>
       </div>
     );
   }
 
-  // Group by kategorija (preserves order of first occurrence)
   const groups = new Map<Kategorija, Pravo[]>();
   for (const p of results) {
     const list = groups.get(p.kategorija) ?? [];
@@ -54,7 +50,7 @@ export function SearchResults({ results, hasQuery }: Props) {
                   className="flex items-start justify-between gap-3 px-4 py-3 text-[14px] text-[#1b1b1b] hover:bg-[#f0f0f0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
                 >
                   <span className="font-medium text-[var(--brand-primary)]">
-                    {pickScript(p.naziv, script)}
+                    {pickLocalized(p.naziv)}
                   </span>
                   <span className="shrink-0 text-[#565c65]">→</span>
                 </Link>

@@ -1,5 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { ScriptProvider } from '@/lib/script-context';
+import { LangProvider } from '@/lib/lang-context';
 import { ThemeProvider } from '@/lib/theme-context';
 import { PageShell } from '@/components/layout';
 import { CatalogProvider } from '@/hooks/useCatalog';
@@ -9,13 +9,13 @@ import { WizardPage } from '@/pages/WizardPage';
 import { SearchPage } from '@/pages/SearchPage';
 import { ResultsPage } from '@/pages/ResultsPage';
 import { AboutPage } from '@/pages/AboutPage';
-import { DonatePage } from '@/pages/DonatePage';
+import { SupportPage } from '@/pages/SupportPage';
 import { PravoDetailPage } from '@/pages/PravoDetailPage';
 
 function App() {
   return (
     <ThemeProvider>
-      <ScriptProvider>
+      <LangProvider>
         <CatalogProvider>
           <ProfileProvider>
             <BrowserRouter>
@@ -27,14 +27,15 @@ function App() {
                   <Route path="/rezultati" element={<ResultsPage />} />
                   <Route path="/pravo/:id" element={<PravoDetailPage />} />
                   <Route path="/o-projektu" element={<AboutPage />} />
-                  <Route path="/podrzite" element={<DonatePage />} />
+                  <Route path="/podrska" element={<SupportPage />} />
+                  <Route path="/podrzite" element={<Navigate to="/podrska" replace />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
               </PageShell>
             </BrowserRouter>
           </ProfileProvider>
         </CatalogProvider>
-      </ScriptProvider>
+      </LangProvider>
     </ThemeProvider>
   );
 }

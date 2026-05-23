@@ -1,17 +1,7 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import { DEFAULT_SCRIPT, getScript, pickScript, setScript as setScriptStorage } from './script';
-import type { Script } from './script';
-import type { LocalizedText } from '@/types';
-
-export type { Script } from './script';
-
-type Ctx = {
-  script: Script;
-  setScript: (s: Script) => void;
-  t: (v: LocalizedText) => string;
-};
-
-const ScriptContext = createContext<Ctx | null>(null);
+/**
+ * Basic Serbian Cyrillic ↔ Latin transliteration. Used by PDF export (lower
+ * Helvetica only supports Latin) and search index (cross-script normalize).
+ */
 
 const LAT_TO_CYR: Record<string, string> = {
   a: 'а', b: 'б', v: 'в', g: 'г', d: 'д', e: 'е', z: 'з', i: 'и', j: 'ј',
@@ -51,35 +41,4 @@ export function cyrToLat(s: string): string {
     .split('')
     .map((c) => m[c] ?? c)
     .join('');
-}
-
-export function ScriptProvider({ children }: { children: ReactNode }) {
-  const [script, setScriptState] = useState<Script>(DEFAULT_SCRIPT);
-
-  useEffect(() => {
-    setScriptState(getScript());
-  }, []);
-
-  const setScript = (s: Script) => {
-    setScriptState(s);
-    setScriptStorage(s);
-  };
-
-  const t = (v: LocalizedText) => pickScript(v, script);
-
-  return (
-    <ScriptContext.Provider value={{ script, setScript, t }}>{children}</ScriptContext.Provider>
-  );
-}
-
-export function useScript() {
-  const v = useContext(ScriptContext);
-  if (!v) {
-    return {
-      script: DEFAULT_SCRIPT,
-      setScript: () => {},
-      t: (x: LocalizedText) => x.sr_lat,
-    };
-  }
-  return v;
 }

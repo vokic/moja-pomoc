@@ -1,7 +1,7 @@
 import { jsPDF } from 'jspdf';
 import { formatIznos } from './iznos';
 import { kategorijaLabel } from './labels';
-import { cyrToLat } from './script-context';
+import { cyrToLat } from './transliterate';
 import type { Pravo } from '@/types';
 
 const PAGE_W = 210;

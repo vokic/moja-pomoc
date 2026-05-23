@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { TabDokumenti } from '@/components/pravo-detail/TabDokumenti';
@@ -13,21 +13,24 @@ import { Badge } from '@/components/ui/badge';
 import { useCatalog } from '@/hooks/useCatalog';
 import { usePageDwell } from '@/hooks/usePageDwell';
 import { usePageTitle } from '@/hooks/usePageTitle';
-import { useScript } from '@/hooks/useScript';
 import { useScrollDepth } from '@/hooks/useScrollDepth';
 import { track } from '@/lib/analytics';
 import { findPravo } from '@/lib/catalog';
 import { kategorijaLabel } from '@/lib/labels';
-import { pickScript } from '@/lib/script';
+import { useLang } from '@/lib/lang-context';
 
 export function PravoDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { katalog, loading, error } = useCatalog();
-  const { script } = useScript();
+  const { t, pickLocalized } = useLang();
   const pravoForTitle = id && katalog ? findPravo(katalog, id) : undefined;
-  usePageTitle(pravoForTitle ? pickScript(pravoForTitle.naziv, script) : 'Pravo');
+  usePageTitle(pravoForTitle ? pickLocalized(pravoForTitle.naziv) : t('detail.not_found.title'));
   usePageDwell('pravo_detail');
-  useScrollDepth('pravo_detail', pravoForTitle ? { pravo_id: pravoForTitle.id } : undefined, pravoForTitle?.id);
+  useScrollDepth(
+    'pravo_detail',
+    pravoForTitle ? { pravo_id: pravoForTitle.id } : undefined,
+    pravoForTitle?.id,
+  );
 
   const [activeTab, setActiveTab] = useState('osnovno');
 
@@ -37,16 +40,14 @@ export function PravoDetailPage() {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-4xl px-6 py-16 text-center text-[#565c65]">
-        Učitavanje…
-      </div>
+      <div className="mx-auto max-w-4xl px-6 py-16 text-center text-[#565c65]">…</div>
     );
   }
 
   if (error) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16 text-center text-rose-700">
-        Greška: {error.message}
+        {error.message}
       </div>
     );
   }
@@ -56,15 +57,17 @@ export function PravoDetailPage() {
   if (!pravo) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">Pravo nije pronađeno</h1>
+        <h1 className="text-2xl font-bold text-[var(--brand-primary)]">
+          {t('detail.not_found.title')}
+        </h1>
         <p className="mt-2 text-[14px] text-[#565c65]">
-          Pravo sa identifikatorom <code>{id}</code> ne postoji u katalogu.
+          {t('detail.not_found.body', { id: id ?? '?' })}
         </p>
         <Link
           to="/pretraga"
           className="mt-4 inline-block text-[14px] font-semibold text-[var(--brand-primary)] underline"
         >
-          ← Vrati se na pretragu
+          {t('detail.back_link')}
         </Link>
       </div>
     );
@@ -79,30 +82,30 @@ export function PravoDetailPage() {
         to="/pretraga"
         className="text-[13px] font-semibold text-[var(--brand-primary)] hover:underline"
       >
-        ← Nazad na pretragu
+        {t('detail.back_to_search')}
       </Link>
 
       <header className="mt-3">
         <h1 className="text-balance text-3xl font-bold leading-tight text-[var(--brand-primary)]">
-          {pickScript(pravo.naziv, script)}
+          {pickLocalized(pravo.naziv)}
         </h1>
 
         <div className="mt-3 flex flex-wrap gap-1.5">
           {isSurprise && (
             <Badge className="bg-amber-100 text-amber-900 hover:bg-amber-100">
-              Verovatno niste znali
+              {t('detail.badge.surprise')}
             </Badge>
           )}
           {isHigh && (
             <Badge className="bg-rose-100 text-rose-900 hover:bg-rose-100">
-              Visok prioritet
+              {t('detail.badge.high')}
             </Badge>
           )}
           <Badge variant="secondary">{kategorijaLabel(pravo.kategorija)}</Badge>
         </div>
 
         <p className="mt-4 text-pretty text-[15px] leading-relaxed text-[#1b1b1b]">
-          {pickScript(pravo.kratak_opis, script)}
+          {pickLocalized(pravo.kratak_opis)}
         </p>
       </header>
 
@@ -119,12 +122,12 @@ export function PravoDetailPage() {
           }}
         >
           <TabsList className="w-full overflow-x-auto">
-            <TabsTrigger value="osnovno">Osnovno</TabsTrigger>
-            <TabsTrigger value="koraci">Koraci</TabsTrigger>
-            <TabsTrigger value="dokumenti">Dokumenti</TabsTrigger>
-            <TabsTrigger value="institucije">Gde se obratiti</TabsTrigger>
-            <TabsTrigger value="uputstvo">Uputstvo zahteva</TabsTrigger>
-            <TabsTrigger value="greske">Česte greške</TabsTrigger>
+            <TabsTrigger value="osnovno">{t('detail.tab.osnovno')}</TabsTrigger>
+            <TabsTrigger value="koraci">{t('detail.tab.koraci')}</TabsTrigger>
+            <TabsTrigger value="dokumenti">{t('detail.tab.dokumenti')}</TabsTrigger>
+            <TabsTrigger value="institucije">{t('detail.tab.institucije')}</TabsTrigger>
+            <TabsTrigger value="uputstvo">{t('detail.tab.uputstvo')}</TabsTrigger>
+            <TabsTrigger value="greske">{t('detail.tab.greske')}</TabsTrigger>
           </TabsList>
 
           <div className="mt-6">
