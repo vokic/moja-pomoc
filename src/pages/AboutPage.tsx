@@ -46,7 +46,6 @@ export function AboutPage() {
         t('about.plan.v1.1'),
         t('about.plan.v1.2'),
         t('about.plan.v1.3'),
-        t('about.plan.v1.4'),
       ]} badge="✓" badgeColor="bg-emerald-100 text-emerald-900" />
 
       <PlanSection title={t('about.plan.v15.title')} items={[
@@ -55,6 +54,9 @@ export function AboutPage() {
         t('about.plan.v15.3'),
         t('about.plan.v15.4'),
         t('about.plan.v15.5'),
+        t('about.plan.v15.6'),
+        t('about.plan.v15.7'),
+        t('about.plan.v15.8'),
       ]} badge="◷" badgeColor="bg-amber-100 text-amber-900" />
 
       <PlanSection title={t('about.plan.v2.title')} items={[
@@ -63,6 +65,9 @@ export function AboutPage() {
         t('about.plan.v2.3'),
         t('about.plan.v2.4'),
         t('about.plan.v2.5'),
+        t('about.plan.v2.6'),
+        t('about.plan.v2.7'),
+        t('about.plan.v2.8'),
       ]} badge="◷" badgeColor="bg-slate-100 text-slate-700" />
 
       <PlanSection title={t('about.plan.cont.title')} items={[
@@ -70,6 +75,9 @@ export function AboutPage() {
         t('about.plan.cont.2'),
         t('about.plan.cont.3'),
         t('about.plan.cont.4'),
+        t('about.plan.cont.5'),
+        t('about.plan.cont.6'),
+        t('about.plan.cont.7'),
       ]} badge="∞" badgeColor="bg-slate-100 text-slate-700" />
 
       <PlanSection title={t('about.plan.never.title')} items={[
