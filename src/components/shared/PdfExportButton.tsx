@@ -7,7 +7,7 @@ import type { Pravo } from '@/types';
 
 type Props = {
   prava: Pravo[];
-  /** Where in the app this button was rendered — for analytics segmentation. */
+  /** Where in the app this button was rendered - for analytics segmentation. */
   source?: string;
 };
 

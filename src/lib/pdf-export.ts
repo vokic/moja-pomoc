@@ -48,7 +48,7 @@ export function exportPravaPdf(prava: Pravo[]): void {
   // Header
   pdf.setFont('helvetica', 'bold');
   pdf.setFontSize(18);
-  pdf.text('Moja Pomoć — vaša prava', MARGIN, 22);
+  pdf.text('Moja Pomoć - vaša prava', MARGIN, 22);
 
   pdf.setFont('helvetica', 'normal');
   pdf.setFontSize(10);

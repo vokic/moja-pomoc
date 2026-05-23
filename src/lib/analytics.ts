@@ -1,6 +1,6 @@
 /**
  * Analytics wrapper. V1: PostHog (cookieless, EU-hosted, GDPR-clean).
- * The track() interface is vendor-neutral — only this module + analytics-init
+ * The track() interface is vendor-neutral - only this module + analytics-init
  * know about PostHog.
  *
  * PostHog snippet creates window.posthog stub before init that queues calls,

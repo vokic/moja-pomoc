@@ -493,7 +493,7 @@
       ],
       "filijala_pravilo": "prema_prebivalistu",
       "uputstvo_zahteva": {
-        "naziv_zahteva": "UP-1 — Zahtev za oslobađanje od plaćanja participacije",
+        "naziv_zahteva": "UP-1 - Zahtev za oslobađanje od plaćanja participacije",
         "gde_dobiti_obrazac": "Matična RFZO filijala / ispostava",
         "obrazac_url": "https://rfzo.rs/index.php/osiguranalica/participacija",
         "pre_popunjavanja": [
@@ -1701,8 +1701,8 @@
         "sr_lat": "Refundacija PDV-a za bebinu opremu"
       },
       "kratak_opis": {
-        "sr_cyr": "Држава враћа ПДВ плаћен на бебину опрему у првих годину дана детета — до 73.000 РСД јединствено по детету.",
-        "sr_lat": "Država vraća PDV plaćen na bebinu opremu u prvih godinu dana deteta — do 73.000 RSD jedinstveno po detetu."
+        "sr_cyr": "Држава враћа ПДВ плаћен на бебину опрему у првих годину дана детета - до 73.000 РСД јединствено по детету.",
+        "sr_lat": "Država vraća PDV plaćen na bebinu opremu u prvih godinu dana deteta - do 73.000 RSD jedinstveno po detetu."
       },
       "prioritet_propusta": 5,
       "tagovi": [
@@ -1746,7 +1746,7 @@
           ]
         }
       ],
-      "zasto_se_propusta": "Većina roditelja ne zna da postoji ili ne čuva fiskalne račune. Rok je strog — godinu dana od rođenja, posle toga gubi se pravo. PDV iznos je značajan jer se bebina oprema kupuje u kratkom periodu i ukupna potrošnja često prelazi 300.000 RSD.",
+      "zasto_se_propusta": "Većina roditelja ne zna da postoji ili ne čuva fiskalne račune. Rok je strog - godinu dana od rođenja, posle toga gubi se pravo. PDV iznos je značajan jer se bebina oprema kupuje u kratkom periodu i ukupna potrošnja često prelazi 300.000 RSD.",
       "koraci": [
         {
           "redni_broj": 1,
@@ -1763,11 +1763,11 @@
           "redni_broj": 3,
           "naslov": "Podnesite zahtev opštinskom Centru za socijalni rad",
           "opis": "Pre nego što istekne prva godina deteta, podnesite zahtev sa svim fiskalnim računima. U nekim opštinama postupak ide preko Lokalne samouprave (sektor za društvene delatnosti).",
-          "upozorenje": "Posle prve godine deteta pravo se GUBI — ne može se naknadno podneti."
+          "upozorenje": "Posle prve godine deteta pravo se GUBI - ne može se naknadno podneti."
         },
         {
           "redni_broj": 4,
-          "naslov": "Obrada zahteva — CSR proverava račune",
+          "naslov": "Obrada zahteva - CSR proverava račune",
           "opis": "CSR proverava fiskalne račune, evidentira PDV iznos i utvrđuje refundaciju (do zakonski propisanog maksimuma)."
         },
         {
@@ -1825,7 +1825,7 @@
           "Napravite Excel/papir tabelu: datum, prodavnica, ukupan iznos, PDV iznos",
           "Pripremite izvod iz matične knjige rođenih za dete (svež, ne stariji od 6 meseci)",
           "Pripremite svoj IBAN tekućeg računa",
-          "Ako ste samohrani roditelj — pripremite dokaz (presudu o starateljstvu ili izjavu)"
+          "Ako ste samohrani roditelj - pripremite dokaz (presudu o starateljstvu ili izjavu)"
         ],
         "sta_reci_na_salteru": [
           "Podnosim zahtev za refundaciju PDV-a na bebinu opremu po Zakonu o finansijskoj podršci porodici",
@@ -1841,14 +1841,14 @@
         "posle_predaje": [
           "Sačuvajte potvrdu o prijemu sa pečatom",
           "Postupak traje 30-60 dana; ne morate zvati svaki dan",
-          "Ako vas pozovu da dodate dokumentaciju — dostavite u roku od 8 dana",
-          "Po isplati, proverite iznos — ako se razlikuje od očekivanog, pitajte za detaljno obrazloženje"
+          "Ako vas pozovu da dodate dokumentaciju - dostavite u roku od 8 dana",
+          "Po isplati, proverite iznos - ako se razlikuje od očekivanog, pitajte za detaljno obrazloženje"
         ]
       },
       "ceste_greske": [
         {
           "greska": "Ne čuva fiskalne račune ili čuva samo slipove platne kartice",
-          "posledica": "Bez fiskalnih računa nema osnova za refundaciju — pravo se gubi",
+          "posledica": "Bez fiskalnih računa nema osnova za refundaciju - pravo se gubi",
           "resenje": "Od dana rođenja: fiskalni račun za SVE što kupujete za bebu. Slip kartice nije fiskalni račun"
         },
         {
@@ -1958,7 +1958,7 @@
         {
           "redni_broj": 6,
           "naslov": "Naredne rate (drugo dete i više)",
-          "opis": "Za drugo dete: 2 rate na 1 godinu razmaka. Za treće: 10 rata na 10 godina. Svake godine CSR vrši proveru — dete mora i dalje da bude sa majkom u Srbiji."
+          "opis": "Za drugo dete: 2 rate na 1 godinu razmaka. Za treće: 10 rata na 10 godina. Svake godine CSR vrši proveru - dete mora i dalje da bude sa majkom u Srbiji."
         }
       ],
       "dokumenti": [
@@ -2716,7 +2716,7 @@
           ]
         }
       ],
-      "zasto_se_propusta": "Mnogi penzioneri ne znaju da postoji centralna penzionerska kartica osim onih iz trgovina. Procesi izdavanja su konfuzni — koji partner, koja kartica, koja je gradska, koja republička. Ukupna vrednost popusta tokom godine je značajna ali se ne meri jer su pojedinačni popusti mali.",
+      "zasto_se_propusta": "Mnogi penzioneri ne znaju da postoji centralna penzionerska kartica osim onih iz trgovina. Procesi izdavanja su konfuzni - koji partner, koja kartica, koja je gradska, koja republička. Ukupna vrednost popusta tokom godine je značajna ali se ne meri jer su pojedinačni popusti mali.",
       "koraci": [
         {
           "redni_broj": 1,
@@ -2851,7 +2851,7 @@
         "vrednost_rsd": 33000,
         "napomena": "Iznos za 2024-2025. Usklađuje se sa kretanjem prosečne neto zarade. VERIFIKOVATI tačan iznos za 2026."
       },
-      "ko_ima_pravo_opis": "Lica koja zbog zdravstvenog stanja (telesno oštećenje, mentalno stanje, hronična bolest) nisu u stanju da samostalno obavljaju osnovne dnevne aktivnosti — ishrana, oblačenje, kupanje, kretanje. Potrebna je medicinska procena lekarskog veća pri PIO. Ne zavisi od primanja, ne zavisi od starosti.",
+      "ko_ima_pravo_opis": "Lica koja zbog zdravstvenog stanja (telesno oštećenje, mentalno stanje, hronična bolest) nisu u stanju da samostalno obavljaju osnovne dnevne aktivnosti - ishrana, oblačenje, kupanje, kretanje. Potrebna je medicinska procena lekarskog veća pri PIO. Ne zavisi od primanja, ne zavisi od starosti.",
       "uslovi": [
         {
           "tip": "i",
@@ -2873,7 +2873,7 @@
           ]
         }
       ],
-      "zasto_se_propusta": "Najveći razlog: nedostatak informacije. Mnogi misle da je tuđa nega samo za invalide, ne i za starije sa Alzheimerom, Parkinsonovom bolešću, ili posledicama moždanog udara. Postupak komisije može biti odbijen prvi put — mnogi ne ulažu žalbu iako bi po pravilu mogli da dobiju.",
+      "zasto_se_propusta": "Najveći razlog: nedostatak informacije. Mnogi misle da je tuđa nega samo za invalide, ne i za starije sa Alzheimerom, Parkinsonovom bolešću, ili posledicama moždanog udara. Postupak komisije može biti odbijen prvi put - mnogi ne ulažu žalbu iako bi po pravilu mogli da dobiju.",
       "koraci": [
         {
           "redni_broj": 1,

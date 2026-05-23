@@ -20,11 +20,11 @@ export function ResultCard({ pravo }: Props) {
       className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
     >
       <Card className="p-5 transition-shadow hover:shadow-md">
-        <div className="flex flex-wrap items-start justify-between gap-3">
-          <h3 className="text-balance text-[16px] font-semibold leading-snug text-[var(--brand-primary)]">
+        <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
+          <h3 className="min-w-0 flex-1 text-balance text-[16px] font-semibold leading-snug text-[var(--brand-primary)]">
             {pickLocalized(pravo.naziv)}
           </h3>
-          <span className="whitespace-nowrap text-[13px] font-semibold text-emerald-700">
+          <span className="min-w-0 max-w-full break-words text-[13px] font-semibold text-emerald-700">
             {formatIznos(pravo.iznos)}
           </span>
         </div>

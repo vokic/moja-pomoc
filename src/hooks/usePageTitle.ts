@@ -11,10 +11,10 @@ export function usePageTitle(title?: string): void {
   const { t } = useLang();
   const suffix = t('page_title.default_suffix');
   useEffect(() => {
-    const full = title ? `${title} · ${BASE}` : `${BASE} — ${suffix}`;
+    const full = title ? `${title} · ${BASE}` : `${BASE} - ${suffix}`;
     document.title = full;
     return () => {
-      document.title = `${BASE} — ${suffix}`;
+      document.title = `${BASE} - ${suffix}`;
     };
   }, [title, suffix]);
 }

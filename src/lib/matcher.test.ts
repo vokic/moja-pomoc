@@ -14,9 +14,9 @@ function makePravo(overrides: Partial<Pravo> & { id: string; uslovi: Uslov[] }):
     prioritet_propusta: 3,
     tagovi: [],
     pravni_osnov: [{ zakon: 'Test' }],
-    iznos: { tip: 'opisno', vrednost_opis: '—' },
-    ko_ima_pravo_opis: '—',
-    zasto_se_propusta: '—',
+    iznos: { tip: 'opisno', vrednost_opis: '-' },
+    ko_ima_pravo_opis: '-',
+    zasto_se_propusta: '-',
     koraci: [],
     dokumenti: [],
     institucije: [],
@@ -41,7 +41,7 @@ describe('mapToAge', () => {
 });
 
 // -----------------------------------------------------------------------------
-// evalUslov — primitive types
+// evalUslov - primitive types
 // -----------------------------------------------------------------------------
 
 describe('evalUslov: starost', () => {
@@ -210,7 +210,7 @@ describe('evalUslov: posebna_kategorija', () => {
 });
 
 // -----------------------------------------------------------------------------
-// Combinators — unknown propagation
+// Combinators - unknown propagation
 // -----------------------------------------------------------------------------
 
 describe('evalUslov: i (AND)', () => {

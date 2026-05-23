@@ -2,7 +2,7 @@ import { track } from '@/lib/analytics';
 import type { AnchorHTMLAttributes } from 'react';
 
 type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  /** Optional explicit category — passed through to the analytics event. */
+  /** Optional explicit category - passed through to the analytics event. */
   source?: string;
 };
 
@@ -27,7 +27,7 @@ export function TrackedLink({ source, onClick, href, children, ...rest }: Props)
             props.domain = u.host.replace(/^www\./, '');
           }
         } catch {
-          /* invalid URL — skip domain */
+          /* invalid URL - skip domain */
         }
       }
     }

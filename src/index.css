@@ -119,7 +119,7 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-/* Theme-specific brand colors — keep interior pages in sync with the
+/* Theme-specific brand colors - keep interior pages in sync with the
  * design-kit's themed Header/Footer (PageShell sets data-theme).
  */
 [data-theme='usa'] {

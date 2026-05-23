@@ -62,6 +62,7 @@ export function AboutPage() {
         t('about.plan.v2.2'),
         t('about.plan.v2.3'),
         t('about.plan.v2.4'),
+        t('about.plan.v2.5'),
       ]} badge="◷" badgeColor="bg-slate-100 text-slate-700" />
 
       <PlanSection title={t('about.plan.cont.title')} items={[
@@ -75,7 +76,6 @@ export function AboutPage() {
         t('about.plan.never.1'),
         t('about.plan.never.2'),
         t('about.plan.never.3'),
-        t('about.plan.never.4'),
       ]} badge="✕" badgeColor="bg-rose-100 text-rose-900" />
 
       <div className="mt-12 flex flex-wrap gap-3">

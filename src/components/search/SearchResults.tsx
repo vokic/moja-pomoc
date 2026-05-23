@@ -21,7 +21,7 @@ export function SearchResults({ results, hasQuery }: Props) {
           <Link to="/wizard" className="font-semibold text-[var(--brand-primary)] underline">
             {t('nav.wizard')}
           </Link>
-          {' — '}
+          {' - '}
           {t('search.empty.cta')}
         </p>
       </div>

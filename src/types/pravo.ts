@@ -9,7 +9,7 @@ import type {
   UputstvoZahteva,
 } from './katalog';
 
-/** Lokalizovan tekst — na latinici i ćirilici */
+/** Lokalizovan tekst - na latinici i ćirilici */
 export type LocalizedText = {
   sr_cyr: string;
   sr_lat: string;

@@ -37,7 +37,7 @@ export type FilijalaPravilo =
   | 'pratilac_pravnog_lica';
 
 /**
- * Uputstvo za zahtev — MVP odluka: NE popunjavamo zahtev. Dajemo uputstvo + checklist.
+ * Uputstvo za zahtev - MVP odluka: NE popunjavamo zahtev. Dajemo uputstvo + checklist.
  */
 export type UputstvoZahteva = {
   naziv_zahteva: string;

@@ -6,7 +6,7 @@ const MILESTONES = [25, 50, 75, 100] as const;
 /**
  * Fire `scroll_depth` events when the user scrolls past 25/50/75/100% of
  * the page. Each milestone fires at most once per mount (or until `key`
- * changes — pass a route/id-specific key when switching content without
+ * changes - pass a route/id-specific key when switching content without
  * full unmount).
  */
 export function useScrollDepth(

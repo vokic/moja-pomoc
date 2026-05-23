@@ -1,5 +1,5 @@
 /**
- * PostHog analytics loader (snippet pattern — full lib loads async from
+ * PostHog analytics loader (snippet pattern - full lib loads async from
  * PostHog CDN, keeps our main JS bundle small).
  *
  * Privacy-friendly config:
@@ -38,7 +38,7 @@ export function initAnalytics(): void {
 
   if (!key || typeof window === 'undefined') return;
 
-  // Official PostHog snippet — creates window.posthog stub that queues calls,
+  // Official PostHog snippet - creates window.posthog stub that queues calls,
   // then loads the full library async from PostHog CDN. Adapted from
   // posthog.com/docs/libraries/js. Typed as `any` because the snippet is a
   // micro-loader that's intentionally untyped (it bootstraps the real lib).

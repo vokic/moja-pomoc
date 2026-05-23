@@ -19,7 +19,7 @@ export function saveProfile(profile: Profile): void {
   try {
     window.localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
   } catch {
-    /* quota / privacy mode — drop silently */
+    /* quota / privacy mode - drop silently */
   }
 }
 
@@ -35,7 +35,7 @@ export function clearProfile(): void {
 /**
  * A profile is considered complete when every wizard step has an answer.
  * Multi-select steps must have at least one value (incl. exclusive options
- * like "nema" or "nista" — those count as deliberate answers).
+ * like "nema" or "nista" - those count as deliberate answers).
  */
 export function isProfileComplete(p: Profile | null | undefined): boolean {
   if (!p) return false;

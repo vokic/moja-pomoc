@@ -8,8 +8,8 @@
   },
 
   "kratak_opis": {
-    "sr_cyr": "Држава враћа ПДВ плаћен на бебину опрему у првих годину дана детета — до 73.000 РСД јединствено по детету.",
-    "sr_lat": "Država vraća PDV plaćen na bebinu opremu u prvih godinu dana deteta — do 73.000 RSD jedinstveno po detetu."
+    "sr_cyr": "Држава враћа ПДВ плаћен на бебину опрему у првих годину дана детета - до 73.000 РСД јединствено по детету.",
+    "sr_lat": "Država vraća PDV plaćen na bebinu opremu u prvih godinu dana deteta - do 73.000 RSD jedinstveno po detetu."
   },
 
   "prioritet_propusta": 5,
@@ -47,7 +47,7 @@
     }
   ],
 
-  "zasto_se_propusta": "Većina roditelja ne zna da postoji ili ne čuva fiskalne račune. Rok je strog — godinu dana od rođenja, posle toga gubi se pravo. PDV iznos je značajan jer se bebina oprema kupuje u kratkom periodu i ukupna potrošnja često prelazi 300.000 RSD.",
+  "zasto_se_propusta": "Većina roditelja ne zna da postoji ili ne čuva fiskalne račune. Rok je strog - godinu dana od rođenja, posle toga gubi se pravo. PDV iznos je značajan jer se bebina oprema kupuje u kratkom periodu i ukupna potrošnja često prelazi 300.000 RSD.",
 
   "koraci": [
     {
@@ -65,11 +65,11 @@
       "redni_broj": 3,
       "naslov": "Podnesite zahtev opštinskom Centru za socijalni rad",
       "opis": "Pre nego što istekne prva godina deteta, podnesite zahtev sa svim fiskalnim računima. U nekim opštinama postupak ide preko Lokalne samouprave (sektor za društvene delatnosti).",
-      "upozorenje": "Posle prve godine deteta pravo se GUBI — ne može se naknadno podneti."
+      "upozorenje": "Posle prve godine deteta pravo se GUBI - ne može se naknadno podneti."
     },
     {
       "redni_broj": 4,
-      "naslov": "Obrada zahteva — CSR proverava račune",
+      "naslov": "Obrada zahteva - CSR proverava račune",
       "opis": "CSR proverava fiskalne račune, evidentira PDV iznos i utvrđuje refundaciju (do zakonski propisanog maksimuma)."
     },
     {
@@ -131,7 +131,7 @@
       "Napravite Excel/papir tabelu: datum, prodavnica, ukupan iznos, PDV iznos",
       "Pripremite izvod iz matične knjige rođenih za dete (svež, ne stariji od 6 meseci)",
       "Pripremite svoj IBAN tekućeg računa",
-      "Ako ste samohrani roditelj — pripremite dokaz (presudu o starateljstvu ili izjavu)"
+      "Ako ste samohrani roditelj - pripremite dokaz (presudu o starateljstvu ili izjavu)"
     ],
     "sta_reci_na_salteru": [
       "Podnosim zahtev za refundaciju PDV-a na bebinu opremu po Zakonu o finansijskoj podršci porodici",
@@ -147,15 +147,15 @@
     "posle_predaje": [
       "Sačuvajte potvrdu o prijemu sa pečatom",
       "Postupak traje 30-60 dana; ne morate zvati svaki dan",
-      "Ako vas pozovu da dodate dokumentaciju — dostavite u roku od 8 dana",
-      "Po isplati, proverite iznos — ako se razlikuje od očekivanog, pitajte za detaljno obrazloženje"
+      "Ako vas pozovu da dodate dokumentaciju - dostavite u roku od 8 dana",
+      "Po isplati, proverite iznos - ako se razlikuje od očekivanog, pitajte za detaljno obrazloženje"
     ]
   },
 
   "ceste_greske": [
     {
       "greska": "Ne čuva fiskalne račune ili čuva samo slipove platne kartice",
-      "posledica": "Bez fiskalnih računa nema osnova za refundaciju — pravo se gubi",
+      "posledica": "Bez fiskalnih računa nema osnova za refundaciju - pravo se gubi",
       "resenje": "Od dana rođenja: fiskalni račun za SVE što kupujete za bebu. Slip kartice nije fiskalni račun"
     },
     {

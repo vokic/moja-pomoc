@@ -15,9 +15,9 @@ const NAV: ReadonlyArray<{ to: string; key: TKey }> = [
 
 // ============================================================
 //  THEME TOKENS
-//  USA  — USA.gov / Benefits.gov (Nunito Sans + Merriweather logo)
-//  SR   — eUprava-style (Nunito Sans body + PT Sans Caption logo)
-//  ThemeSwitch UI temporarily hidden — restore from git history once we
+//  USA  - USA.gov / Benefits.gov (Nunito Sans + Merriweather logo)
+//  SR   - eUprava-style (Nunito Sans body + PT Sans Caption logo)
+//  ThemeSwitch UI temporarily hidden - restore from git history once we
 //  decide which theme to keep long-term.
 // ============================================================
 
