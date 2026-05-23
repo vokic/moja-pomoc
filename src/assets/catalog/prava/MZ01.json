@@ -1,0 +1,145 @@
+{
+  "id": "MZ01",
+  "kategorija": "mentalno_zdravlje",
+
+  "naziv": {
+    "sr_cyr": "Бесплатна психотерапија и психијатријска помоћ преко РФЗО",
+    "sr_lat": "Besplatna psihoterapija i psihijatrijska pomoć preko RFZO"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Преглед код психијатра, психолошко саветовање и групна терапија су бесплатни у домовима здравља и психијатријским установама преко РФЗО.",
+    "sr_lat": "Pregled kod psihijatra, psihološko savetovanje i grupna terapija su besplatni u domovima zdravlja i psihijatrijskim ustanovama preko RFZO."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zdravstvenoj zaštiti",
+      "sluzbeni_glasnik": "Sl. glasnik RS 25/2019"
+    },
+    {
+      "zakon": "Zakon o zaštiti lica sa mentalnim smetnjama",
+      "sluzbeni_glasnik": "Sl. glasnik RS 45/2013"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Pregled psihijatra, individualna terapija, grupna terapija, krizne intervencije - besplatno preko RFZO. Vrednost privatno: 4.000 - 10.000 RSD po seansi."
+  },
+
+  "ko_ima_pravo_opis": "Svi osigurani građani Srbije. Pristup preko izabranog lekara opšte prakse koji daje uput. U urgentnim slučajevima (suicidalne misli, akutna kriza) - direktan pristup bez upita preko hitne pomoći ili psihijatrijske klinike.",
+
+  "uslovi": [
+    {
+      "tip": "ili",
+      "uslovi": [
+        { "tip": "zdravlje", "vrednost": ["mentalno"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mentalno zdravlje je stigmatizovano - ljudi izbegavaju da odu kod psihijatra, ili idu privatno (5.000-10.000 RSD po seansi) ne znajući da je u domu zdravlja besplatno. Mnogi misle da je sistem 'samo za ozbiljne slučajeve' - nije, dostupan je za sve. Čeka se 2-4 nedelje za prvi pregled, ali to je još uvek mnogo bolje od godine privatne terapije.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Otidite kod izabranog lekara opšte prakse",
+      "opis": "Recite šta vas muči. Izabrani lekar daje uput za psihijatra ili psihologa - ne pita previše, ne treba dokazivati 'koliko je strašno'.",
+      "napomena": "Možete reći samo 'imam anksioznost / depresiju / probleme sa spavanjem - molim uput za psihijatra'. Neće biti dodatnih pitanja."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Zakažite pregled kod psihijatra",
+      "opis": "Sa uputom idete u psihijatrijsku službu vašeg doma zdravlja, ili u Institut za mentalno zdravlje (Beograd) / odgovarajuću kliniku u vašem gradu. Čekanje 2-4 nedelje (osim za urgentne slučajeve)."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Prvi pregled - 30-45 minuta",
+      "opis": "Psihijatar pita o simptomima, životnoj situaciji, prethodnim epizodama. Procenjuje dijagnozu i preporučuje terapiju (lekovi, psihoterapija, oba).",
+      "upozorenje": "Ako vam je psihijatar užasan (osudjuje, ne sluša) - imate pravo da promenite. Ne odustajite od sistema zbog jednog lošeg iskustva."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Terapija po preporuci",
+      "opis": "Ako su prepisani lekovi - na recept preko apoteke (sa pozitivne liste su besplatni ili sa malim popustom). Ako je psihoterapija - sledeće seanse zakazujete redovno.",
+      "napomena": "Psihoterapija u sistemu često nije CBT/EMDR/specijalizovani modeli - više opšta podržavajuća. Za specijalizovane terapije može biti potrebno ići privatno."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Urgentni slučajevi - bez uputa",
+      "opis": "Suicidalne misli, akutna psihotička epizoda, teška kriza - idete direktno u hitnu psihijatrijsku službu (npr. KC Beograd, Laza Lazarević u Padinskoj Skeli). Bez uputa, bez čekanja."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "zdrav_knjizica", "naziv": "Zdravstvena knjižica", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uput", "naziv": "Uput za psihijatra", "obavezno": true, "gde_se_nabavlja": "Izabrani lekar opšte prakse", "trosak_rsd": 0, "napomena": "Ne za urgentne slučajeve - tada bez uputa." }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Dom zdravlja - psihijatrijska služba",
+      "tip": "filijala",
+      "napomena": "Standardni pristup za psihijatra. Različite ustanove imaju različite kapacitete."
+    },
+    {
+      "naziv": "Institut za mentalno zdravlje Beograd",
+      "tip": "specijalisticka",
+      "telefon": "011 3307 500",
+      "url": "https://www.imh.org.rs",
+      "adresa": "Palmotićeva 37, Beograd",
+      "napomena": "Najveći specijalizovani centar. Lečenje anksioznosti, depresije, posttraumatske, opsesivno-kompulzivnog poremećaja."
+    },
+    {
+      "naziv": "Klinika za psihijatriju 'Laza Lazarević', Padinska Skela",
+      "tip": "specijalisticka",
+      "telefon": "011 8870 020",
+      "napomena": "Hospitalizacija za teže slučajeve. 24/7 hitna psihijatrijska služba."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Stid sprečava odlazak kod psihijatra",
+      "posledica": "Stanje se pogoršava, ide privatno i plaća 5.000+ po seansi",
+      "resenje": "Psihijatrijski karton je strogo poverljiv - poslodavac, porodica, niko ne može pristupiti. Idite bez stida."
+    },
+    {
+      "greska": "Misli da psihijatar = 'lud sam'",
+      "posledica": "Izbegavanje pomoći",
+      "resenje": "Psihijatar je lekar kao svaki drugi - za probleme sa snom, anksioznost, tugu, stres. Većina ljudi ima problem nekad u životu."
+    },
+    {
+      "greska": "Ide privatno jer 'sistem ne valja'",
+      "posledica": "Plaća 5.000-10.000 RSD seansa godinama",
+      "resenje": "Pokušajte prvo sistem. Ako baš ne odgovara - onda privatno. Ali nemojte preskočiti zbog predrasude."
+    },
+    {
+      "greska": "Prekida lečenje kad se 'oseća bolje'",
+      "posledica": "Recidiv, povratak na početak",
+      "resenje": "Lečenje (lekovi, terapija) se prekida POSTEPENO, pod nadzorom psihijatra. Nikad samostalno."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad. Što ranije - to bolje.",
+
+  "prosecno_trajanje_postupka": "Uput: isti dan. Čekanje na prvi pregled: 2-4 nedelje. Urgentno: isti dan.",
+
+  "spoljni_resursi": [
+    { "naziv": "Institut za mentalno zdravlje", "url": "https://www.imh.org.rs" },
+    { "naziv": "SOS linija (24/7)", "url": "tel:0800 100 199" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati kontakt podatke i čekanje za 2026"
+}

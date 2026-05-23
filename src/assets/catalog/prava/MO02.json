@@ -1,0 +1,132 @@
+{
+  "id": "MO02",
+  "kategorija": "mladi",
+
+  "naziv": {
+    "sr_cyr": "Гаранцијски програм за младе НСЗ (Моја прва плата, приправнички)",
+    "sr_lat": "Garancijski program za mlade NSZ (Moja prva plata, pripravnički)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "НСЗ програми за младе без радног искуства - подстицаји послодавцима да их запосле + обуке и менторство. 'Моја прва плата': државна помоћ за 9 месеци плате.",
+    "sr_lat": "NSZ programi za mlade bez radnog iskustva - podsticaji poslodavcima da ih zaposle + obuke i mentorstvo. 'Moja prva plata': državna pomoć za 9 meseci plate."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti",
+      "sluzbeni_glasnik": "Sl. glasnik RS 36/2009 sa izmenama"
+    },
+    {
+      "zakon": "Pravilnik o subvencijama za zapošljavanje mladih",
+      "napomena": "NSZ donosi godišnje. Provera za 2026."
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "'Moja prva plata' - 35.000 RSD mesečno za nestručne, 40.000 RSD za sa srednjim, 45.000 RSD za visokoškolce. Plata se isplaćuje 9 meseci. Poslodavac plaća doprinose."
+  },
+
+  "ko_ima_pravo_opis": "Mladi do 30 godina, bez radnog iskustva u struci, registrovani kod NSZ-a. Različiti programi za različite kategorije: srednjoškolci, fakultetski obrazovani, lica sa invaliditetom mlada, Romi mladi. Program traje 9 meseci, sa mogućnošću produženja.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "starost_max", "vrednost": 30 },
+        {
+          "tip": "zaposlenje",
+          "vrednost": ["nezaposlen", "student"]
+        }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mladi često ne idu na NSZ misleći da je 'samo za one koji su izgubili posao'. NSZ je ZA mlade bez prvog iskustva, prijava donosi pristup svim programima. Drugi propust: poslodavci ne znaju za 'Moja prva plata' - mlada osoba mora sama da nauči poslodavca i 'doneti mu' program.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Prijavite se kod NSZ-a",
+      "opis": "Filijala NSZ-a prema mestu prebivališta. Sa ličnom kartom i diploma/svedočanstvom. Bez ovog koraka - nemate pristup programima.",
+      "napomena": "Možete se prijaviti i online preko portala NSZ."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Razgovor sa savetnikom za zapošljavanje",
+      "opis": "Savetnik vam predstavlja dostupne programe. Posebno tražite 'Moja prva plata' (za one koji nemaju iskustvo), 'Pripravnički staž' (za fakultetski obrazovane)."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Pronađite poslodavca koji prihvata program",
+      "opis": "NSZ ima listu poslodavaca koji su prijavili da uzimaju mlade preko 'Moje prve plate'. Ili - vi nalazite poslodavca, on se prijavljuje (vrlo lako).",
+      "napomena": "Većina malih i srednjih preduzeća radi rado sa programom - zarade 35.000-45.000 RSD plus doprinosi pokrivene su."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Poslodavac podnosi zahtev NSZ-u",
+      "opis": "Zahtev za uključivanje u program. Po odobrenju (15-30 dana) - počinje plata.",
+      "upozorenje": "Mladi mora biti prijavljen sa svim doprinosima - 'na crno' ne radi sa programom."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Rad 9 meseci",
+      "opis": "Rad na poziciji koja odgovara vašoj struci. Plata 35-45 hiljada (zavisno od kvalifikacije). Posle 9 meseci - poslodavac može da vas zaposli redovno (ili ne).",
+      "napomena": "Ako poslodavac nije zadovoljan - može vas zameniti i u programu. Vi takođe možete otići i probati drugog poslodavca."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "diploma", "naziv": "Diploma / svedočanstvo (najviše stečeno)", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uver_drzavljanstvo", "naziv": "Uverenje o državljanstvu", "obavezno": false, "gde_se_nabavlja": "MUP", "trosak_rsd": 1000 },
+    { "id": "cv", "naziv": "CV (radna biografija)", "obavezno": false, "gde_se_nabavlja": "Sami pripremate", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Nacionalna služba za zapošljavanje (NSZ)",
+      "tip": "filijala",
+      "telefon": "0800 300 301",
+      "url": "https://www.nsz.gov.rs",
+      "napomena": "Filijala prema mestu prebivališta. 'Moja prva plata' - posebna info na sajtu."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Ne registruje se kod NSZ jer 'nije nezaposlen'",
+      "posledica": "Propuste pristup svim programima",
+      "resenje": "NSZ je ZA mlade tražioce posla - bilo nezaposlene ili one koji traže prvi posao. Registracija je besplatna i otvara sve programe."
+    },
+    {
+      "greska": "Ne kažu poslodavcu za 'Moja prva plata'",
+      "posledica": "Poslodavac plaća punu platu od svog budžeta, mladi dobija manje ili ne dobija posao",
+      "resenje": "Doneste poslodavcu info: 'Mogu da budem u programu Moja prva plata - tebe košta samo doprinosi, plata 35-45 hiljada ide od države.' Većina poslodavaca pristane."
+    },
+    {
+      "greska": "Misle da je program 'za određene struke'",
+      "posledica": "Ne probaju",
+      "resenje": "Program je za sve struke - od ekonomista do mehaničara, od programera do prodavaca."
+    }
+  ],
+
+  "rok_za_podnosenje": "Otvoren cele godine kad ima budžeta. NSZ ima kvote - prijavite se što ranije.",
+
+  "prosecno_trajanje_postupka": "Od registracije do početka rada: 1-2 meseca (zavisno od pronalaženja poslodavca).",
+
+  "spoljni_resursi": [
+    { "naziv": "NSZ - 'Moja prva plata'", "url": "https://www.nsz.gov.rs/live/info/mladi" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - PROVERITI iznose za 2026 i aktuelne programe"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "ZZ01",
+  "kategorija": "zdravlje_zena",
+
+  "naziv": {
+    "sr_cyr": "Вантелесна оплодња (БМПО / ИВФ) преко РФЗО",
+    "sr_lat": "Vantelesna oplodnja (BMPO / IVF) preko RFZO"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Република финансира до 6 покушаја вантелесне оплодње (укључујући претходне покушаје). Услугу пружа РФЗО мрежа клиника. Без старосне границе од 2024.",
+    "sr_lat": "Republika finansira do 6 pokušaja vantelesne oplodnje (uključujući prethodne pokušaje). Uslugu pruža RFZO mreža klinika. Bez starosne granice od 2024."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Pravilnik o uslovima i načinu ostvarivanja prava na BMPO",
+      "sluzbeni_glasnik": "Sl. glasnik RS - aktuelni važi za 2024+",
+      "url": "https://www.rfzo.rs/index.php/osiguranalica/bmpo"
+    },
+    {
+      "zakon": "Zakon o biomedicinski potpomognutoj oplodnji",
+      "sluzbeni_glasnik": "Sl. glasnik RS 40/2017"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Kompletna procedura BMPO (IVF/ICSI) sa lekovima, kontrolama i krioprezervacijom. Vrednost jednog pokušaja: 400.000 - 700.000 RSD. Pravo na do 6 pokušaja kroz život."
+  },
+
+  "ko_ima_pravo_opis": "Žene sa medicinski potvrđenim sterilitetom ili neplodnošću para. Od 2024. ukinuta starosna granica - mogu da konkurišu i žene preko 43 godine (ranija granica). Potreban je nalaz nadležne komisije i lečenje u jednoj od RFZO mreža klinika (GAK Narodni front, KC Niš, KC Novi Sad, KCK, privatne ugovorne klinike).",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "pol", "vrednost": "z" },
+        { "tip": "starost_min", "vrednost": 18 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi parovi misle da je IVF samo privatna usluga i plaćaju 500.000+ RSD po pokušaju, ne znajući da država finansira do 6 pokušaja. Ranije je postojala starosna granica od 43 godine - ukinuta je 2024. ali to nije dovoljno komunicirano. Postupak komisije za odobrenje traje 2-3 meseca pa parovi često idu privatno iz nestrpljenja.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Posetite ginekologa u domu zdravlja",
+      "opis": "Izabrani ginekolog daje uput za ginekologa specijalistu (najčešće u GAK Narodni front, KC u Nišu/Novom Sadu/Kragujevcu). Bez uputa - nema procedure."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Dijagnostička obrada para",
+      "opis": "Žena: hormoni, ultrazvuk, HSG (histerosalpingografija). Muškarac: spermogram. Sve preko RFZO-a, besplatno.",
+      "napomena": "Komisija za odobrenje BMPO zahteva kompletnu dokumentaciju - ne preskačite testove."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Komisija RFZO za odobrenje BMPO",
+      "opis": "Sa medicinskom dokumentacijom podnese se zahtev komisiji RFZO. Komisija odlučuje u roku od 30-60 dana.",
+      "upozorenje": "Komisija ne odobrava ako nalazi nisu kompletni - obavezno proverite sa vašim lekarom šta još fali."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Izbor klinike i zakazivanje",
+      "opis": "Po odobrenju, klinika iz RFZO mreže zakazuje protokol stimulacije. Lista RFZO ugovornih klinika na rfzo.rs/bmpo."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Procedura i kontrole",
+      "opis": "Stimulacija jajnika, punkcija, transfer embriona. Sve sa lekovima i kontrolama - besplatno preko RFZO-a.",
+      "napomena": "Ako neuspeo pokušaj - imate pravo na sledeći (do 6 ukupno). Ne morate čekati godinama."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "zdrav_knjizica", "naziv": "Zdravstvena knjižica", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uput_ginekolog", "naziv": "Uput izabranog ginekologa", "obavezno": true, "gde_se_nabavlja": "Dom zdravlja", "trosak_rsd": 0 },
+    { "id": "nalaz_hormoni", "naziv": "Hormonalni nalazi (FSH, LH, AMH, estradiol)", "obavezno": true, "gde_se_nabavlja": "Specijalistička ordinacija - RFZO", "trosak_rsd": 0 },
+    { "id": "hsg", "naziv": "HSG nalaz (prohodnost jajovoda)", "obavezno": true, "gde_se_nabavlja": "Specijalistička ordinacija - RFZO", "trosak_rsd": 0 },
+    { "id": "spermogram", "naziv": "Spermogram partnera", "obavezno": true, "gde_se_nabavlja": "Andrologija - RFZO", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "RFZO - Komisija za BMPO",
+      "tip": "centralna",
+      "telefon": "0700 33 33 33",
+      "url": "https://www.rfzo.rs/index.php/osiguranalica/bmpo",
+      "napomena": "Odobrenje BMPO. Klinike: GAK Narodni front Beograd, KCK Kragujevac, KC Niš, KC Novi Sad i ugovorne privatne."
+    },
+    {
+      "naziv": "GAK Narodni front Beograd - centar za BMPO",
+      "tip": "specijalisticka",
+      "url": "https://www.gakfront.org",
+      "adresa": "Kraljice Natalije 62, Beograd"
+    }
+  ],
+
+  "filijala_pravilo": "po_izboru",
+
+  "ceste_greske": [
+    {
+      "greska": "Para odlaze direktno u privatnu kliniku ne proveravajući RFZO put",
+      "posledica": "Plaćaju 500.000+ RSD po pokušaju umesto besplatno",
+      "resenje": "PRVO uput izabranog ginekologa → komisija RFZO → besplatna procedura. Privatno samo ako baš želite preskočiti čekanje."
+    },
+    {
+      "greska": "Misle da postoji starosna granica od 43 godine",
+      "posledica": "Žene preko 43 ne podnose zahtev",
+      "resenje": "Granica je ukinuta 2024. Komisija odlučuje na osnovu medicinskih nalaza, ne godina."
+    },
+    {
+      "greska": "Nedovoljna dokumentacija pri podnošenju komisiji",
+      "posledica": "Odbijanje zahteva, ponovno prolaženje kroz proceduru",
+      "resenje": "Pre podnošenja - tražite od ginekologa da vam tačno kaže šta SVE treba. Hormonalni, HSG, spermogram - sve mora biti aktuelno (do 6 meseci staro)."
+    }
+  ],
+
+  "rok_za_podnosenje": "Nema strogog roka. Posle neuspelog pokušaja možete odmah konkurisati za sledeći (ako imate kvotu od 6).",
+
+  "prosecno_trajanje_postupka": "Dijagnostika: 2-4 meseca. Komisija: 30-60 dana. Procedura nakon odobrenja: 1-2 ciklusa stimulacije.",
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv aktuelnog Pravilnika i broja pokušaja na rfzo.rs/bmpo",
+
+  "napomena_za_urednika": "Broj pokušaja (6) važi od 2024. Pre toga je bilo 3. Proveriti za 2026 - moguće je dalje proširenje. Starosna granica ukinuta 2024."
+}

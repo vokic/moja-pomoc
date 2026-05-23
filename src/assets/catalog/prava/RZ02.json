@@ -1,0 +1,156 @@
+{
+  "id": "RZ02",
+  "kategorija": "razvod",
+
+  "naziv": {
+    "sr_cyr": "Бесплатна правна помоћ за развод и брачне спорове",
+    "sr_lat": "Besplatna pravna pomoć za razvod i bračne sporove"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Бесплатна правна помоћ за лица са нижим примањима - кроз центре за социјални рад, правне клинике факултета и НВО (Праксис, ИРИС, ЈУКОМ).",
+    "sr_lat": "Besplatna pravna pomoć za lica sa nižim primanjima - kroz centre za socijalni rad, pravne klinike fakulteta i NVO (Praxis, IRIS, YUCOM)."
+  },
+
+  "prioritet_propusta": 3,
+
+  "tagovi": ["surprise", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o besplatnoj pravnoj pomoći",
+      "sluzbeni_glasnik": "Sl. glasnik RS 87/2018",
+      "url": "https://www.paragraf.rs/propisi/zakon_o_besplatnoj_pravnoj_pomoci.html"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Pravni saveti, sastavljanje tužbe, zastupanje u sudu - besplatno. Vrednost privatnog advokata za razvod: 60.000-200.000 RSD."
+  },
+
+  "ko_ima_pravo_opis": "Lica sa nižim primanjima (cenzus se određuje opštinskim odlukama, otprilike minimalna potrošačka korpa po članu domaćinstva). Žrtve nasilja u porodici - bez cenzusa, automatski. Maloletnici. Tražioci azila. Osobe sa invaliditetom.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "situacija", "vrednost": ["razvod"] },
+        {
+          "tip": "ili",
+          "uslovi": [
+            { "tip": "primanja_max_rsd", "vrednost": 40000, "po_clanu": true },
+            { "tip": "situacija", "vrednost": ["nasilje"] }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Većina ljudi misli da je za razvod 'mora advokat' i plaća 60.000-200.000 RSD. Ne znaju da postoji besplatna pravna pomoć preko opštine ili NVO. Drugi propust: misle da je sistem birokratski i komplikovan - postupak za odobrenje besplatne pomoći jeste zahtevan, ali isplati se za 60.000+ RSD štednje.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Prvi izbor: Centar za socijalni rad",
+      "opis": "CSR prema mestu prebivališta. Tražite besplatnu pravnu pomoć za razvod. CSR procenjuje cenzus i dodjeluje vam advokata (ili obavlja sam pravne radnje).",
+      "napomena": "Ako ste žrtva nasilja u porodici - bez cenzusa, automatski dobijate pomoć."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Drugi izbor: Pravna klinika fakulteta",
+      "opis": "Pravni fakulteti u Beogradu, Novom Sadu, Nišu, Kragujevcu imaju pravne klinike - studenti pod nadzorom profesora. Besplatno za sve, ne traži se cenzus.",
+      "napomena": "Manje formalno od advokata, ali ozbiljan kvalitet. Posebno za jednostavnije slučajeve razvoda po sporazumu."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Treći izbor: NVO za pravnu pomoć",
+      "opis": "Praxis, IRIS, YUCOM, A11, Centar za socijalnu politiku - sve nude besplatne pravne savete. Specijalizovani po grupama (Romi, izbeglice, žrtve nasilja, LGBT).",
+      "napomena": "Praxis i IRIS imaju veliko iskustvo sa porodičnim sporovima."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Pripremite dokumente",
+      "opis": "Lična karta, izvod iz matične knjige venčanih, izvodi za decu (ako su), dokazi o primanjima domaćinstva (za cenzus), bilo koji dokazi o specifičnosti slučaja (nasilje, primanja partnera itd.)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Sastanak sa advokatom",
+      "opis": "Pravni savet, plan postupka, sastavljanje tužbe. Sve besplatno. Po potrebi - zastupanje u sudu."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "izvod_braka", "naziv": "Izvod iz knjige venčanih", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "izvod_dece", "naziv": "Izvodi za decu (ako su)", "obavezno": false, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "uver_primanja", "naziv": "Uverenje o primanjima za 3 meseca (za cenzus)", "obavezno": true, "gde_se_nabavlja": "Poslodavac/PIO/NSZ", "trosak_rsd": 0, "napomena": "Za sve punoletne članove domaćinstva." }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Centar za socijalni rad (CSR)",
+      "tip": "filijala",
+      "url": "https://www.minrzs.gov.rs",
+      "napomena": "Filijala prema mestu prebivališta. Tražite 'besplatnu pravnu pomoć po Zakonu o besplatnoj pravnoj pomoći'."
+    },
+    {
+      "naziv": "Pravna klinika Pravnog fakulteta Beograd",
+      "tip": "centralna",
+      "url": "https://www.ius.bg.ac.rs/pravna-klinika",
+      "adresa": "Bulevar kralja Aleksandra 67, Beograd"
+    },
+    {
+      "naziv": "Praxis - NVO za pravnu pomoć",
+      "tip": "centralna",
+      "telefon": "011 3636 144",
+      "url": "https://www.praxis.org.rs",
+      "napomena": "Specijalizovani za marginalizovane grupe."
+    },
+    {
+      "naziv": "YUCOM - Pravna pomoć",
+      "tip": "centralna",
+      "telefon": "011 3344 235",
+      "url": "https://www.yucom.org.rs"
+    },
+    {
+      "naziv": "Sigurna ženska kuća / SOS Vojvodina",
+      "tip": "centralna",
+      "telefon": "021 422 740",
+      "url": "https://www.sigurnazenskakuca.rs",
+      "napomena": "Za žene žrtve nasilja u porodici - besplatna pravna pomoć + sigurno utočište."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Misli da 'samo bogati' imaju advokata",
+      "posledica": "Niski prihodi → loš ishod razvoda → gubitak deteta/stana/alimentacije",
+      "resenje": "Besplatna pravna pomoć postoji. CSR, pravne klinike, NVO."
+    },
+    {
+      "greska": "Plaća privatnog advokata 60.000-200.000 RSD pre nego što proba besplatne opcije",
+      "posledica": "Velika rupa u budžetu u već stresnom periodu",
+      "resenje": "Prvo idite u CSR ili pravnu kliniku. Proces je možda sporiji, ali kvalitet je dobar za većinu slučajeva."
+    },
+    {
+      "greska": "Žrtve nasilja idu kod skupog advokata umesto u sigurnu kuću",
+      "posledica": "Plaća za nešto što ima besplatno",
+      "resenje": "Sigurna ženska kuća = pravna pomoć + sigurnost. Bez cenzusa, automatski."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad pre, tokom ili posle bračnog spora.",
+
+  "prosecno_trajanje_postupka": "CSR - odobrenje 15-30 dana. Sam postupak razvoda: 6-24 meseca (zavisi od složenosti).",
+
+  "spoljni_resursi": [
+    { "naziv": "Zakon o besplatnoj pravnoj pomoći", "url": "https://www.paragraf.rs/propisi/zakon_o_besplatnoj_pravnoj_pomoci.html" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati cenzuse i kontakte NVO za 2026"
+}

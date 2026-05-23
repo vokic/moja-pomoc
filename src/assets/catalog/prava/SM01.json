@@ -1,0 +1,156 @@
+{
+  "id": "SM01",
+  "kategorija": "smrt_porodice",
+
+  "naziv": {
+    "sr_cyr": "Породична пензија (ПИО)",
+    "sr_lat": "Porodična penzija (PIO)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Месечно примање за брачног партнера, децу и родитеље преминулог осигураника. До 70% пензије преминулог зависно од броја корисника.",
+    "sr_lat": "Mesečno primanje za bračnog partnera, decu i roditelje preminulog osiguranika. Do 70% penzije preminulog zavisno od broja korisnika."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+      "sluzbeni_glasnik": "Sl. glasnik RS 34/2003 sa izmenama",
+      "url": "https://www.paragraf.rs/propisi/zakon_o_penzijskom_i_invalidskom_osiguranju.html"
+    }
+  ],
+
+  "iznos": {
+    "tip": "mesecno_raspon",
+    "min_rsd": 25000,
+    "max_rsd": 80000,
+    "napomena": "Zavisi od penzije preminulog i broja korisnika. Jedan korisnik: 70% penzije. Dva: 80%. Tri ili više: 100%. Minimum: zakonski najniži iznos (cca. 25.000 RSD)."
+  },
+
+  "ko_ima_pravo_opis": "Bračni partner preminulog (udova/udovac) sa najmanje 53 godine za žene / 58 za muškarce, ili pre - ako je nesposoban za rad ili ima decu na svom izdržavanju. Deca do 15 godina (ili do 26 ako studiraju, bez granice ako su nesposobna za rad). Roditelji koje je preminuli izdržavao. Razvedeni supružnici uz određene uslove (sudsko izdržavanje).",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "situacija", "vrednost": ["smrt_porodice"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Porodice u tuzi često ne podnose zahtev na vreme. Rok je 6 meseci za retroaktivno dobijanje od datuma smrti - posle toga se dobija samo od datuma podnošenja. Mnogi udovci/udove ne znaju da imaju pravo, posebno ako su sami radili (misle 'imam svoju penziju, ne treba'). Zapravo - mogu da kombinuju svoju i porodičnu (uz limit).",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Sačekajte da prođe 30-40 dana od smrti",
+      "opis": "Tek nakon obrade matičnih dokumenata (izvod iz matične knjige umrlih). Bez toga - PIO odbija zahtev.",
+      "napomena": "Izvod traje 5-10 dana posle smrti. Ne idite ranije - vraćaju vas."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pripremite dokumentaciju",
+      "opis": "Izvod iz matične knjige umrlih, izvod iz knjige venčanih (za bračnog partnera), izvodi za decu, PIO knjižica preminulog, lična karta, dokaz o adresi.",
+      "upozorenje": "Sve izvode tražite VIŠE PRIMERAKA - trebaće vam i za nasledstvo, banku, fakultet (deca), itd."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev u PIO filijali",
+      "opis": "Filijala prema mestu prebivališta preminulog. Obrazac 'Zahtev za priznavanje prava na porodičnu penziju' - dobijete na šalteru.",
+      "napomena": "PIO ima i opciju podnošenja online preko ePisarnice, ali za prvi zahtev preporučljivo je lično."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Čekajte rešenje (30-90 dana)",
+      "opis": "PIO obrađuje, izračunava iznos. Po donošenju rešenja - prva isplata retroaktivno od datuma smrti (ako ste podneli u roku od 6 meseci)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Mesečna isplata",
+      "opis": "Penzija se isplaćuje na tekući račun (ili pošta). Možete je primati uz svoju penziju (ako je imate) - PIO obračunava limite."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta podnosioca", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "izvod_umrli", "naziv": "Izvod iz matične knjige umrlih (3+ primerka)", "obavezno": true, "gde_se_nabavlja": "Matičar opštine gde je smrt registrovana", "trosak_rsd": 380, "vazi_meseci": 6 },
+    { "id": "izvod_braka", "naziv": "Izvod iz knjige venčanih", "obavezno": false, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380, "napomena": "Samo za bračnog partnera." },
+    { "id": "izvod_dece", "naziv": "Izvod iz knjige rođenih za decu", "obavezno": false, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380, "napomena": "Samo ako podnosite za decu." },
+    { "id": "pio_knjizica", "naziv": "PIO knjižica preminulog (ako postoji)", "obavezno": false, "gde_se_nabavlja": "Pretražite dokumenta preminulog", "trosak_rsd": 0 },
+    { "id": "dokaz_studiranja", "naziv": "Potvrda o studiranju (za decu 18-26)", "obavezno": false, "gde_se_nabavlja": "Fakultet/srednja škola", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Republički fond za penzijsko i invalidsko osiguranje (PIO)",
+      "tip": "filijala",
+      "telefon": "0700 020 020",
+      "url": "https://www.pio.rs",
+      "napomena": "Filijala prema mestu prebivališta preminulog."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "uputstvo_zahteva": {
+    "naziv_zahteva": "Zahtev za priznavanje prava na porodičnu penziju",
+    "gde_dobiti_obrazac": "PIO filijala",
+    "obrazac_url": "https://www.pio.rs",
+    "pre_popunjavanja": [
+      "Obezbedite više primeraka izvoda iz matične knjige umrlih (trebaće za sve institucije)",
+      "Tačno datum smrti i mesto smrti",
+      "Podaci preminulog: JMBG, broj penzijske knjižice (ako postoji)",
+      "Vaši podaci: lična karta, JMBG, broj računa za isplatu"
+    ],
+    "sta_reci_na_salteru": [
+      "Podnosim zahtev za porodičnu penziju kao [bračni partner / dete / roditelj]",
+      "Molim za obrazac",
+      "Da li mogu da retrogradno dobijem od datuma smrti? (Da, ako je u roku od 6 meseci.)"
+    ],
+    "sta_proveriti_pre_potpisa": [
+      "Tačan datum smrti",
+      "Tačan procenat (70% za jednog korisnika, 80% za dva, 100% za tri+)",
+      "Tačan broj računa za uplatu"
+    ],
+    "posle_predaje": [
+      "Sačuvajte potvrdu o prijemu",
+      "PIO obrađuje 30-90 dana",
+      "Po prijemu rešenja, proverite tačnost - imate pravo na žalbu u 30 dana"
+    ]
+  },
+
+  "ceste_greske": [
+    {
+      "greska": "Ne podnose zahtev na vreme (prošlo 6 meseci)",
+      "posledica": "Gube retroaktivna primanja",
+      "resenje": "Podnesite što ranije, najbolje 1-2 meseca nakon smrti (kad već imate izvod). Imate pravo retroaktivno do 6 meseci."
+    },
+    {
+      "greska": "Misle da nemaju pravo jer imaju svoju penziju",
+      "posledica": "Propuste 30.000-50.000 RSD mesečno",
+      "resenje": "Mogu se kombinovati (uz limit). PIO obračuna - vredi podneti zahtev."
+    },
+    {
+      "greska": "Razvedeni partner misli da nema pravo",
+      "posledica": "Propuste mogućnost porodične penzije",
+      "resenje": "Razvedeni supružnik IMA pravo ako je sudski dobio izdržavanje od preminulog ili ako je bivši brak trajao najmanje godinu dana i ima decu sa preminulim."
+    }
+  ],
+
+  "rok_za_podnosenje": "6 meseci od smrti za retroaktivnu isplatu od datuma smrti. Posle - samo od datuma podnošenja zahteva.",
+
+  "prosecno_trajanje_postupka": "Obrada PIO: 30-90 dana.",
+
+  "spoljni_resursi": [
+    { "naziv": "PIO - Porodična penzija", "url": "https://www.pio.rs/cir/porodicna-penzija" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv pio.rs i tačne procente za 2026"
+}

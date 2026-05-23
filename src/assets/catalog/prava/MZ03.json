@@ -1,0 +1,127 @@
+{
+  "id": "MZ03",
+  "kategorija": "mentalno_zdravlje",
+
+  "naziv": {
+    "sr_cyr": "СОС телефонске линије за психолошку и кризну подршку (бесплатне)",
+    "sr_lat": "SOS telefonske linije za psihološku i kriznu podršku (besplatne)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Анонимни и бесплатни позиви: SOS Линија (24/7), Линија за самоубиство, СОС за жртве насиља. Без чекања, без хитне.",
+    "sr_lat": "Anonimni i besplatni pozivi: SOS Linija (24/7), Linija za samoubistvo, SOS za žrtve nasilja. Bez čekanja, bez hitne."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "time_sensitive", "surprise"],
+
+  "pravni_osnov": [
+    { "zakon": "Zakon o zaštiti lica sa mentalnim smetnjama", "sluzbeni_glasnik": "Sl. glasnik RS 45/2013" },
+    { "zakon": "Zakon o sprečavanju nasilja u porodici", "sluzbeni_glasnik": "Sl. glasnik RS 94/2016" }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Pozivi i online savetovanje besplatni. Anonimni. Dostupni 24/7 (većina) ili u tačnim satima rada."
+  },
+
+  "ko_ima_pravo_opis": "Svako ko se nalazi u psihološkoj krizi - suicidalne misli, panični napad, akutna anksioznost, posttraumatska reakcija, depresija. Žene i muškarci. Maloletnici - posebne linije (npr. NADEL).",
+
+  "uslovi": [
+    { "tip": "prebivaliste_srbija", "vrednost": true }
+  ],
+
+  "zasto_se_propusta": "Većina ljudi u krizi misli da 'mora da bude dovoljno loše' da bi pozvali. Ne razumeju da SOS linije postoje baš za 'manje hitne' situacije: tugu, anksioznost, osećaj besmislenosti. Druga prepreka: ne znaju brojeve, ili misle da nema niko da odgovori. Mnogi probaju samo 1-2 puta i odustanu jer je linija zauzeta.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Identifikujte odgovarajuću liniju",
+      "opis": "Opšta kriza/suicid: 0800 100 199. Žrtve nasilja u porodici: 0800 100 600. Trgovina ljudima: 011 7855 145. Maloletnici: 116 111 (NADEL)."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pozovite - prvi kontakt",
+      "opis": "Volonter ili stručnjak odgovara. Predstavite se kako želite (može i anonimno). Ispričajte šta se dešava - ne morate biti 'racionalni' ili 'logični'.",
+      "napomena": "Nema sudova. Linija je tu da sluša. Ako je zauzeta - pokušajte ponovo, ne odustajte posle jednog poziva."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Razgovor traje koliko vam treba",
+      "opis": "Standardno 15-45 minuta. Nema vremenskog limita. Stručnjak vam pomaže da se smirite, identifikujete naredne korake, povežete sa specifičnijim resursom."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Po potrebi - dalji koraci",
+      "opis": "Linija može da vas usmeri ka: hitnoj pomoći (ako je akutna kriza), psihijatru (za dugotrajno lečenje), psihologu, sigurnoj kući (žene koje su žrtve nasilja).",
+      "upozorenje": "Ako razmišljate o samoubistvu sada - ovo NIJE situacija da čekate kraj poziva. Ako je linija zauzeta, idite direktno na hitnu pomoć (194) ili u najbližu psihijatrijsku ustanovu."
+    }
+  ],
+
+  "dokumenti": [],
+
+  "institucije": [
+    {
+      "naziv": "SOS Linija - Centar za suicidologiju Srbije",
+      "tip": "centralna",
+      "telefon": "0800 100 199",
+      "url": "https://www.suicidologija.org.rs",
+      "radno_vreme": "0-24h",
+      "napomena": "Besplatan poziv, anonimno. Najpoznatija linija u Srbiji."
+    },
+    {
+      "naziv": "SOS za žrtve nasilja u porodici",
+      "tip": "centralna",
+      "telefon": "0800 100 600",
+      "radno_vreme": "0-24h",
+      "napomena": "Posebno za žene i decu žrtve nasilja u porodici."
+    },
+    {
+      "naziv": "NADEL - linija za decu i mlade",
+      "tip": "centralna",
+      "telefon": "116 111",
+      "url": "https://www.nadel.rs",
+      "radno_vreme": "Pon-Pet 09-21, Sub-Ned 11-20",
+      "napomena": "Za decu i mlade do 18 godina. Besplatno, anonimno."
+    },
+    {
+      "naziv": "Centar za zaštitu žrtava trgovine ljudima",
+      "tip": "centralna",
+      "telefon": "011 7855 145"
+    }
+  ],
+
+  "filijala_pravilo": "jedinstvena",
+
+  "ceste_greske": [
+    {
+      "greska": "Misli 'moja kriza nije dovoljno strašna'",
+      "posledica": "Ne zove, problem se produbljuje",
+      "resenje": "Linije su za SVAKU vrstu krize - tuga, stres, anksioznost, suicidalne misli. Nema 'dovoljno strašno'. Pozovi."
+    },
+    {
+      "greska": "Misli da neće biti razumevanja",
+      "posledica": "Ne zove",
+      "resenje": "Stručnjaci na liniji su obučeni za SVE vrste situacija - LGBTQ, romsko poreklo, ekonomska kriza, sve."
+    },
+    {
+      "greska": "Posle zauzete linije odustaje",
+      "posledica": "Kriza se produbljuje",
+      "resenje": "Pokušaj ponovo za 10-15 minuta. Ako je urgentno - hitna pomoć (194) bez čekanja."
+    }
+  ],
+
+  "rok_za_podnosenje": "Pozovi kad ti treba. Bez čekanja, bez termina.",
+
+  "prosecno_trajanje_postupka": "Poziv: 15-45 minuta. Dostupno odmah ili sa kratkim čekanjem.",
+
+  "spoljni_resursi": [
+    { "naziv": "SOS Linija - Centar za suicidologiju", "url": "https://www.suicidologija.org.rs" },
+    { "naziv": "NADEL", "url": "https://www.nadel.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati brojeve i radna vremena za 2026"
+}

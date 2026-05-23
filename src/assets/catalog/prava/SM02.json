@@ -1,0 +1,119 @@
+{
+  "id": "SM02",
+  "kategorija": "smrt_porodice",
+
+  "naziv": {
+    "sr_cyr": "Једнократна помоћ за погребне трошкове (ПИО)",
+    "sr_lat": "Jednokratna pomoć za pogrebne troškove (PIO)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Помоћ члановима породице или лицу које је сносило трошкове погреба - ~70.000 РСД. Право имају и породице пензионера и активних осигураника.",
+    "sr_lat": "Pomoć članovima porodice ili licu koje je snosilo troškove pogreba - ~70.000 RSD. Pravo imaju i porodice penzionera i aktivnih osiguranika."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "surprise", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+      "sluzbeni_glasnik": "Sl. glasnik RS 34/2003 sa izmenama"
+    }
+  ],
+
+  "iznos": {
+    "tip": "jednokratno",
+    "vrednost_rsd": 70000,
+    "napomena": "Iznos se usklađuje sa rastom prosečne penzije - 2025: ~70.000 RSD. Proveriti aktuelni iznos na pio.rs."
+  },
+
+  "ko_ima_pravo_opis": "Lice koje je stvarno snosilo troškove pogreba osiguranog lica - obično bračni partner, dete, roditelj, ali i prijatelj ili neko ko nije rođak (ako može da dokaže da je on platio). Preminuli mora biti osigurano lice (penzioner ili aktivni osiguranik).",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "situacija", "vrednost": ["smrt_porodice"] },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Najveći broj porodica ne zna da ovo pravo postoji. Pogreb košta 100.000-300.000 RSD - PIO pokriva 30-50% i to se ne traži. PIO ne obaveštava aktivno - porodica mora sama da zna i da podnese zahtev u roku od 3 godine.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Sačuvajte sve račune o pogrebu",
+      "opis": "Sahrana, kovčeg, mrtvačnica, parcela, naknada svešteniku - sve račune koje plaćate. Trebaće za dokaz troškova.",
+      "napomena": "Iako PIO daje fiksni iznos (~70.000 RSD), računi dokazuju da ste vi snosili troškove (a ne neko drugi)."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Sačekajte izvod iz matične knjige umrlih",
+      "opis": "Bez izvoda - PIO ne prima zahtev. Izvod stiže 5-10 dana posle smrti."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev u PIO filijali",
+      "opis": "Filijala prema mestu prebivališta preminulog. Obrazac 'Zahtev za jednokratnu naknadu pogrebnih troškova'.",
+      "napomena": "Možete podneti i online preko ePisarnice (eUprava)."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Čekajte rešenje (30-60 dana)",
+      "opis": "PIO obrađuje, donosi rešenje, isplaćuje jednokratno na vaš račun."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta podnosioca", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "izvod_umrli", "naziv": "Izvod iz matične knjige umrlih", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "racuni_pogreb", "naziv": "Računi o troškovima pogreba", "obavezno": true, "gde_se_nabavlja": "Pogrebno preduzeće, mrtvačnica, JKP", "trosak_rsd": 0, "napomena": "Originali ili overene kopije." },
+    { "id": "izvod_braka_rodjenja", "naziv": "Izvod iz knjige venčanih/rođenih (dokaz srodstva)", "obavezno": false, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380, "napomena": "Samo ako niste rodbina u prvom kolenu - tada treba dokaz da ste platili." }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Republički fond za penzijsko i invalidsko osiguranje (PIO)",
+      "tip": "filijala",
+      "telefon": "0700 020 020",
+      "url": "https://www.pio.rs",
+      "napomena": "Filijala prema mestu prebivališta preminulog."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Ne znaju da pravo postoji",
+      "posledica": "Propuste 70.000 RSD",
+      "resenje": "Svaka porodica gde je preminuli imao penziju ili je radio - ima pravo. Podnesite zahtev."
+    },
+    {
+      "greska": "Bacaju račune o pogrebu",
+      "posledica": "Ne mogu da dokažu da su platili",
+      "resenje": "Sačuvajte SVE račune iz pogrebnog - to su dokazi za PIO i poreske olakšice."
+    },
+    {
+      "greska": "Misli da pogreb mora biti 'standardni'",
+      "posledica": "Ne traži ako je bilo specifičnih troškova",
+      "resenje": "PIO ne pita za stil pogreba - daje fiksni iznos. Vi navedete da ste snosili troškove i platili."
+    }
+  ],
+
+  "rok_za_podnosenje": "3 godine od smrti - posle nije moguće.",
+
+  "prosecno_trajanje_postupka": "30-60 dana od podnošenja zahteva.",
+
+  "spoljni_resursi": [
+    { "naziv": "PIO - Naknada pogrebnih troškova", "url": "https://www.pio.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati tačan iznos za 2026"
+}

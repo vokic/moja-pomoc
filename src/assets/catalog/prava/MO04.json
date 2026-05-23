@@ -1,0 +1,147 @@
+{
+  "id": "MO04",
+  "kategorija": "mladi",
+
+  "naziv": {
+    "sr_cyr": "Субвенционисани смештај у студентским домовима",
+    "sr_lat": "Subvencionisani smeštaj u studentskim domovima"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Студентски домови - смештај од 2.000-5.000 РСД месечно (вс. 200-300 ЕУР за приватну станарину). Конкурс једном годишње, рангирање по успеху и социјалном статусу.",
+    "sr_lat": "Studentski domovi - smeštaj od 2.000-5.000 RSD mesečno (vs. 200-300 EUR za privatnu stanarinu). Konkurs jednom godišnje, rangiranje po uspehu i socijalnom statusu."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o učeničkom i studentskom standardu",
+      "sluzbeni_glasnik": "Sl. glasnik RS 18/2010 sa izmenama"
+    }
+  ],
+
+  "iznos": {
+    "tip": "mesecno_raspon",
+    "min_rsd": 2000,
+    "max_rsd": 5000,
+    "napomena": "Cena zavisi od tipa doma i sobe (jednokrevetna skuplja). Uštede u odnosu na iznajmljivanje stana: 15.000-25.000 RSD mesečno."
+  },
+
+  "ko_ima_pravo_opis": "Studenti državnih fakulteta van mesta prebivališta (npr. studenti iz Niša koji studiraju u Beogradu). Rangiranje: prosečna ocena (50%), socijalni status (30%), godina studija (20%). Posebne kategorije: deca palih boraca, izbeglice, sa invaliditetom - imaju prednost.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "zaposlenje", "vrednost": ["student"] },
+        { "tip": "starost_max", "vrednost": 26 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi studenti misle da je dom 'samo za prvogodišnje' ili 'mora prosek 9.5'. Realno: konkurišu svi godišnji nivoi, prosek od 7.0 može biti dovoljan ako ima socijalnih bodova. Drugi propust: ne podnose dokumentaciju o socijalnom statusu (primanja roditelja) - što je 30% bodova.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pratite konkurs studentskog centra",
+      "opis": "Studentski centar Beograd, Novi Sad, Niš, Kragujevac - konkurs raspisuju u julu-avgustu za narednu akademsku godinu. Rok: obično 20. avgust."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pripremite dokumentaciju",
+      "opis": "Uverenje o upisu (od fakulteta), uverenje o prosečnoj oceni, dokaz o primanjima domaćinstva za poslednja 3 meseca (od svih punoletnih članova), izvodi (dokaz porodice), specifični dokazi (smrt roditelja, invaliditet, dr.)."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev studentskom centru",
+      "opis": "Online ili lično. Detaljno popunite sve sekcije - kategorije sa specijalnim statusima donose dodatne bodove.",
+      "upozorenje": "Ne ostavljajte 'prazno' tamo gde se odnosi - ostali bodovi propadaju."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Rang lista (septembar)",
+      "opis": "Studentski centar objavljuje rang listu. Studenti sa najvišim brojem bodova - dobijaju mesto. Pravo na žalbu u 5 dana."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Useljenje (oktobar)",
+      "opis": "Useljenje pre početka semestra. Ugovor o smeštaju važi godinu dana - rekonkurišete svake godine za sledeću.",
+      "napomena": "Ako ne dobijete dom u prvoj godini - ne odustajte, podnosite svake godine. Šanse rastu sa godinama studija."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uver_upis", "naziv": "Uverenje o upisu", "obavezno": true, "gde_se_nabavlja": "Studentska služba", "trosak_rsd": 0 },
+    { "id": "uver_prosek", "naziv": "Uverenje o prosečnoj oceni (za stariji upisani)", "obavezno": false, "gde_se_nabavlja": "Studentska služba", "trosak_rsd": 0 },
+    { "id": "uver_primanja", "naziv": "Uverenje o primanjima ZA SVE punoletne članove (3 meseca)", "obavezno": true, "gde_se_nabavlja": "Poreska / poslodavci", "trosak_rsd": 0, "napomena": "30% bodova zavisi od ovog!" },
+    { "id": "izvod_porodice", "naziv": "Izvod iz matične knjige rođenih + venčanih roditelja", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Studentski centar Beograd",
+      "tip": "centralna",
+      "telefon": "011 3613 122",
+      "url": "https://www.sc.rs",
+      "adresa": "Svetozara Markovića 56, Beograd"
+    },
+    {
+      "naziv": "Studentski centar Novi Sad",
+      "tip": "centralna",
+      "telefon": "021 6622 477",
+      "url": "https://www.scns.rs"
+    },
+    {
+      "naziv": "Studentski centar Niš",
+      "tip": "centralna",
+      "telefon": "018 525 077"
+    },
+    {
+      "naziv": "Studentski centar Kragujevac",
+      "tip": "centralna",
+      "telefon": "034 333 175"
+    }
+  ],
+
+  "filijala_pravilo": "po_izboru",
+
+  "ceste_greske": [
+    {
+      "greska": "Misle 'samo za prvogodišnje'",
+      "posledica": "Stariji studenti propuste",
+      "resenje": "Konkurs je za sve godine. Stariji studenti imaju i godinu kao kriterijum (više bodova)."
+    },
+    {
+      "greska": "Ne podnose dokaze o primanjima",
+      "posledica": "Gube 30% mogućih bodova",
+      "resenje": "Čak i ako su primanja srednja - dokumentujete. 30% bodova nije za bacanje."
+    },
+    {
+      "greska": "Propuste rok (avgust)",
+      "posledica": "Čekaju godinu, iznajmljuju stan za 200-300 EUR",
+      "resenje": "Postavite podsetnik u julu. Dokumentaciju počnite skupljati u junu."
+    },
+    {
+      "greska": "Ne reaguju na rang listu",
+      "posledica": "Možda greška u podacima koja ih je spustila niže",
+      "resenje": "Rang lista se objavi - imate 5 dana za žalbu. Proverite tačnost svojih bodova."
+    }
+  ],
+
+  "rok_za_podnosenje": "20. avgust svake godine (orijentaciono, proverite konkurs).",
+
+  "prosecno_trajanje_postupka": "Konkurs traje ~3 nedelje. Useljenje: oktobar.",
+
+  "spoljni_resursi": [
+    { "naziv": "Studentski centar Beograd", "url": "https://www.sc.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - PROVERITI cene i rokove za 2025/2026"
+}

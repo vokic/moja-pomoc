@@ -1,0 +1,149 @@
+{
+  "id": "RZ03",
+  "kategorija": "razvod",
+
+  "naziv": {
+    "sr_cyr": "Хитне мере заштите од насиља у породици (без судског поступка)",
+    "sr_lat": "Hitne mere zaštite od nasilja u porodici (bez sudskog postupka)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Полиција може одмах извршиоцу насиља да изрекне меру привремене забране приласка (до 48 сати), коју тужилаштво може продужити до 30 дана. Без чекања на суд.",
+    "sr_lat": "Policija može odmah izvršiocu nasilja da izrekne meru privremene zabrane prilaska (do 48 sati), koju tužilaštvo može produžiti do 30 dana. Bez čekanja na sud."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o sprečavanju nasilja u porodici",
+      "sluzbeni_glasnik": "Sl. glasnik RS 94/2016",
+      "url": "https://www.paragraf.rs/propisi/zakon_o_sprecavanju_nasilja_u_porodici.html"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Zaštita od nasilja - bez troška za žrtvu. Uključuje udaljavanje izvršioca, sigurnu kuću, pravnu pomoć, psihološku podršku."
+  },
+
+  "ko_ima_pravo_opis": "Svaka osoba koja trpi nasilje u porodici - fizičko, psihičko, seksualno, ekonomsko. Žene, deca, stariji, muškarci. Bračni partneri (uključujući bivše), vanbračni partneri (uključujući bivše), srodnici, lica koja su zajedno živela.",
+
+  "uslovi": [
+    {
+      "tip": "situacija",
+      "vrednost": ["nasilje"]
+    }
+  ],
+
+  "zasto_se_propusta": "Žrtve često ne znaju da policija MORA da postupi - misle da se može samo 'preneti slučaj sudu' (što traje mesecima). Po Zakonu iz 2016, hitne mere su OBAVEZNE - policija mora odmah da udalji izvršioca i da slučaj prosledi tužilaštvu u roku od 8 sati. Drugi propust: misle da 'jedan udarac' nije dovoljan - ALI po zakonu, čak i pretnja nasiljem je nasilje.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pozovite 192 (policija) ili 0800 100 600 (SOS)",
+      "opis": "Hitno - opisujete šta se dešava: 'ima nasilje u porodici, hitno trebamo pomoć'. Policija MORA da dođe i da deluje.",
+      "upozorenje": "NE čekajte, NE razgovarajte sa nasilnikom o tome. Pozovite kad ste sami i bezbedni."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Policija dolazi i udaljava izvršioca",
+      "opis": "Po Zakonu, policija mora razdvojiti vas i napadača. Izrekne meru zabrane prilaska 48 sati. Slučaj prosleđuje tužilaštvu u 8 sati.",
+      "napomena": "Ako policajac ne želi da postupi - tražite njegovo ime, broj značke. Žaljite se kod komandanta stanice ili javnom tužiocu."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Tužilaštvo produžava meru do 30 dana",
+      "opis": "U roku od 24 sata, tužilac odlučuje o produženju mere. Ako produži - mera traje do 30 dana. Za to vreme - sud odlučuje o trajnijim merama.",
+      "napomena": "Sve se dešava bez tvog aktivnog učešća - sistem deluje. Ali ti imaš pravo da se izjasniš."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Sigurna ženska kuća (ako je potrebno)",
+      "opis": "Ako se ne osećate sigurno kod kuće - sigurne ženske kuće postoje u svakom većem gradu. Tajna lokacija, 24/7 prijem, dete i vi.",
+      "napomena": "Boravak je besplatan. Trajanje: nekoliko nedelja do 6 meseci."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Sudski postupak za dugotrajnije mere",
+      "opis": "Posle 30 dana, sud može odrediti dugotrajnije mere: zabrana prilaska godinu dana, oduzimanje deteta, krivična procena. Idete uz pomoć CSR-a ili NVO."
+    }
+  ],
+
+  "dokumenti": [],
+
+  "institucije": [
+    {
+      "naziv": "Policija - poziv 192",
+      "tip": "centralna",
+      "telefon": "192",
+      "napomena": "Hitan poziv. Obavezna intervencija po Zakonu o sprečavanju nasilja u porodici."
+    },
+    {
+      "naziv": "SOS Linija za žrtve nasilja",
+      "tip": "centralna",
+      "telefon": "0800 100 600",
+      "radno_vreme": "0-24h",
+      "napomena": "Besplatan poziv, anonimno. Savet, podrška, prosleđivanje policiji ili CSR-u."
+    },
+    {
+      "naziv": "Centar za socijalni rad (CSR)",
+      "tip": "filijala",
+      "napomena": "Procena bezbednosti, plan zaštite, pravna pomoć. Filijala prema mestu prebivališta."
+    },
+    {
+      "naziv": "Sigurna ženska kuća Beograd",
+      "tip": "centralna",
+      "telefon": "011 3132 280",
+      "url": "https://www.sigurnazenskakuca.rs",
+      "napomena": "Sigurno utočište za žene i decu žrtve nasilja. Tajna lokacija."
+    },
+    {
+      "naziv": "Autonomni ženski centar",
+      "tip": "centralna",
+      "telefon": "011 2645 328",
+      "url": "https://www.womenngo.org.rs",
+      "napomena": "Pravna pomoć, psihološka podrška, edukacija. Specijalizovani za nasilje u porodici."
+    }
+  ],
+
+  "filijala_pravilo": "jedinstvena",
+
+  "ceste_greske": [
+    {
+      "greska": "Misle da nije 'dovoljno strašno' za policiju",
+      "posledica": "Nasilje eskalira",
+      "resenje": "I jedan udarac, jedna pretnja, kontrolisanje finansija - sve je nasilje po Zakonu. Pozovi 192."
+    },
+    {
+      "greska": "Veruju nasilnika da će se 'promeniti'",
+      "posledica": "Ciklus nasilja se ponavlja, često sa eskalacijom",
+      "resenje": "Statistika: bez intervencije, nasilje se nastavlja u 90%+ slučajeva. Tražite zaštitu."
+    },
+    {
+      "greska": "Idu odmah u sigurnu kuću bez prijave policiji",
+      "posledica": "Nasilnik nije udaljen od kuće - vi ste 'prognani' iz svog doma",
+      "resenje": "Prvo policija - oni udaljavaju nasilnika. Sigurna kuća je dodatna opcija ako se ne osećate sigurno."
+    },
+    {
+      "greska": "Povlače prijavu posle 'razgovora' sa nasilnikom",
+      "posledica": "Zaštita se gasi, nasilje se vraća",
+      "resenje": "Mere zaštite traju 30 dana bez obzira na vaš pristanak (po zakonu). NE povlačite prijavu pod pritiskom."
+    }
+  ],
+
+  "rok_za_podnosenje": "Odmah - hitno. Nema zastarelosti.",
+
+  "prosecno_trajanje_postupka": "Hitne mere: trenutno (48 sati + 30 dana). Sudski postupak za dugotrajnije mere: 1-3 meseca.",
+
+  "spoljni_resursi": [
+    { "naziv": "Zakon o sprečavanju nasilja u porodici", "url": "https://www.paragraf.rs/propisi/zakon_o_sprecavanju_nasilja_u_porodici.html" },
+    { "naziv": "Autonomni ženski centar - resursi", "url": "https://www.womenngo.org.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv Zakona o sprečavanju nasilja u porodici 2026"
+}

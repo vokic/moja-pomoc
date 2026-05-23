@@ -1,0 +1,119 @@
+{
+  "id": "SM04",
+  "kategorija": "smrt_porodice",
+
+  "naziv": {
+    "sr_cyr": "Ослобађање од пореза на наслеђе за наследнике првог реда",
+    "sr_lat": "Oslobađanje od poreza na nasleđe za naslednike prvog reda"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Брачни партнер и деца преминулог НЕ плаћају порез на наслеђе. Други ред - 1,5%, остали 2,5%. Битно при наслеђивању стана, новца, имовине.",
+    "sr_lat": "Bračni partner i deca preminulog NE plaćaju porez na nasleđe. Drugi red - 1,5%, ostali 2,5%. Bitno pri nasleđivanju stana, novca, imovine."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["surprise", "big_money"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o porezima na imovinu",
+      "sluzbeni_glasnik": "Sl. glasnik RS 26/2001 sa izmenama",
+      "clanovi": "Čl. 21",
+      "url": "https://www.paragraf.rs/propisi/zakon_o_porezima_na_imovinu.html"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "0% poreza za naslednike prvog reda (bračni partner, deca). Pri nasleđivanju stana od 100.000 EUR - ušteda od 0 RSD vs 2.500-3.500 EUR za daljnju rodbinu."
+  },
+
+  "ko_ima_pravo_opis": "Prvi naslednički red (Čl. 8 Zakona o nasleđivanju): bračni partner i potomci preminulog. Oni su automatski oslobođeni poreza na nasleđe - ne moraju da podnose zahtev za oslobađanje, samo da prijave nasleđe Poreskoj upravi.",
+
+  "uslovi": [
+    {
+      "tip": "situacija",
+      "vrednost": ["smrt_porodice"]
+    }
+  ],
+
+  "zasto_se_propusta": "Ne propušta se baš pravo, jer je automatski. Ali se propušta razumevanje - mnogi naslednici prvog reda u panici idu kod advokata i plaćaju 2.000-5.000 EUR za savetovanje, ne znajući da nisu obavezni da plate porez. Drugi propust: ne prijavljuju nasleđe Poreskoj u roku od 30 dana posle ostavinske rasprave - što vodi do kazni.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pokrenite ostavinsku raspravu (notarsku)",
+      "opis": "Najbliža javnobeležnička kancelarija pokreće ostavinski postupak. Identifikuje sve naslednike i imovinu. Trošak: ~1-2% vrednosti imovine."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Po donošenju rešenja - prijavite Poreskoj",
+      "opis": "U roku od 30 dana od pravnosnažnosti rešenja o nasleđu, podnesite PP-OPN obrazac u Poreskoj upravi (filijala prema mestu prebivališta preminulog).",
+      "upozorenje": "Rok je STROG - 30 dana. Posle - kazna 5.000-150.000 RSD i obaveza retrogradnog plaćanja."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Naznačite naslednički red",
+      "opis": "U obrascu PP-OPN označite 'prvi naslednički red'. Poreska automatski izračunava 0% porez i izdaje rešenje o oslobađanju.",
+      "napomena": "Ne morate da tražite OSLOBAĐANJE kao posebno pravo - to je automatski."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Prevedite imovinu",
+      "opis": "Sa rešenjem o nasleđu i rešenjem Poreske - idete u katastar (stan), banku (novac), saobraćajnu policiju (auto). Pravosnažni prenos."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta naslednika", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "izvod_umrli", "naziv": "Izvod iz matične knjige umrlih", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "resenje_nasledjivanje", "naziv": "Rešenje o nasleđivanju (pravosnažno)", "obavezno": true, "gde_se_nabavlja": "Javni beležnik", "trosak_rsd": 0, "napomena": "Trošak postupka: 1-2% vrednosti." },
+    { "id": "izvod_srodstvo", "naziv": "Dokaz srodstva (izvod iz knjige rođenih/venčanih)", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Poreska uprava - filijala",
+      "tip": "filijala",
+      "telefon": "0700 700 007",
+      "url": "https://www.purs.gov.rs",
+      "napomena": "Filijala prema mestu prebivališta preminulog (gde se nalazi imovina)."
+    },
+    {
+      "naziv": "Javni beležnik (notar)",
+      "tip": "centralna",
+      "url": "https://www.beleznik.org",
+      "napomena": "Pokretanje ostavinske rasprave. Cene su zakonom regulisane."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Ne prijave nasleđe Poreskoj u roku 30 dana",
+      "posledica": "Kazna 5.000-150.000 RSD + obaveza naknadnog prijavljivanja",
+      "resenje": "Postavite podsetnik 25 dana posle ostavinske rasprave. Idite u Poresku sa PP-OPN obrascem."
+    },
+    {
+      "greska": "Plate advokatu da 'reši poresko oslobađanje'",
+      "posledica": "Bačeno 2.000-5.000 EUR jer je automatski",
+      "resenje": "Prvi naslednički red ne plaća porez - ne treba pravna pomoć za to. Samo prijavite PP-OPN."
+    },
+    {
+      "greska": "Naslednici drugog reda misle da su oslobođeni",
+      "posledica": "Pogrešno prijavljivanje, kazna",
+      "resenje": "Drugi red (braća/sestre, baba/deda) plaća 1,5%. Treba pravilno prijaviti. Posavetujte se sa poreskom."
+    }
+  ],
+
+  "rok_za_podnosenje": "30 dana od pravnosnažnosti rešenja o nasleđu.",
+
+  "prosecno_trajanje_postupka": "Ostavinska rasprava: 1-3 meseca. Poreska prijava: 15-30 dana.",
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv aktuelnog Zakona o porezima na imovinu"
+}

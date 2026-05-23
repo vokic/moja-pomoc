@@ -1,0 +1,153 @@
+{
+  "id": "MO01",
+  "kategorija": "mladi",
+
+  "naziv": {
+    "sr_cyr": "Субвенције за први стан за младе до 35 година",
+    "sr_lat": "Subvencije za prvi stan za mlade do 35 godina"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Држава финансира 20% вредности првог стана за младе до 35 година, плус ослобађање од ПДВ-а (10%). Укупна уштеда: 30% од цене стана.",
+    "sr_lat": "Država finansira 20% vrednosti prvog stana za mlade do 35 godina, plus oslobađanje od PDV-a (10%). Ukupna ušteda: 30% od cene stana."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "big_money", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o porezu na dodatu vrednost",
+      "sluzbeni_glasnik": "Sl. glasnik RS 84/2004 sa izmenama"
+    },
+    {
+      "zakon": "Program subvencionisanja kupovine prvog stana za mlade",
+      "napomena": "Program Ministarstva građevinarstva, saobraćaja i infrastrukture. Aktuelne uslove proveriti za 2026."
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "20% subvencije od cene stana + povrat PDV-a 10% = 30% ukupne uštede. Za stan od 100.000 EUR: ušteda 30.000 EUR."
+  },
+
+  "ko_ima_pravo_opis": "Mladi do 35 godina (uključujući 35) koji prvi put kupuju stan u Srbiji. Uslovi: državljanstvo Srbije, nemaju nepokretnost u vlasništvu (oni i njihovi supružnici), stan mora biti za stalno stanovanje (ne za izdavanje). Stan može biti nov ili polovan (uz određene uslove).",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "starost_max", "vrednost": 35 },
+        { "tip": "prebivaliste_srbija", "vrednost": true }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi mladi ne znaju da program postoji, ili misle da je 'samo za Beograd' / 'samo za neke'. Drugi propust: čekaju da imaju ceo budžet, ne znajući da banka uračunava državnu subvenciju u kredit. Program se otvara periodično - kad imate priliku, treba reagovati brzo.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Proverite trenutne uslove na sajtu Ministarstva",
+      "opis": "Program može imati specifične rokove i kvote. Ministarstvo građevinarstva ima informacije na svom sajtu i preko portala eUprava.",
+      "napomena": "Stanje programa u 2026 - proveriti aktuelno, jer se uslovi menjaju."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pripremite dokumentaciju za prijavu",
+      "opis": "Lična karta, izvod iz matične knjige rođenih, izvod iz matične knjige venčanih (ako ste), izveštaj o vlasništvu nepokretnosti (iz katastra) - dokazuje da nemate stan.",
+      "napomena": "Ako ste u braku - i partner mora da nema stan. Bez izuzetka."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Izaberite stan",
+      "opis": "Nov ili polovan stan. Mora biti za stalno stanovanje. Cena - obično postoji maksimum koje država pokriva (npr. do 1.500 EUR/m² u Beogradu, manje u manjim gradovima).",
+      "upozorenje": "Stan ne smete prodavati 5 godina nakon kupovine - inače morate vratiti subvenciju."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Stambeni kredit u banci",
+      "opis": "Banka uračunava subvenciju kao deo finansiranja. Vaš učešće: cca. 10-20% (preostale 50-70% kredit, 20% subvencija, 10% PDV povrat).",
+      "napomena": "Kamate na stambeni kredit za mlade su povoljne - oko 5-6% RSD ili 4-5% EUR (variraju)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Podnesite prijavu kod Ministarstva (preko banke ili direktno)",
+      "opis": "Banka često administrira proces - vi joj dajete dokumentaciju, ona šalje Ministarstvu. Po odobrenju - subvencija ide direktno prodavcu stana.",
+      "napomena": "PDV povrat - posebnim zahtevom Poreskoj upravi nakon zatvaranja kupoprodaje."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Preselite se u stan (uslov)",
+      "opis": "Morate stvarno prebivati u stanu - prijava na adresu u roku od 30 dana posle uvođenja u posed. Ministarstvo može kontrolisati.",
+      "upozorenje": "Iznajmljivanje stana u 5 godina - nemoguće. Stan mora služiti vama, ne za prihod."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "izvod_rodjenje", "naziv": "Izvod iz matične knjige rođenih", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "izvod_braka", "naziv": "Izvod iz knjige venčanih (ako ste u braku)", "obavezno": false, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "list_nepok", "naziv": "List nepokretnosti - potvrda da nemate stan", "obavezno": true, "gde_se_nabavlja": "Republički geodetski zavod (katastar)", "trosak_rsd": 200, "napomena": "I za partnera ako ste u braku." },
+    { "id": "uver_drzavljanstvo", "naziv": "Uverenje o državljanstvu", "obavezno": true, "gde_se_nabavlja": "MUP", "trosak_rsd": 1000 },
+    { "id": "uver_zaposlenje", "naziv": "Potvrda o zaposlenju i visini plate", "obavezno": false, "gde_se_nabavlja": "Poslodavac", "trosak_rsd": 0, "napomena": "Za stambeni kredit u banci." }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "tip": "centralna",
+      "telefon": "011 3617 700",
+      "url": "https://www.mgsi.gov.rs"
+    },
+    {
+      "naziv": "Banka (komercijalna - za kredit)",
+      "tip": "centralna",
+      "napomena": "OTP, Komercijalna, Eurobank, ProCredit - sve nude stambene kredite uz program subvencionisanja."
+    },
+    {
+      "naziv": "Poreska uprava - povrat PDV",
+      "tip": "filijala",
+      "telefon": "0700 700 007",
+      "url": "https://www.purs.gov.rs"
+    }
+  ],
+
+  "filijala_pravilo": "jedinstvena",
+
+  "ceste_greske": [
+    {
+      "greska": "Misle da je program 'samo za Beograd'",
+      "posledica": "Mladi iz manjih gradova ne podnose zahtev",
+      "resenje": "Program je za celu Srbiju. Manji gradovi imaju i jeftinije stanove - veća efikasna pomoć."
+    },
+    {
+      "greska": "Ne uračunavaju oslobađanje od PDV",
+      "posledica": "Misle da je 20% subvencija sve - propuste još 10% PDV-a",
+      "resenje": "Ukupno: 20% subvencija + 10% PDV povrat = 30% ušteda. Tražite oboje."
+    },
+    {
+      "greska": "Posude stan u 5 godina (Airbnb, izdavanje studentima)",
+      "posledica": "Vraćaju celu subvenciju + kazna",
+      "resenje": "Stan je vaš stalan dom 5 godina. Posle 5 godina možete da radite šta želite."
+    },
+    {
+      "greska": "Misle da je 'previše komplikovano'",
+      "posledica": "Bačeno 30.000 EUR",
+      "resenje": "Banka administrira većinu - vi samo prikupljate dokumente. Trajanje: 2-4 meseca."
+    }
+  ],
+
+  "rok_za_podnosenje": "Otvoren kad je program aktivan - kvote su godišnje. Proverite tekuće rokove.",
+
+  "prosecno_trajanje_postupka": "Od podnošenja zahteva do uplate: 2-4 meseca.",
+
+  "spoljni_resursi": [
+    { "naziv": "Ministarstvo građevinarstva", "url": "https://www.mgsi.gov.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - PROVERITI aktuelni program za 2026, kvote i rokove"
+}

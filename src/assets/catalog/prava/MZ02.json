@@ -1,0 +1,137 @@
+{
+  "id": "MZ02",
+  "kategorija": "mentalno_zdravlje",
+
+  "naziv": {
+    "sr_cyr": "Бесплатно лечење зависности (алкохол, дрога, коцкарска зависност)",
+    "sr_lat": "Besplatno lečenje zavisnosti (alkohol, droga, kockarska zavisnost)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Anonimna i besplatna terapija zavisnosti od alkohola, droga, kockanja u специјализованим центрима и ванболничким јединицама.",
+    "sr_lat": "Anonimna i besplatna terapija zavisnosti od alkohola, droga, kockanja u specijalizovanim centrima i vanbolničkim jedinicama."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o psihoaktivnim kontrolisanim supstancama",
+      "sluzbeni_glasnik": "Sl. glasnik RS 99/2010"
+    },
+    { "zakon": "Zakon o zdravstvenoj zaštiti" }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Detoksikacija, supstituciona terapija (metadon, buprenorfin), individualna i grupna terapija, hospitalizacija u krizi - sve besplatno preko RFZO. Vrednost privatno: 50.000+ RSD mesečno za supstitucionu terapiju."
+  },
+
+  "ko_ima_pravo_opis": "Svi sa zavisnošću od alkohola, droga ili patološkim kockarstvom. Anonimno za prvi kontakt. Maloletna lica - sa pristankom roditelja ili po nalogu suda. Stranci sa privremenim boravkom takođe imaju pravo na hitnu pomoć.",
+
+  "uslovi": [
+    { "tip": "prebivaliste_srbija", "vrednost": true }
+  ],
+
+  "zasto_se_propusta": "Stigma + strah od evidencije (kazne, gubitka posla, sukoba sa policijom). Većina ljudi se boji da će biti prijavljeni - ali sistem je anonimni i ne komunicira sa policijom. Drugi razlog: niska vidljivost - mnogi ne znaju gde da se obrate. Mnogi pokušaju 'sami' i posle 5-10 godina dolaze izgubljeni.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pozovite anonimnu liniju ili dođite u CZAD",
+      "opis": "Centri za zavisnost od alkohola i droga (CZAD) postoje u svakom većem gradu. Pozovite ili dođite lično - prvi kontakt je anoniman. Nema obavezno pokazivanje lične karte za inicijalni razgovor."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Procena i plan lečenja",
+      "opis": "Psihijatar i socijalni radnik procenjuju stanje. Plan može biti: ambulantno (samo dolasci), bolničko (2-4 nedelje detoksikacija), terapeutska zajednica (3-12 meseci).",
+      "napomena": "Vi ste deo odluke - kažite šta vam odgovara i šta ne. Nije obavezno hospitalizovanje."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Detoksikacija (ako je neophodna)",
+      "opis": "Za teške zavisnosti od alkohola i opioida - hospitalizacija 2-4 nedelje u kontrolisanim uslovima. Bezbedno povlačenje uz medicinski nadzor.",
+      "upozorenje": "Naglo prekidanje alkohola ili opioida bez nadzora MOŽE biti smrtonosno. Nemojte to raditi sami."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Supstituciona terapija (za opioidne zavisnosti)",
+      "opis": "Metadon ili buprenorfin (Suboxone) - dnevna doza koju dobijaš u centru ili u apoteci. Stabilizuje stanje, omogućava normalan život."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Dugoročna terapija",
+      "opis": "Individualna terapija (CBT), grupna terapija (AA, NA, GA), terapija porodice. Trajanje: minimum 6-12 meseci, idealno 2-3 godine.",
+      "napomena": "Recidiv je deo procesa za većinu ljudi. Nemoj odustajati zbog jednog povratka - vraćaš se u proces, ne počinješ ispočetka."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta (za zvanično lečenje)", "obavezno": false, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0, "napomena": "Prvi kontakt može biti anoniman. Ali za supstitucionu terapiju i evidenciju u sistemu - potrebna." },
+    { "id": "zdrav_knjizica", "naziv": "Zdravstvena knjižica", "obavezno": false, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Klinika za bolesti zavisnosti, KCS Beograd",
+      "tip": "specijalisticka",
+      "telefon": "011 3663 422",
+      "adresa": "Pasterova 2, Beograd",
+      "url": "https://www.kcs.ac.rs"
+    },
+    {
+      "naziv": "Specijalna bolnica za bolesti zavisnosti, Drajzerova",
+      "tip": "specijalisticka",
+      "telefon": "011 3088 200",
+      "adresa": "Drajzerova 44, Beograd",
+      "napomena": "Najveća specijalizovana ustanova za zavisnosti od alkohola i droga."
+    },
+    {
+      "naziv": "Centar za prevenciju i lečenje zavisnosti, Niš",
+      "tip": "specijalisticka",
+      "telefon": "018 533 411"
+    },
+    {
+      "naziv": "Anonimni alkoholičari (AA) Srbije",
+      "tip": "centralna",
+      "telefon": "0800 110 200",
+      "url": "https://www.aa-srbija.org",
+      "napomena": "Grupna podrška, anonimno, besplatno. Sastanci u celoj Srbiji."
+    }
+  ],
+
+  "filijala_pravilo": "po_izboru",
+
+  "ceste_greske": [
+    {
+      "greska": "Strah od evidencije sprečava odlazak",
+      "posledica": "Zavisnost traje godinama, kvalitet života pada",
+      "resenje": "Evidencija u zdravstvu je strogo poverljiva. Policija nema pristup. Poslodavac može da vidi samo bolovanje (ne dijagnozu)."
+    },
+    {
+      "greska": "Pokušava da se otkači sam, naglo",
+      "posledica": "Patnja, recidiv, kod alkohola i opioida - opasnost po život (delirijum, smrt)",
+      "resenje": "Detoksikacija pod medicinskim nadzorom. Ambulantna ili bolnička, ali sa lekarima."
+    },
+    {
+      "greska": "Misli da je supstituciona terapija 'samo zamena zavisnosti'",
+      "posledica": "Odbija metadon/Suboxone, pa pada na uličnu drogu",
+      "resenje": "Supstituciona terapija je dokazano efikasna. Stabilizuje, omogućava posao i porodicu. Nije 'zamena' - to je lečenje."
+    },
+    {
+      "greska": "Posle recidiva odustaje",
+      "posledica": "Vraća se u zavisnost",
+      "resenje": "Recidiv je deo lečenja za 70%+ ljudi. Vrati se centru ili AA grupi - ne počinješ ispočetka."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad. Što ranije.",
+
+  "prosecno_trajanje_postupka": "Prvi kontakt: 1-3 dana. Detoks: 2-4 nedelje. Dugoročna terapija: 6-24 meseca.",
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati kontakte i kapacitete u 2026"
+}

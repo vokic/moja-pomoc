@@ -1,0 +1,113 @@
+{
+  "id": "SM03",
+  "kategorija": "smrt_porodice",
+
+  "naziv": {
+    "sr_cyr": "Плаћено одсуство због смрти у породици (5 дана)",
+    "sr_lat": "Plaćeno odsustvo zbog smrti u porodici (5 dana)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "По Закону о раду, запослени има право на 5 дана плаћеног одсуства код смрти члана уже породице (брачни партнер, дете, родитељ, брат, сестра).",
+    "sr_lat": "Po Zakonu o radu, zaposleni ima pravo na 5 dana plaćenog odsustva kod smrti člana uže porodice (bračni partner, dete, roditelj, brat, sestra)."
+  },
+
+  "prioritet_propusta": 3,
+
+  "tagovi": ["time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o radu",
+      "sluzbeni_glasnik": "Sl. glasnik RS 24/2005 sa izmenama",
+      "clanovi": "Čl. 77",
+      "url": "https://www.paragraf.rs/propisi/zakon_o_radu.html"
+    }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "5 dana plaćenog odsustva. Plaćeno kao redovan rad - 100% zarade. Ne smanjuje godišnji odmor."
+  },
+
+  "ko_ima_pravo_opis": "Svaki zaposleni po ugovoru o radu (puno ili deo radnog vremena). Smrt mora biti člana uže porodice: bračni partner, deca, roditelji, braća/sestre, baba/deda, unuci, snaja/zet. Ne važi za daljnju rodbinu (tetka, ujak, rođak) - tu se može uzeti godišnji.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "situacija", "vrednost": ["smrt_porodice"] },
+        { "tip": "zaposlenje", "vrednost": ["zaposlen"] }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi zaposleni ne znaju da imaju ovo pravo - misle da moraju uzeti godišnji ili neplaćeno. Neki poslodavci ne obaveštavaju proaktivno. Pravo se mora zatražiti - poslodavac neće sam predložiti.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Obavestite poslodavca odmah",
+      "opis": "Pozovite ili pošaljite poruku (SMS, email) - 'imam smrt u porodici, koristim 5 dana plaćenog odsustva po čl. 77 Zakona o radu'. Ne tražite, OBAVEŠTAVATE."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Donesite izvod iz matične knjige umrlih (po povratku)",
+      "opis": "Poslodavac može tražiti dokaz - donesite izvod kad ga dobijete (5-10 dana). Bez izvoda - poslodavac može sumnjati i ne platiti.",
+      "napomena": "Originali NE TREBA - kopije su dovoljne. Sačuvajte original za sebe."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Provera u platnoj listi",
+      "opis": "Sledeća plata mora biti puna - sa 5 dana plaćenog odsustva (ne godišnji, ne neplaćeno). Ako je smanjena - tražite proveru u kadrovskoj.",
+      "upozorenje": "Neki poslodavci 'zaboravljaju' - tražite ispravku. Ne ćutite ako je smanjeno."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "izvod_umrli", "naziv": "Izvod iz matične knjige umrlih (kopija)", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380, "napomena": "Kopija je dovoljna za poslodavca." }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Vaš poslodavac (kadrovska služba)",
+      "tip": "pravno_lice",
+      "napomena": "Obavestite kadrovsku direktno. Možete i menadžera, ali kadrovska obrađuje administraciju."
+    },
+    {
+      "naziv": "Inspekcija rada (ako poslodavac ne plati)",
+      "tip": "centralna",
+      "telefon": "011 36 16 261",
+      "url": "https://www.minrzs.gov.rs",
+      "napomena": "Ako poslodavac uskrati ovo pravo - inspekcija rada može da kontroliše."
+    }
+  ],
+
+  "filijala_pravilo": "pratilac_pravnog_lica",
+
+  "ceste_greske": [
+    {
+      "greska": "Uzima godišnji odmor umesto plaćenog odsustva",
+      "posledica": "Gubi 5 dana godišnjeg odmora besplatno",
+      "resenje": "5 dana plaćenog odsustva po čl. 77 - NIJE deo godišnjeg odmora. Drži ih odvojeno."
+    },
+    {
+      "greska": "Ne traži od poslodavca jer 'osetljiva tema'",
+      "posledica": "Gubi 5 plaćenih dana",
+      "resenje": "Vaše je pravo. Poslodavac je obavezan po zakonu. Ne molite, obaveštavajte."
+    },
+    {
+      "greska": "Misle da važi i za daljnju rodbinu",
+      "posledica": "Konflikt sa poslodavcem",
+      "resenje": "Samo uža porodica: bračni partner, deca, roditelji, braća/sestre, baba/deda, unuci, snaja/zet. Za daljnju - uzmite godišnji."
+    }
+  ],
+
+  "rok_za_podnosenje": "Odmah po smrti. Pravo ne postoji ako se ne iskoristi neposredno.",
+
+  "prosecno_trajanje_postupka": "5 dana plaćenog odsustva. Bez procedure - samo prijava poslodavcu.",
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv aktuelnog Zakona o radu, čl. 77"
+}

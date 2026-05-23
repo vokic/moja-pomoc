@@ -1,0 +1,149 @@
+{
+  "id": "RZ01",
+  "kategorija": "razvod",
+
+  "naziv": {
+    "sr_cyr": "Издржавање детета (алиментација) после развода",
+    "sr_lat": "Izdržavanje deteta (alimentacija) posle razvoda"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Право детета на месечно издржавање од оба родитеља. Износ одређује суд - просечно 20-40% месечног примања родитеља који не живи са дететом.",
+    "sr_lat": "Pravo deteta na mesečno izdržavanje od oba roditelja. Iznos određuje sud - prosečno 20-40% mesečnog primanja roditelja koji ne živi sa detetom."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "big_money", "time_sensitive"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Porodični zakon",
+      "sluzbeni_glasnik": "Sl. glasnik RS 18/2005 sa izmenama",
+      "clanovi": "Čl. 154-164",
+      "url": "https://www.paragraf.rs/propisi/porodicni_zakon.html"
+    }
+  ],
+
+  "iznos": {
+    "tip": "mesecno_raspon",
+    "min_rsd": 10000,
+    "max_rsd": 50000,
+    "napomena": "Sud određuje na osnovu primanja roditelja i potreba deteta. Minimum: oko 15.000 RSD (vezano za prosečnu zaradu). Maksimum: do 50% neto primanja obveznika."
+  },
+
+  "ko_ima_pravo_opis": "Maloletno dete (do 18 god) preko roditelja kod kojeg živi. Punoletno dete koje se redovno školuje (do 26 god) ili je nesposobno za rad. Pravo NIJE roditelja - nego DETETA.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "situacija", "vrednost": ["razvod"] },
+        { "tip": "ima_decu" }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Posle razvoda, roditelj kod kojeg deca žive često ne traži formalnu alimentaciju ('da ne pravimo problem'). Ali dete IMA pravo. Drugi propust: dogovor 'mimo suda' (cash) - bez sudskog rešenja, ako drugi roditelj prestane da plaća, nema načina za prinudnu naplatu. Treći propust: ne usklađuju iznos sa rastom plata (alimentacija se može menjati).",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Pokrenite postupak za izdržavanje deteta",
+      "opis": "Tužba za izdržavanje deteta - osnovni sud prema mestu prebivališta deteta. Možete je pokrenuti u toku ili posle razvoda, ili kao samostalan postupak.",
+      "napomena": "Tuženi je roditelj koji ne živi sa detetom. Tužbu podnosi roditelj kod kojeg dete živi (zakonski zastupnik)."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Prikupite dokaze o primanjima drugog roditelja",
+      "opis": "Plate, ugovori, dobit od preduzetništva, imovinske kartice. Sud će ih i sam tražiti, ali brže ide ako vi imate nešto.",
+      "upozorenje": "Ako drugi roditelj radi 'na crno' - sud može odrediti iznos na osnovu PROSEČNE zarade u Srbiji (cca. 80.000-100.000 RSD)."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Prikupite dokaze o potrebama deteta",
+      "opis": "Računi: vrtić, škola, lekar, sport, dodatna nastava. Sud određuje iznos na osnovu potreba deteta + mogućnosti roditelja."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Sudski postupak (3-12 meseci)",
+      "opis": "Ročišta, izvođenje dokaza. Sud donosi presudu - mesečni iznos, način uplate, dospeće.",
+      "napomena": "Možete tražiti privremenu meru - sud određuje iznos odmah dok se postupak ne završi."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Naplata i praćenje",
+      "opis": "Ako roditelj plaća dobrovoljno - dobro. Ako ne plaća - izvršenje preko izvršitelja (zatraži obustavu sa plate, blokada računa, prinudna naplata)."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Povećanje iznosa u vremenu",
+      "opis": "Plate i potrebe deteta rastu. Možete podneti zahtev za povećanje alimentacije svake 2-3 godine. Sud razmatra promenu prilika.",
+      "napomena": "Ne morate da čekate roditelja da pristane - tužba sudu."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta podnosioca", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "izvod_rodjenje_dete", "naziv": "Izvod iz matične knjige rođenih za dete", "obavezno": true, "gde_se_nabavlja": "Matičar", "trosak_rsd": 380 },
+    { "id": "presuda_razvod", "naziv": "Presuda o razvodu (ako razvod proveden)", "obavezno": false, "gde_se_nabavlja": "Sud", "trosak_rsd": 0 },
+    { "id": "dokazi_primanja", "naziv": "Dokazi o primanjima tuženog (ako su dostupni)", "obavezno": false, "gde_se_nabavlja": "Plata, banka, poreska", "trosak_rsd": 0 },
+    { "id": "dokazi_troskovi", "naziv": "Računi za troškove deteta", "obavezno": false, "gde_se_nabavlja": "Vrtić, škola, lekar", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Osnovni sud prema mestu prebivališta deteta",
+      "tip": "centralna",
+      "url": "https://www.sudovi.rs"
+    },
+    {
+      "naziv": "Centar za socijalni rad (mišljenje suda)",
+      "tip": "filijala",
+      "napomena": "Sud traži mišljenje CSR-a o najboljem interesu deteta. Procena se obavlja u CSR-u."
+    },
+    {
+      "naziv": "Pravni klinik fakulteta (besplatna pravna pomoć)",
+      "tip": "centralna",
+      "url": "https://www.ius.bg.ac.rs/pravna-klinika",
+      "napomena": "Studenti prava pod nadzorom profesora - besplatno za niska primanja."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Dogovor 'mimo suda' bez sudskog rešenja",
+      "posledica": "Kad drugi roditelj prestane da plaća - nema prinudne naplate",
+      "resenje": "Uvek formalna sudska odluka. I ako se dogovorite - tražite da sud overi sporazum."
+    },
+    {
+      "greska": "Ne tražite alimentaciju jer 'ja sam kriva za razvod' / 'on ne može'",
+      "posledica": "Dete dobija manje nego što mu pripada",
+      "resenje": "Alimentacija je pravo DETETA, ne tvoje. Bez veze sa krivicom za razvod."
+    },
+    {
+      "greska": "Ne usklađuju iznos godinama",
+      "posledica": "5.000 RSD iz 2020. nije isto što 5.000 RSD 2026.",
+      "resenje": "Svake 2-3 godine - razmislite o povećanju. Tužba sudu za povećanje."
+    },
+    {
+      "greska": "Roditelj koji ne živi sa detetom prestaje da plaća, ne preduzima ništa",
+      "posledica": "Mesecima bez para, dete trpi",
+      "resenje": "Idite izvršitelju sa presudom - blokada računa drugog roditelja, obustava od plate. Postupak: 15-30 dana."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad - dok dete ne završi obrazovanje (max 26 god) ili dok ne postane sposobno za rad.",
+
+  "prosecno_trajanje_postupka": "Sudski postupak: 3-12 meseci. Privremena mera: 30-60 dana.",
+
+  "spoljni_resursi": [
+    { "naziv": "Porodični zakon", "url": "https://www.paragraf.rs/propisi/porodicni_zakon.html" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati prosečne iznose za 2026"
+}

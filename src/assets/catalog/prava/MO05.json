@@ -1,0 +1,123 @@
+{
+  "id": "MO05",
+  "kategorija": "mladi",
+
+  "naziv": {
+    "sr_cyr": "Студентска картица (попусти на превоз, културу и спорт)",
+    "sr_lat": "Studentska kartica (popusti na prevoz, kulturu i sport)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Студентска картица доноси: 75% попуст на јавни превоз (БГ Плус), бесплатан улаз у већину државних музеја, попуст на железницу, биоскопе, позоришта. Само 500 РСД годишње.",
+    "sr_lat": "Studentska kartica donosi: 75% popust na javni prevoz (BG Plus), besplatan ulaz u većinu državnih muzeja, popust na železnicu, bioskope, pozorišta. Samo 500 RSD godišnje."
+  },
+
+  "prioritet_propusta": 2,
+
+  "tagovi": ["surprise"],
+
+  "pravni_osnov": [
+    { "zakon": "Zakon o učeničkom i studentskom standardu" },
+    { "zakon": "Odluke gradskih saobraćajnih preduzeća (GSP Beograd, Niš, Novi Sad)" }
+  ],
+
+  "iznos": {
+    "tip": "opisno",
+    "vrednost_opis": "Trošak kartice: ~500 RSD godišnje. Ušteda: prevoz 1.500-3.000 RSD mesečno (vs. ~6.000 RSD bez popusta) = 50.000-70.000 RSD godišnje samo na prevozu. Plus muzeji, bioskopi - dodatno."
+  },
+
+  "ko_ima_pravo_opis": "Svi studenti državnih i privatnih fakulteta u Srbiji do 26 godina (određene popuste i do 30). Sa važećim uverenjem o upisu.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "zaposlenje", "vrednost": ["student"] },
+        { "tip": "starost_max", "vrednost": 26 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi studenti misle da kartica 'nije bitna' ili da je 'samo za prevoz'. Realno - 75% popust na prevoz znači uštedu od 50.000+ RSD godišnje. Plus muzeji, pozorišta - kulturni život za male pare. Drugi propust: misle da je proces komplikovan - zapravo, 10 minuta na šalteru fakulteta ili studentskog centra.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Idite u studentsku službu fakulteta",
+      "opis": "Studentska služba (ili kod nekih fakulteta - posebna kancelarija) izdaje studentske kartice. Sa važećim uverenjem o upisu."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Donesite fotografiju",
+      "opis": "Pasoška fotografija (35x45mm). Većina mesta odštampa karticu istovremeno."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Platite taksu ~500 RSD",
+      "opis": "Plaćate šalteru. Kartica važi godinu dana - rekonkurišete posle."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Sa karticom u GSP-u (Beograd)",
+      "opis": "Idite u BG Plus centar (Tunala, Knez Mihailova) ili online preko bgnaplata.rs - dodajte studentsku kategoriju. Mesečna karta: 1.300-1.500 RSD (vs. 4.500-6.000 RSD redovna)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Koristite za sve studentske popuste",
+      "opis": "Pri kupovini karata - tražite studentski popust i pokažite karticu. Muzeji, pozorišta, bioskopi, železnica, autobus, čak i neke kafane i prodavnice imaju popuste.",
+      "napomena": "Neki popusti zahtevaju i potvrdu o tekućem semestru - držite uvek uverenje o upisu u rancu."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uver_upis", "naziv": "Uverenje o upisu (važi za tekući semestar)", "obavezno": true, "gde_se_nabavlja": "Studentska služba", "trosak_rsd": 0 },
+    { "id": "foto", "naziv": "Pasoška fotografija", "obavezno": true, "gde_se_nabavlja": "Foto radnja", "trosak_rsd": 500 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Studentska služba fakulteta",
+      "tip": "filijala",
+      "napomena": "Izdaje studentske kartice. Procedura jednostavna."
+    },
+    {
+      "naziv": "BG Plus centar (Beograd) - dodavanje studentske kategorije",
+      "tip": "centralna",
+      "url": "https://www.bgnaplata.rs",
+      "adresa": "Knez Mihailova / Tunala"
+    }
+  ],
+
+  "filijala_pravilo": "pratilac_pravnog_lica",
+
+  "ceste_greske": [
+    {
+      "greska": "Ne vade karticu jer 'samo prevoz - ne treba'",
+      "posledica": "Propuste 50.000+ RSD uštede godišnje",
+      "resenje": "Čak i ako ne koristite prevoz - muzeji su besplatni, bioskopi imaju 30-50% popust. Vredi 500 RSD."
+    },
+    {
+      "greska": "Vade karticu ali ne aktiviraju u GSP-u",
+      "posledica": "Plaćaju punu cenu prevoza",
+      "resenje": "Idite u BG Plus centar i tražite 'dodavanje studentske kategorije'. 5 minuta posla."
+    },
+    {
+      "greska": "Ne nose karticu uvek",
+      "posledica": "Pri kontroli plaćaju kaznu",
+      "resenje": "Stalno u novčaniku ili rancu. Kontrola je česta - bez kartice = puna karta."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad u toku akademske godine.",
+
+  "prosecno_trajanje_postupka": "Vađenje kartice: 10-15 minuta. Aktiviranje u GSP-u: 5 minuta.",
+
+  "spoljni_resursi": [
+    { "naziv": "BG Plus", "url": "https://www.bgnaplata.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati cene i popuste za 2026"
+}

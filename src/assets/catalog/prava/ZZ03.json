@@ -1,0 +1,127 @@
+{
+  "id": "ZZ03",
+  "kategorija": "zdravlje_zena",
+
+  "naziv": {
+    "sr_cyr": "Скрининг карцинома дојке (мамографија)",
+    "sr_lat": "Skrining karcinoma dojke (mamografija)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Бесплатна превентивна мамографија за жене 45-69 година, једном у две године. Део Националног програма скрининга.",
+    "sr_lat": "Besplatna preventivna mamografija za žene 45-69 godina, jednom u dve godine. Deo Nacionalnog programa skrininga."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "time_sensitive", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zdravstvenoj zaštiti",
+      "sluzbeni_glasnik": "Sl. glasnik RS 25/2019"
+    },
+    {
+      "zakon": "Uredba o Nacionalnom programu za rano otkrivanje karcinoma dojke"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Besplatna mamografija (snimak oba dojke) + očitavanje od strane dva radiologa + obaveštavanje o rezultatima. Vrednost privatno: 4.000 - 8.000 RSD."
+  },
+
+  "ko_ima_pravo_opis": "Sve žene osigurane preko RFZO, starosne dobi 45-69 godina. Pozivnice se šalju proaktivno na kućnu adresu (Institut za javno zdravlje). Učestalost: jednom u 2 godine. Žene mlađe od 45 ili starije od 69 - mogu na mamografiju po preporuci lekara (npr. porodična anamneza, palpabilan čvor).",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "pol", "vrednost": "z" },
+        { "tip": "starost_min", "vrednost": 45 },
+        { "tip": "starost_max", "vrednost": 69 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Žene koje su pozvane na mamografiju često ne odgovore - pozivnica izgleda kao spam, ili strah od bola, ili sram. Mamografija nije bolna (kratak pritisak), traje 10 minuta, i otkriva rak 5-10 godina pre nego što se napipa. Mnoge žene plaćaju privatno 5.000-8.000 RSD ne znajući da je u domu zdravlja besplatno.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Sačekajte pozivnicu ili zatražite uput",
+      "opis": "Ako dobijete pozivnicu Instituta za javno zdravlje - tu su sve informacije (gde, kad). Ako niste dobili - tražite uput od izabranog ginekologa ili lekara opšte prakse.",
+      "napomena": "Sistem pozivnica nije savršen - mnoge žene se 'izgube' u sistemu. Ne čekajte ako ste u uzrastu 45-69."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Zakažite mamografiju",
+      "opis": "Sa uputom ili pozivnicom, idete u najbližu instituciju koja radi skrining (dom zdravlja sa mamografom, KC, IORS Beograd). Lista na batut.org.rs."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Mamografija traje 10-15 minuta",
+      "opis": "Snimak svake dojke iz dva ugla. Kratak pritisak (5-10 sekundi po snimku). Bezbolan postupak za većinu žena.",
+      "upozorenje": "Žene mlađe od 50 imaju gušće tkivo dojke - ponekad treba ultrazvuk kao dopuna. Tražite ako vam je nalaz neodređen."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Rezultati za 2-3 nedelje",
+      "opis": "Dva radiologa nezavisno očitavaju snimke. Negativan nalaz = sve OK, sledeća mamografija za 2 godine. Pozitivan ili neodređen = ultrazvuk, biopsija."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "zdrav_knjizica", "naziv": "Zdravstvena knjižica", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uput", "naziv": "Uput (ako nemate pozivnicu)", "obavezno": false, "gde_se_nabavlja": "Izabrani ginekolog / lekar opšte prakse", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Institut za javno zdravlje Srbije 'Dr Milan Jovanović Batut'",
+      "tip": "centralna",
+      "telefon": "011 2684 566",
+      "url": "https://www.batut.org.rs",
+      "napomena": "Koordinira Nacionalni program. Šalje pozivnice na kućnu adresu."
+    },
+    {
+      "naziv": "Institut za onkologiju i radiologiju Srbije (IORS)",
+      "tip": "specijalisticka",
+      "telefon": "011 2068 100",
+      "adresa": "Pasterova 14, Beograd"
+    }
+  ],
+
+  "filijala_pravilo": "po_izboru",
+
+  "ceste_greske": [
+    {
+      "greska": "Ignoriše se pozivnica Instituta",
+      "posledica": "Propušta se besplatan skrining, pa onda plaća privatno ili uopšte ne ide",
+      "resenje": "Ako dobijete pozivnicu - odazovite se. Ako ste je izgubili ili niste dobili - tražite uput kod izabranog lekara."
+    },
+    {
+      "greska": "Strah od bola sprečava odlazak",
+      "posledica": "Žene godinama izbegavaju, kasna detekcija",
+      "resenje": "Mamografija nije bolna. Kratak pritisak traje 5-10 sekundi. Iskustvo: kao snažan stisak. Mnogo manje neprijatno od npr. vađenja zuba."
+    },
+    {
+      "greska": "Ne ide jer 'nema nikoga u porodici sa rakom dojke'",
+      "posledica": "85% slučajeva raka dojke nema porodičnu istoriju - skrining je upravo za njih",
+      "resenje": "Porodična istorija je samo jedan faktor. Najveći faktor je starost (preko 45). Idite na skrining bez obzira."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad - preventiva. Idealno jednom u 2 godine za uzrast 45-69.",
+
+  "prosecno_trajanje_postupka": "Snimanje: 15 minuta. Rezultati: 2-3 nedelje.",
+
+  "spoljni_resursi": [
+    { "naziv": "Nacionalni program skrininga karcinoma dojke", "url": "https://www.batut.org.rs/index.php?content=2008" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv batut.org.rs"
+}

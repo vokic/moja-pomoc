@@ -1,0 +1,126 @@
+{
+  "id": "ZZ02",
+  "kategorija": "zdravlje_zena",
+
+  "naziv": {
+    "sr_cyr": "Скрининг карцинома грлића материце (ПАПА тест)",
+    "sr_lat": "Skrining karcinoma grlića materice (PAPA test)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Бесплатан превентивни ПАПА тест за жене 25-69 година, једном у три године. Део Националног програма скрининга.",
+    "sr_lat": "Besplatan preventivni PAPA test za žene 25-69 godina, jednom u tri godine. Deo Nacionalnog programa skrininga."
+  },
+
+  "prioritet_propusta": 5,
+
+  "tagovi": ["high_priority", "time_sensitive", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o zdravstvenoj zaštiti",
+      "sluzbeni_glasnik": "Sl. glasnik RS 25/2019",
+      "url": "https://www.paragraf.rs/propisi/zakon_o_zdravstvenoj_zastiti.html"
+    },
+    {
+      "zakon": "Uredba o Nacionalnom programu za rano otkrivanje karcinoma grlića materice"
+    }
+  ],
+
+  "iznos": {
+    "tip": "usluga_besplatna",
+    "opis": "Besplatan ginekološki pregled + PAPA test + obaveštavanje o rezultatima i pozivima na kontrolu. Vrednost privatno: 3.000 - 5.000 RSD po testu."
+  },
+
+  "ko_ima_pravo_opis": "Sve žene osigurane preko RFZO, starosne dobi 25-69 godina. Poziv za skrining se šalje proaktivno preko izabranog ginekologa ili Instituta za javno zdravlje. Učestalost: jednom u 3 godine za negativan nalaz; češće po preporuci lekara ako su pozitivni nalazi.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "pol", "vrednost": "z" },
+        { "tip": "starost_min", "vrednost": 25 },
+        { "tip": "starost_max", "vrednost": 69 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Veliki broj žena ne zna da je PAPA test besplatan, ili da postoji organizovani poziv. Mnoge žene plaćaju 3.000-5.000 RSD privatno, ili još gore - uopšte ne idu na pregled. Pozivi iz Instituta za javno zdravlje stižu na adresu ali se često bacaju kao reklama. Rana detekcija = 100% izlečenje, a kasna = ozbiljan rizik.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Zakažite kod vašeg izabranog ginekologa",
+      "opis": "Pozovite dom zdravlja ili idite lično i tražite redovan ginekološki pregled sa PAPA testom. Bez uputa - jer je deo preventive."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pregled traje 15-20 minuta",
+      "opis": "Standardni ginekološki pregled + uzimanje brisa sa grlića materice. Bezbolan postupak, izvodi se na ginekološkom stolu.",
+      "napomena": "Idealno: ne tokom menstruacije, bez seksualnog odnosa 24h pre pregleda, bez vaginalnih krema 48h pre."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Rezultati za 2-4 nedelje",
+      "opis": "Laboratorija analizira bris. Negativan nalaz = sve OK, sledeći pregled za 3 godine. Pozitivan ili neodređen = dodatne analize.",
+      "upozorenje": "Pozitivan PAPA NIJE rak. Najčešće je u pitanju lakša inflamacija ili HPV virus. Tražite jasnu interpretaciju od ginekologa."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Praćenje rezultata",
+      "opis": "Vodite evidenciju o datumima PAPA testova i nalazima. Sledeći test za 3 godine ako je negativno; za 6-12 meseci ako je pozitivno."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "zdrav_knjizica", "naziv": "Zdravstvena knjižica", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Dom zdravlja - vaš izabrani ginekolog",
+      "tip": "filijala",
+      "napomena": "PAPA test izvodi izabrani ginekolog u domu zdravlja. Za to ne treba poseban uput."
+    },
+    {
+      "naziv": "Institut za javno zdravlje Srbije 'Dr Milan Jovanović Batut'",
+      "tip": "centralna",
+      "telefon": "011 2684 566",
+      "url": "https://www.batut.org.rs",
+      "napomena": "Koordinira Nacionalni program skrininga, šalje pozive."
+    }
+  ],
+
+  "filijala_pravilo": "prema_prebivalistu",
+
+  "ceste_greske": [
+    {
+      "greska": "Plaćanje PAPA testa privatno",
+      "posledica": "Bacate 3.000-5.000 RSD koje država pokriva",
+      "resenje": "Idite vašem izabranom ginekologu u domu zdravlja. Test je besplatan kao deo preventive."
+    },
+    {
+      "greska": "Ne idu uopšte jer 'nema simptoma'",
+      "posledica": "Karcinom grlića materice se razvija godinama bez simptoma - kad se osete, već je kasna faza",
+      "resenje": "PAPA test JESTE preventiva - radi se baš da otkrije nešto pre nego što daje simptome. Idite jednom u 3 godine bez izgovora."
+    },
+    {
+      "greska": "Paniče zbog pozitivnog PAPA testa",
+      "posledica": "Stres i nepotrebne privatne provere",
+      "resenje": "Pozitivan PAPA = potrebno dalje praćenje (kolposkopija, biopsija). 95% pozitivnih nalaza nije rak. Sledite preporuke vašeg ginekologa."
+    }
+  ],
+
+  "rok_za_podnosenje": "Bilo kad - preventiva nema rokove. Idealno: jednom u 3 godine.",
+
+  "prosecno_trajanje_postupka": "Pregled: 20 minuta. Rezultati: 2-4 nedelje.",
+
+  "spoljni_resursi": [
+    { "naziv": "Nacionalni program skrininga (Batut)", "url": "https://www.batut.org.rs/index.php?content=2010" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - verifikovati protiv batut.org.rs i RFZO Pravilnika za 2026"
+}

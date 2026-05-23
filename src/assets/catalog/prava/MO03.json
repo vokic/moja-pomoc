@@ -1,0 +1,142 @@
+{
+  "id": "MO03",
+  "kategorija": "mladi",
+
+  "naziv": {
+    "sr_cyr": "Студентски кредит и стипендија (Министарство просвете)",
+    "sr_lat": "Studentski kredit i stipendija (Ministarstvo prosvete)"
+  },
+
+  "kratak_opis": {
+    "sr_cyr": "Студентски кредит: до 18.000 РСД месечно, без камате. Стипендија за најбоље студенте (просек 9.0+): до 23.000 РСД, не враћа се.",
+    "sr_lat": "Studentski kredit: do 18.000 RSD mesečno, bez kamate. Stipendija za najbolje studente (prosek 9.0+): do 23.000 RSD, ne vraća se."
+  },
+
+  "prioritet_propusta": 4,
+
+  "tagovi": ["high_priority", "surprise"],
+
+  "pravni_osnov": [
+    {
+      "zakon": "Zakon o učeničkom i studentskom standardu",
+      "sluzbeni_glasnik": "Sl. glasnik RS 18/2010 sa izmenama"
+    },
+    {
+      "zakon": "Pravilnik o studentskim kreditima i stipendijama",
+      "napomena": "Ministarstvo prosvete donosi godišnje."
+    }
+  ],
+
+  "iznos": {
+    "tip": "mesecno_raspon",
+    "min_rsd": 13000,
+    "max_rsd": 23000,
+    "napomena": "Kredit: ~18.000 RSD/mesec, beskamatni, vraćanje posle završetka studija u 5-10 rata. Stipendija (za najbolje): ~23.000 RSD/mesec, ne vraća se. Iznosi za 2025 - usklađuju se godišnje."
+  },
+
+  "ko_ima_pravo_opis": "Studenti državnih visokoškolskih ustanova u Srbiji. Kredit: svi sa prosečnim prosekom (najmanje 8.0). Stipendija: prosek 9.0+ (osnovne studije), 9.5+ (master, doktorske). Posebne stipendije za studente sa invaliditetom, romske studente, izbeglice, decu palih boraca.",
+
+  "uslovi": [
+    {
+      "tip": "i",
+      "uslovi": [
+        { "tip": "zaposlenje", "vrednost": ["student"] },
+        { "tip": "starost_max", "vrednost": 26 }
+      ]
+    }
+  ],
+
+  "zasto_se_propusta": "Mnogi studenti ne znaju razliku između kredita i stipendije - misle 'kredit = dug' i ne prijavljuju, ne uviđajući da je beskamatan i vraća se tek posle zaposlenja. Drugi propust: prosek 9.0+ je dostižan a mnogi ne podnose zahtev za stipendiju misleći 'previše komplikovano'. Treći: rok je oktobar svake godine - ako propuste, čekaju godinu.",
+
+  "koraci": [
+    {
+      "redni_broj": 1,
+      "naslov": "Proverite uslove za tekuću školsku godinu",
+      "opis": "Ministarstvo prosvete objavljuje konkurs u septembru-oktobru svake godine. Sajt: mpn.gov.rs. Tu su tačni iznosi, rokovi, kriterijumi.",
+      "napomena": "Iznosi se menjaju godišnje - proverite za 2025/2026."
+    },
+    {
+      "redni_broj": 2,
+      "naslov": "Pripremite dokumentaciju",
+      "opis": "Uverenje o upisu (od fakulteta), uverenje o prosečnoj oceni, dokaz o primanjima domaćinstva (za kredit/stipendiju sa socijalnim kriterijumom), lična karta, uverenje o nepokretnosti (ne mora porodica da bude bogata).",
+      "upozorenje": "Sve dokumente prikupljajte ranije - krajem septembra je gužva."
+    },
+    {
+      "redni_broj": 3,
+      "naslov": "Podnesite zahtev kroz fakultet",
+      "opis": "Studentska služba fakulteta prikuplja zahteve i prosleđuje Ministarstvu. Rok: obično 15. oktobar.",
+      "napomena": "Različite fakultete - različite procedure. Pitajte studentsku službu prvog dana zimskog semestra."
+    },
+    {
+      "redni_broj": 4,
+      "naslov": "Čekajte rešenje (60-90 dana)",
+      "opis": "Ministarstvo obrađuje sve zahteve, donosi rang listu, isplaćuje. Prva uplata - decembar/januar (retrogradno od oktobra)."
+    },
+    {
+      "redni_broj": 5,
+      "naslov": "Mesečna uplata",
+      "opis": "Uplata na vaš tekući račun. 10 meseci u godini (osim leta - jul i avgust).",
+      "napomena": "Kredit: zadržavate dokle god studirate. Stipendija: zadržavate ako prosek ostane 9.0+ - bira se godišnje."
+    },
+    {
+      "redni_broj": 6,
+      "naslov": "Vraćanje kredita (samo za kredit, ne za stipendiju)",
+      "opis": "Posle završetka studija - vraćate kredit u 5-10 godišnjih rata, bez kamate. Ako se ne zaposlite u Srbiji - vraćate odjednom.",
+      "napomena": "Ako se zaposlite u javnom sektoru ili u nedovoljno razvijenom gradu - moguće je oslobađanje od dela duga."
+    }
+  ],
+
+  "dokumenti": [
+    { "id": "lk", "naziv": "Lična karta", "obavezno": true, "gde_se_nabavlja": "Već imate", "trosak_rsd": 0 },
+    { "id": "uver_upis", "naziv": "Uverenje o upisu na fakultet", "obavezno": true, "gde_se_nabavlja": "Studentska služba", "trosak_rsd": 0 },
+    { "id": "uver_prosek", "naziv": "Uverenje o prosečnoj oceni", "obavezno": true, "gde_se_nabavlja": "Studentska služba", "trosak_rsd": 0 },
+    { "id": "uver_primanja", "naziv": "Uverenje o primanjima domaćinstva", "obavezno": false, "gde_se_nabavlja": "Poreska / poslodavci roditelja", "trosak_rsd": 0, "napomena": "Za neke kategorije - socijalni kriterijum." }
+  ],
+
+  "institucije": [
+    {
+      "naziv": "Ministarstvo prosvete, nauke i tehnološkog razvoja",
+      "tip": "centralna",
+      "telefon": "011 3631 000",
+      "url": "https://www.mpn.gov.rs",
+      "napomena": "Konkurs za studentske kredite i stipendije objavljuje se u septembru-oktobru."
+    },
+    {
+      "naziv": "Studentska služba fakulteta",
+      "tip": "filijala",
+      "napomena": "Prijem i prosleđivanje zahteva."
+    }
+  ],
+
+  "filijala_pravilo": "pratilac_pravnog_lica",
+
+  "ceste_greske": [
+    {
+      "greska": "Misle 'kredit = dug zauvek'",
+      "posledica": "Ne uzimaju, plaćaju studije iz roditeljskog budžeta",
+      "resenje": "Kredit je BESKAMATAN. Vraćate posle 5-10 godina, kad već imate platu. Realna vrednost u tih 5-10 godina opada zbog inflacije - kredit postaje sve jeftiniji."
+    },
+    {
+      "greska": "Ne pokušavaju stipendiju jer 'nemam prosek 9.0'",
+      "posledica": "Gube i ako su blizu",
+      "resenje": "Prosek se računa na poslednju godinu. Ako ste imali slabu prvu godinu, ali druga je 9.2+ - imate šanse. Pokušajte."
+    },
+    {
+      "greska": "Propuste oktobarski rok",
+      "posledica": "Čekaju godinu",
+      "resenje": "Postavite podsetnik 1. septembra svake godine. Dokumentaciju počnite da prikupljate krajem avgusta."
+    }
+  ],
+
+  "rok_za_podnosenje": "15. oktobar svake godine (orijentaciono, proveriti za 2026).",
+
+  "prosecno_trajanje_postupka": "Obrada Ministarstva: 60-90 dana. Prva uplata: decembar/januar.",
+
+  "spoljni_resursi": [
+    { "naziv": "Ministarstvo prosvete - studentski kredit", "url": "https://www.mpn.gov.rs" }
+  ],
+
+  "last_verified": "2026-05-23",
+
+  "verified_by": "Claude draft - PROVERITI iznose i rokove za 2025/2026 školsku godinu"
+}

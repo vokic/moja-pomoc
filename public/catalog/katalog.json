@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "last_update": "2026-05-23",
-  "total_prava": 16,
+  "total_prava": 34,
   "prava": [
     {
       "id": "DJ01",
@@ -969,6 +969,1245 @@
       "last_verified": "2026-05-22",
       "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE detalje Pravilnika",
       "napomena_za_urednika": "Ovo je 'gateway' pravo - otvara desetine drugih. Pri prikazu UI - obavezno povezati sa drugim pravima koje ono otključava (invalidska penzija, tuđa nega, OI poreske olakšice itd). VERIFIKACIJA: detaljni Pravilnik o utvrđivanju procenta telesnog oštećenja. Izvori: pio.rs, paragraf.rs."
+    },
+    {
+      "id": "MO01",
+      "kategorija": "mladi",
+      "naziv": {
+        "sr_cyr": "Субвенције за први стан за младе до 35 година",
+        "sr_lat": "Subvencije za prvi stan za mlade do 35 godina"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Држава финансира 20% вредности првог стана за младе до 35 година, плус ослобађање од ПДВ-а (10%). Укупна уштеда: 30% од цене стана.",
+        "sr_lat": "Država finansira 20% vrednosti prvog stana za mlade do 35 godina, plus oslobađanje od PDV-a (10%). Ukupna ušteda: 30% od cene stana."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o porezu na dodatu vrednost",
+          "sluzbeni_glasnik": "Sl. glasnik RS 84/2004 sa izmenama"
+        },
+        {
+          "zakon": "Program subvencionisanja kupovine prvog stana za mlade",
+          "napomena": "Program Ministarstva građevinarstva, saobraćaja i infrastrukture. Aktuelne uslove proveriti za 2026."
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "20% subvencije od cene stana + povrat PDV-a 10% = 30% ukupne uštede. Za stan od 100.000 EUR: ušteda 30.000 EUR."
+      },
+      "ko_ima_pravo_opis": "Mladi do 35 godina (uključujući 35) koji prvi put kupuju stan u Srbiji. Uslovi: državljanstvo Srbije, nemaju nepokretnost u vlasništvu (oni i njihovi supružnici), stan mora biti za stalno stanovanje (ne za izdavanje). Stan može biti nov ili polovan (uz određene uslove).",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "starost_max",
+              "vrednost": 35
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi mladi ne znaju da program postoji, ili misle da je 'samo za Beograd' / 'samo za neke'. Drugi propust: čekaju da imaju ceo budžet, ne znajući da banka uračunava državnu subvenciju u kredit. Program se otvara periodično - kad imate priliku, treba reagovati brzo.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Proverite trenutne uslove na sajtu Ministarstva",
+          "opis": "Program može imati specifične rokove i kvote. Ministarstvo građevinarstva ima informacije na svom sajtu i preko portala eUprava.",
+          "napomena": "Stanje programa u 2026 - proveriti aktuelno, jer se uslovi menjaju."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pripremite dokumentaciju za prijavu",
+          "opis": "Lična karta, izvod iz matične knjige rođenih, izvod iz matične knjige venčanih (ako ste), izveštaj o vlasništvu nepokretnosti (iz katastra) - dokazuje da nemate stan.",
+          "napomena": "Ako ste u braku - i partner mora da nema stan. Bez izuzetka."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Izaberite stan",
+          "opis": "Nov ili polovan stan. Mora biti za stalno stanovanje. Cena - obično postoji maksimum koje država pokriva (npr. do 1.500 EUR/m² u Beogradu, manje u manjim gradovima).",
+          "upozorenje": "Stan ne smete prodavati 5 godina nakon kupovine - inače morate vratiti subvenciju."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Stambeni kredit u banci",
+          "opis": "Banka uračunava subvenciju kao deo finansiranja. Vaš učešće: cca. 10-20% (preostale 50-70% kredit, 20% subvencija, 10% PDV povrat).",
+          "napomena": "Kamate na stambeni kredit za mlade su povoljne - oko 5-6% RSD ili 4-5% EUR (variraju)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Podnesite prijavu kod Ministarstva (preko banke ili direktno)",
+          "opis": "Banka često administrira proces - vi joj dajete dokumentaciju, ona šalje Ministarstvu. Po odobrenju - subvencija ide direktno prodavcu stana.",
+          "napomena": "PDV povrat - posebnim zahtevom Poreskoj upravi nakon zatvaranja kupoprodaje."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Preselite se u stan (uslov)",
+          "opis": "Morate stvarno prebivati u stanu - prijava na adresu u roku od 30 dana posle uvođenja u posed. Ministarstvo može kontrolisati.",
+          "upozorenje": "Iznajmljivanje stana u 5 godina - nemoguće. Stan mora služiti vama, ne za prihod."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_rodjenje",
+          "naziv": "Izvod iz matične knjige rođenih",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "izvod_braka",
+          "naziv": "Izvod iz knjige venčanih (ako ste u braku)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "list_nepok",
+          "naziv": "List nepokretnosti - potvrda da nemate stan",
+          "obavezno": true,
+          "gde_se_nabavlja": "Republički geodetski zavod (katastar)",
+          "trosak_rsd": 200,
+          "napomena": "I za partnera ako ste u braku."
+        },
+        {
+          "id": "uver_drzavljanstvo",
+          "naziv": "Uverenje o državljanstvu",
+          "obavezno": true,
+          "gde_se_nabavlja": "MUP",
+          "trosak_rsd": 1000
+        },
+        {
+          "id": "uver_zaposlenje",
+          "naziv": "Potvrda o zaposlenju i visini plate",
+          "obavezno": false,
+          "gde_se_nabavlja": "Poslodavac",
+          "trosak_rsd": 0,
+          "napomena": "Za stambeni kredit u banci."
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+          "tip": "centralna",
+          "telefon": "011 3617 700",
+          "url": "https://www.mgsi.gov.rs"
+        },
+        {
+          "naziv": "Banka (komercijalna - za kredit)",
+          "tip": "centralna",
+          "napomena": "OTP, Komercijalna, Eurobank, ProCredit - sve nude stambene kredite uz program subvencionisanja."
+        },
+        {
+          "naziv": "Poreska uprava - povrat PDV",
+          "tip": "filijala",
+          "telefon": "0700 700 007",
+          "url": "https://www.purs.gov.rs"
+        }
+      ],
+      "filijala_pravilo": "jedinstvena",
+      "ceste_greske": [
+        {
+          "greska": "Misle da je program 'samo za Beograd'",
+          "posledica": "Mladi iz manjih gradova ne podnose zahtev",
+          "resenje": "Program je za celu Srbiju. Manji gradovi imaju i jeftinije stanove - veća efikasna pomoć."
+        },
+        {
+          "greska": "Ne uračunavaju oslobađanje od PDV",
+          "posledica": "Misle da je 20% subvencija sve - propuste još 10% PDV-a",
+          "resenje": "Ukupno: 20% subvencija + 10% PDV povrat = 30% ušteda. Tražite oboje."
+        },
+        {
+          "greska": "Posude stan u 5 godina (Airbnb, izdavanje studentima)",
+          "posledica": "Vraćaju celu subvenciju + kazna",
+          "resenje": "Stan je vaš stalan dom 5 godina. Posle 5 godina možete da radite šta želite."
+        },
+        {
+          "greska": "Misle da je 'previše komplikovano'",
+          "posledica": "Bačeno 30.000 EUR",
+          "resenje": "Banka administrira većinu - vi samo prikupljate dokumente. Trajanje: 2-4 meseca."
+        }
+      ],
+      "rok_za_podnosenje": "Otvoren kad je program aktivan - kvote su godišnje. Proverite tekuće rokove.",
+      "prosecno_trajanje_postupka": "Od podnošenja zahteva do uplate: 2-4 meseca.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Ministarstvo građevinarstva",
+          "url": "https://www.mgsi.gov.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - PROVERITI aktuelni program za 2026, kvote i rokove"
+    },
+    {
+      "id": "MO02",
+      "kategorija": "mladi",
+      "naziv": {
+        "sr_cyr": "Гаранцијски програм за младе НСЗ (Моја прва плата, приправнички)",
+        "sr_lat": "Garancijski program za mlade NSZ (Moja prva plata, pripravnički)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "НСЗ програми за младе без радног искуства - подстицаји послодавцима да их запосле + обуке и менторство. 'Моја прва плата': државна помоћ за 9 месеци плате.",
+        "sr_lat": "NSZ programi za mlade bez radnog iskustva - podsticaji poslodavcima da ih zaposle + obuke i mentorstvo. 'Moja prva plata': državna pomoć za 9 meseci plate."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zapošljavanju i osiguranju za slučaj nezaposlenosti",
+          "sluzbeni_glasnik": "Sl. glasnik RS 36/2009 sa izmenama"
+        },
+        {
+          "zakon": "Pravilnik o subvencijama za zapošljavanje mladih",
+          "napomena": "NSZ donosi godišnje. Provera za 2026."
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "'Moja prva plata' - 35.000 RSD mesečno za nestručne, 40.000 RSD za sa srednjim, 45.000 RSD za visokoškolce. Plata se isplaćuje 9 meseci. Poslodavac plaća doprinose."
+      },
+      "ko_ima_pravo_opis": "Mladi do 30 godina, bez radnog iskustva u struci, registrovani kod NSZ-a. Različiti programi za različite kategorije: srednjoškolci, fakultetski obrazovani, lica sa invaliditetom mlada, Romi mladi. Program traje 9 meseci, sa mogućnošću produženja.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "starost_max",
+              "vrednost": 30
+            },
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "nezaposlen",
+                "student"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mladi često ne idu na NSZ misleći da je 'samo za one koji su izgubili posao'. NSZ je ZA mlade bez prvog iskustva, prijava donosi pristup svim programima. Drugi propust: poslodavci ne znaju za 'Moja prva plata' - mlada osoba mora sama da nauči poslodavca i 'doneti mu' program.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Prijavite se kod NSZ-a",
+          "opis": "Filijala NSZ-a prema mestu prebivališta. Sa ličnom kartom i diploma/svedočanstvom. Bez ovog koraka - nemate pristup programima.",
+          "napomena": "Možete se prijaviti i online preko portala NSZ."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Razgovor sa savetnikom za zapošljavanje",
+          "opis": "Savetnik vam predstavlja dostupne programe. Posebno tražite 'Moja prva plata' (za one koji nemaju iskustvo), 'Pripravnički staž' (za fakultetski obrazovane)."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Pronađite poslodavca koji prihvata program",
+          "opis": "NSZ ima listu poslodavaca koji su prijavili da uzimaju mlade preko 'Moje prve plate'. Ili - vi nalazite poslodavca, on se prijavljuje (vrlo lako).",
+          "napomena": "Većina malih i srednjih preduzeća radi rado sa programom - zarade 35.000-45.000 RSD plus doprinosi pokrivene su."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Poslodavac podnosi zahtev NSZ-u",
+          "opis": "Zahtev za uključivanje u program. Po odobrenju (15-30 dana) - počinje plata.",
+          "upozorenje": "Mladi mora biti prijavljen sa svim doprinosima - 'na crno' ne radi sa programom."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Rad 9 meseci",
+          "opis": "Rad na poziciji koja odgovara vašoj struci. Plata 35-45 hiljada (zavisno od kvalifikacije). Posle 9 meseci - poslodavac može da vas zaposli redovno (ili ne).",
+          "napomena": "Ako poslodavac nije zadovoljan - može vas zameniti i u programu. Vi takođe možete otići i probati drugog poslodavca."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "diploma",
+          "naziv": "Diploma / svedočanstvo (najviše stečeno)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_drzavljanstvo",
+          "naziv": "Uverenje o državljanstvu",
+          "obavezno": false,
+          "gde_se_nabavlja": "MUP",
+          "trosak_rsd": 1000
+        },
+        {
+          "id": "cv",
+          "naziv": "CV (radna biografija)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Sami pripremate",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Nacionalna služba za zapošljavanje (NSZ)",
+          "tip": "filijala",
+          "telefon": "0800 300 301",
+          "url": "https://www.nsz.gov.rs",
+          "napomena": "Filijala prema mestu prebivališta. 'Moja prva plata' - posebna info na sajtu."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Ne registruje se kod NSZ jer 'nije nezaposlen'",
+          "posledica": "Propuste pristup svim programima",
+          "resenje": "NSZ je ZA mlade tražioce posla - bilo nezaposlene ili one koji traže prvi posao. Registracija je besplatna i otvara sve programe."
+        },
+        {
+          "greska": "Ne kažu poslodavcu za 'Moja prva plata'",
+          "posledica": "Poslodavac plaća punu platu od svog budžeta, mladi dobija manje ili ne dobija posao",
+          "resenje": "Doneste poslodavcu info: 'Mogu da budem u programu Moja prva plata - tebe košta samo doprinosi, plata 35-45 hiljada ide od države.' Većina poslodavaca pristane."
+        },
+        {
+          "greska": "Misle da je program 'za određene struke'",
+          "posledica": "Ne probaju",
+          "resenje": "Program je za sve struke - od ekonomista do mehaničara, od programera do prodavaca."
+        }
+      ],
+      "rok_za_podnosenje": "Otvoren cele godine kad ima budžeta. NSZ ima kvote - prijavite se što ranije.",
+      "prosecno_trajanje_postupka": "Od registracije do početka rada: 1-2 meseca (zavisno od pronalaženja poslodavca).",
+      "spoljni_resursi": [
+        {
+          "naziv": "NSZ - 'Moja prva plata'",
+          "url": "https://www.nsz.gov.rs/live/info/mladi"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - PROVERITI iznose za 2026 i aktuelne programe"
+    },
+    {
+      "id": "MO03",
+      "kategorija": "mladi",
+      "naziv": {
+        "sr_cyr": "Студентски кредит и стипендија (Министарство просвете)",
+        "sr_lat": "Studentski kredit i stipendija (Ministarstvo prosvete)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Студентски кредит: до 18.000 РСД месечно, без камате. Стипендија за најбоље студенте (просек 9.0+): до 23.000 РСД, не враћа се.",
+        "sr_lat": "Studentski kredit: do 18.000 RSD mesečno, bez kamate. Stipendija za najbolje studente (prosek 9.0+): do 23.000 RSD, ne vraća se."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o učeničkom i studentskom standardu",
+          "sluzbeni_glasnik": "Sl. glasnik RS 18/2010 sa izmenama"
+        },
+        {
+          "zakon": "Pravilnik o studentskim kreditima i stipendijama",
+          "napomena": "Ministarstvo prosvete donosi godišnje."
+        }
+      ],
+      "iznos": {
+        "tip": "mesecno_raspon",
+        "min_rsd": 13000,
+        "max_rsd": 23000,
+        "napomena": "Kredit: ~18.000 RSD/mesec, beskamatni, vraćanje posle završetka studija u 5-10 rata. Stipendija (za najbolje): ~23.000 RSD/mesec, ne vraća se. Iznosi za 2025 - usklađuju se godišnje."
+      },
+      "ko_ima_pravo_opis": "Studenti državnih visokoškolskih ustanova u Srbiji. Kredit: svi sa prosečnim prosekom (najmanje 8.0). Stipendija: prosek 9.0+ (osnovne studije), 9.5+ (master, doktorske). Posebne stipendije za studente sa invaliditetom, romske studente, izbeglice, decu palih boraca.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "student"
+              ]
+            },
+            {
+              "tip": "starost_max",
+              "vrednost": 26
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi studenti ne znaju razliku između kredita i stipendije - misle 'kredit = dug' i ne prijavljuju, ne uviđajući da je beskamatan i vraća se tek posle zaposlenja. Drugi propust: prosek 9.0+ je dostižan a mnogi ne podnose zahtev za stipendiju misleći 'previše komplikovano'. Treći: rok je oktobar svake godine - ako propuste, čekaju godinu.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Proverite uslove za tekuću školsku godinu",
+          "opis": "Ministarstvo prosvete objavljuje konkurs u septembru-oktobru svake godine. Sajt: mpn.gov.rs. Tu su tačni iznosi, rokovi, kriterijumi.",
+          "napomena": "Iznosi se menjaju godišnje - proverite za 2025/2026."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pripremite dokumentaciju",
+          "opis": "Uverenje o upisu (od fakulteta), uverenje o prosečnoj oceni, dokaz o primanjima domaćinstva (za kredit/stipendiju sa socijalnim kriterijumom), lična karta, uverenje o nepokretnosti (ne mora porodica da bude bogata).",
+          "upozorenje": "Sve dokumente prikupljajte ranije - krajem septembra je gužva."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev kroz fakultet",
+          "opis": "Studentska služba fakulteta prikuplja zahteve i prosleđuje Ministarstvu. Rok: obično 15. oktobar.",
+          "napomena": "Različite fakultete - različite procedure. Pitajte studentsku službu prvog dana zimskog semestra."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Čekajte rešenje (60-90 dana)",
+          "opis": "Ministarstvo obrađuje sve zahteve, donosi rang listu, isplaćuje. Prva uplata - decembar/januar (retrogradno od oktobra)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Mesečna uplata",
+          "opis": "Uplata na vaš tekući račun. 10 meseci u godini (osim leta - jul i avgust).",
+          "napomena": "Kredit: zadržavate dokle god studirate. Stipendija: zadržavate ako prosek ostane 9.0+ - bira se godišnje."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Vraćanje kredita (samo za kredit, ne za stipendiju)",
+          "opis": "Posle završetka studija - vraćate kredit u 5-10 godišnjih rata, bez kamate. Ako se ne zaposlite u Srbiji - vraćate odjednom.",
+          "napomena": "Ako se zaposlite u javnom sektoru ili u nedovoljno razvijenom gradu - moguće je oslobađanje od dela duga."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_upis",
+          "naziv": "Uverenje o upisu na fakultet",
+          "obavezno": true,
+          "gde_se_nabavlja": "Studentska služba",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_prosek",
+          "naziv": "Uverenje o prosečnoj oceni",
+          "obavezno": true,
+          "gde_se_nabavlja": "Studentska služba",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenje o primanjima domaćinstva",
+          "obavezno": false,
+          "gde_se_nabavlja": "Poreska / poslodavci roditelja",
+          "trosak_rsd": 0,
+          "napomena": "Za neke kategorije - socijalni kriterijum."
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Ministarstvo prosvete, nauke i tehnološkog razvoja",
+          "tip": "centralna",
+          "telefon": "011 3631 000",
+          "url": "https://www.mpn.gov.rs",
+          "napomena": "Konkurs za studentske kredite i stipendije objavljuje se u septembru-oktobru."
+        },
+        {
+          "naziv": "Studentska služba fakulteta",
+          "tip": "filijala",
+          "napomena": "Prijem i prosleđivanje zahteva."
+        }
+      ],
+      "filijala_pravilo": "pratilac_pravnog_lica",
+      "ceste_greske": [
+        {
+          "greska": "Misle 'kredit = dug zauvek'",
+          "posledica": "Ne uzimaju, plaćaju studije iz roditeljskog budžeta",
+          "resenje": "Kredit je BESKAMATAN. Vraćate posle 5-10 godina, kad već imate platu. Realna vrednost u tih 5-10 godina opada zbog inflacije - kredit postaje sve jeftiniji."
+        },
+        {
+          "greska": "Ne pokušavaju stipendiju jer 'nemam prosek 9.0'",
+          "posledica": "Gube i ako su blizu",
+          "resenje": "Prosek se računa na poslednju godinu. Ako ste imali slabu prvu godinu, ali druga je 9.2+ - imate šanse. Pokušajte."
+        },
+        {
+          "greska": "Propuste oktobarski rok",
+          "posledica": "Čekaju godinu",
+          "resenje": "Postavite podsetnik 1. septembra svake godine. Dokumentaciju počnite da prikupljate krajem avgusta."
+        }
+      ],
+      "rok_za_podnosenje": "15. oktobar svake godine (orijentaciono, proveriti za 2026).",
+      "prosecno_trajanje_postupka": "Obrada Ministarstva: 60-90 dana. Prva uplata: decembar/januar.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Ministarstvo prosvete - studentski kredit",
+          "url": "https://www.mpn.gov.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - PROVERITI iznose i rokove za 2025/2026 školsku godinu"
+    },
+    {
+      "id": "MO04",
+      "kategorija": "mladi",
+      "naziv": {
+        "sr_cyr": "Субвенционисани смештај у студентским домовима",
+        "sr_lat": "Subvencionisani smeštaj u studentskim domovima"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Студентски домови - смештај од 2.000-5.000 РСД месечно (вс. 200-300 ЕУР за приватну станарину). Конкурс једном годишње, рангирање по успеху и социјалном статусу.",
+        "sr_lat": "Studentski domovi - smeštaj od 2.000-5.000 RSD mesečno (vs. 200-300 EUR za privatnu stanarinu). Konkurs jednom godišnje, rangiranje po uspehu i socijalnom statusu."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o učeničkom i studentskom standardu",
+          "sluzbeni_glasnik": "Sl. glasnik RS 18/2010 sa izmenama"
+        }
+      ],
+      "iznos": {
+        "tip": "mesecno_raspon",
+        "min_rsd": 2000,
+        "max_rsd": 5000,
+        "napomena": "Cena zavisi od tipa doma i sobe (jednokrevetna skuplja). Uštede u odnosu na iznajmljivanje stana: 15.000-25.000 RSD mesečno."
+      },
+      "ko_ima_pravo_opis": "Studenti državnih fakulteta van mesta prebivališta (npr. studenti iz Niša koji studiraju u Beogradu). Rangiranje: prosečna ocena (50%), socijalni status (30%), godina studija (20%). Posebne kategorije: deca palih boraca, izbeglice, sa invaliditetom - imaju prednost.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "student"
+              ]
+            },
+            {
+              "tip": "starost_max",
+              "vrednost": 26
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi studenti misle da je dom 'samo za prvogodišnje' ili 'mora prosek 9.5'. Realno: konkurišu svi godišnji nivoi, prosek od 7.0 može biti dovoljan ako ima socijalnih bodova. Drugi propust: ne podnose dokumentaciju o socijalnom statusu (primanja roditelja) - što je 30% bodova.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pratite konkurs studentskog centra",
+          "opis": "Studentski centar Beograd, Novi Sad, Niš, Kragujevac - konkurs raspisuju u julu-avgustu za narednu akademsku godinu. Rok: obično 20. avgust."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pripremite dokumentaciju",
+          "opis": "Uverenje o upisu (od fakulteta), uverenje o prosečnoj oceni, dokaz o primanjima domaćinstva za poslednja 3 meseca (od svih punoletnih članova), izvodi (dokaz porodice), specifični dokazi (smrt roditelja, invaliditet, dr.)."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev studentskom centru",
+          "opis": "Online ili lično. Detaljno popunite sve sekcije - kategorije sa specijalnim statusima donose dodatne bodove.",
+          "upozorenje": "Ne ostavljajte 'prazno' tamo gde se odnosi - ostali bodovi propadaju."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Rang lista (septembar)",
+          "opis": "Studentski centar objavljuje rang listu. Studenti sa najvišim brojem bodova - dobijaju mesto. Pravo na žalbu u 5 dana."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Useljenje (oktobar)",
+          "opis": "Useljenje pre početka semestra. Ugovor o smeštaju važi godinu dana - rekonkurišete svake godine za sledeću.",
+          "napomena": "Ako ne dobijete dom u prvoj godini - ne odustajte, podnosite svake godine. Šanse rastu sa godinama studija."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_upis",
+          "naziv": "Uverenje o upisu",
+          "obavezno": true,
+          "gde_se_nabavlja": "Studentska služba",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_prosek",
+          "naziv": "Uverenje o prosečnoj oceni (za stariji upisani)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Studentska služba",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenje o primanjima ZA SVE punoletne članove (3 meseca)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Poreska / poslodavci",
+          "trosak_rsd": 0,
+          "napomena": "30% bodova zavisi od ovog!"
+        },
+        {
+          "id": "izvod_porodice",
+          "naziv": "Izvod iz matične knjige rođenih + venčanih roditelja",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Studentski centar Beograd",
+          "tip": "centralna",
+          "telefon": "011 3613 122",
+          "url": "https://www.sc.rs",
+          "adresa": "Svetozara Markovića 56, Beograd"
+        },
+        {
+          "naziv": "Studentski centar Novi Sad",
+          "tip": "centralna",
+          "telefon": "021 6622 477",
+          "url": "https://www.scns.rs"
+        },
+        {
+          "naziv": "Studentski centar Niš",
+          "tip": "centralna",
+          "telefon": "018 525 077"
+        },
+        {
+          "naziv": "Studentski centar Kragujevac",
+          "tip": "centralna",
+          "telefon": "034 333 175"
+        }
+      ],
+      "filijala_pravilo": "po_izboru",
+      "ceste_greske": [
+        {
+          "greska": "Misle 'samo za prvogodišnje'",
+          "posledica": "Stariji studenti propuste",
+          "resenje": "Konkurs je za sve godine. Stariji studenti imaju i godinu kao kriterijum (više bodova)."
+        },
+        {
+          "greska": "Ne podnose dokaze o primanjima",
+          "posledica": "Gube 30% mogućih bodova",
+          "resenje": "Čak i ako su primanja srednja - dokumentujete. 30% bodova nije za bacanje."
+        },
+        {
+          "greska": "Propuste rok (avgust)",
+          "posledica": "Čekaju godinu, iznajmljuju stan za 200-300 EUR",
+          "resenje": "Postavite podsetnik u julu. Dokumentaciju počnite skupljati u junu."
+        },
+        {
+          "greska": "Ne reaguju na rang listu",
+          "posledica": "Možda greška u podacima koja ih je spustila niže",
+          "resenje": "Rang lista se objavi - imate 5 dana za žalbu. Proverite tačnost svojih bodova."
+        }
+      ],
+      "rok_za_podnosenje": "20. avgust svake godine (orijentaciono, proverite konkurs).",
+      "prosecno_trajanje_postupka": "Konkurs traje ~3 nedelje. Useljenje: oktobar.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Studentski centar Beograd",
+          "url": "https://www.sc.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - PROVERITI cene i rokove za 2025/2026"
+    },
+    {
+      "id": "MO05",
+      "kategorija": "mladi",
+      "naziv": {
+        "sr_cyr": "Студентска картица (попусти на превоз, културу и спорт)",
+        "sr_lat": "Studentska kartica (popusti na prevoz, kulturu i sport)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Студентска картица доноси: 75% попуст на јавни превоз (БГ Плус), бесплатан улаз у већину државних музеја, попуст на железницу, биоскопе, позоришта. Само 500 РСД годишње.",
+        "sr_lat": "Studentska kartica donosi: 75% popust na javni prevoz (BG Plus), besplatan ulaz u većinu državnih muzeja, popust na železnicu, bioskope, pozorišta. Samo 500 RSD godišnje."
+      },
+      "prioritet_propusta": 2,
+      "tagovi": [
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o učeničkom i studentskom standardu"
+        },
+        {
+          "zakon": "Odluke gradskih saobraćajnih preduzeća (GSP Beograd, Niš, Novi Sad)"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "Trošak kartice: ~500 RSD godišnje. Ušteda: prevoz 1.500-3.000 RSD mesečno (vs. ~6.000 RSD bez popusta) = 50.000-70.000 RSD godišnje samo na prevozu. Plus muzeji, bioskopi - dodatno."
+      },
+      "ko_ima_pravo_opis": "Svi studenti državnih i privatnih fakulteta u Srbiji do 26 godina (određene popuste i do 30). Sa važećim uverenjem o upisu.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "student"
+              ]
+            },
+            {
+              "tip": "starost_max",
+              "vrednost": 26
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi studenti misle da kartica 'nije bitna' ili da je 'samo za prevoz'. Realno - 75% popust na prevoz znači uštedu od 50.000+ RSD godišnje. Plus muzeji, pozorišta - kulturni život za male pare. Drugi propust: misle da je proces komplikovan - zapravo, 10 minuta na šalteru fakulteta ili studentskog centra.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Idite u studentsku službu fakulteta",
+          "opis": "Studentska služba (ili kod nekih fakulteta - posebna kancelarija) izdaje studentske kartice. Sa važećim uverenjem o upisu."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Donesite fotografiju",
+          "opis": "Pasoška fotografija (35x45mm). Većina mesta odštampa karticu istovremeno."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Platite taksu ~500 RSD",
+          "opis": "Plaćate šalteru. Kartica važi godinu dana - rekonkurišete posle."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Sa karticom u GSP-u (Beograd)",
+          "opis": "Idite u BG Plus centar (Tunala, Knez Mihailova) ili online preko bgnaplata.rs - dodajte studentsku kategoriju. Mesečna karta: 1.300-1.500 RSD (vs. 4.500-6.000 RSD redovna)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Koristite za sve studentske popuste",
+          "opis": "Pri kupovini karata - tražite studentski popust i pokažite karticu. Muzeji, pozorišta, bioskopi, železnica, autobus, čak i neke kafane i prodavnice imaju popuste.",
+          "napomena": "Neki popusti zahtevaju i potvrdu o tekućem semestru - držite uvek uverenje o upisu u rancu."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uver_upis",
+          "naziv": "Uverenje o upisu (važi za tekući semestar)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Studentska služba",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "foto",
+          "naziv": "Pasoška fotografija",
+          "obavezno": true,
+          "gde_se_nabavlja": "Foto radnja",
+          "trosak_rsd": 500
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Studentska služba fakulteta",
+          "tip": "filijala",
+          "napomena": "Izdaje studentske kartice. Procedura jednostavna."
+        },
+        {
+          "naziv": "BG Plus centar (Beograd) - dodavanje studentske kategorije",
+          "tip": "centralna",
+          "url": "https://www.bgnaplata.rs",
+          "adresa": "Knez Mihailova / Tunala"
+        }
+      ],
+      "filijala_pravilo": "pratilac_pravnog_lica",
+      "ceste_greske": [
+        {
+          "greska": "Ne vade karticu jer 'samo prevoz - ne treba'",
+          "posledica": "Propuste 50.000+ RSD uštede godišnje",
+          "resenje": "Čak i ako ne koristite prevoz - muzeji su besplatni, bioskopi imaju 30-50% popust. Vredi 500 RSD."
+        },
+        {
+          "greska": "Vade karticu ali ne aktiviraju u GSP-u",
+          "posledica": "Plaćaju punu cenu prevoza",
+          "resenje": "Idite u BG Plus centar i tražite 'dodavanje studentske kategorije'. 5 minuta posla."
+        },
+        {
+          "greska": "Ne nose karticu uvek",
+          "posledica": "Pri kontroli plaćaju kaznu",
+          "resenje": "Stalno u novčaniku ili rancu. Kontrola je česta - bez kartice = puna karta."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad u toku akademske godine.",
+      "prosecno_trajanje_postupka": "Vađenje kartice: 10-15 minuta. Aktiviranje u GSP-u: 5 minuta.",
+      "spoljni_resursi": [
+        {
+          "naziv": "BG Plus",
+          "url": "https://www.bgnaplata.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati cene i popuste za 2026"
+    },
+    {
+      "id": "MZ01",
+      "kategorija": "mentalno_zdravlje",
+      "naziv": {
+        "sr_cyr": "Бесплатна психотерапија и психијатријска помоћ преко РФЗО",
+        "sr_lat": "Besplatna psihoterapija i psihijatrijska pomoć preko RFZO"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Преглед код психијатра, психолошко саветовање и групна терапија су бесплатни у домовима здравља и психијатријским установама преко РФЗО.",
+        "sr_lat": "Pregled kod psihijatra, psihološko savetovanje i grupna terapija su besplatni u domovima zdravlja i psihijatrijskim ustanovama preko RFZO."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zdravstvenoj zaštiti",
+          "sluzbeni_glasnik": "Sl. glasnik RS 25/2019"
+        },
+        {
+          "zakon": "Zakon o zaštiti lica sa mentalnim smetnjama",
+          "sluzbeni_glasnik": "Sl. glasnik RS 45/2013"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Pregled psihijatra, individualna terapija, grupna terapija, krizne intervencije - besplatno preko RFZO. Vrednost privatno: 4.000 - 10.000 RSD po seansi."
+      },
+      "ko_ima_pravo_opis": "Svi osigurani građani Srbije. Pristup preko izabranog lekara opšte prakse koji daje uput. U urgentnim slučajevima (suicidalne misli, akutna kriza) - direktan pristup bez upita preko hitne pomoći ili psihijatrijske klinike.",
+      "uslovi": [
+        {
+          "tip": "ili",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "mentalno"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mentalno zdravlje je stigmatizovano - ljudi izbegavaju da odu kod psihijatra, ili idu privatno (5.000-10.000 RSD po seansi) ne znajući da je u domu zdravlja besplatno. Mnogi misle da je sistem 'samo za ozbiljne slučajeve' - nije, dostupan je za sve. Čeka se 2-4 nedelje za prvi pregled, ali to je još uvek mnogo bolje od godine privatne terapije.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Otidite kod izabranog lekara opšte prakse",
+          "opis": "Recite šta vas muči. Izabrani lekar daje uput za psihijatra ili psihologa - ne pita previše, ne treba dokazivati 'koliko je strašno'.",
+          "napomena": "Možete reći samo 'imam anksioznost / depresiju / probleme sa spavanjem - molim uput za psihijatra'. Neće biti dodatnih pitanja."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Zakažite pregled kod psihijatra",
+          "opis": "Sa uputom idete u psihijatrijsku službu vašeg doma zdravlja, ili u Institut za mentalno zdravlje (Beograd) / odgovarajuću kliniku u vašem gradu. Čekanje 2-4 nedelje (osim za urgentne slučajeve)."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Prvi pregled - 30-45 minuta",
+          "opis": "Psihijatar pita o simptomima, životnoj situaciji, prethodnim epizodama. Procenjuje dijagnozu i preporučuje terapiju (lekovi, psihoterapija, oba).",
+          "upozorenje": "Ako vam je psihijatar užasan (osudjuje, ne sluša) - imate pravo da promenite. Ne odustajite od sistema zbog jednog lošeg iskustva."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Terapija po preporuci",
+          "opis": "Ako su prepisani lekovi - na recept preko apoteke (sa pozitivne liste su besplatni ili sa malim popustom). Ako je psihoterapija - sledeće seanse zakazujete redovno.",
+          "napomena": "Psihoterapija u sistemu često nije CBT/EMDR/specijalizovani modeli - više opšta podržavajuća. Za specijalizovane terapije može biti potrebno ići privatno."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Urgentni slučajevi - bez uputa",
+          "opis": "Suicidalne misli, akutna psihotička epizoda, teška kriza - idete direktno u hitnu psihijatrijsku službu (npr. KC Beograd, Laza Lazarević u Padinskoj Skeli). Bez uputa, bez čekanja."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uput",
+          "naziv": "Uput za psihijatra",
+          "obavezno": true,
+          "gde_se_nabavlja": "Izabrani lekar opšte prakse",
+          "trosak_rsd": 0,
+          "napomena": "Ne za urgentne slučajeve - tada bez uputa."
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Dom zdravlja - psihijatrijska služba",
+          "tip": "filijala",
+          "napomena": "Standardni pristup za psihijatra. Različite ustanove imaju različite kapacitete."
+        },
+        {
+          "naziv": "Institut za mentalno zdravlje Beograd",
+          "tip": "specijalisticka",
+          "telefon": "011 3307 500",
+          "url": "https://www.imh.org.rs",
+          "adresa": "Palmotićeva 37, Beograd",
+          "napomena": "Najveći specijalizovani centar. Lečenje anksioznosti, depresije, posttraumatske, opsesivno-kompulzivnog poremećaja."
+        },
+        {
+          "naziv": "Klinika za psihijatriju 'Laza Lazarević', Padinska Skela",
+          "tip": "specijalisticka",
+          "telefon": "011 8870 020",
+          "napomena": "Hospitalizacija za teže slučajeve. 24/7 hitna psihijatrijska služba."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Stid sprečava odlazak kod psihijatra",
+          "posledica": "Stanje se pogoršava, ide privatno i plaća 5.000+ po seansi",
+          "resenje": "Psihijatrijski karton je strogo poverljiv - poslodavac, porodica, niko ne može pristupiti. Idite bez stida."
+        },
+        {
+          "greska": "Misli da psihijatar = 'lud sam'",
+          "posledica": "Izbegavanje pomoći",
+          "resenje": "Psihijatar je lekar kao svaki drugi - za probleme sa snom, anksioznost, tugu, stres. Većina ljudi ima problem nekad u životu."
+        },
+        {
+          "greska": "Ide privatno jer 'sistem ne valja'",
+          "posledica": "Plaća 5.000-10.000 RSD seansa godinama",
+          "resenje": "Pokušajte prvo sistem. Ako baš ne odgovara - onda privatno. Ali nemojte preskočiti zbog predrasude."
+        },
+        {
+          "greska": "Prekida lečenje kad se 'oseća bolje'",
+          "posledica": "Recidiv, povratak na početak",
+          "resenje": "Lečenje (lekovi, terapija) se prekida POSTEPENO, pod nadzorom psihijatra. Nikad samostalno."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad. Što ranije - to bolje.",
+      "prosecno_trajanje_postupka": "Uput: isti dan. Čekanje na prvi pregled: 2-4 nedelje. Urgentno: isti dan.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Institut za mentalno zdravlje",
+          "url": "https://www.imh.org.rs"
+        },
+        {
+          "naziv": "SOS linija (24/7)",
+          "url": "tel:0800 100 199"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati kontakt podatke i čekanje za 2026"
+    },
+    {
+      "id": "MZ02",
+      "kategorija": "mentalno_zdravlje",
+      "naziv": {
+        "sr_cyr": "Бесплатно лечење зависности (алкохол, дрога, коцкарска зависност)",
+        "sr_lat": "Besplatno lečenje zavisnosti (alkohol, droga, kockarska zavisnost)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Anonimna i besplatna terapija zavisnosti od alkohola, droga, kockanja u специјализованим центрима и ванболничким јединицама.",
+        "sr_lat": "Anonimna i besplatna terapija zavisnosti od alkohola, droga, kockanja u specijalizovanim centrima i vanbolničkim jedinicama."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o psihoaktivnim kontrolisanim supstancama",
+          "sluzbeni_glasnik": "Sl. glasnik RS 99/2010"
+        },
+        {
+          "zakon": "Zakon o zdravstvenoj zaštiti"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Detoksikacija, supstituciona terapija (metadon, buprenorfin), individualna i grupna terapija, hospitalizacija u krizi - sve besplatno preko RFZO. Vrednost privatno: 50.000+ RSD mesečno za supstitucionu terapiju."
+      },
+      "ko_ima_pravo_opis": "Svi sa zavisnošću od alkohola, droga ili patološkim kockarstvom. Anonimno za prvi kontakt. Maloletna lica - sa pristankom roditelja ili po nalogu suda. Stranci sa privremenim boravkom takođe imaju pravo na hitnu pomoć.",
+      "uslovi": [
+        {
+          "tip": "prebivaliste_srbija",
+          "vrednost": true
+        }
+      ],
+      "zasto_se_propusta": "Stigma + strah od evidencije (kazne, gubitka posla, sukoba sa policijom). Većina ljudi se boji da će biti prijavljeni - ali sistem je anonimni i ne komunicira sa policijom. Drugi razlog: niska vidljivost - mnogi ne znaju gde da se obrate. Mnogi pokušaju 'sami' i posle 5-10 godina dolaze izgubljeni.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pozovite anonimnu liniju ili dođite u CZAD",
+          "opis": "Centri za zavisnost od alkohola i droga (CZAD) postoje u svakom većem gradu. Pozovite ili dođite lično - prvi kontakt je anoniman. Nema obavezno pokazivanje lične karte za inicijalni razgovor."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Procena i plan lečenja",
+          "opis": "Psihijatar i socijalni radnik procenjuju stanje. Plan može biti: ambulantno (samo dolasci), bolničko (2-4 nedelje detoksikacija), terapeutska zajednica (3-12 meseci).",
+          "napomena": "Vi ste deo odluke - kažite šta vam odgovara i šta ne. Nije obavezno hospitalizovanje."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Detoksikacija (ako je neophodna)",
+          "opis": "Za teške zavisnosti od alkohola i opioida - hospitalizacija 2-4 nedelje u kontrolisanim uslovima. Bezbedno povlačenje uz medicinski nadzor.",
+          "upozorenje": "Naglo prekidanje alkohola ili opioida bez nadzora MOŽE biti smrtonosno. Nemojte to raditi sami."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Supstituciona terapija (za opioidne zavisnosti)",
+          "opis": "Metadon ili buprenorfin (Suboxone) - dnevna doza koju dobijaš u centru ili u apoteci. Stabilizuje stanje, omogućava normalan život."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Dugoročna terapija",
+          "opis": "Individualna terapija (CBT), grupna terapija (AA, NA, GA), terapija porodice. Trajanje: minimum 6-12 meseci, idealno 2-3 godine.",
+          "napomena": "Recidiv je deo procesa za većinu ljudi. Nemoj odustajati zbog jednog povratka - vraćaš se u proces, ne počinješ ispočetka."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta (za zvanično lečenje)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0,
+          "napomena": "Prvi kontakt može biti anoniman. Ali za supstitucionu terapiju i evidenciju u sistemu - potrebna."
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica",
+          "obavezno": false,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Klinika za bolesti zavisnosti, KCS Beograd",
+          "tip": "specijalisticka",
+          "telefon": "011 3663 422",
+          "adresa": "Pasterova 2, Beograd",
+          "url": "https://www.kcs.ac.rs"
+        },
+        {
+          "naziv": "Specijalna bolnica za bolesti zavisnosti, Drajzerova",
+          "tip": "specijalisticka",
+          "telefon": "011 3088 200",
+          "adresa": "Drajzerova 44, Beograd",
+          "napomena": "Najveća specijalizovana ustanova za zavisnosti od alkohola i droga."
+        },
+        {
+          "naziv": "Centar za prevenciju i lečenje zavisnosti, Niš",
+          "tip": "specijalisticka",
+          "telefon": "018 533 411"
+        },
+        {
+          "naziv": "Anonimni alkoholičari (AA) Srbije",
+          "tip": "centralna",
+          "telefon": "0800 110 200",
+          "url": "https://www.aa-srbija.org",
+          "napomena": "Grupna podrška, anonimno, besplatno. Sastanci u celoj Srbiji."
+        }
+      ],
+      "filijala_pravilo": "po_izboru",
+      "ceste_greske": [
+        {
+          "greska": "Strah od evidencije sprečava odlazak",
+          "posledica": "Zavisnost traje godinama, kvalitet života pada",
+          "resenje": "Evidencija u zdravstvu je strogo poverljiva. Policija nema pristup. Poslodavac može da vidi samo bolovanje (ne dijagnozu)."
+        },
+        {
+          "greska": "Pokušava da se otkači sam, naglo",
+          "posledica": "Patnja, recidiv, kod alkohola i opioida - opasnost po život (delirijum, smrt)",
+          "resenje": "Detoksikacija pod medicinskim nadzorom. Ambulantna ili bolnička, ali sa lekarima."
+        },
+        {
+          "greska": "Misli da je supstituciona terapija 'samo zamena zavisnosti'",
+          "posledica": "Odbija metadon/Suboxone, pa pada na uličnu drogu",
+          "resenje": "Supstituciona terapija je dokazano efikasna. Stabilizuje, omogućava posao i porodicu. Nije 'zamena' - to je lečenje."
+        },
+        {
+          "greska": "Posle recidiva odustaje",
+          "posledica": "Vraća se u zavisnost",
+          "resenje": "Recidiv je deo lečenja za 70%+ ljudi. Vrati se centru ili AA grupi - ne počinješ ispočetka."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad. Što ranije.",
+      "prosecno_trajanje_postupka": "Prvi kontakt: 1-3 dana. Detoks: 2-4 nedelje. Dugoročna terapija: 6-24 meseca.",
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati kontakte i kapacitete u 2026"
+    },
+    {
+      "id": "MZ03",
+      "kategorija": "mentalno_zdravlje",
+      "naziv": {
+        "sr_cyr": "СОС телефонске линије за психолошку и кризну подршку (бесплатне)",
+        "sr_lat": "SOS telefonske linije za psihološku i kriznu podršku (besplatne)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Анонимни и бесплатни позиви: SOS Линија (24/7), Линија за самоубиство, СОС за жртве насиља. Без чекања, без хитне.",
+        "sr_lat": "Anonimni i besplatni pozivi: SOS Linija (24/7), Linija za samoubistvo, SOS za žrtve nasilja. Bez čekanja, bez hitne."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "time_sensitive",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zaštiti lica sa mentalnim smetnjama",
+          "sluzbeni_glasnik": "Sl. glasnik RS 45/2013"
+        },
+        {
+          "zakon": "Zakon o sprečavanju nasilja u porodici",
+          "sluzbeni_glasnik": "Sl. glasnik RS 94/2016"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Pozivi i online savetovanje besplatni. Anonimni. Dostupni 24/7 (većina) ili u tačnim satima rada."
+      },
+      "ko_ima_pravo_opis": "Svako ko se nalazi u psihološkoj krizi - suicidalne misli, panični napad, akutna anksioznost, posttraumatska reakcija, depresija. Žene i muškarci. Maloletnici - posebne linije (npr. NADEL).",
+      "uslovi": [
+        {
+          "tip": "prebivaliste_srbija",
+          "vrednost": true
+        }
+      ],
+      "zasto_se_propusta": "Većina ljudi u krizi misli da 'mora da bude dovoljno loše' da bi pozvali. Ne razumeju da SOS linije postoje baš za 'manje hitne' situacije: tugu, anksioznost, osećaj besmislenosti. Druga prepreka: ne znaju brojeve, ili misle da nema niko da odgovori. Mnogi probaju samo 1-2 puta i odustanu jer je linija zauzeta.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Identifikujte odgovarajuću liniju",
+          "opis": "Opšta kriza/suicid: 0800 100 199. Žrtve nasilja u porodici: 0800 100 600. Trgovina ljudima: 011 7855 145. Maloletnici: 116 111 (NADEL)."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pozovite - prvi kontakt",
+          "opis": "Volonter ili stručnjak odgovara. Predstavite se kako želite (može i anonimno). Ispričajte šta se dešava - ne morate biti 'racionalni' ili 'logični'.",
+          "napomena": "Nema sudova. Linija je tu da sluša. Ako je zauzeta - pokušajte ponovo, ne odustajte posle jednog poziva."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Razgovor traje koliko vam treba",
+          "opis": "Standardno 15-45 minuta. Nema vremenskog limita. Stručnjak vam pomaže da se smirite, identifikujete naredne korake, povežete sa specifičnijim resursom."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Po potrebi - dalji koraci",
+          "opis": "Linija može da vas usmeri ka: hitnoj pomoći (ako je akutna kriza), psihijatru (za dugotrajno lečenje), psihologu, sigurnoj kući (žene koje su žrtve nasilja).",
+          "upozorenje": "Ako razmišljate o samoubistvu sada - ovo NIJE situacija da čekate kraj poziva. Ako je linija zauzeta, idite direktno na hitnu pomoć (194) ili u najbližu psihijatrijsku ustanovu."
+        }
+      ],
+      "dokumenti": [],
+      "institucije": [
+        {
+          "naziv": "SOS Linija - Centar za suicidologiju Srbije",
+          "tip": "centralna",
+          "telefon": "0800 100 199",
+          "url": "https://www.suicidologija.org.rs",
+          "radno_vreme": "0-24h",
+          "napomena": "Besplatan poziv, anonimno. Najpoznatija linija u Srbiji."
+        },
+        {
+          "naziv": "SOS za žrtve nasilja u porodici",
+          "tip": "centralna",
+          "telefon": "0800 100 600",
+          "radno_vreme": "0-24h",
+          "napomena": "Posebno za žene i decu žrtve nasilja u porodici."
+        },
+        {
+          "naziv": "NADEL - linija za decu i mlade",
+          "tip": "centralna",
+          "telefon": "116 111",
+          "url": "https://www.nadel.rs",
+          "radno_vreme": "Pon-Pet 09-21, Sub-Ned 11-20",
+          "napomena": "Za decu i mlade do 18 godina. Besplatno, anonimno."
+        },
+        {
+          "naziv": "Centar za zaštitu žrtava trgovine ljudima",
+          "tip": "centralna",
+          "telefon": "011 7855 145"
+        }
+      ],
+      "filijala_pravilo": "jedinstvena",
+      "ceste_greske": [
+        {
+          "greska": "Misli 'moja kriza nije dovoljno strašna'",
+          "posledica": "Ne zove, problem se produbljuje",
+          "resenje": "Linije su za SVAKU vrstu krize - tuga, stres, anksioznost, suicidalne misli. Nema 'dovoljno strašno'. Pozovi."
+        },
+        {
+          "greska": "Misli da neće biti razumevanja",
+          "posledica": "Ne zove",
+          "resenje": "Stručnjaci na liniji su obučeni za SVE vrste situacija - LGBTQ, romsko poreklo, ekonomska kriza, sve."
+        },
+        {
+          "greska": "Posle zauzete linije odustaje",
+          "posledica": "Kriza se produbljuje",
+          "resenje": "Pokušaj ponovo za 10-15 minuta. Ako je urgentno - hitna pomoć (194) bez čekanja."
+        }
+      ],
+      "rok_za_podnosenje": "Pozovi kad ti treba. Bez čekanja, bez termina.",
+      "prosecno_trajanje_postupka": "Poziv: 15-45 minuta. Dostupno odmah ili sa kratkim čekanjem.",
+      "spoljni_resursi": [
+        {
+          "naziv": "SOS Linija - Centar za suicidologiju",
+          "url": "https://www.suicidologija.org.rs"
+        },
+        {
+          "naziv": "NADEL",
+          "url": "https://www.nadel.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati brojeve i radna vremena za 2026"
     },
     {
       "id": "NZ01",
@@ -3204,6 +4443,1518 @@
       "last_verified": "2026-05-22",
       "verified_by": "Claude draft - VIKTOR MORA DA VERIFIKUJE iznos i rok",
       "napomena_za_urednika": "VERIFIKACIJA: (1) Tačan iznos za 2026; (2) Tačan rok za podnošenje (6 meseci? godina dana?); (3) Da li se primenjuje i kad je preminuli imao samo deo staža (ne punu penziju). Izvori: pio.rs, paragraf.rs."
+    },
+    {
+      "id": "RZ01",
+      "kategorija": "razvod",
+      "naziv": {
+        "sr_cyr": "Издржавање детета (алиментација) после развода",
+        "sr_lat": "Izdržavanje deteta (alimentacija) posle razvoda"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Право детета на месечно издржавање од оба родитеља. Износ одређује суд - просечно 20-40% месечног примања родитеља који не живи са дететом.",
+        "sr_lat": "Pravo deteta na mesečno izdržavanje od oba roditelja. Iznos određuje sud - prosečno 20-40% mesečnog primanja roditelja koji ne živi sa detetom."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Porodični zakon",
+          "sluzbeni_glasnik": "Sl. glasnik RS 18/2005 sa izmenama",
+          "clanovi": "Čl. 154-164",
+          "url": "https://www.paragraf.rs/propisi/porodicni_zakon.html"
+        }
+      ],
+      "iznos": {
+        "tip": "mesecno_raspon",
+        "min_rsd": 10000,
+        "max_rsd": 50000,
+        "napomena": "Sud određuje na osnovu primanja roditelja i potreba deteta. Minimum: oko 15.000 RSD (vezano za prosečnu zaradu). Maksimum: do 50% neto primanja obveznika."
+      },
+      "ko_ima_pravo_opis": "Maloletno dete (do 18 god) preko roditelja kod kojeg živi. Punoletno dete koje se redovno školuje (do 26 god) ili je nesposobno za rad. Pravo NIJE roditelja - nego DETETA.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "razvod"
+              ]
+            },
+            {
+              "tip": "ima_decu"
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Posle razvoda, roditelj kod kojeg deca žive često ne traži formalnu alimentaciju ('da ne pravimo problem'). Ali dete IMA pravo. Drugi propust: dogovor 'mimo suda' (cash) - bez sudskog rešenja, ako drugi roditelj prestane da plaća, nema načina za prinudnu naplatu. Treći propust: ne usklađuju iznos sa rastom plata (alimentacija se može menjati).",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pokrenite postupak za izdržavanje deteta",
+          "opis": "Tužba za izdržavanje deteta - osnovni sud prema mestu prebivališta deteta. Možete je pokrenuti u toku ili posle razvoda, ili kao samostalan postupak.",
+          "napomena": "Tuženi je roditelj koji ne živi sa detetom. Tužbu podnosi roditelj kod kojeg dete živi (zakonski zastupnik)."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Prikupite dokaze o primanjima drugog roditelja",
+          "opis": "Plate, ugovori, dobit od preduzetništva, imovinske kartice. Sud će ih i sam tražiti, ali brže ide ako vi imate nešto.",
+          "upozorenje": "Ako drugi roditelj radi 'na crno' - sud može odrediti iznos na osnovu PROSEČNE zarade u Srbiji (cca. 80.000-100.000 RSD)."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Prikupite dokaze o potrebama deteta",
+          "opis": "Računi: vrtić, škola, lekar, sport, dodatna nastava. Sud određuje iznos na osnovu potreba deteta + mogućnosti roditelja."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Sudski postupak (3-12 meseci)",
+          "opis": "Ročišta, izvođenje dokaza. Sud donosi presudu - mesečni iznos, način uplate, dospeće.",
+          "napomena": "Možete tražiti privremenu meru - sud određuje iznos odmah dok se postupak ne završi."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Naplata i praćenje",
+          "opis": "Ako roditelj plaća dobrovoljno - dobro. Ako ne plaća - izvršenje preko izvršitelja (zatraži obustavu sa plate, blokada računa, prinudna naplata)."
+        },
+        {
+          "redni_broj": 6,
+          "naslov": "Povećanje iznosa u vremenu",
+          "opis": "Plate i potrebe deteta rastu. Možete podneti zahtev za povećanje alimentacije svake 2-3 godine. Sud razmatra promenu prilika.",
+          "napomena": "Ne morate da čekate roditelja da pristane - tužba sudu."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta podnosioca",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_rodjenje_dete",
+          "naziv": "Izvod iz matične knjige rođenih za dete",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "presuda_razvod",
+          "naziv": "Presuda o razvodu (ako razvod proveden)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Sud",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "dokazi_primanja",
+          "naziv": "Dokazi o primanjima tuženog (ako su dostupni)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Plata, banka, poreska",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "dokazi_troskovi",
+          "naziv": "Računi za troškove deteta",
+          "obavezno": false,
+          "gde_se_nabavlja": "Vrtić, škola, lekar",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Osnovni sud prema mestu prebivališta deteta",
+          "tip": "centralna",
+          "url": "https://www.sudovi.rs"
+        },
+        {
+          "naziv": "Centar za socijalni rad (mišljenje suda)",
+          "tip": "filijala",
+          "napomena": "Sud traži mišljenje CSR-a o najboljem interesu deteta. Procena se obavlja u CSR-u."
+        },
+        {
+          "naziv": "Pravni klinik fakulteta (besplatna pravna pomoć)",
+          "tip": "centralna",
+          "url": "https://www.ius.bg.ac.rs/pravna-klinika",
+          "napomena": "Studenti prava pod nadzorom profesora - besplatno za niska primanja."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Dogovor 'mimo suda' bez sudskog rešenja",
+          "posledica": "Kad drugi roditelj prestane da plaća - nema prinudne naplate",
+          "resenje": "Uvek formalna sudska odluka. I ako se dogovorite - tražite da sud overi sporazum."
+        },
+        {
+          "greska": "Ne tražite alimentaciju jer 'ja sam kriva za razvod' / 'on ne može'",
+          "posledica": "Dete dobija manje nego što mu pripada",
+          "resenje": "Alimentacija je pravo DETETA, ne tvoje. Bez veze sa krivicom za razvod."
+        },
+        {
+          "greska": "Ne usklađuju iznos godinama",
+          "posledica": "5.000 RSD iz 2020. nije isto što 5.000 RSD 2026.",
+          "resenje": "Svake 2-3 godine - razmislite o povećanju. Tužba sudu za povećanje."
+        },
+        {
+          "greska": "Roditelj koji ne živi sa detetom prestaje da plaća, ne preduzima ništa",
+          "posledica": "Mesecima bez para, dete trpi",
+          "resenje": "Idite izvršitelju sa presudom - blokada računa drugog roditelja, obustava od plate. Postupak: 15-30 dana."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad - dok dete ne završi obrazovanje (max 26 god) ili dok ne postane sposobno za rad.",
+      "prosecno_trajanje_postupka": "Sudski postupak: 3-12 meseci. Privremena mera: 30-60 dana.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Porodični zakon",
+          "url": "https://www.paragraf.rs/propisi/porodicni_zakon.html"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati prosečne iznose za 2026"
+    },
+    {
+      "id": "RZ02",
+      "kategorija": "razvod",
+      "naziv": {
+        "sr_cyr": "Бесплатна правна помоћ за развод и брачне спорове",
+        "sr_lat": "Besplatna pravna pomoć za razvod i bračne sporove"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Бесплатна правна помоћ за лица са нижим примањима - кроз центре за социјални рад, правне клинике факултета и НВО (Праксис, ИРИС, ЈУКОМ).",
+        "sr_lat": "Besplatna pravna pomoć za lica sa nižim primanjima - kroz centre za socijalni rad, pravne klinike fakulteta i NVO (Praxis, IRIS, YUCOM)."
+      },
+      "prioritet_propusta": 3,
+      "tagovi": [
+        "surprise",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o besplatnoj pravnoj pomoći",
+          "sluzbeni_glasnik": "Sl. glasnik RS 87/2018",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_besplatnoj_pravnoj_pomoci.html"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Pravni saveti, sastavljanje tužbe, zastupanje u sudu - besplatno. Vrednost privatnog advokata za razvod: 60.000-200.000 RSD."
+      },
+      "ko_ima_pravo_opis": "Lica sa nižim primanjima (cenzus se određuje opštinskim odlukama, otprilike minimalna potrošačka korpa po članu domaćinstva). Žrtve nasilja u porodici - bez cenzusa, automatski. Maloletnici. Tražioci azila. Osobe sa invaliditetom.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "razvod"
+              ]
+            },
+            {
+              "tip": "ili",
+              "uslovi": [
+                {
+                  "tip": "primanja_max_rsd",
+                  "vrednost": 40000,
+                  "po_clanu": true
+                },
+                {
+                  "tip": "situacija",
+                  "vrednost": [
+                    "nasilje"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Većina ljudi misli da je za razvod 'mora advokat' i plaća 60.000-200.000 RSD. Ne znaju da postoji besplatna pravna pomoć preko opštine ili NVO. Drugi propust: misle da je sistem birokratski i komplikovan - postupak za odobrenje besplatne pomoći jeste zahtevan, ali isplati se za 60.000+ RSD štednje.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Prvi izbor: Centar za socijalni rad",
+          "opis": "CSR prema mestu prebivališta. Tražite besplatnu pravnu pomoć za razvod. CSR procenjuje cenzus i dodjeluje vam advokata (ili obavlja sam pravne radnje).",
+          "napomena": "Ako ste žrtva nasilja u porodici - bez cenzusa, automatski dobijate pomoć."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Drugi izbor: Pravna klinika fakulteta",
+          "opis": "Pravni fakulteti u Beogradu, Novom Sadu, Nišu, Kragujevcu imaju pravne klinike - studenti pod nadzorom profesora. Besplatno za sve, ne traži se cenzus.",
+          "napomena": "Manje formalno od advokata, ali ozbiljan kvalitet. Posebno za jednostavnije slučajeve razvoda po sporazumu."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Treći izbor: NVO za pravnu pomoć",
+          "opis": "Praxis, IRIS, YUCOM, A11, Centar za socijalnu politiku - sve nude besplatne pravne savete. Specijalizovani po grupama (Romi, izbeglice, žrtve nasilja, LGBT).",
+          "napomena": "Praxis i IRIS imaju veliko iskustvo sa porodičnim sporovima."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Pripremite dokumente",
+          "opis": "Lična karta, izvod iz matične knjige venčanih, izvodi za decu (ako su), dokazi o primanjima domaćinstva (za cenzus), bilo koji dokazi o specifičnosti slučaja (nasilje, primanja partnera itd.)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Sastanak sa advokatom",
+          "opis": "Pravni savet, plan postupka, sastavljanje tužbe. Sve besplatno. Po potrebi - zastupanje u sudu."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_braka",
+          "naziv": "Izvod iz knjige venčanih",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "izvod_dece",
+          "naziv": "Izvodi za decu (ako su)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "uver_primanja",
+          "naziv": "Uverenje o primanjima za 3 meseca (za cenzus)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Poslodavac/PIO/NSZ",
+          "trosak_rsd": 0,
+          "napomena": "Za sve punoletne članove domaćinstva."
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Centar za socijalni rad (CSR)",
+          "tip": "filijala",
+          "url": "https://www.minrzs.gov.rs",
+          "napomena": "Filijala prema mestu prebivališta. Tražite 'besplatnu pravnu pomoć po Zakonu o besplatnoj pravnoj pomoći'."
+        },
+        {
+          "naziv": "Pravna klinika Pravnog fakulteta Beograd",
+          "tip": "centralna",
+          "url": "https://www.ius.bg.ac.rs/pravna-klinika",
+          "adresa": "Bulevar kralja Aleksandra 67, Beograd"
+        },
+        {
+          "naziv": "Praxis - NVO za pravnu pomoć",
+          "tip": "centralna",
+          "telefon": "011 3636 144",
+          "url": "https://www.praxis.org.rs",
+          "napomena": "Specijalizovani za marginalizovane grupe."
+        },
+        {
+          "naziv": "YUCOM - Pravna pomoć",
+          "tip": "centralna",
+          "telefon": "011 3344 235",
+          "url": "https://www.yucom.org.rs"
+        },
+        {
+          "naziv": "Sigurna ženska kuća / SOS Vojvodina",
+          "tip": "centralna",
+          "telefon": "021 422 740",
+          "url": "https://www.sigurnazenskakuca.rs",
+          "napomena": "Za žene žrtve nasilja u porodici - besplatna pravna pomoć + sigurno utočište."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Misli da 'samo bogati' imaju advokata",
+          "posledica": "Niski prihodi → loš ishod razvoda → gubitak deteta/stana/alimentacije",
+          "resenje": "Besplatna pravna pomoć postoji. CSR, pravne klinike, NVO."
+        },
+        {
+          "greska": "Plaća privatnog advokata 60.000-200.000 RSD pre nego što proba besplatne opcije",
+          "posledica": "Velika rupa u budžetu u već stresnom periodu",
+          "resenje": "Prvo idite u CSR ili pravnu kliniku. Proces je možda sporiji, ali kvalitet je dobar za većinu slučajeva."
+        },
+        {
+          "greska": "Žrtve nasilja idu kod skupog advokata umesto u sigurnu kuću",
+          "posledica": "Plaća za nešto što ima besplatno",
+          "resenje": "Sigurna ženska kuća = pravna pomoć + sigurnost. Bez cenzusa, automatski."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad pre, tokom ili posle bračnog spora.",
+      "prosecno_trajanje_postupka": "CSR - odobrenje 15-30 dana. Sam postupak razvoda: 6-24 meseca (zavisi od složenosti).",
+      "spoljni_resursi": [
+        {
+          "naziv": "Zakon o besplatnoj pravnoj pomoći",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_besplatnoj_pravnoj_pomoci.html"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati cenzuse i kontakte NVO za 2026"
+    },
+    {
+      "id": "RZ03",
+      "kategorija": "razvod",
+      "naziv": {
+        "sr_cyr": "Хитне мере заштите од насиља у породици (без судског поступка)",
+        "sr_lat": "Hitne mere zaštite od nasilja u porodici (bez sudskog postupka)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Полиција може одмах извршиоцу насиља да изрекне меру привремене забране приласка (до 48 сати), коју тужилаштво може продужити до 30 дана. Без чекања на суд.",
+        "sr_lat": "Policija može odmah izvršiocu nasilja da izrekne meru privremene zabrane prilaska (do 48 sati), koju tužilaštvo može produžiti do 30 dana. Bez čekanja na sud."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o sprečavanju nasilja u porodici",
+          "sluzbeni_glasnik": "Sl. glasnik RS 94/2016",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_sprecavanju_nasilja_u_porodici.html"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Zaštita od nasilja - bez troška za žrtvu. Uključuje udaljavanje izvršioca, sigurnu kuću, pravnu pomoć, psihološku podršku."
+      },
+      "ko_ima_pravo_opis": "Svaka osoba koja trpi nasilje u porodici - fizičko, psihičko, seksualno, ekonomsko. Žene, deca, stariji, muškarci. Bračni partneri (uključujući bivše), vanbračni partneri (uključujući bivše), srodnici, lica koja su zajedno živela.",
+      "uslovi": [
+        {
+          "tip": "situacija",
+          "vrednost": [
+            "nasilje"
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Žrtve često ne znaju da policija MORA da postupi - misle da se može samo 'preneti slučaj sudu' (što traje mesecima). Po Zakonu iz 2016, hitne mere su OBAVEZNE - policija mora odmah da udalji izvršioca i da slučaj prosledi tužilaštvu u roku od 8 sati. Drugi propust: misle da 'jedan udarac' nije dovoljan - ALI po zakonu, čak i pretnja nasiljem je nasilje.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pozovite 192 (policija) ili 0800 100 600 (SOS)",
+          "opis": "Hitno - opisujete šta se dešava: 'ima nasilje u porodici, hitno trebamo pomoć'. Policija MORA da dođe i da deluje.",
+          "upozorenje": "NE čekajte, NE razgovarajte sa nasilnikom o tome. Pozovite kad ste sami i bezbedni."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Policija dolazi i udaljava izvršioca",
+          "opis": "Po Zakonu, policija mora razdvojiti vas i napadača. Izrekne meru zabrane prilaska 48 sati. Slučaj prosleđuje tužilaštvu u 8 sati.",
+          "napomena": "Ako policajac ne želi da postupi - tražite njegovo ime, broj značke. Žaljite se kod komandanta stanice ili javnom tužiocu."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Tužilaštvo produžava meru do 30 dana",
+          "opis": "U roku od 24 sata, tužilac odlučuje o produženju mere. Ako produži - mera traje do 30 dana. Za to vreme - sud odlučuje o trajnijim merama.",
+          "napomena": "Sve se dešava bez tvog aktivnog učešća - sistem deluje. Ali ti imaš pravo da se izjasniš."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Sigurna ženska kuća (ako je potrebno)",
+          "opis": "Ako se ne osećate sigurno kod kuće - sigurne ženske kuće postoje u svakom većem gradu. Tajna lokacija, 24/7 prijem, dete i vi.",
+          "napomena": "Boravak je besplatan. Trajanje: nekoliko nedelja do 6 meseci."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Sudski postupak za dugotrajnije mere",
+          "opis": "Posle 30 dana, sud može odrediti dugotrajnije mere: zabrana prilaska godinu dana, oduzimanje deteta, krivična procena. Idete uz pomoć CSR-a ili NVO."
+        }
+      ],
+      "dokumenti": [],
+      "institucije": [
+        {
+          "naziv": "Policija - poziv 192",
+          "tip": "centralna",
+          "telefon": "192",
+          "napomena": "Hitan poziv. Obavezna intervencija po Zakonu o sprečavanju nasilja u porodici."
+        },
+        {
+          "naziv": "SOS Linija za žrtve nasilja",
+          "tip": "centralna",
+          "telefon": "0800 100 600",
+          "radno_vreme": "0-24h",
+          "napomena": "Besplatan poziv, anonimno. Savet, podrška, prosleđivanje policiji ili CSR-u."
+        },
+        {
+          "naziv": "Centar za socijalni rad (CSR)",
+          "tip": "filijala",
+          "napomena": "Procena bezbednosti, plan zaštite, pravna pomoć. Filijala prema mestu prebivališta."
+        },
+        {
+          "naziv": "Sigurna ženska kuća Beograd",
+          "tip": "centralna",
+          "telefon": "011 3132 280",
+          "url": "https://www.sigurnazenskakuca.rs",
+          "napomena": "Sigurno utočište za žene i decu žrtve nasilja. Tajna lokacija."
+        },
+        {
+          "naziv": "Autonomni ženski centar",
+          "tip": "centralna",
+          "telefon": "011 2645 328",
+          "url": "https://www.womenngo.org.rs",
+          "napomena": "Pravna pomoć, psihološka podrška, edukacija. Specijalizovani za nasilje u porodici."
+        }
+      ],
+      "filijala_pravilo": "jedinstvena",
+      "ceste_greske": [
+        {
+          "greska": "Misle da nije 'dovoljno strašno' za policiju",
+          "posledica": "Nasilje eskalira",
+          "resenje": "I jedan udarac, jedna pretnja, kontrolisanje finansija - sve je nasilje po Zakonu. Pozovi 192."
+        },
+        {
+          "greska": "Veruju nasilnika da će se 'promeniti'",
+          "posledica": "Ciklus nasilja se ponavlja, često sa eskalacijom",
+          "resenje": "Statistika: bez intervencije, nasilje se nastavlja u 90%+ slučajeva. Tražite zaštitu."
+        },
+        {
+          "greska": "Idu odmah u sigurnu kuću bez prijave policiji",
+          "posledica": "Nasilnik nije udaljen od kuće - vi ste 'prognani' iz svog doma",
+          "resenje": "Prvo policija - oni udaljavaju nasilnika. Sigurna kuća je dodatna opcija ako se ne osećate sigurno."
+        },
+        {
+          "greska": "Povlače prijavu posle 'razgovora' sa nasilnikom",
+          "posledica": "Zaštita se gasi, nasilje se vraća",
+          "resenje": "Mere zaštite traju 30 dana bez obzira na vaš pristanak (po zakonu). NE povlačite prijavu pod pritiskom."
+        }
+      ],
+      "rok_za_podnosenje": "Odmah - hitno. Nema zastarelosti.",
+      "prosecno_trajanje_postupka": "Hitne mere: trenutno (48 sati + 30 dana). Sudski postupak za dugotrajnije mere: 1-3 meseca.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Zakon o sprečavanju nasilja u porodici",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_sprecavanju_nasilja_u_porodici.html"
+        },
+        {
+          "naziv": "Autonomni ženski centar - resursi",
+          "url": "https://www.womenngo.org.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv Zakona o sprečavanju nasilja u porodici 2026"
+    },
+    {
+      "id": "SM01",
+      "kategorija": "smrt_porodice",
+      "naziv": {
+        "sr_cyr": "Породична пензија (ПИО)",
+        "sr_lat": "Porodična penzija (PIO)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Месечно примање за брачног партнера, децу и родитеље преминулог осигураника. До 70% пензије преминулог зависно од броја корисника.",
+        "sr_lat": "Mesečno primanje za bračnog partnera, decu i roditelje preminulog osiguranika. Do 70% penzije preminulog zavisno od broja korisnika."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+          "sluzbeni_glasnik": "Sl. glasnik RS 34/2003 sa izmenama",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_penzijskom_i_invalidskom_osiguranju.html"
+        }
+      ],
+      "iznos": {
+        "tip": "mesecno_raspon",
+        "min_rsd": 25000,
+        "max_rsd": 80000,
+        "napomena": "Zavisi od penzije preminulog i broja korisnika. Jedan korisnik: 70% penzije. Dva: 80%. Tri ili više: 100%. Minimum: zakonski najniži iznos (cca. 25.000 RSD)."
+      },
+      "ko_ima_pravo_opis": "Bračni partner preminulog (udova/udovac) sa najmanje 53 godine za žene / 58 za muškarce, ili pre - ako je nesposoban za rad ili ima decu na svom izdržavanju. Deca do 15 godina (ili do 26 ako studiraju, bez granice ako su nesposobna za rad). Roditelji koje je preminuli izdržavao. Razvedeni supružnici uz određene uslove (sudsko izdržavanje).",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "smrt_porodice"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Porodice u tuzi često ne podnose zahtev na vreme. Rok je 6 meseci za retroaktivno dobijanje od datuma smrti - posle toga se dobija samo od datuma podnošenja. Mnogi udovci/udove ne znaju da imaju pravo, posebno ako su sami radili (misle 'imam svoju penziju, ne treba'). Zapravo - mogu da kombinuju svoju i porodičnu (uz limit).",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Sačekajte da prođe 30-40 dana od smrti",
+          "opis": "Tek nakon obrade matičnih dokumenata (izvod iz matične knjige umrlih). Bez toga - PIO odbija zahtev.",
+          "napomena": "Izvod traje 5-10 dana posle smrti. Ne idite ranije - vraćaju vas."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pripremite dokumentaciju",
+          "opis": "Izvod iz matične knjige umrlih, izvod iz knjige venčanih (za bračnog partnera), izvodi za decu, PIO knjižica preminulog, lična karta, dokaz o adresi.",
+          "upozorenje": "Sve izvode tražite VIŠE PRIMERAKA - trebaće vam i za nasledstvo, banku, fakultet (deca), itd."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev u PIO filijali",
+          "opis": "Filijala prema mestu prebivališta preminulog. Obrazac 'Zahtev za priznavanje prava na porodičnu penziju' - dobijete na šalteru.",
+          "napomena": "PIO ima i opciju podnošenja online preko ePisarnice, ali za prvi zahtev preporučljivo je lično."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Čekajte rešenje (30-90 dana)",
+          "opis": "PIO obrađuje, izračunava iznos. Po donošenju rešenja - prva isplata retroaktivno od datuma smrti (ako ste podneli u roku od 6 meseci)."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Mesečna isplata",
+          "opis": "Penzija se isplaćuje na tekući račun (ili pošta). Možete je primati uz svoju penziju (ako je imate) - PIO obračunava limite."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta podnosioca",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_umrli",
+          "naziv": "Izvod iz matične knjige umrlih (3+ primerka)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar opštine gde je smrt registrovana",
+          "trosak_rsd": 380,
+          "vazi_meseci": 6
+        },
+        {
+          "id": "izvod_braka",
+          "naziv": "Izvod iz knjige venčanih",
+          "obavezno": false,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380,
+          "napomena": "Samo za bračnog partnera."
+        },
+        {
+          "id": "izvod_dece",
+          "naziv": "Izvod iz knjige rođenih za decu",
+          "obavezno": false,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380,
+          "napomena": "Samo ako podnosite za decu."
+        },
+        {
+          "id": "pio_knjizica",
+          "naziv": "PIO knjižica preminulog (ako postoji)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Pretražite dokumenta preminulog",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "dokaz_studiranja",
+          "naziv": "Potvrda o studiranju (za decu 18-26)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Fakultet/srednja škola",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Republički fond za penzijsko i invalidsko osiguranje (PIO)",
+          "tip": "filijala",
+          "telefon": "0700 020 020",
+          "url": "https://www.pio.rs",
+          "napomena": "Filijala prema mestu prebivališta preminulog."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "uputstvo_zahteva": {
+        "naziv_zahteva": "Zahtev za priznavanje prava na porodičnu penziju",
+        "gde_dobiti_obrazac": "PIO filijala",
+        "obrazac_url": "https://www.pio.rs",
+        "pre_popunjavanja": [
+          "Obezbedite više primeraka izvoda iz matične knjige umrlih (trebaće za sve institucije)",
+          "Tačno datum smrti i mesto smrti",
+          "Podaci preminulog: JMBG, broj penzijske knjižice (ako postoji)",
+          "Vaši podaci: lična karta, JMBG, broj računa za isplatu"
+        ],
+        "sta_reci_na_salteru": [
+          "Podnosim zahtev za porodičnu penziju kao [bračni partner / dete / roditelj]",
+          "Molim za obrazac",
+          "Da li mogu da retrogradno dobijem od datuma smrti? (Da, ako je u roku od 6 meseci.)"
+        ],
+        "sta_proveriti_pre_potpisa": [
+          "Tačan datum smrti",
+          "Tačan procenat (70% za jednog korisnika, 80% za dva, 100% za tri+)",
+          "Tačan broj računa za uplatu"
+        ],
+        "posle_predaje": [
+          "Sačuvajte potvrdu o prijemu",
+          "PIO obrađuje 30-90 dana",
+          "Po prijemu rešenja, proverite tačnost - imate pravo na žalbu u 30 dana"
+        ]
+      },
+      "ceste_greske": [
+        {
+          "greska": "Ne podnose zahtev na vreme (prošlo 6 meseci)",
+          "posledica": "Gube retroaktivna primanja",
+          "resenje": "Podnesite što ranije, najbolje 1-2 meseca nakon smrti (kad već imate izvod). Imate pravo retroaktivno do 6 meseci."
+        },
+        {
+          "greska": "Misle da nemaju pravo jer imaju svoju penziju",
+          "posledica": "Propuste 30.000-50.000 RSD mesečno",
+          "resenje": "Mogu se kombinovati (uz limit). PIO obračuna - vredi podneti zahtev."
+        },
+        {
+          "greska": "Razvedeni partner misli da nema pravo",
+          "posledica": "Propuste mogućnost porodične penzije",
+          "resenje": "Razvedeni supružnik IMA pravo ako je sudski dobio izdržavanje od preminulog ili ako je bivši brak trajao najmanje godinu dana i ima decu sa preminulim."
+        }
+      ],
+      "rok_za_podnosenje": "6 meseci od smrti za retroaktivnu isplatu od datuma smrti. Posle - samo od datuma podnošenja zahteva.",
+      "prosecno_trajanje_postupka": "Obrada PIO: 30-90 dana.",
+      "spoljni_resursi": [
+        {
+          "naziv": "PIO - Porodična penzija",
+          "url": "https://www.pio.rs/cir/porodicna-penzija"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv pio.rs i tačne procente za 2026"
+    },
+    {
+      "id": "SM02",
+      "kategorija": "smrt_porodice",
+      "naziv": {
+        "sr_cyr": "Једнократна помоћ за погребне трошкове (ПИО)",
+        "sr_lat": "Jednokratna pomoć za pogrebne troškove (PIO)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Помоћ члановима породице или лицу које је сносило трошкове погреба - ~70.000 РСД. Право имају и породице пензионера и активних осигураника.",
+        "sr_lat": "Pomoć članovima porodice ili licu koje je snosilo troškove pogreba - ~70.000 RSD. Pravo imaju i porodice penzionera i aktivnih osiguranika."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "surprise",
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o penzijskom i invalidskom osiguranju",
+          "sluzbeni_glasnik": "Sl. glasnik RS 34/2003 sa izmenama"
+        }
+      ],
+      "iznos": {
+        "tip": "jednokratno",
+        "vrednost_rsd": 70000,
+        "napomena": "Iznos se usklađuje sa rastom prosečne penzije - 2025: ~70.000 RSD. Proveriti aktuelni iznos na pio.rs."
+      },
+      "ko_ima_pravo_opis": "Lice koje je stvarno snosilo troškove pogreba osiguranog lica - obično bračni partner, dete, roditelj, ali i prijatelj ili neko ko nije rođak (ako može da dokaže da je on platio). Preminuli mora biti osigurano lice (penzioner ili aktivni osiguranik).",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "smrt_porodice"
+              ]
+            },
+            {
+              "tip": "prebivaliste_srbija",
+              "vrednost": true
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Najveći broj porodica ne zna da ovo pravo postoji. Pogreb košta 100.000-300.000 RSD - PIO pokriva 30-50% i to se ne traži. PIO ne obaveštava aktivno - porodica mora sama da zna i da podnese zahtev u roku od 3 godine.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Sačuvajte sve račune o pogrebu",
+          "opis": "Sahrana, kovčeg, mrtvačnica, parcela, naknada svešteniku - sve račune koje plaćate. Trebaće za dokaz troškova.",
+          "napomena": "Iako PIO daje fiksni iznos (~70.000 RSD), računi dokazuju da ste vi snosili troškove (a ne neko drugi)."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Sačekajte izvod iz matične knjige umrlih",
+          "opis": "Bez izvoda - PIO ne prima zahtev. Izvod stiže 5-10 dana posle smrti."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Podnesite zahtev u PIO filijali",
+          "opis": "Filijala prema mestu prebivališta preminulog. Obrazac 'Zahtev za jednokratnu naknadu pogrebnih troškova'.",
+          "napomena": "Možete podneti i online preko ePisarnice (eUprava)."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Čekajte rešenje (30-60 dana)",
+          "opis": "PIO obrađuje, donosi rešenje, isplaćuje jednokratno na vaš račun."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta podnosioca",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_umrli",
+          "naziv": "Izvod iz matične knjige umrlih",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "racuni_pogreb",
+          "naziv": "Računi o troškovima pogreba",
+          "obavezno": true,
+          "gde_se_nabavlja": "Pogrebno preduzeće, mrtvačnica, JKP",
+          "trosak_rsd": 0,
+          "napomena": "Originali ili overene kopije."
+        },
+        {
+          "id": "izvod_braka_rodjenja",
+          "naziv": "Izvod iz knjige venčanih/rođenih (dokaz srodstva)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380,
+          "napomena": "Samo ako niste rodbina u prvom kolenu - tada treba dokaz da ste platili."
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Republički fond za penzijsko i invalidsko osiguranje (PIO)",
+          "tip": "filijala",
+          "telefon": "0700 020 020",
+          "url": "https://www.pio.rs",
+          "napomena": "Filijala prema mestu prebivališta preminulog."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Ne znaju da pravo postoji",
+          "posledica": "Propuste 70.000 RSD",
+          "resenje": "Svaka porodica gde je preminuli imao penziju ili je radio - ima pravo. Podnesite zahtev."
+        },
+        {
+          "greska": "Bacaju račune o pogrebu",
+          "posledica": "Ne mogu da dokažu da su platili",
+          "resenje": "Sačuvajte SVE račune iz pogrebnog - to su dokazi za PIO i poreske olakšice."
+        },
+        {
+          "greska": "Misli da pogreb mora biti 'standardni'",
+          "posledica": "Ne traži ako je bilo specifičnih troškova",
+          "resenje": "PIO ne pita za stil pogreba - daje fiksni iznos. Vi navedete da ste snosili troškove i platili."
+        }
+      ],
+      "rok_za_podnosenje": "3 godine od smrti - posle nije moguće.",
+      "prosecno_trajanje_postupka": "30-60 dana od podnošenja zahteva.",
+      "spoljni_resursi": [
+        {
+          "naziv": "PIO - Naknada pogrebnih troškova",
+          "url": "https://www.pio.rs"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati tačan iznos za 2026"
+    },
+    {
+      "id": "SM03",
+      "kategorija": "smrt_porodice",
+      "naziv": {
+        "sr_cyr": "Плаћено одсуство због смрти у породици (5 дана)",
+        "sr_lat": "Plaćeno odsustvo zbog smrti u porodici (5 dana)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "По Закону о раду, запослени има право на 5 дана плаћеног одсуства код смрти члана уже породице (брачни партнер, дете, родитељ, брат, сестра).",
+        "sr_lat": "Po Zakonu o radu, zaposleni ima pravo na 5 dana plaćenog odsustva kod smrti člana uže porodice (bračni partner, dete, roditelj, brat, sestra)."
+      },
+      "prioritet_propusta": 3,
+      "tagovi": [
+        "time_sensitive"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o radu",
+          "sluzbeni_glasnik": "Sl. glasnik RS 24/2005 sa izmenama",
+          "clanovi": "Čl. 77",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_radu.html"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "5 dana plaćenog odsustva. Plaćeno kao redovan rad - 100% zarade. Ne smanjuje godišnji odmor."
+      },
+      "ko_ima_pravo_opis": "Svaki zaposleni po ugovoru o radu (puno ili deo radnog vremena). Smrt mora biti člana uže porodice: bračni partner, deca, roditelji, braća/sestre, baba/deda, unuci, snaja/zet. Ne važi za daljnju rodbinu (tetka, ujak, rođak) - tu se može uzeti godišnji.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "smrt_porodice"
+              ]
+            },
+            {
+              "tip": "zaposlenje",
+              "vrednost": [
+                "zaposlen"
+              ]
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi zaposleni ne znaju da imaju ovo pravo - misle da moraju uzeti godišnji ili neplaćeno. Neki poslodavci ne obaveštavaju proaktivno. Pravo se mora zatražiti - poslodavac neće sam predložiti.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Obavestite poslodavca odmah",
+          "opis": "Pozovite ili pošaljite poruku (SMS, email) - 'imam smrt u porodici, koristim 5 dana plaćenog odsustva po čl. 77 Zakona o radu'. Ne tražite, OBAVEŠTAVATE."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Donesite izvod iz matične knjige umrlih (po povratku)",
+          "opis": "Poslodavac može tražiti dokaz - donesite izvod kad ga dobijete (5-10 dana). Bez izvoda - poslodavac može sumnjati i ne platiti.",
+          "napomena": "Originali NE TREBA - kopije su dovoljne. Sačuvajte original za sebe."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Provera u platnoj listi",
+          "opis": "Sledeća plata mora biti puna - sa 5 dana plaćenog odsustva (ne godišnji, ne neplaćeno). Ako je smanjena - tražite proveru u kadrovskoj.",
+          "upozorenje": "Neki poslodavci 'zaboravljaju' - tražite ispravku. Ne ćutite ako je smanjeno."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "izvod_umrli",
+          "naziv": "Izvod iz matične knjige umrlih (kopija)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380,
+          "napomena": "Kopija je dovoljna za poslodavca."
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Vaš poslodavac (kadrovska služba)",
+          "tip": "pravno_lice",
+          "napomena": "Obavestite kadrovsku direktno. Možete i menadžera, ali kadrovska obrađuje administraciju."
+        },
+        {
+          "naziv": "Inspekcija rada (ako poslodavac ne plati)",
+          "tip": "centralna",
+          "telefon": "011 36 16 261",
+          "url": "https://www.minrzs.gov.rs",
+          "napomena": "Ako poslodavac uskrati ovo pravo - inspekcija rada može da kontroliše."
+        }
+      ],
+      "filijala_pravilo": "pratilac_pravnog_lica",
+      "ceste_greske": [
+        {
+          "greska": "Uzima godišnji odmor umesto plaćenog odsustva",
+          "posledica": "Gubi 5 dana godišnjeg odmora besplatno",
+          "resenje": "5 dana plaćenog odsustva po čl. 77 - NIJE deo godišnjeg odmora. Drži ih odvojeno."
+        },
+        {
+          "greska": "Ne traži od poslodavca jer 'osetljiva tema'",
+          "posledica": "Gubi 5 plaćenih dana",
+          "resenje": "Vaše je pravo. Poslodavac je obavezan po zakonu. Ne molite, obaveštavajte."
+        },
+        {
+          "greska": "Misle da važi i za daljnju rodbinu",
+          "posledica": "Konflikt sa poslodavcem",
+          "resenje": "Samo uža porodica: bračni partner, deca, roditelji, braća/sestre, baba/deda, unuci, snaja/zet. Za daljnju - uzmite godišnji."
+        }
+      ],
+      "rok_za_podnosenje": "Odmah po smrti. Pravo ne postoji ako se ne iskoristi neposredno.",
+      "prosecno_trajanje_postupka": "5 dana plaćenog odsustva. Bez procedure - samo prijava poslodavcu.",
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv aktuelnog Zakona o radu, čl. 77"
+    },
+    {
+      "id": "SM04",
+      "kategorija": "smrt_porodice",
+      "naziv": {
+        "sr_cyr": "Ослобађање од пореза на наслеђе за наследнике првог реда",
+        "sr_lat": "Oslobađanje od poreza na nasleđe za naslednike prvog reda"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Брачни партнер и деца преминулог НЕ плаћају порез на наслеђе. Други ред - 1,5%, остали 2,5%. Битно при наслеђивању стана, новца, имовине.",
+        "sr_lat": "Bračni partner i deca preminulog NE plaćaju porez na nasleđe. Drugi red - 1,5%, ostali 2,5%. Bitno pri nasleđivanju stana, novca, imovine."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "surprise",
+        "big_money"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o porezima na imovinu",
+          "sluzbeni_glasnik": "Sl. glasnik RS 26/2001 sa izmenama",
+          "clanovi": "Čl. 21",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_porezima_na_imovinu.html"
+        }
+      ],
+      "iznos": {
+        "tip": "opisno",
+        "vrednost_opis": "0% poreza za naslednike prvog reda (bračni partner, deca). Pri nasleđivanju stana od 100.000 EUR - ušteda od 0 RSD vs 2.500-3.500 EUR za daljnju rodbinu."
+      },
+      "ko_ima_pravo_opis": "Prvi naslednički red (Čl. 8 Zakona o nasleđivanju): bračni partner i potomci preminulog. Oni su automatski oslobođeni poreza na nasleđe - ne moraju da podnose zahtev za oslobađanje, samo da prijave nasleđe Poreskoj upravi.",
+      "uslovi": [
+        {
+          "tip": "situacija",
+          "vrednost": [
+            "smrt_porodice"
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Ne propušta se baš pravo, jer je automatski. Ali se propušta razumevanje - mnogi naslednici prvog reda u panici idu kod advokata i plaćaju 2.000-5.000 EUR za savetovanje, ne znajući da nisu obavezni da plate porez. Drugi propust: ne prijavljuju nasleđe Poreskoj u roku od 30 dana posle ostavinske rasprave - što vodi do kazni.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Pokrenite ostavinsku raspravu (notarsku)",
+          "opis": "Najbliža javnobeležnička kancelarija pokreće ostavinski postupak. Identifikuje sve naslednike i imovinu. Trošak: ~1-2% vrednosti imovine."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Po donošenju rešenja - prijavite Poreskoj",
+          "opis": "U roku od 30 dana od pravnosnažnosti rešenja o nasleđu, podnesite PP-OPN obrazac u Poreskoj upravi (filijala prema mestu prebivališta preminulog).",
+          "upozorenje": "Rok je STROG - 30 dana. Posle - kazna 5.000-150.000 RSD i obaveza retrogradnog plaćanja."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Naznačite naslednički red",
+          "opis": "U obrascu PP-OPN označite 'prvi naslednički red'. Poreska automatski izračunava 0% porez i izdaje rešenje o oslobađanju.",
+          "napomena": "Ne morate da tražite OSLOBAĐANJE kao posebno pravo - to je automatski."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Prevedite imovinu",
+          "opis": "Sa rešenjem o nasleđu i rešenjem Poreske - idete u katastar (stan), banku (novac), saobraćajnu policiju (auto). Pravosnažni prenos."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta naslednika",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "izvod_umrli",
+          "naziv": "Izvod iz matične knjige umrlih",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        },
+        {
+          "id": "resenje_nasledjivanje",
+          "naziv": "Rešenje o nasleđivanju (pravosnažno)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Javni beležnik",
+          "trosak_rsd": 0,
+          "napomena": "Trošak postupka: 1-2% vrednosti."
+        },
+        {
+          "id": "izvod_srodstvo",
+          "naziv": "Dokaz srodstva (izvod iz knjige rođenih/venčanih)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Matičar",
+          "trosak_rsd": 380
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Poreska uprava - filijala",
+          "tip": "filijala",
+          "telefon": "0700 700 007",
+          "url": "https://www.purs.gov.rs",
+          "napomena": "Filijala prema mestu prebivališta preminulog (gde se nalazi imovina)."
+        },
+        {
+          "naziv": "Javni beležnik (notar)",
+          "tip": "centralna",
+          "url": "https://www.beleznik.org",
+          "napomena": "Pokretanje ostavinske rasprave. Cene su zakonom regulisane."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Ne prijave nasleđe Poreskoj u roku 30 dana",
+          "posledica": "Kazna 5.000-150.000 RSD + obaveza naknadnog prijavljivanja",
+          "resenje": "Postavite podsetnik 25 dana posle ostavinske rasprave. Idite u Poresku sa PP-OPN obrascem."
+        },
+        {
+          "greska": "Plate advokatu da 'reši poresko oslobađanje'",
+          "posledica": "Bačeno 2.000-5.000 EUR jer je automatski",
+          "resenje": "Prvi naslednički red ne plaća porez - ne treba pravna pomoć za to. Samo prijavite PP-OPN."
+        },
+        {
+          "greska": "Naslednici drugog reda misle da su oslobođeni",
+          "posledica": "Pogrešno prijavljivanje, kazna",
+          "resenje": "Drugi red (braća/sestre, baba/deda) plaća 1,5%. Treba pravilno prijaviti. Posavetujte se sa poreskom."
+        }
+      ],
+      "rok_za_podnosenje": "30 dana od pravnosnažnosti rešenja o nasleđu.",
+      "prosecno_trajanje_postupka": "Ostavinska rasprava: 1-3 meseca. Poreska prijava: 15-30 dana.",
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv aktuelnog Zakona o porezima na imovinu"
+    },
+    {
+      "id": "ZZ01",
+      "kategorija": "zdravlje_zena",
+      "naziv": {
+        "sr_cyr": "Вантелесна оплодња (БМПО / ИВФ) преко РФЗО",
+        "sr_lat": "Vantelesna oplodnja (BMPO / IVF) preko RFZO"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Република финансира до 6 покушаја вантелесне оплодње (укључујући претходне покушаје). Услугу пружа РФЗО мрежа клиника. Без старосне границе од 2024.",
+        "sr_lat": "Republika finansira do 6 pokušaja vantelesne oplodnje (uključujući prethodne pokušaje). Uslugu pruža RFZO mreža klinika. Bez starosne granice od 2024."
+      },
+      "prioritet_propusta": 4,
+      "tagovi": [
+        "high_priority",
+        "big_money",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Pravilnik o uslovima i načinu ostvarivanja prava na BMPO",
+          "sluzbeni_glasnik": "Sl. glasnik RS - aktuelni važi za 2024+",
+          "url": "https://www.rfzo.rs/index.php/osiguranalica/bmpo"
+        },
+        {
+          "zakon": "Zakon o biomedicinski potpomognutoj oplodnji",
+          "sluzbeni_glasnik": "Sl. glasnik RS 40/2017"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Kompletna procedura BMPO (IVF/ICSI) sa lekovima, kontrolama i krioprezervacijom. Vrednost jednog pokušaja: 400.000 - 700.000 RSD. Pravo na do 6 pokušaja kroz život."
+      },
+      "ko_ima_pravo_opis": "Žene sa medicinski potvrđenim sterilitetom ili neplodnošću para. Od 2024. ukinuta starosna granica - mogu da konkurišu i žene preko 43 godine (ranija granica). Potreban je nalaz nadležne komisije i lečenje u jednoj od RFZO mreža klinika (GAK Narodni front, KC Niš, KC Novi Sad, KCK, privatne ugovorne klinike).",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "pol",
+              "vrednost": "z"
+            },
+            {
+              "tip": "starost_min",
+              "vrednost": 18
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Mnogi parovi misle da je IVF samo privatna usluga i plaćaju 500.000+ RSD po pokušaju, ne znajući da država finansira do 6 pokušaja. Ranije je postojala starosna granica od 43 godine - ukinuta je 2024. ali to nije dovoljno komunicirano. Postupak komisije za odobrenje traje 2-3 meseca pa parovi često idu privatno iz nestrpljenja.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Posetite ginekologa u domu zdravlja",
+          "opis": "Izabrani ginekolog daje uput za ginekologa specijalistu (najčešće u GAK Narodni front, KC u Nišu/Novom Sadu/Kragujevcu). Bez uputa - nema procedure."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Dijagnostička obrada para",
+          "opis": "Žena: hormoni, ultrazvuk, HSG (histerosalpingografija). Muškarac: spermogram. Sve preko RFZO-a, besplatno.",
+          "napomena": "Komisija za odobrenje BMPO zahteva kompletnu dokumentaciju - ne preskačite testove."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Komisija RFZO za odobrenje BMPO",
+          "opis": "Sa medicinskom dokumentacijom podnese se zahtev komisiji RFZO. Komisija odlučuje u roku od 30-60 dana.",
+          "upozorenje": "Komisija ne odobrava ako nalazi nisu kompletni - obavezno proverite sa vašim lekarom šta još fali."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Izbor klinike i zakazivanje",
+          "opis": "Po odobrenju, klinika iz RFZO mreže zakazuje protokol stimulacije. Lista RFZO ugovornih klinika na rfzo.rs/bmpo."
+        },
+        {
+          "redni_broj": 5,
+          "naslov": "Procedura i kontrole",
+          "opis": "Stimulacija jajnika, punkcija, transfer embriona. Sve sa lekovima i kontrolama - besplatno preko RFZO-a.",
+          "napomena": "Ako neuspeo pokušaj - imate pravo na sledeći (do 6 ukupno). Ne morate čekati godinama."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uput_ginekolog",
+          "naziv": "Uput izabranog ginekologa",
+          "obavezno": true,
+          "gde_se_nabavlja": "Dom zdravlja",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "nalaz_hormoni",
+          "naziv": "Hormonalni nalazi (FSH, LH, AMH, estradiol)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Specijalistička ordinacija - RFZO",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "hsg",
+          "naziv": "HSG nalaz (prohodnost jajovoda)",
+          "obavezno": true,
+          "gde_se_nabavlja": "Specijalistička ordinacija - RFZO",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "spermogram",
+          "naziv": "Spermogram partnera",
+          "obavezno": true,
+          "gde_se_nabavlja": "Andrologija - RFZO",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "RFZO - Komisija za BMPO",
+          "tip": "centralna",
+          "telefon": "0700 33 33 33",
+          "url": "https://www.rfzo.rs/index.php/osiguranalica/bmpo",
+          "napomena": "Odobrenje BMPO. Klinike: GAK Narodni front Beograd, KCK Kragujevac, KC Niš, KC Novi Sad i ugovorne privatne."
+        },
+        {
+          "naziv": "GAK Narodni front Beograd - centar za BMPO",
+          "tip": "specijalisticka",
+          "url": "https://www.gakfront.org",
+          "adresa": "Kraljice Natalije 62, Beograd"
+        }
+      ],
+      "filijala_pravilo": "po_izboru",
+      "ceste_greske": [
+        {
+          "greska": "Para odlaze direktno u privatnu kliniku ne proveravajući RFZO put",
+          "posledica": "Plaćaju 500.000+ RSD po pokušaju umesto besplatno",
+          "resenje": "PRVO uput izabranog ginekologa → komisija RFZO → besplatna procedura. Privatno samo ako baš želite preskočiti čekanje."
+        },
+        {
+          "greska": "Misle da postoji starosna granica od 43 godine",
+          "posledica": "Žene preko 43 ne podnose zahtev",
+          "resenje": "Granica je ukinuta 2024. Komisija odlučuje na osnovu medicinskih nalaza, ne godina."
+        },
+        {
+          "greska": "Nedovoljna dokumentacija pri podnošenju komisiji",
+          "posledica": "Odbijanje zahteva, ponovno prolaženje kroz proceduru",
+          "resenje": "Pre podnošenja - tražite od ginekologa da vam tačno kaže šta SVE treba. Hormonalni, HSG, spermogram - sve mora biti aktuelno (do 6 meseci staro)."
+        }
+      ],
+      "rok_za_podnosenje": "Nema strogog roka. Posle neuspelog pokušaja možete odmah konkurisati za sledeći (ako imate kvotu od 6).",
+      "prosecno_trajanje_postupka": "Dijagnostika: 2-4 meseca. Komisija: 30-60 dana. Procedura nakon odobrenja: 1-2 ciklusa stimulacije.",
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv aktuelnog Pravilnika i broja pokušaja na rfzo.rs/bmpo",
+      "napomena_za_urednika": "Broj pokušaja (6) važi od 2024. Pre toga je bilo 3. Proveriti za 2026 - moguće je dalje proširenje. Starosna granica ukinuta 2024."
+    },
+    {
+      "id": "ZZ02",
+      "kategorija": "zdravlje_zena",
+      "naziv": {
+        "sr_cyr": "Скрининг карцинома грлића материце (ПАПА тест)",
+        "sr_lat": "Skrining karcinoma grlića materice (PAPA test)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Бесплатан превентивни ПАПА тест за жене 25-69 година, једном у три године. Део Националног програма скрининга.",
+        "sr_lat": "Besplatan preventivni PAPA test za žene 25-69 godina, jednom u tri godine. Deo Nacionalnog programa skrininga."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "time_sensitive",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zdravstvenoj zaštiti",
+          "sluzbeni_glasnik": "Sl. glasnik RS 25/2019",
+          "url": "https://www.paragraf.rs/propisi/zakon_o_zdravstvenoj_zastiti.html"
+        },
+        {
+          "zakon": "Uredba o Nacionalnom programu za rano otkrivanje karcinoma grlića materice"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Besplatan ginekološki pregled + PAPA test + obaveštavanje o rezultatima i pozivima na kontrolu. Vrednost privatno: 3.000 - 5.000 RSD po testu."
+      },
+      "ko_ima_pravo_opis": "Sve žene osigurane preko RFZO, starosne dobi 25-69 godina. Poziv za skrining se šalje proaktivno preko izabranog ginekologa ili Instituta za javno zdravlje. Učestalost: jednom u 3 godine za negativan nalaz; češće po preporuci lekara ako su pozitivni nalazi.",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "pol",
+              "vrednost": "z"
+            },
+            {
+              "tip": "starost_min",
+              "vrednost": 25
+            },
+            {
+              "tip": "starost_max",
+              "vrednost": 69
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Veliki broj žena ne zna da je PAPA test besplatan, ili da postoji organizovani poziv. Mnoge žene plaćaju 3.000-5.000 RSD privatno, ili još gore - uopšte ne idu na pregled. Pozivi iz Instituta za javno zdravlje stižu na adresu ali se često bacaju kao reklama. Rana detekcija = 100% izlečenje, a kasna = ozbiljan rizik.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Zakažite kod vašeg izabranog ginekologa",
+          "opis": "Pozovite dom zdravlja ili idite lično i tražite redovan ginekološki pregled sa PAPA testom. Bez uputa - jer je deo preventive."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Pregled traje 15-20 minuta",
+          "opis": "Standardni ginekološki pregled + uzimanje brisa sa grlića materice. Bezbolan postupak, izvodi se na ginekološkom stolu.",
+          "napomena": "Idealno: ne tokom menstruacije, bez seksualnog odnosa 24h pre pregleda, bez vaginalnih krema 48h pre."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Rezultati za 2-4 nedelje",
+          "opis": "Laboratorija analizira bris. Negativan nalaz = sve OK, sledeći pregled za 3 godine. Pozitivan ili neodređen = dodatne analize.",
+          "upozorenje": "Pozitivan PAPA NIJE rak. Najčešće je u pitanju lakša inflamacija ili HPV virus. Tražite jasnu interpretaciju od ginekologa."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Praćenje rezultata",
+          "opis": "Vodite evidenciju o datumima PAPA testova i nalazima. Sledeći test za 3 godine ako je negativno; za 6-12 meseci ako je pozitivno."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Dom zdravlja - vaš izabrani ginekolog",
+          "tip": "filijala",
+          "napomena": "PAPA test izvodi izabrani ginekolog u domu zdravlja. Za to ne treba poseban uput."
+        },
+        {
+          "naziv": "Institut za javno zdravlje Srbije 'Dr Milan Jovanović Batut'",
+          "tip": "centralna",
+          "telefon": "011 2684 566",
+          "url": "https://www.batut.org.rs",
+          "napomena": "Koordinira Nacionalni program skrininga, šalje pozive."
+        }
+      ],
+      "filijala_pravilo": "prema_prebivalistu",
+      "ceste_greske": [
+        {
+          "greska": "Plaćanje PAPA testa privatno",
+          "posledica": "Bacate 3.000-5.000 RSD koje država pokriva",
+          "resenje": "Idite vašem izabranom ginekologu u domu zdravlja. Test je besplatan kao deo preventive."
+        },
+        {
+          "greska": "Ne idu uopšte jer 'nema simptoma'",
+          "posledica": "Karcinom grlića materice se razvija godinama bez simptoma - kad se osete, već je kasna faza",
+          "resenje": "PAPA test JESTE preventiva - radi se baš da otkrije nešto pre nego što daje simptome. Idite jednom u 3 godine bez izgovora."
+        },
+        {
+          "greska": "Paniče zbog pozitivnog PAPA testa",
+          "posledica": "Stres i nepotrebne privatne provere",
+          "resenje": "Pozitivan PAPA = potrebno dalje praćenje (kolposkopija, biopsija). 95% pozitivnih nalaza nije rak. Sledite preporuke vašeg ginekologa."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad - preventiva nema rokove. Idealno: jednom u 3 godine.",
+      "prosecno_trajanje_postupka": "Pregled: 20 minuta. Rezultati: 2-4 nedelje.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Nacionalni program skrininga (Batut)",
+          "url": "https://www.batut.org.rs/index.php?content=2010"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv batut.org.rs i RFZO Pravilnika za 2026"
+    },
+    {
+      "id": "ZZ03",
+      "kategorija": "zdravlje_zena",
+      "naziv": {
+        "sr_cyr": "Скрининг карцинома дојке (мамографија)",
+        "sr_lat": "Skrining karcinoma dojke (mamografija)"
+      },
+      "kratak_opis": {
+        "sr_cyr": "Бесплатна превентивна мамографија за жене 45-69 година, једном у две године. Део Националног програма скрининга.",
+        "sr_lat": "Besplatna preventivna mamografija za žene 45-69 godina, jednom u dve godine. Deo Nacionalnog programa skrininga."
+      },
+      "prioritet_propusta": 5,
+      "tagovi": [
+        "high_priority",
+        "time_sensitive",
+        "surprise"
+      ],
+      "pravni_osnov": [
+        {
+          "zakon": "Zakon o zdravstvenoj zaštiti",
+          "sluzbeni_glasnik": "Sl. glasnik RS 25/2019"
+        },
+        {
+          "zakon": "Uredba o Nacionalnom programu za rano otkrivanje karcinoma dojke"
+        }
+      ],
+      "iznos": {
+        "tip": "usluga_besplatna",
+        "opis": "Besplatna mamografija (snimak oba dojke) + očitavanje od strane dva radiologa + obaveštavanje o rezultatima. Vrednost privatno: 4.000 - 8.000 RSD."
+      },
+      "ko_ima_pravo_opis": "Sve žene osigurane preko RFZO, starosne dobi 45-69 godina. Pozivnice se šalju proaktivno na kućnu adresu (Institut za javno zdravlje). Učestalost: jednom u 2 godine. Žene mlađe od 45 ili starije od 69 - mogu na mamografiju po preporuci lekara (npr. porodična anamneza, palpabilan čvor).",
+      "uslovi": [
+        {
+          "tip": "i",
+          "uslovi": [
+            {
+              "tip": "pol",
+              "vrednost": "z"
+            },
+            {
+              "tip": "starost_min",
+              "vrednost": 45
+            },
+            {
+              "tip": "starost_max",
+              "vrednost": 69
+            }
+          ]
+        }
+      ],
+      "zasto_se_propusta": "Žene koje su pozvane na mamografiju često ne odgovore - pozivnica izgleda kao spam, ili strah od bola, ili sram. Mamografija nije bolna (kratak pritisak), traje 10 minuta, i otkriva rak 5-10 godina pre nego što se napipa. Mnoge žene plaćaju privatno 5.000-8.000 RSD ne znajući da je u domu zdravlja besplatno.",
+      "koraci": [
+        {
+          "redni_broj": 1,
+          "naslov": "Sačekajte pozivnicu ili zatražite uput",
+          "opis": "Ako dobijete pozivnicu Instituta za javno zdravlje - tu su sve informacije (gde, kad). Ako niste dobili - tražite uput od izabranog ginekologa ili lekara opšte prakse.",
+          "napomena": "Sistem pozivnica nije savršen - mnoge žene se 'izgube' u sistemu. Ne čekajte ako ste u uzrastu 45-69."
+        },
+        {
+          "redni_broj": 2,
+          "naslov": "Zakažite mamografiju",
+          "opis": "Sa uputom ili pozivnicom, idete u najbližu instituciju koja radi skrining (dom zdravlja sa mamografom, KC, IORS Beograd). Lista na batut.org.rs."
+        },
+        {
+          "redni_broj": 3,
+          "naslov": "Mamografija traje 10-15 minuta",
+          "opis": "Snimak svake dojke iz dva ugla. Kratak pritisak (5-10 sekundi po snimku). Bezbolan postupak za većinu žena.",
+          "upozorenje": "Žene mlađe od 50 imaju gušće tkivo dojke - ponekad treba ultrazvuk kao dopuna. Tražite ako vam je nalaz neodređen."
+        },
+        {
+          "redni_broj": 4,
+          "naslov": "Rezultati za 2-3 nedelje",
+          "opis": "Dva radiologa nezavisno očitavaju snimke. Negativan nalaz = sve OK, sledeća mamografija za 2 godine. Pozitivan ili neodređen = ultrazvuk, biopsija."
+        }
+      ],
+      "dokumenti": [
+        {
+          "id": "lk",
+          "naziv": "Lična karta",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "zdrav_knjizica",
+          "naziv": "Zdravstvena knjižica",
+          "obavezno": true,
+          "gde_se_nabavlja": "Već imate",
+          "trosak_rsd": 0
+        },
+        {
+          "id": "uput",
+          "naziv": "Uput (ako nemate pozivnicu)",
+          "obavezno": false,
+          "gde_se_nabavlja": "Izabrani ginekolog / lekar opšte prakse",
+          "trosak_rsd": 0
+        }
+      ],
+      "institucije": [
+        {
+          "naziv": "Institut za javno zdravlje Srbije 'Dr Milan Jovanović Batut'",
+          "tip": "centralna",
+          "telefon": "011 2684 566",
+          "url": "https://www.batut.org.rs",
+          "napomena": "Koordinira Nacionalni program. Šalje pozivnice na kućnu adresu."
+        },
+        {
+          "naziv": "Institut za onkologiju i radiologiju Srbije (IORS)",
+          "tip": "specijalisticka",
+          "telefon": "011 2068 100",
+          "adresa": "Pasterova 14, Beograd"
+        }
+      ],
+      "filijala_pravilo": "po_izboru",
+      "ceste_greske": [
+        {
+          "greska": "Ignoriše se pozivnica Instituta",
+          "posledica": "Propušta se besplatan skrining, pa onda plaća privatno ili uopšte ne ide",
+          "resenje": "Ako dobijete pozivnicu - odazovite se. Ako ste je izgubili ili niste dobili - tražite uput kod izabranog lekara."
+        },
+        {
+          "greska": "Strah od bola sprečava odlazak",
+          "posledica": "Žene godinama izbegavaju, kasna detekcija",
+          "resenje": "Mamografija nije bolna. Kratak pritisak traje 5-10 sekundi. Iskustvo: kao snažan stisak. Mnogo manje neprijatno od npr. vađenja zuba."
+        },
+        {
+          "greska": "Ne ide jer 'nema nikoga u porodici sa rakom dojke'",
+          "posledica": "85% slučajeva raka dojke nema porodičnu istoriju - skrining je upravo za njih",
+          "resenje": "Porodična istorija je samo jedan faktor. Najveći faktor je starost (preko 45). Idite na skrining bez obzira."
+        }
+      ],
+      "rok_za_podnosenje": "Bilo kad - preventiva. Idealno jednom u 2 godine za uzrast 45-69.",
+      "prosecno_trajanje_postupka": "Snimanje: 15 minuta. Rezultati: 2-3 nedelje.",
+      "spoljni_resursi": [
+        {
+          "naziv": "Nacionalni program skrininga karcinoma dojke",
+          "url": "https://www.batut.org.rs/index.php?content=2008"
+        }
+      ],
+      "last_verified": "2026-05-23",
+      "verified_by": "Claude draft - verifikovati protiv batut.org.rs"
     }
   ]
 }
