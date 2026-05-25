@@ -66,8 +66,11 @@ export const TRANSLATIONS = {
     'results.filter.surprise': 'Verovatno niste znali',
     'results.filter.high': 'Visok prioritet',
     'results.view.grouped': 'Pokaži po kategorijama',
-    'results.empty.no_match':
-      'Na osnovu vaših odgovora nismo pronašli prava u trenutnom katalogu. Katalog se redovno proširuje - vratite se kasnije ili kontaktirajte nas sa predlogom prava koje treba dodati.',
+    'results.empty.no_match.title': 'Za vašu situaciju u ovom trenutku nismo pronašli odgovarajuću pomoć u katalogu',
+    'results.empty.no_match.body':
+      'Katalog se redovno proširuje. Možete da pokrenete vodič ponovo sa drugačijim odgovorima, ili da pretražite kompletnu bazu pomoći.',
+    'results.empty.cta.restart': 'Pokrenite vodič ponovo',
+    'results.empty.cta.search': 'Pretražite bazu pomoći',
     'results.empty.filtered': 'Nijedno pravo ne odgovara izabranom filteru.',
     'results.pdf': 'Sačuvaj kao PDF',
     'results.pdf.busy': 'Generisanje…',
@@ -344,8 +347,11 @@ export const TRANSLATIONS = {
     'results.filter.surprise': 'You probably did not know',
     'results.filter.high': 'High priority',
     'results.view.grouped': 'Group by category',
-    'results.empty.no_match':
-      'Based on your answers we did not find any rights in the current catalog. The catalog grows continuously - come back later or contact us to suggest a right to add.',
+    'results.empty.no_match.title': 'We could not find a matching benefit for your situation in the current catalog',
+    'results.empty.no_match.body':
+      'The catalog grows continuously. You can restart the guide with different answers, or browse the complete benefits database.',
+    'results.empty.cta.restart': 'Restart the guide',
+    'results.empty.cta.search': 'Browse benefits',
     'results.empty.filtered': 'No right matches the selected filter.',
     'results.pdf': 'Save as PDF',
     'results.pdf.busy': 'Generating…',

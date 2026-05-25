@@ -1,9 +1,10 @@
 ﻿import { useMemo, useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { ResultCard } from '@/components/results/ResultCard';
 import { Anketa } from '@/components/shared/Anketa';
 import { Disclaimer } from '@/components/shared/Disclaimer';
 import { PdfExportButton } from '@/components/shared/PdfExportButton';
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useCatalog } from '@/hooks/useCatalog';
 import { useMatches } from '@/hooks/useMatches';
@@ -21,7 +22,8 @@ export function ResultsPage() {
   const { t, lang } = useLang();
   usePageTitle(t('results.page_title'));
   usePageDwell('rezultati');
-  const { complete, loaded } = useProfile();
+  const navigate = useNavigate();
+  const { complete, loaded, reset } = useProfile();
   const { loading: catalogLoading, error: catalogError } = useCatalog();
   const { matches, count, surprises, categories, highPriority } = useMatches();
 
@@ -121,9 +123,34 @@ export function ResultsPage() {
       )}
 
       <section className="mt-6">
-        {filtered.length === 0 ? (
+        {matches.length === 0 ? (
+          <div className="rounded-md border border-[#dfe1e2] bg-white p-8 text-center">
+            <h2 className="text-balance text-[18px] font-bold leading-snug text-[var(--brand-primary)]">
+              {t('results.empty.no_match.title')}
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-pretty text-[14px] leading-relaxed text-[#1b1b1b]">
+              {t('results.empty.no_match.body')}
+            </p>
+            <div className="mt-6 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+              <Button
+                onClick={() => {
+                  reset();
+                  navigate('/wizard');
+                }}
+              >
+                {t('results.empty.cta.restart')}
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => navigate('/pretraga')}
+              >
+                {t('results.empty.cta.search')}
+              </Button>
+            </div>
+          </div>
+        ) : filtered.length === 0 ? (
           <p className="rounded-md border border-dashed border-[#dfe1e2] p-6 text-center text-[14px] text-[#565c65]">
-            {matches.length === 0 ? t('results.empty.no_match') : t('results.empty.filtered')}
+            {t('results.empty.filtered')}
           </p>
         ) : groupByCategory ? (
           <GroupedResults results={filtered} lang={lang} />
