@@ -14,6 +14,8 @@ export type WizardStepDef = {
   q: BiText;
   hint?: BiText;
   type: 'single' | 'multi';
+  /** If true, user can advance without selecting any option. Default false. */
+  optional?: boolean;
   options: WizardOption[];
 };
 
@@ -45,6 +47,7 @@ export const WIZARD_STEPS: WizardStepDef[] = [
       en: 'Some rights are women-specific (IVF, screening, maternity)',
     },
     type: 'single',
+    optional: true,
     options: [
       { val: 'z', label: { sr: 'Žena', en: 'Woman' }, icon: 'venus' },
       { val: 'm', label: { sr: 'Muškarac', en: 'Man' }, icon: 'mars' },
@@ -214,6 +217,7 @@ export const WIZARD_STEPS: WizardStepDef[] = [
       en: 'Total household income divided by number of members. An estimate is enough.',
     },
     type: 'single',
+    optional: true,
     options: [
       {
         val: 'vrlo_niska',

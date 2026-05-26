@@ -35,13 +35,7 @@
   "ko_ima_pravo_opis": "Svi osigurani građani Srbije. Pristup preko izabranog lekara opšte prakse koji daje uput. U urgentnim slučajevima (suicidalne misli, akutna kriza) - direktan pristup bez upita preko hitne pomoći ili psihijatrijske klinike.",
 
   "uslovi": [
-    {
-      "tip": "ili",
-      "uslovi": [
-        { "tip": "zdravlje", "vrednost": ["mentalno"] },
-        { "tip": "prebivaliste_srbija", "vrednost": true }
-      ]
-    }
+    { "tip": "zdravlje", "vrednost": ["mentalno"] }
   ],
 
   "zasto_se_propusta": "Mentalno zdravlje je stigmatizovano - ljudi izbegavaju da odu kod psihijatra, ili idu privatno (5.000-10.000 RSD po seansi) ne znajući da je u domu zdravlja besplatno. Mnogi misle da je sistem 'samo za ozbiljne slučajeve' - nije, dostupan je za sve. Čeka se 2-4 nedelje za prvi pregled, ali to je još uvek mnogo bolje od godine privatne terapije.",

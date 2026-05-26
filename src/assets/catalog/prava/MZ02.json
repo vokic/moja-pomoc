@@ -32,7 +32,7 @@
   "ko_ima_pravo_opis": "Svi sa zavisnošću od alkohola, droga ili patološkim kockarstvom. Anonimno za prvi kontakt. Maloletna lica - sa pristankom roditelja ili po nalogu suda. Stranci sa privremenim boravkom takođe imaju pravo na hitnu pomoć.",
 
   "uslovi": [
-    { "tip": "prebivaliste_srbija", "vrednost": true }
+    { "tip": "zdravlje", "vrednost": ["mentalno"] }
   ],
 
   "zasto_se_propusta": "Stigma + strah od evidencije (kazne, gubitka posla, sukoba sa policijom). Većina ljudi se boji da će biti prijavljeni - ali sistem je anonimni i ne komunicira sa policijom. Drugi razlog: niska vidljivost - mnogi ne znaju gde da se obrate. Mnogi pokušaju 'sami' i posle 5-10 godina dolaze izgubljeni.",

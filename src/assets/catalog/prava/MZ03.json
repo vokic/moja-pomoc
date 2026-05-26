@@ -29,7 +29,13 @@
   "ko_ima_pravo_opis": "Svako ko se nalazi u psihološkoj krizi - suicidalne misli, panični napad, akutna anksioznost, posttraumatska reakcija, depresija. Žene i muškarci. Maloletnici - posebne linije (npr. NADEL).",
 
   "uslovi": [
-    { "tip": "prebivaliste_srbija", "vrednost": true }
+    {
+      "tip": "ili",
+      "uslovi": [
+        { "tip": "zdravlje", "vrednost": ["mentalno"] },
+        { "tip": "situacija", "vrednost": ["nasilje", "smrt_porodice", "razvod"] }
+      ]
+    }
   ],
 
   "zasto_se_propusta": "Većina ljudi u krizi misli da 'mora da bude dovoljno loše' da bi pozvali. Ne razumeju da SOS linije postoje baš za 'manje hitne' situacije: tugu, anksioznost, osećaj besmislenosti. Druga prepreka: ne znaju brojeve, ili misle da nema niko da odgovori. Mnogi probaju samo 1-2 puta i odustanu jer je linija zauzeta.",

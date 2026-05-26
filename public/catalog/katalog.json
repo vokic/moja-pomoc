@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "last_update": "2026-05-23",
+  "last_update": "2026-05-26",
   "total_prava": 34,
   "prava": [
     {
@@ -1813,18 +1813,9 @@
       "ko_ima_pravo_opis": "Svi osigurani građani Srbije. Pristup preko izabranog lekara opšte prakse koji daje uput. U urgentnim slučajevima (suicidalne misli, akutna kriza) - direktan pristup bez upita preko hitne pomoći ili psihijatrijske klinike.",
       "uslovi": [
         {
-          "tip": "ili",
-          "uslovi": [
-            {
-              "tip": "zdravlje",
-              "vrednost": [
-                "mentalno"
-              ]
-            },
-            {
-              "tip": "prebivaliste_srbija",
-              "vrednost": true
-            }
+          "tip": "zdravlje",
+          "vrednost": [
+            "mentalno"
           ]
         }
       ],
@@ -1974,8 +1965,10 @@
       "ko_ima_pravo_opis": "Svi sa zavisnošću od alkohola, droga ili patološkim kockarstvom. Anonimno za prvi kontakt. Maloletna lica - sa pristankom roditelja ili po nalogu suda. Stranci sa privremenim boravkom takođe imaju pravo na hitnu pomoć.",
       "uslovi": [
         {
-          "tip": "prebivaliste_srbija",
-          "vrednost": true
+          "tip": "zdravlje",
+          "vrednost": [
+            "mentalno"
+          ]
         }
       ],
       "zasto_se_propusta": "Stigma + strah od evidencije (kazne, gubitka posla, sukoba sa policijom). Većina ljudi se boji da će biti prijavljeni - ali sistem je anonimni i ne komunicira sa policijom. Drugi razlog: niska vidljivost - mnogi ne znaju gde da se obrate. Mnogi pokušaju 'sami' i posle 5-10 godina dolaze izgubljeni.",
@@ -2116,8 +2109,23 @@
       "ko_ima_pravo_opis": "Svako ko se nalazi u psihološkoj krizi - suicidalne misli, panični napad, akutna anksioznost, posttraumatska reakcija, depresija. Žene i muškarci. Maloletnici - posebne linije (npr. NADEL).",
       "uslovi": [
         {
-          "tip": "prebivaliste_srbija",
-          "vrednost": true
+          "tip": "ili",
+          "uslovi": [
+            {
+              "tip": "zdravlje",
+              "vrednost": [
+                "mentalno"
+              ]
+            },
+            {
+              "tip": "situacija",
+              "vrednost": [
+                "nasilje",
+                "smrt_porodice",
+                "razvod"
+              ]
+            }
+          ]
         }
       ],
       "zasto_se_propusta": "Većina ljudi u krizi misli da 'mora da bude dovoljno loše' da bi pozvali. Ne razumeju da SOS linije postoje baš za 'manje hitne' situacije: tugu, anksioznost, osećaj besmislenosti. Druga prepreka: ne znaju brojeve, ili misle da nema niko da odgovori. Mnogi probaju samo 1-2 puta i odustanu jer je linija zauzeta.",

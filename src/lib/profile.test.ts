@@ -89,14 +89,26 @@ describe('isProfileComplete', () => {
     expect(isProfileComplete(full)).toBe(true);
   });
 
-  it('fali jedno polje -> false', () => {
+  it('fali obavezno polje (starost) -> false', () => {
     const partial: Profile = { ...full };
-    delete partial.primanja;
+    delete partial.starost;
     expect(isProfileComplete(partial)).toBe(false);
   });
 
   it('prazna multi-select lista -> false', () => {
     const empty: Profile = { ...full, zdravlje: [] };
     expect(isProfileComplete(empty)).toBe(false);
+  });
+
+  it('opcioni pol odsutan -> i dalje true', () => {
+    const noPol: Profile = { ...full };
+    delete noPol.pol;
+    expect(isProfileComplete(noPol)).toBe(true);
+  });
+
+  it('opciona primanja odsutna -> i dalje true', () => {
+    const noPrimanja: Profile = { ...full };
+    delete noPrimanja.primanja;
+    expect(isProfileComplete(noPrimanja)).toBe(true);
   });
 });

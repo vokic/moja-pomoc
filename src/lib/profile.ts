@@ -33,7 +33,10 @@ export function clearProfile(): void {
 }
 
 /**
- * A profile is considered complete when every wizard step has an answer.
+ * A profile is considered complete when every REQUIRED wizard step has an
+ * answer. `pol` and `primanja` are optional (user may skip them) — their
+ * absence does not make the profile incomplete.
+ *
  * Multi-select steps must have at least one value (incl. exclusive options
  * like "nema" or "nista" - those count as deliberate answers).
  */
@@ -41,12 +44,10 @@ export function isProfileComplete(p: Profile | null | undefined): boolean {
   if (!p) return false;
   return (
     !!p.starost &&
-    !!p.pol &&
     !!p.domacinstvo &&
     Array.isArray(p.deca) &&
     p.deca.length > 0 &&
     !!p.zaposlenje &&
-    !!p.primanja &&
     Array.isArray(p.zdravlje) &&
     p.zdravlje.length > 0 &&
     Array.isArray(p.situacija) &&

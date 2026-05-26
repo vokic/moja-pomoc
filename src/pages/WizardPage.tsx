@@ -65,6 +65,12 @@ export function WizardPage() {
   const rawValue = profile?.[step.id];
   const value: string | string[] | undefined = rawValue as string | string[] | undefined;
 
+  const hasAnswer =
+    step.type === 'multi'
+      ? Array.isArray(value) && value.length > 0
+      : typeof value === 'string' && value.length > 0;
+  const canAdvance = hasAnswer || step.optional === true;
+
   const handleChange = (next: string | string[]) => {
     update(step.id, next as Profile[typeof step.id]);
   };
@@ -94,11 +100,15 @@ export function WizardPage() {
           {t('wizard.nav.back')}
         </Button>
         {!isLast ? (
-          <Button onClick={() => setCurrentStep((s) => Math.min(TOTAL_STEPS - 1, s + 1))}>
+          <Button
+            disabled={!canAdvance}
+            onClick={() => setCurrentStep((s) => Math.min(TOTAL_STEPS - 1, s + 1))}
+          >
             {t('wizard.nav.next')}
           </Button>
         ) : (
           <Button
+            disabled={!canAdvance}
             onClick={() => {
               track('wizard_completed');
               navigate('/rezultati');
